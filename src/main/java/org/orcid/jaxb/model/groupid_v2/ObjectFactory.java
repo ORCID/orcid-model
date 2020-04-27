@@ -38,7 +38,9 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link OrcidClientGroup }
+     * Create an instance of {@link GroupIdRecords }
+     * 
+     * @return a GroupIdRecords object
      * 
      */
     public GroupIdRecords createGroupIdRecords() {
@@ -47,6 +49,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     * @param value - a GroupIdRecord
+     * @return a JAXBElement list containing the GroupIdRecord 
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/group-id", name = "group-id-record")

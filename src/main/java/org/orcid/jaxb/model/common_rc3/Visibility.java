@@ -16,14 +16,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import java.io.Serializable;
 
 /**
- * <p/>
  * Java class for visibility.
- * <p/>
- * <p/>
- * The following schema fragment specifies the expected content contained within
- * this class.
- * <p/>
- * <p/>
  * 
  */
 @XmlType(name = "visibility")

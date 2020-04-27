@@ -18,10 +18,9 @@ import io.swagger.annotations.ApiModel;
 import java.io.Serializable;
 
 /**
- * <p>Java class for media-type.
+ * Java class for media-type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
+ * The following schema fragment specifies the expected content contained within this class.
  * 
  */
 @XmlType(name = "mediaType")

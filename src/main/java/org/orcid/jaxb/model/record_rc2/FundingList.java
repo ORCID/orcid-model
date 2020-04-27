@@ -23,14 +23,10 @@ import javax.xml.bind.annotation.XmlType;
 import org.orcid.jaxb.model.common_rc2.LastModifiedDate;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * 
- * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -50,13 +46,11 @@ public class FundingList implements ActivitiesContainer, Serializable {
     /**
      * Gets the value of the Fundings property.
      * 
-     * <p>
      * This accessor method returns a reference to the live list, not a
      * snapshot. Therefore any modification you make to the returned list will
      * be present inside the JAXB object. This is why there is not a
      * <CODE>set</CODE> method for the Fundings property.
      * 
-     * <p>
      * For example, to add a new item, do as follows:
      * 
      * <pre>
@@ -64,8 +58,9 @@ public class FundingList implements ActivitiesContainer, Serializable {
      * </pre>
      * 
      * 
-     * <p>
      * Objects of the following type(s) are allowed in the list {@link Funding }
+     * 
+     * @return a List of Funding objects
      * 
      * 
      */

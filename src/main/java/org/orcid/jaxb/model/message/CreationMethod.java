@@ -17,21 +17,18 @@ import io.swagger.annotations.ApiModel;
 import java.io.Serializable;
 
 /**
- * <p>
  * Java class for creation-method values..
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * <p>
  * 
  * <pre>
- * &lt;xs:simpleType>
- *   &lt;xs:restriction base="xs:string">
- *     &lt;xs:enumeration value="API"/>
- *     &lt;xs:enumeration value="manual">
- *   &lt;/xs:restriction>
- * &lt;/xs:simpleType>
+ * &lt;xs:simpleType&gt;
+ *   &lt;xs:restriction base="xs:string"&gt;
+ *     &lt;xs:enumeration value="API"/&gt;
+ *     &lt;xs:enumeration value="manual"&gt;
+ *   &lt;/xs:restriction&gt;
+ * &lt;/xs:simpleType&gt;
  * </pre>
  * 
  */

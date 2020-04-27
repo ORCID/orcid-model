@@ -14,13 +14,10 @@ import javax.xml.bind.annotation.XmlType;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- * <p>
- * Java class for null.
+ * Java class for NotificationType.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * <p>
  * 
  */
 @XmlType(name = "")

@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlType;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- * <p>Java class for citation-type.
+ * Java class for citation-type.
  * 
  * 
  */

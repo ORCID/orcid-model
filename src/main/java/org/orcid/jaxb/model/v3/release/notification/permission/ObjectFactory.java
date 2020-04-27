@@ -36,6 +36,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link NotificationPermission }
      * 
+     * @return a NotificationPermission object
+     * 
      */
     public NotificationPermission createNotification() {
         return new NotificationPermission();

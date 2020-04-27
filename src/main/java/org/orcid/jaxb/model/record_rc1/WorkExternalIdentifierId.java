@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlValue;
 import java.io.Serializable;
 
 /**
- * <p>Java class for anonymous complex type.
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * The following schema fragment specifies the expected content contained within this class.
  * 
  * 
  */
@@ -26,9 +26,6 @@ import java.io.Serializable;
 @XmlRootElement(name = "externalIdentifierId")
 public class WorkExternalIdentifierId implements Serializable {
 
-    /**
-     * 
-     */
     private static final long serialVersionUID = 1L;
     @XmlValue
     protected String content;

@@ -248,10 +248,9 @@ public class WorkSummary implements VisibilityType, Activity, GroupableActivity,
     /**
      * Gets the value of the workSources property.
      * 
-     * @return possible object is {@link WorkSource }
+     * @return String representation of work source
      * 
      */
-
     @Override
     public String retrieveSourcePath() {
         if (source != null) {

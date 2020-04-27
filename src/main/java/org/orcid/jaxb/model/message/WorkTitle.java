@@ -15,22 +15,22 @@ import javax.xml.bind.annotation.XmlType;
 import java.io.Serializable;
 
 /**
- * <p>Java class for anonymous complex type.
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}title" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}subtitle" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}translated-title" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}title" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}subtitle" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}translated-title" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -40,12 +40,12 @@ import java.io.Serializable;
 @XmlRootElement(name = "work-title")
 public class WorkTitle implements Serializable {
 
-    /**
-     * 
-     */
     private static final long serialVersionUID = 1L;
+
     protected Title title;
+    
     protected Subtitle subtitle;
+    
     @XmlElement(name = "translated-title")
     protected TranslatedTitle translatedTitle;
 
@@ -113,9 +113,7 @@ public class WorkTitle implements Serializable {
     /**
      * Sets the value of the translatedTitle property.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link translatedTitle }
+     * @param translatedTitle - the translated title
      *     
      */
     public void setTranslatedTitle(TranslatedTitle translatedTitle) {

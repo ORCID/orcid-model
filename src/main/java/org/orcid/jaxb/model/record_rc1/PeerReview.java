@@ -335,9 +335,10 @@ public class PeerReview implements VisibilityType, Activity, Serializable, Organ
      * be duplicated if they have the same source and share at least one
      * external id
      * 
+     * @param obj - peer review to carry out duplicate checks against
      * @return true if the two peer reviews are duplicated according to ORCID
      *         requirements
-     * */
+     */
     public boolean isDuplicated(Object obj) {
         if (this == obj)
             return true;

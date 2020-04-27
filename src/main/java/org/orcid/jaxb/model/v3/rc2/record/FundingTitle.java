@@ -21,9 +21,9 @@ import io.swagger.annotations.ApiModel;
 import java.io.Serializable;
 
 /**
- * <p>Java class for anonymous complex type.
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * The following schema fragment specifies the expected content contained within this class.
  *  
  * 
  */
@@ -33,9 +33,6 @@ import java.io.Serializable;
 @ApiModel(value = "FundingTitleV3_0_rc2")
 public class FundingTitle implements Serializable {
 
-    /**
-     * 
-     */
     private static final long serialVersionUID = 1L;
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected Title title;    
@@ -81,9 +78,7 @@ public class FundingTitle implements Serializable {
     /**
      * Sets the value of the translatedTitle property.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link translatedTitle }
+     * @param translatedTitle - the translated title
      *     
      */
     public void setTranslatedTitle(TranslatedTitle translatedTitle) {

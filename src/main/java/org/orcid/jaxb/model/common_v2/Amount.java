@@ -14,14 +14,11 @@ import org.apache.commons.lang.StringUtils;
 import io.swagger.annotations.ApiModel;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
  * 
-* 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)

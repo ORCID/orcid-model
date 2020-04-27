@@ -15,23 +15,23 @@ import javax.xml.bind.annotation.XmlType;
 import java.io.Serializable;
 
 /**
- * <p>Java class for anonymous complex type.
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}encrypted-password"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}security-question-id"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}encrypted-security-answer"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}encrypted-verification-code"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}encrypted-password"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}security-question-id"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}encrypted-security-answer"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}encrypted-verification-code"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

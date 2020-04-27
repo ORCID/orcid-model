@@ -21,12 +21,7 @@ import org.orcid.jaxb.model.common_rc4.Visibility;
 /**
  * City
  * 
- * <p>
  * Java class for anonymous complex type.
- * 
- * <p>
- * 
- * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)

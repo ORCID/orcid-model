@@ -16,13 +16,10 @@ import javax.xml.bind.annotation.XmlType;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- * <p>
  * Java class for anonymous complex type.
- * <p/>
- * <p>
+ * 
  * The following schema fragment specifies the expected content contained within
  * this class.
- * <p/>
  * 
  */
 @XmlType(name = "externalIdentifierType", namespace = "http://www.orcid.org/ns/work")

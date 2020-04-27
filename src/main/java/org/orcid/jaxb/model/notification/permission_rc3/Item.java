@@ -27,17 +27,17 @@ import org.orcid.jaxb.model.record_rc3.ExternalID;
  * this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.orcid.org/ns/notification}activity-type"/>
- *         &lt;element ref="{http://www.orcid.org/ns/notification}activity-name"/>
- *         &lt;element ref="{http://www.orcid.org/ns/common}external-id" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/notification}activity-type"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/notification}activity-name"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/common}external-id" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -110,7 +110,7 @@ public class Item implements Serializable {
     /**
      * Gets the value of the externalId property.
      * 
-     * @return possible object is {@link PersonExternalIdentifier }
+     * @return the externalIdentifier
      * 
      */
     public ExternalID getExternalIdentifier() {
@@ -120,8 +120,7 @@ public class Item implements Serializable {
     /**
      * Sets the value of the externalId property.
      * 
-     * @param value
-     *            allowed object is {@link PersonExternalIdentifier }
+     * @param value - the externalIdentifier
      * 
      */
     public void setExternalIdentifier(ExternalID value) {

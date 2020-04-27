@@ -16,13 +16,10 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -30,9 +27,6 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "source", namespace = "http://www.orcid.org/ns/common")
 public class Source implements Serializable {
 
-    /**
-     * 
-     */
     private static final long serialVersionUID = 1L;
     @XmlElement(name="source-orcid", namespace = "http://www.orcid.org/ns/common")
     protected SourceOrcid sourceOrcid;
@@ -78,6 +72,9 @@ public class Source implements Serializable {
      * Only use this method if you really need to tell the difference between a
      * source ORCID and a source client ID. Use {@link #retrieveSourcePath()}
      * instead.
+     * 
+     * @return the SourceClientId
+     * 
      **/
     @Deprecated
     public SourceClientId getSourceClientId() {

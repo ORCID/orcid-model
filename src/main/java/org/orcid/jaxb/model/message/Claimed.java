@@ -15,17 +15,17 @@ import javax.xml.bind.annotation.XmlValue;
 import java.io.Serializable;
 
 /**
- * <p>Java class for anonymous complex type.
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>boolean">
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema&gt;boolean"&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -35,9 +35,6 @@ import java.io.Serializable;
 @XmlRootElement(name = "verified-primary-email")
 public class Claimed implements Serializable {
 
-    /**
-     * 
-     */
     private static final long serialVersionUID = 1L;
     @XmlValue
     protected boolean value;
@@ -53,6 +50,8 @@ public class Claimed implements Serializable {
     /**
      * Gets the value of the value property.
      * 
+     * @return the claimed boolean
+     * 
      */
     public boolean isValue() {
         return value;
@@ -60,6 +59,8 @@ public class Claimed implements Serializable {
 
     /**
      * Sets the value of the value property.
+     * 
+     * @param value - the claimed boolean
      * 
      */
     public void setValue(boolean value) {

@@ -109,9 +109,7 @@ public class WorkTitle implements Serializable {
     /**
      * Sets the value of the translatedTitle property.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link translatedTitle }
+     * @param translatedTitle - the translated title
      *     
      */
     public void setTranslatedTitle(TranslatedTitle translatedTitle) {

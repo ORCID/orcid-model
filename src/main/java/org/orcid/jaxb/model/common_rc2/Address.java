@@ -19,10 +19,8 @@ import org.orcid.jaxb.model.record_rc2.City;
 import org.orcid.jaxb.model.record_rc2.Region;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
  * 
@@ -96,8 +94,7 @@ public class Address implements Serializable {
     /**
      * Sets the value of the affiliationCountry property.
      * 
-     * @param value
-     *            allowed object is {@link AffiliationCountry }
+     * @param value - the Country
      * 
      */
     public void setCountry(Country value) {

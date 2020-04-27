@@ -15,14 +15,10 @@ import javax.xml.bind.annotation.XmlType;
 import io.swagger.annotations.ApiModel;
 
 /**
- * <p>
  * Java class for country-type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * <p>
- * 
  * 
  */
 @XmlType(name = "iso3166Country")

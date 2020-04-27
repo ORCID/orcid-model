@@ -406,6 +406,8 @@ public class Funding implements Filterable, Serializable, OrganizationHolder, So
      * duplicated if they have the same type, title, organization, description
      * and amount
      * 
+     * @param obj - object to check for duplication
+     * 
      * @return true if the two fundings are duplicated according to ORCID
      *         requirements
      * */

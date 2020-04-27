@@ -23,12 +23,7 @@ import io.swagger.annotations.ApiModel;
 /**
  * City
  * 
- * <p>
  * Java class for anonymous complex type.
- * 
- * <p>
- * 
- * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)

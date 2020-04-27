@@ -20,243 +20,243 @@ import org.apache.commons.lang3.StringUtils;
 import io.swagger.annotations.ApiModel;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(propOrder = { "sourceOrcid", "sourceClientId", "sourceName","assertionOriginOrcid", "assertionOriginClientId", "assertionOriginName" })
+@XmlType(propOrder = { "sourceOrcid", "sourceClientId", "sourceName", "assertionOriginOrcid", "assertionOriginClientId",
+		"assertionOriginName" })
 @XmlRootElement(name = "source", namespace = "http://www.orcid.org/ns/common")
 @ApiModel(value = "SourceV3_0")
 public class Source implements Serializable {
 
-    /**
-     * 
-     */
-    private static final long serialVersionUID = 1L;
-    @XmlElement(name="source-orcid", namespace = "http://www.orcid.org/ns/common")
-    protected SourceOrcid sourceOrcid;
-    @XmlElement(name="source-client-id", namespace="http://www.orcid.org/ns/common")
-    protected SourceClientId sourceClientId;
-    @XmlElement(name="source-name", namespace="http://www.orcid.org/ns/common")
-    protected SourceName sourceName;
-    
-    @XmlElement(name="assertion-origin-orcid", namespace = "http://www.orcid.org/ns/common")
-    protected SourceOrcid assertionOriginOrcid;
-    @XmlElement(name="assertion-origin-client-id", namespace="http://www.orcid.org/ns/common")
-    protected SourceClientId assertionOriginClientId;
-    @XmlElement(name="assertion-origin-name", namespace="http://www.orcid.org/ns/common")
-    protected SourceName assertionOriginName;
+	private static final long serialVersionUID = 1L;
+	@XmlElement(name = "source-orcid", namespace = "http://www.orcid.org/ns/common")
+	protected SourceOrcid sourceOrcid;
+	@XmlElement(name = "source-client-id", namespace = "http://www.orcid.org/ns/common")
+	protected SourceClientId sourceClientId;
+	@XmlElement(name = "source-name", namespace = "http://www.orcid.org/ns/common")
+	protected SourceName sourceName;
 
-    public Source() {
-    }
+	@XmlElement(name = "assertion-origin-orcid", namespace = "http://www.orcid.org/ns/common")
+	protected SourceOrcid assertionOriginOrcid;
+	@XmlElement(name = "assertion-origin-client-id", namespace = "http://www.orcid.org/ns/common")
+	protected SourceClientId assertionOriginClientId;
+	@XmlElement(name = "assertion-origin-name", namespace = "http://www.orcid.org/ns/common")
+	protected SourceName assertionOriginName;
 
-    public Source(String amenderOrcidPath) {
-        SourceOrcid so = new SourceOrcid();
-        so.setPath(amenderOrcidPath);
-        this.sourceOrcid = so;
-    }
+	public Source() {
+	}
 
-    /**
-     * Only use this method if you really need to tell the difference between a
-     * source ORCID and a source client ID. Use {@link #retrieveSourcePath()}
-     * instead.
-     *
-     * @return possible object is {@link SourceOrcid }
-     * 
-     */
-    @Deprecated
-    public SourceOrcid getSourceOrcid() {
-        return sourceOrcid;
-    }
+	public Source(String amenderOrcidPath) {
+		SourceOrcid so = new SourceOrcid();
+		so.setPath(amenderOrcidPath);
+		this.sourceOrcid = so;
+	}
 
-    /**
-     * Sets the value of the sourceOrcid property.
-     * 
-     * @param value
-     *            allowed object is {@link SourceOrcid }
-     * 
-     */
-    public void setSourceOrcid(SourceOrcid value) {
-        this.sourceOrcid = value;
-    }
+	/**
+	 * Only use this method if you really need to tell the difference between a
+	 * source ORCID and a source client ID. Use {@link #retrieveSourcePath()}
+	 * instead.
+	 *
+	 * @return possible object is {@link SourceOrcid }
+	 * 
+	 */
+	@Deprecated
+	public SourceOrcid getSourceOrcid() {
+		return sourceOrcid;
+	}
 
-    /**
-     * Only use this method if you really need to tell the difference between a
-     * source ORCID and a source client ID. Use {@link #retrieveSourcePath()}
-     * instead.
-     **/
-    @Deprecated
-    public SourceClientId getSourceClientId() {
-        return sourceClientId;
-    }
+	/**
+	 * Sets the value of the sourceOrcid property.
+	 * 
+	 * @param value allowed object is {@link SourceOrcid }
+	 * 
+	 */
+	public void setSourceOrcid(SourceOrcid value) {
+		this.sourceOrcid = value;
+	}
 
-    public void setSourceClientId(SourceClientId sourceClientId) {
-        this.sourceClientId = sourceClientId;
-    }
+	/**
+	 * Only use this method if you really need to tell the difference between a
+	 * source ORCID and a source client ID. Use {@link #retrieveSourcePath()}
+	 * instead.
+	 * 
+	 * @return a SourceClientId object
+	 * 
+	 **/
+	@Deprecated
+	public SourceClientId getSourceClientId() {
+		return sourceClientId;
+	}
 
-    /**
-     * Gets the value of the sourceName property.
-     * 
-     * @return possible object is {@link SourceName }
-     * 
-     */
-    public SourceName getSourceName() {
-        return sourceName;
-    }
+	public void setSourceClientId(SourceClientId sourceClientId) {
+		this.sourceClientId = sourceClientId;
+	}
 
-    /**
-     * Sets the value of the sourceName property.
-     * 
-     * @param value
-     *            allowed object is {@link SourceName }
-     * 
-     */
-    public void setSourceName(SourceName value) {
-        this.sourceName = value;
-    }
-    
-    public SourceOrcid getAssertionOriginOrcid() {
-        return assertionOriginOrcid;
-    }
+	/**
+	 * Gets the value of the sourceName property.
+	 * 
+	 * @return possible object is {@link SourceName }
+	 * 
+	 */
+	public SourceName getSourceName() {
+		return sourceName;
+	}
 
-    public void setAssertionOriginOrcid(SourceOrcid assertionOriginOrcid) {
-        this.assertionOriginOrcid = assertionOriginOrcid;
-    }
+	/**
+	 * Sets the value of the sourceName property.
+	 * 
+	 * @param value allowed object is {@link SourceName }
+	 * 
+	 */
+	public void setSourceName(SourceName value) {
+		this.sourceName = value;
+	}
 
-    public SourceClientId getAssertionOriginClientId() {
-        return assertionOriginClientId;
-    }
+	public SourceOrcid getAssertionOriginOrcid() {
+		return assertionOriginOrcid;
+	}
 
-    public void setAssertionOriginClientId(SourceClientId assertionOriginClientId) {
-        this.assertionOriginClientId = assertionOriginClientId;
-    }
+	public void setAssertionOriginOrcid(SourceOrcid assertionOriginOrcid) {
+		this.assertionOriginOrcid = assertionOriginOrcid;
+	}
 
-    public SourceName getAssertionOriginName() {
-        return assertionOriginName;
-    }
+	public SourceClientId getAssertionOriginClientId() {
+		return assertionOriginClientId;
+	}
 
-    public void setAssertionOriginName(SourceName assertionOriginName) {
-        this.assertionOriginName = assertionOriginName;
-    }
+	public void setAssertionOriginClientId(SourceClientId assertionOriginClientId) {
+		this.assertionOriginClientId = assertionOriginClientId;
+	}
 
-    public String retrieveSourcePath() {
-        if (sourceClientId != null) {
-            return sourceClientId.getPath();
-        }
-        if (sourceOrcid != null) {
-            return sourceOrcid.getPath();
-        }
-        return null;
-    }
-    
-    public String retrieveAssertionOriginPath() {
-        if (assertionOriginClientId != null) {
-            return assertionOriginClientId.getPath();
-        }
-        if (assertionOriginOrcid != null) {
-            return assertionOriginOrcid.getPath();
-        }
-        return null;
-    }
-    
-    public String retriveSourceUri() {
-        if (sourceClientId != null) {
-            return sourceClientId.getUri();
-        }
-        if (sourceOrcid != null) {
-            return sourceOrcid.getUri();
-        }
-        return null;
-    }
-    
-    public String retriveAssertionOriginUri() {
-        if (assertionOriginClientId != null) {
-            return assertionOriginClientId.getUri();
-        }
-        if (assertionOriginOrcid != null) {
-            return assertionOriginOrcid.getUri();
-        }
-        return null;
-    }
-    
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((assertionOriginClientId == null) ? 0 : assertionOriginClientId.hashCode());
-        result = prime * result + ((assertionOriginOrcid == null) ? 0 : assertionOriginOrcid.hashCode());
-        result = prime * result + ((sourceClientId == null) ? 0 : sourceClientId.hashCode());
-        result = prime * result + ((sourceOrcid == null) ? 0 : sourceOrcid.hashCode());
-        return result;
-    }
+	public SourceName getAssertionOriginName() {
+		return assertionOriginName;
+	}
 
-    //TODO: consider empty subclasses == null subclasses...
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        Source other = (Source) obj;
-        if (assertionOriginClientId == null) {
-            if (other.assertionOriginClientId != null)
-                return false;
-        } else if (!assertionOriginClientId.equals(other.assertionOriginClientId))
-            return false;
-        if (assertionOriginOrcid == null) {
-            if (other.assertionOriginOrcid != null)
-                return false;
-        } else if (!assertionOriginOrcid.equals(other.assertionOriginOrcid))
-            return false;
-        if (sourceClientId == null) {
-            if (other.sourceClientId != null)
-                return false;
-        } else if (!sourceClientId.equals(other.sourceClientId))
-            return false;
-        if (sourceOrcid == null) {
-            if (other.sourceOrcid != null)
-                return false;
-        } else if (!sourceOrcid.equals(other.sourceOrcid))
-            return false;
-        return true;
-    }
+	public void setAssertionOriginName(SourceName assertionOriginName) {
+		this.assertionOriginName = assertionOriginName;
+	}
 
-    /**
-     * Returns a source with populated sourceClientId. 
-     * 
-     * @param clientId - String representation of the clientDetailsId representing the source entity of this source.
-     * @return source with populated sourceClientId
-     */
-    public static Source forClient(String clientId) {
-        if (StringUtils.isEmpty(clientId)) {
-            throw new IllegalArgumentException("Client ID cannot be null");
-        }
-        Source s = new Source();
-        s.setSourceClientId(new SourceClientId(clientId));
-        return s;
-    }
+	public String retrieveSourcePath() {
+		if (sourceClientId != null) {
+			return sourceClientId.getPath();
+		}
+		if (sourceOrcid != null) {
+			return sourceOrcid.getPath();
+		}
+		return null;
+	}
 
-    /**
-     * Returns a source with populated sourceClientId and assertionOriginClientId. 
-     * 
-     * @param clientId - String representation of the clientDetailsId representing the source entity of this source.
-     * @param oboId - String representation of the assertionOriginClientId for this source.
-     * @return source with populated sourceClientId and assertionOriginClientId
-     */
-    public static Source forClientWithClientOBO(String clientId, String oboId) {
-        if (StringUtils.isEmpty(oboId)) {
-            throw new IllegalArgumentException("Client OBO ID cannot be null");
-        }
-        Source s = forClient(clientId);
-        s.setAssertionOriginClientId(new SourceClientId(oboId));
-        return s;
-    }
+	public String retrieveAssertionOriginPath() {
+		if (assertionOriginClientId != null) {
+			return assertionOriginClientId.getPath();
+		}
+		if (assertionOriginOrcid != null) {
+			return assertionOriginOrcid.getPath();
+		}
+		return null;
+	}
+
+	public String retriveSourceUri() {
+		if (sourceClientId != null) {
+			return sourceClientId.getUri();
+		}
+		if (sourceOrcid != null) {
+			return sourceOrcid.getUri();
+		}
+		return null;
+	}
+
+	public String retriveAssertionOriginUri() {
+		if (assertionOriginClientId != null) {
+			return assertionOriginClientId.getUri();
+		}
+		if (assertionOriginOrcid != null) {
+			return assertionOriginOrcid.getUri();
+		}
+		return null;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((assertionOriginClientId == null) ? 0 : assertionOriginClientId.hashCode());
+		result = prime * result + ((assertionOriginOrcid == null) ? 0 : assertionOriginOrcid.hashCode());
+		result = prime * result + ((sourceClientId == null) ? 0 : sourceClientId.hashCode());
+		result = prime * result + ((sourceOrcid == null) ? 0 : sourceOrcid.hashCode());
+		return result;
+	}
+
+	// TODO: consider empty subclasses == null subclasses...
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Source other = (Source) obj;
+		if (assertionOriginClientId == null) {
+			if (other.assertionOriginClientId != null)
+				return false;
+		} else if (!assertionOriginClientId.equals(other.assertionOriginClientId))
+			return false;
+		if (assertionOriginOrcid == null) {
+			if (other.assertionOriginOrcid != null)
+				return false;
+		} else if (!assertionOriginOrcid.equals(other.assertionOriginOrcid))
+			return false;
+		if (sourceClientId == null) {
+			if (other.sourceClientId != null)
+				return false;
+		} else if (!sourceClientId.equals(other.sourceClientId))
+			return false;
+		if (sourceOrcid == null) {
+			if (other.sourceOrcid != null)
+				return false;
+		} else if (!sourceOrcid.equals(other.sourceOrcid))
+			return false;
+		return true;
+	}
+
+	/**
+	 * Returns a source with populated sourceClientId.
+	 * 
+	 * @param clientId - String representation of the clientDetailsId representing
+	 *                 the source entity of this source.
+	 * @return source with populated sourceClientId
+	 */
+	public static Source forClient(String clientId) {
+		if (StringUtils.isEmpty(clientId)) {
+			throw new IllegalArgumentException("Client ID cannot be null");
+		}
+		Source s = new Source();
+		s.setSourceClientId(new SourceClientId(clientId));
+		return s;
+	}
+
+	/**
+	 * Returns a source with populated sourceClientId and assertionOriginClientId.
+	 * 
+	 * @param clientId - String representation of the clientDetailsId representing
+	 *                 the source entity of this source.
+	 * @param oboId    - String representation of the assertionOriginClientId for
+	 *                 this source.
+	 * @return source with populated sourceClientId and assertionOriginClientId
+	 */
+	public static Source forClientWithClientOBO(String clientId, String oboId) {
+		if (StringUtils.isEmpty(oboId)) {
+			throw new IllegalArgumentException("Client OBO ID cannot be null");
+		}
+		Source s = forClient(clientId);
+		s.setAssertionOriginClientId(new SourceClientId(oboId));
+		return s;
+	}
 }

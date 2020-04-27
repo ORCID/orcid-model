@@ -116,7 +116,7 @@ public enum WorkType implements Serializable {
     /** Return true if type is in the Publications section of the CASRAI dictionary
      * See publication section: http://members.orcid.org/api/supported-work-types
      * 
-     * @return
+     * @return boolean indicating whether the work type is a publication
      */
     public boolean isPublication(){
         return publications.contains(this);
@@ -125,7 +125,7 @@ public enum WorkType implements Serializable {
     /** Return true if type is in the Conference section of the CASRAI dictionary
      * See publication section: http://members.orcid.org/api/supported-work-types
      * 
-     * @return
+     * @return boolean indicating whether the work type is a conference
      */
     public boolean isConference(){
         return conferences.contains(this);

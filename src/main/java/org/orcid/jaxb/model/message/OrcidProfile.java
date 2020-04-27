@@ -18,31 +18,29 @@ import org.orcid.jaxb.model.clientgroup.MemberType;
 import org.orcid.model.utils.ReleaseNameUtils;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}orcid" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}orcid-deprecated" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}orcid-history" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}orcid-bio" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}orcid-activities" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}orcid-internal" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="type" type="{http://www.orcid.org/ns/orcid}orcid-type" default="user" />
- *       &lt;attribute name="groupType" type="{http://www.orcid.org/ns/orcid}client-type" default="user" />
- *       &lt;attribute name="clientType" type="{http://www.orcid.org/ns/orcid}group-type" default="user" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}orcid" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}orcid-deprecated" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}orcid-history" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}orcid-bio" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}orcid-activities" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}orcid-internal" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="type" type="{http://www.orcid.org/ns/orcid}orcid-type" default="user" /&gt;
+ *       &lt;attribute name="groupType" type="{http://www.orcid.org/ns/orcid}client-type" default="user" /&gt;
+ *       &lt;attribute name="clientType" type="{http://www.orcid.org/ns/orcid}group-type" default="user" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -256,7 +254,7 @@ public class OrcidProfile implements Serializable {
 
     /**
      * 
-     * @param orcidFundings
+     * @param orcidFundings - a FundingList container
      */
     public void setFundings(FundingList orcidFundings) {
         if (orcidActivities == null) {
@@ -267,7 +265,7 @@ public class OrcidProfile implements Serializable {
 
     /**
      * 
-     * @return
+     * @return a FundingList object
      */
     public FundingList retrieveFundings() {
         return orcidActivities != null ? orcidActivities.getFundings() : null;
@@ -275,7 +273,7 @@ public class OrcidProfile implements Serializable {
 
     /**
      * 
-     * @return affiliations
+     * @return affiliations container
      */
     public Affiliations retrieveAffiliations() {
         return orcidActivities != null ? orcidActivities.getAffiliations() : null;
@@ -283,7 +281,7 @@ public class OrcidProfile implements Serializable {
 
     /**
      * 
-     * @param affiliations
+     * @param affiliations - the affiliations container
      */
     public void setAffiliations(Affiliations affiliations) {
         if (orcidActivities == null) {
@@ -294,7 +292,7 @@ public class OrcidProfile implements Serializable {
 
     /**
      * 
-     * @return
+     * @return OrcidWorks object
      */
     public OrcidWorks retrieveOrcidWorks() {
         return orcidActivities != null ? orcidActivities.getOrcidWorks() : null;
@@ -302,7 +300,7 @@ public class OrcidProfile implements Serializable {
 
     /**
      * 
-     * @param orcidWorks
+     * @param orcidWorks - the OrcidWorks object
      */
     public void setOrcidWorks(OrcidWorks orcidWorks) {
         if (orcidActivities == null) {
@@ -313,7 +311,7 @@ public class OrcidProfile implements Serializable {
 
     /**
      * 
-     * @param orcidWorks
+     * @param orcidWorks - the List of OrcidWork objects
      */
     public void setOrcidWork(List<OrcidWork> orcidWorks) {
         if (orcidActivities == null) {

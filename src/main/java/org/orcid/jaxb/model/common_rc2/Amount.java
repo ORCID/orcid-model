@@ -12,14 +12,11 @@ import javax.xml.bind.annotation.XmlValue;
 import org.apache.commons.lang.StringUtils;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
  * 
-* 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)

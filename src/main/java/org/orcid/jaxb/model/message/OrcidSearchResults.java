@@ -18,23 +18,21 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}orcid-search-result" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}orcid-search-result" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -44,9 +42,6 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "orcid-search-results")
 public class OrcidSearchResults implements Serializable {
 
-    /**
-     * 
-     */
     private static final long serialVersionUID = 1L;
     @XmlAttribute(name = "num-found")
     protected long numFound;
@@ -64,24 +59,21 @@ public class OrcidSearchResults implements Serializable {
     /**
      * Gets the value of the orcidSearchResult property.
      * 
-     * <p>
      * This accessor method returns a reference to the live list, not a
      * snapshot. Therefore any modification you make to the returned list will
      * be present inside the JAXB object. This is why there is not a
      * <CODE>set</CODE> method for the orcidSearchResult property.
      * 
-     * <p>
      * For example, to add a new item, do as follows:
      * 
      * <pre>
      * getOrcidSearchResult().add(newItem);
      * </pre>
      * 
-     * 
-     * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link OrcidSearchResult }
      * 
+     * @return a List of OrcidSearchResult objects
      * 
      */
     public List<OrcidSearchResult> getOrcidSearchResult() {

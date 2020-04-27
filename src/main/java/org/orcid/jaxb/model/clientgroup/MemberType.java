@@ -8,23 +8,20 @@ import com.fasterxml.jackson.annotation.JsonValue;
 
 
 /**
- * <p>
  * Java class for client-type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * <p>
  * 
  * <pre>
- * &lt;simpleType name="client-type">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="basic"/>
- *     &lt;enumeration value="premium"/>
- *     &lt;enumeration value="basic-institution"/>
- *     &lt;enumeration value="premium-institution"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="client-type"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="basic"/&gt;
+ *     &lt;enumeration value="premium"/&gt;
+ *     &lt;enumeration value="basic-institution"/&gt;
+ *     &lt;enumeration value="premium-institution"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

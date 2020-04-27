@@ -36,14 +36,10 @@ import org.orcid.jaxb.model.v3.rc2.record.WorkTitle;
 import io.swagger.annotations.ApiModel;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * 
- * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -297,10 +293,9 @@ public class WorkSummary implements VisibilityType, Activity, GroupableActivity,
     /**
      * Gets the value of the workSources property.
      * 
-     * @return possible object is {@link WorkSource }
+     * @return the source path
      * 
      */
-
     @Override
     public String retrieveSourcePath() {
         if (source != null) {

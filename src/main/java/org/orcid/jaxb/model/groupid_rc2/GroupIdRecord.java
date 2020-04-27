@@ -19,44 +19,42 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.orcid.org/ns/common}source-type">
- *       &lt;sequence>
- *         &lt;element name="name" type="{http://www.orcid.org/ns/common}string-1000"/>
- *         &lt;element name="group-id">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.orcid.org/ns/common}string-1000">
- *               &lt;pattern value="(ringgold:|issn:|orcid-generated:|fundref:).*"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="description" type="{http://www.orcid.org/ns/common}non-empty-string"/>
- *         &lt;element name="type">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="publisher"/>
- *               &lt;enumeration value="institution"/>
- *               &lt;enumeration value="journal"/>
- *               &lt;enumeration value="conference"/>
- *               &lt;enumeration value="newspaper"/>
- *               &lt;enumeration value="newsletter"/>
- *               &lt;enumeration value="magazine"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://www.orcid.org/ns/common}source-type"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="name" type="{http://www.orcid.org/ns/common}string-1000"/&gt;
+ *         &lt;element name="group-id"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.orcid.org/ns/common}string-1000"&gt;
+ *               &lt;pattern value="(ringgold:|issn:|orcid-generated:|fundref:).*"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="description" type="{http://www.orcid.org/ns/common}non-empty-string"/&gt;
+ *         &lt;element name="type"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;enumeration value="publisher"/&gt;
+ *               &lt;enumeration value="institution"/&gt;
+ *               &lt;enumeration value="journal"/&gt;
+ *               &lt;enumeration value="conference"/&gt;
+ *               &lt;enumeration value="newspaper"/&gt;
+ *               &lt;enumeration value="newsletter"/&gt;
+ *               &lt;enumeration value="magazine"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

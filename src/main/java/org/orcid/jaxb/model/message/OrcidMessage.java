@@ -25,28 +25,26 @@ import javax.xml.bind.util.JAXBSource;
 import javax.xml.transform.Source;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}message-version"/>
- *         &lt;choice>
- *           &lt;element ref="{http://www.orcid.org/ns/orcid}orcid-profile"/>
- *           &lt;element ref="{http://www.orcid.org/ns/orcid}orcid-search-results"/>
- *           &lt;element ref="{http://www.orcid.org/ns/orcid}error-desc"/>
- *         &lt;/choice>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}message-version"/&gt;
+ *         &lt;choice&gt;
+ *           &lt;element ref="{http://www.orcid.org/ns/orcid}orcid-profile"/&gt;
+ *           &lt;element ref="{http://www.orcid.org/ns/orcid}orcid-search-results"/&gt;
+ *           &lt;element ref="{http://www.orcid.org/ns/orcid}error-desc"/&gt;
+ *         &lt;/choice&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -177,7 +175,6 @@ public class OrcidMessage implements Serializable {
 
     /**
      * @return A string of valid XML
-     * @throw RuntimeException if there is an error marshalling to XML
      */
     public String toXmlString() {
         try {

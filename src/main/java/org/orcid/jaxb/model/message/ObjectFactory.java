@@ -15,7 +15,7 @@ import javax.xml.namespace.QName;
 /**
  * This object contains factory methods for each Java content interface and Java
  * element interface generated in the org.orcid.jaxb.model.message package.
- * <p>
+ * 
  * An ObjectFactory allows you to programatically construct new instances of the
  * Java representation for XML content. The Java representation of XML content
  * can consist of schema derived interfaces and classes representing the binding
@@ -54,6 +54,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SourceOrcid }
      * 
+     * @return a SourceOrcid object
+     * 
      */
     public SourceOrcid createSourceOrcid() {
         return new SourceOrcid();
@@ -61,6 +63,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link FundingExternalIdentifier }
+     * 
+     * @return a FundingExternalIdentifier object
      * 
      */
     public FundingExternalIdentifier createFundingExternalIdentifier() {
@@ -70,6 +74,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FundingContributors }
      * 
+     * @return a FundingContributors object
+     * 
      */
     public FundingContributors createFundingContributors() {
         return new FundingContributors();
@@ -77,6 +83,8 @@ public class ObjectFactory {
     
     /**
      * Create an instance of {@link GrantExternalProgram }
+     * 
+     * @return a GrantExternalProgram object
      * 
      */
     public GrantExternalProgram createGrantExternalProgram() {
@@ -86,6 +94,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SendChangeNotifications }
      * 
+     * @return a SendChangeNotifications object
+     * 
      */
     public SendChangeNotifications createSendChangeNotifications() {
         return new SendChangeNotifications();
@@ -93,6 +103,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ApplicationWebsite }
+     * 
+     * @return the ApplicationWebsite created
      * 
      */
     public ApplicationWebsite createApplicationWebsite() {
@@ -102,6 +114,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GivenPermissionTo }
      * 
+     * @return a GivenPermissionTo object
+     * 
      */
     public GivenPermissionTo createGivenPermissionTo() {
         return new GivenPermissionTo();
@@ -109,6 +123,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DelegationDetails }
+     * 
+     * @return a DelegationDetails object
      * 
      */
     public DelegationDetails createDelegationDetails() {
@@ -118,6 +134,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ApprovalDate }
      * 
+     * @return an ApprovalDate object
+     * 
      */
     public ApprovalDate createApprovalDate() {
         return new ApprovalDate();
@@ -125,6 +143,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DelegateSummary }
+     * 
+     * @return a DelegateSummary object
      * 
      */
     public DelegateSummary createDelegateSummary() {
@@ -134,6 +154,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Orcid }
      * 
+     * @return an Orcid object
+     * 
      */
     public Orcid createOrcid() {
         return new Orcid();
@@ -141,6 +163,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CreditName }
+     * 
+     * @return a CreditName object
      * 
      */
     public CreditName createCreditName() {
@@ -150,6 +174,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AffiliationCity }
      * 
+     * @return the AffiliationCity created
+     * 
      */
     public AffiliationCity createCity() {
         return new AffiliationCity();
@@ -157,6 +183,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PublicationDate }
+     * 
+     * @return a PublicationDate object
      * 
      */
     public PublicationDate createPublicationDate() {
@@ -166,6 +194,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FuzzyDate }
      * 
+     * @return a FuzzyDate object
+     * 
      */
     public FuzzyDate createFuzzyDate() {
         return new FuzzyDate();
@@ -173,6 +203,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Year }
+     * 
+     * @return a Year object
      * 
      */
     public Year createYear() {
@@ -182,6 +214,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Month }
      * 
+     * @return a Month object
+     * 
      */
     public Month createMonth() {
         return new Month();
@@ -189,6 +223,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Day }
+     * 
+     * @return a Day object
      * 
      */
     public Day createDay() {
@@ -198,6 +234,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Delegation }
      * 
+     * @return a Delegation object
+     * 
      */
     public Delegation createDelegation() {
         return new Delegation();
@@ -205,6 +243,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GivenPermissionBy }
+     * 
+     * @return a GivenPermissionBy object
      * 
      */
     public GivenPermissionBy createGivenPermissionBy() {
@@ -214,6 +254,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FundingList }
      * 
+     * @return a FundingList object
+     * 
      */
     public FundingList createFundingList() {
         return new FundingList();
@@ -221,6 +263,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Funding }
+     * 
+     * @return a Funding object
      * 
      */
     public Funding createFunding() {
@@ -230,6 +274,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FundingAgency }
      * 
+     * @return a FundingAgency object
+     * 
      */
     public FundingAgency createFundingAgency() {
         return new FundingAgency();
@@ -237,6 +283,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AgencyOrcid }
+     * 
+     * @return an AgencyOrcid object
      * 
      */
     public AgencyOrcid createAgencyOrcid() {
@@ -246,6 +294,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AgencyName }
      * 
+     * @return an AgencyName object
+     * 
      */
     public AgencyName createAgencyName() {
         return new AgencyName();
@@ -253,6 +303,8 @@ public class ObjectFactory {
    
     /**
      * Create an instance of {@link GrantDate }
+     * 
+     * @return a GrantDate object
      * 
      */
     public GrantDate createGrantDate() {
@@ -262,6 +314,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Contributor }
      * 
+     * @return a Contributor object
+     * 
      */
     public Contributor createContributor() {
         return new Contributor();
@@ -269,6 +323,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ContributorOrcid }
+     * 
+     * @return a ContributorOrcid object
      * 
      */
     public ContributorOrcid createContributorOrcid() {
@@ -278,6 +334,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ContributorEmail }
      * 
+     * @return a ContributorEmail object
+     * 
      */
     public ContributorEmail createContributorEmail() {
         return new ContributorEmail();
@@ -285,6 +343,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ContributorAttributes }
+     * 
+     * @return a ContributorAttributes object
      * 
      */
     public ContributorAttributes createContributorAttributes() {
@@ -294,6 +354,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GrantSources }
      * 
+     * @return a GrantSources object
+     * 
      */
     public GrantSources createGrantSources() {
         return new GrantSources();
@@ -301,6 +363,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Source }
+     * 
+     * @return a Source object
      * 
      */
     public Source createSource() {
@@ -310,6 +374,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SourceName }
      * 
+     * @return a SourceName object
+     * 
      */
     public SourceName createSourceName() {
         return new SourceName();
@@ -317,6 +383,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SourceDate }
+     * 
+     * @return a SourceDate object
      * 
      */
     public SourceDate createSourceDate() {
@@ -326,6 +394,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ExternalIdCommonName }
      * 
+     * @return an ExternalIdCommonName object
+     * 
      */
     public ExternalIdCommonName createExternalIdCommonName() {
         return new ExternalIdCommonName();
@@ -333,6 +403,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrcidHistory }
+     * 
+     * @return an OrcidHistory object
      * 
      */
     public OrcidHistory createOrcidHistory() {
@@ -342,6 +414,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CompletionDate }
      * 
+     * @return a CompletionDate object
+     * 
      */
     public CompletionDate createCompletionDate() {
         return new CompletionDate();
@@ -349,6 +423,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SubmissionDate }
+     * 
+     * @return a SubmissionDate object
      * 
      */
     public SubmissionDate createSubmissionDate() {
@@ -358,6 +434,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LastModifiedDate }
      * 
+     * @return a LastModifiedDate object
+     * 
      */
     public LastModifiedDate createLastModifiedDate() {
         return new LastModifiedDate();
@@ -365,6 +443,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Claimed }
+     * 
+     * @return a Claimed object
      * 
      */
     public Claimed createClaimed() {
@@ -374,6 +454,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeactivationDate }
      * 
+     * @return a DeactivationDate object
+     * 
      */
     public DeactivationDate createDeactivationDate() {
         return new DeactivationDate();
@@ -381,6 +463,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RoleTitle }
+     * 
+     * @return a RoleTitle object
      * 
      */
     public RoleTitle createRoleTitle() {
@@ -390,6 +474,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ApplicationSummary }
      * 
+     * @return an ApplicationSummary object
+     * 
      */
     public ApplicationSummary createApplicationSummary() {
         return new ApplicationSummary();
@@ -397,6 +483,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ApplicationOrcid }
+     * 
+     * @return an ApplicationOrcid object
      * 
      */
     public ApplicationOrcid createApplicationOrcid() {
@@ -406,6 +494,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ApplicationName }
      * 
+     * @return an ApplicationName object
+     * 
      */
     public ApplicationName createApplicationName() {
         return new ApplicationName();
@@ -413,6 +503,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ScopePaths }
+     * 
+     * @return a ScopePaths object
      * 
      */
     public ScopePaths createScopePaths() {
@@ -422,6 +514,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ScopePath }
      * 
+     * @return a ScopePath object
+     * 
      */
     public ScopePath createScopePath() {
         return new ScopePath();
@@ -429,6 +523,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Affiliation }
+     * 
+     * @return an Affiliation object
      * 
      */
     public Affiliation createAffiliation() {
@@ -438,6 +534,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AffiliationAddress }
      * 
+     * @return an AffiliationAddress object
+     * 
      */
     public AffiliationAddress createAffiliationAddress() {
         return new AffiliationAddress();
@@ -445,6 +543,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AffiliationRegion }
+     * 
+     * @return an AffiliationRegion object
      * 
      */
     public AffiliationRegion createRegion() {
@@ -454,6 +554,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Country }
      * 
+     * @return a Country object
+     * 
      */
     public Country createCountry() {
         return new Country();
@@ -461,6 +563,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DepartmentName }
+     * 
+     * @return a DepartmentName object
      * 
      */
     public DepartmentName createDepartmentName() {
@@ -470,6 +574,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WorkContributors }
      * 
+     * @return a DepartmentName object
+     * 
      */
     public WorkContributors createWorkContributors() {
         return new WorkContributors();
@@ -477,6 +583,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExternalIdentifier }
+     * 
+     * @return an ExternalIdenfitier object
      * 
      */
     public ExternalIdentifier createExternalIdentifier() {
@@ -486,6 +594,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ExternalIdSource }
      * 
+     * @return an ExtrenalIdSource object
+     * 
      */
     public ExternalIdSource createExternalIdOrcid() {
         return new ExternalIdSource();
@@ -493,6 +603,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExternalIdReference }
+     * 
+     * @return an ExternalIdReference object
      * 
      */
     public ExternalIdReference createExternalIdReference() {
@@ -502,6 +614,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ExternalIdUrl }
      * 
+     * @return an ExternalIdUrl object
+     * 
      */
     public ExternalIdUrl createExternalIdUrl() {
         return new ExternalIdUrl();
@@ -509,6 +623,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Affiliations }
+     * 
+     * @return an Affiliations object
      * 
      */
     public Affiliations createAffiliations() {
@@ -518,6 +634,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Assignee }
      * 
+     * @return an Assignee object
+     * 
      */
     public Assignee createAssignee() {
         return new Assignee();
@@ -526,6 +644,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AssigneeOrcid }
      * 
+     * @return an AssigneeOrcid object
+     * 
      */
     public AssigneeOrcid createAssigneeOrcid() {
         return new AssigneeOrcid();
@@ -533,6 +653,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AssigneeName }
+     * 
+     * @return an AssigneeName object
      * 
      */
     public AssigneeName createAssigneeName() {
@@ -543,6 +665,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OrcidPreferences }
      * 
+     * @return an OrcidPreferences object
+     * 
      */
     public OrcidPreferences createOrcidPreferences() {
         return new OrcidPreferences();
@@ -550,6 +674,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrcidActivities }
+     * 
+     * @return an OrcidActivities object
      * 
      */
     public OrcidActivities createOrcidActivities() {
@@ -559,6 +685,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OrcidWorks }
      * 
+     * @return an OrcidWorks object
+     * 
      */
     public OrcidWorks createOrcidWorks() {
         return new OrcidWorks();
@@ -566,6 +694,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrcidWork }
+     * 
+     * @return an OrcidWork object
      * 
      */
     public OrcidWork createOrcidWork() {
@@ -575,6 +705,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WorkTitle }
      * 
+     * @return a WorkTitle object
+     * 
      */
     public WorkTitle createWorkTitle() {
         return new WorkTitle();
@@ -582,6 +714,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Title }
+     * 
+     * @return a Title object
      * 
      */
     public Title createTitle() {
@@ -591,6 +725,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Subtitle }
      * 
+     * @return a Subtitle object
+     * 
      */
     public Subtitle createSubtitle() {
         return new Subtitle();
@@ -598,6 +734,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Citation }
+     * 
+     * @return a Citation object
      * 
      */
     public Citation createCitation() {
@@ -607,6 +745,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WorkExternalIdentifiers }
      * 
+     * @return a WorkExternalIdentifiers object
+     * 
      */
     public WorkExternalIdentifiers createWorkExternalIdentifiers() {
         return new WorkExternalIdentifiers();
@@ -614,6 +754,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link WorkExternalIdentifier }
+     * 
+     * @return a WorkExternalIdentifier object
      * 
      */
     public WorkExternalIdentifier createWorkExternalIdentifier() {
@@ -623,6 +765,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Url }
      * 
+     * @return a Url object
+     * 
      */
     public Url createUrl() {
         return new Url();
@@ -630,6 +774,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SecurityDetails }
+     * 
+     * @return a SecurityDetails object
      * 
      */
     public SecurityDetails createSecurityDetails() {
@@ -639,6 +785,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EncryptedPassword }
      * 
+     * @return an EncryptedPassword object
+     * 
      */
     public EncryptedPassword createEncryptedPassword() {
         return new EncryptedPassword();
@@ -646,6 +794,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link FamilyName }
+     * 
+     * @return a FamilyName object
      * 
      */
     public FamilyName createFamilyName() {
@@ -655,6 +805,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OtherNames }
      * 
+     * @return an OtherNames object
+     * 
      */
     public OtherNames createOtherNames() {
         return new OtherNames();
@@ -662,6 +814,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OtherName }
+     * 
+     * @return an OtherName object
      * 
      */
     public OtherName createOtherName() {
@@ -671,6 +825,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Preferences }
      * 
+     * @return a Preferences object
+     * 
      */
     public Preferences createPreferences() {
         return new Preferences();
@@ -678,6 +834,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SendOrcidNews }
+     * 
+     * @return a SendOrcidNews object
      * 
      */
     public SendOrcidNews createSendOrcidNews() {
@@ -687,6 +845,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WorkVisibilityDefault }
      * 
+     * @return a WorkVisibilityDefault object
+     * 
      */
     public WorkVisibilityDefault createWorkVisibilityDefault() {
         return new WorkVisibilityDefault();
@@ -694,6 +854,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrcidBio }
+     * 
+     * @return an OrcidBio object
      * 
      */
     public OrcidBio createOrcidBio() {
@@ -703,6 +865,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PersonalDetails }
      * 
+     * @return a PersonalDetails object
+     * 
      */
     public PersonalDetails createPersonalDetails() {
         return new PersonalDetails();
@@ -710,6 +874,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GivenNames }
+     * 
+     * @return a GivenNames object
      * 
      */
     public GivenNames createGivenNames() {
@@ -719,6 +885,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Biography }
      * 
+     * @return a Biography object
+     * 
      */
     public Biography createBiography() {
         return new Biography();
@@ -726,6 +894,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ResearcherUrls }
+     * 
+     * @return a ResearcherUrls object
      * 
      */
     public ResearcherUrls createResearcherUrls() {
@@ -735,6 +905,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ResearcherUrl }
      * 
+     * @return a ResearcherUrl object
+     * 
      */
     public ResearcherUrl createResearcherUrl() {
         return new ResearcherUrl();
@@ -742,6 +914,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link UrlName }
+     *
+     * @return a UrlName object	
      * 
      */
     public UrlName createUrlName() {
@@ -751,6 +925,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ContactDetails }
      * 
+     * @return a ContactDetails object
+     * 
      */
     public ContactDetails createContactDetails() {
         return new ContactDetails();
@@ -758,6 +934,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Email }
+     * 
+     * @return an Email object
      * 
      */
     public Email createEmail() {
@@ -767,6 +945,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Address }
      * 
+     * @return an Address object
+     * 
      */
     public Address createAddress() {
         return new Address();
@@ -774,6 +954,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Keywords }
+     * 
+     * @return a Keywords object
      * 
      */
     public Keywords createKeywords() {
@@ -783,6 +965,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Keyword }
      * 
+     * @return a Keyword object
+     * 
      */
     public Keyword createKeyword() {
         return new Keyword();
@@ -790,6 +974,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExternalIdentifiers }
+     * 
+     * @return an ExternalIdentifiers object
      * 
      */
     public ExternalIdentifiers createExternalIdentifiers() {
@@ -799,6 +985,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Applications }
      * 
+     * @return an Applications object
+     * 
      */
     public Applications createApplications() {
         return new Applications();
@@ -806,6 +994,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrcidSearchResult }
+     * 
+     * @return an OrcidSearchResult object
      * 
      */
     public OrcidSearchResult createOrcidSearchResult() {
@@ -815,6 +1005,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RelevancyScore }
      * 
+     * @return a RelevancyScore object
+     * 
      */
     public RelevancyScore createRelevancyScore() {
         return new RelevancyScore();
@@ -822,6 +1014,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrcidProfile }
+     * 
+     * @return an OrcidProfile object
      * 
      */
     public OrcidProfile createOrcidProfile() {
@@ -831,6 +1025,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OrcidInternal }
      * 
+     * @return an OrcidInternal object
+     * 
      */
     public OrcidInternal createOrcidInternal() {
         return new OrcidInternal();
@@ -838,6 +1034,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ErrorDesc }
+     * 
+     * @return an ErrorDesc object
      * 
      */
     public ErrorDesc createErrorDesc() {
@@ -847,6 +1045,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OrcidMessage }
      * 
+     * @return an OrcidMessage object
+     * 
      */
     public OrcidMessage createOrcidMessage() {
         return new OrcidMessage();
@@ -854,6 +1054,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrcidSearchResults }
+     * 
+     * @return an OrcidSearchResults object
      * 
      */
     public OrcidSearchResults createOrcidSearchResults() {
@@ -863,13 +1065,18 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SourceReference }
      * 
+     * @return a SourceReference object
+     * 
      */
     public SourceReference createSourceReference() {
         return new SourceReference();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Create a JAXBElement representation of the given value
+     * 
+     * @param value - a work external identifier
+     * @return a JAXBElement object
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "work-external-identifier-id")
@@ -878,8 +1085,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreationMethod }
-     * {@code >}
+     * Create a JAXBElement representation of the given CreationMethod object
+     * 
+     * @param value - a CreationMethod object
+     * @return a JAXBElement representation of the given CreationMethod object
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "creation-method")
@@ -888,7 +1097,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Create a JAXBElement representation of the given disambiguated affiliation idenfitier value
+     * 
+     * @param value - a disambiguatedAffiliationIdentifier 
+     * @return a JAXBElement object
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "disambiguated-affiliation-identifier")
@@ -897,7 +1109,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Create a JAXBElement representation of the given value
+     * 
+     * @param value - a disambiguation source
+     * @return a JAXBElement object
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "disambiguation-source")
@@ -906,7 +1121,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Create a JAXBElement representation of the given value
+     * 
+     * @param value - a work external identifier
+     * @return a JAXBElement object
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "work-external-identifier-type")
@@ -915,8 +1133,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link FuzzyDate }
-     * {@code >}
+     * Create a JAXBElement representation of the given FuzzyDate value
+     * 
+     * @param value - a FuzzyDate
+     * @return a JAXBElement object
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "start-date")
@@ -925,7 +1145,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Create a JAXBElement representation of the given contributor role value
+     * 
+     * @param value - a contributor role
+     * @return a JAXBElement object
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "contributor-role")
@@ -934,7 +1157,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Create a JAXBElement representation of the given work type value
+     * 
+     * @param value - a work type
+     * @return a JAXBElement object
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "work-type")
@@ -943,7 +1169,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Create a JAXBElement representation of the given affiliation type value
+     * 
+     * @param value - an affiliation type
+     * @return a JAXBElement object
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "affiliation-type")
@@ -952,7 +1181,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Create a JAXBElement representation of the given contributor sequence value
+     * 
+     * @param value - a contributor sequence
+     * @return a JAXBElement object
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "contributor-sequence")
@@ -961,7 +1193,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Create a JAXBElement representation of the given short description value
+     * 
+     * @param value - a short description
+     * @return a JAXBElement object
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "short-description")
@@ -970,7 +1205,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Create a JAXBElement representation of the given message version value
+     * 
+     * @param value - a message version
+     * @return a JAXBElement object
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "message-version")
@@ -979,7 +1217,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Create a JAXBElement representation of the given locale string value
+     * 
+     * @param value - a locale string
+     * @return a JAXBElement object
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "locale")
@@ -988,8 +1229,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link FuzzyDate }
-     * {@code >}
+     * Create a JAXBElement representation of the given FuzzyDate value
+     * 
+     * @param value - a FuzzyDate
+     * @return a JAXBElement object
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "end-date")
@@ -998,7 +1241,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Object }{@code >}
+     * Create a JAXBElement representation of the given work source value
+     * 
+     * @param value - a work source
+     * @return a JAXBElement object
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "work-source")
@@ -1007,8 +1253,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Citation }
-     * {@code >}
+     * Create a JAXBElement representation of the given Citation value
+     * 
+     * @param value - a Citation
+     * @return a JAXBElement object
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "work-citation")

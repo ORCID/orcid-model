@@ -15,22 +15,19 @@ import javax.xml.bind.annotation.XmlValue;
 import java.io.Serializable;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>float">
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema&gt;float"&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
- * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -52,6 +49,8 @@ public class RelevancyScore implements Serializable {
     /**
      * Gets the value of the value property.
      * 
+     * @return float value of RelevancyScore
+     * 
      */
     public float getValue() {
         return value;
@@ -59,6 +58,8 @@ public class RelevancyScore implements Serializable {
 
     /**
      * Sets the value of the value property.
+     * 
+     * @param value - float value of RelevancyScore
      * 
      */
     public void setValue(float value) {

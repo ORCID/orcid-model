@@ -16,31 +16,29 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="type" type="{http://www.orcid.org/ns/orcid}affiliation-type"/>
- *         &lt;element name="department-name" type="{http://www.orcid.org/ns/orcid}non-empty-string" minOccurs="0"/>
- *         &lt;element name="role-title" type="{http://www.orcid.org/ns/orcid}non-empty-string" minOccurs="0"/>
- *         &lt;element name="start-date" type="{http://www.orcid.org/ns/orcid}fuzzy-date" minOccurs="0"/>
- *         &lt;element name="end-date" type="{http://www.w3.org/2001/XMLSchema}anyType" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}organization"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}source" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}visibility"/>
- *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}put-code"/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="type" type="{http://www.orcid.org/ns/orcid}affiliation-type"/&gt;
+ *         &lt;element name="department-name" type="{http://www.orcid.org/ns/orcid}non-empty-string" minOccurs="0"/&gt;
+ *         &lt;element name="role-title" type="{http://www.orcid.org/ns/orcid}non-empty-string" minOccurs="0"/&gt;
+ *         &lt;element name="start-date" type="{http://www.orcid.org/ns/orcid}fuzzy-date" minOccurs="0"/&gt;
+ *         &lt;element name="end-date" type="{http://www.w3.org/2001/XMLSchema}anyType" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}organization"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}source" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}visibility"/&gt;
+ *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}put-code"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

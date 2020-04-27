@@ -105,7 +105,7 @@ public class SubjectName implements Serializable {
     /**
      * Sets the value of the translatedTitle property.
      * 
-     * @param value
+     * @param translatedTitle
      *     allowed object is
      *     {@link translatedTitle }
      *     

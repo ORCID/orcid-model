@@ -19,262 +19,255 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.io.Serializable;
 
 /**
- * <p>
  * Java class for anonymous complex type.
- * <p/>
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
- * <p/>
+ * 
+ * The following schema fragment specifies the expected content contained
+ * within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}orcid"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}external-id-orcid"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}external-id-common-name"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}external-id-reference"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}external-id-url"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}orcid"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}external-id-orcid"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}external-id-common-name"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}external-id-reference"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}external-id-url"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(propOrder = { "orcid", "externalIdOrcid", "externalIdCommonName", "externalIdReference", "externalIdUrl", "externalIdSource", "source" })
+@XmlType(propOrder = { "orcid", "externalIdOrcid", "externalIdCommonName", "externalIdReference", "externalIdUrl",
+		"externalIdSource", "source" })
 @XmlRootElement(name = "external-identifier")
 public class ExternalIdentifier implements VisibilityType, PrivateVisibleToSource, Serializable {
 
-    /**
-     * 
-     */
-    private static final long serialVersionUID = 1L;
-    @XmlElement(name = "orcid", required = true)
-    protected Orcid orcid;
-    /*
-     * @deprecated replaced with external-id-source in 1.2_rc6 and greater
-     */
-    @Deprecated
-    @XmlElement(name = "external-id-source", required = false)
-    protected ExternalIdSource externalIdSource;
-    /*
-     * @deprecated replaced with external-id-source in 1.2_rc5 and greater
-     */
-    @Deprecated
-    @XmlElement(name = "external-id-orcid", required = false)
-    private ExternalIdSource externalIdOrcid;
-    @XmlElement(name = "external-id-common-name", required = false)
-    protected ExternalIdCommonName externalIdCommonName;
-    @XmlElement(name = "external-id-reference", required = true)
-    protected ExternalIdReference externalIdReference;
-    @XmlElement(name = "external-id-url", required = false)
-    protected ExternalIdUrl externalIdUrl;
-    @XmlElement
-    protected Source source;
-    
-    @XmlTransient
-    @JsonIgnore
-    protected Visibility visibility;
-  
-    public ExternalIdentifier() {
-        super();
-    }
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@XmlElement(name = "orcid", required = true)
+	protected Orcid orcid;
+	/*
+	 * @deprecated replaced with external-id-source in 1.2_rc6 and greater
+	 */
+	@Deprecated
+	@XmlElement(name = "external-id-source", required = false)
+	protected ExternalIdSource externalIdSource;
+	/*
+	 * @deprecated replaced with external-id-source in 1.2_rc5 and greater
+	 */
+	@Deprecated
+	@XmlElement(name = "external-id-orcid", required = false)
+	private ExternalIdSource externalIdOrcid;
+	@XmlElement(name = "external-id-common-name", required = false)
+	protected ExternalIdCommonName externalIdCommonName;
+	@XmlElement(name = "external-id-reference", required = true)
+	protected ExternalIdReference externalIdReference;
+	@XmlElement(name = "external-id-url", required = false)
+	protected ExternalIdUrl externalIdUrl;
+	@XmlElement
+	protected Source source;
 
-    public ExternalIdentifier(Visibility vis) {
-        super();
-        this.visibility=vis;
-    }
+	@XmlTransient
+	@JsonIgnore
+	protected Visibility visibility;
 
-    /**
-     * Gets the value of the orcid property.
-     * 
-     * @return possible object is {@link Orcid }
-     */
-    public Orcid getOrcid() {
-        return orcid;
-    }
+	public ExternalIdentifier() {
+		super();
+	}
 
-    /**
-     * Sets the value of the orcid property.
-     * 
-     * @param value
-     *            allowed object is {@link Orcid }
-     */
-    public void setOrcid(Orcid orcid) {
-        this.orcid = orcid;
-    }
+	public ExternalIdentifier(Visibility vis) {
+		super();
+		this.visibility = vis;
+	}
 
-    /**
-     * Gets the value of the externalIdOrcid property.
-     * 
-     * @return possible object is {@link ExternalIdSource }
-     */
-    @Deprecated
-    public ExternalIdSource getExternalIdSource() {
-        return externalIdSource;
-    }
+	/**
+	 * Gets the value of the orcid property.
+	 * 
+	 * @return possible object is {@link Orcid }
+	 */
+	public Orcid getOrcid() {
+		return orcid;
+	}
 
-    /**
-     * Sets the value of the externalIdOrcid property.
-     * 
-     * @param value
-     *            allowed object is {@link ExternalIdSource }
-     */
-    @Deprecated
-    public void setExternalIdSource(ExternalIdSource value) {
-        this.externalIdSource = value;
-    }
+	/**
+	 * Sets the value of the orcid property.
+	 * 
+	 * @param orcid - allowed object is {@link Orcid }
+	 */
+	public void setOrcid(Orcid orcid) {
+		this.orcid = orcid;
+	}
 
-    public Source getSource() {
-        return source;
-    }
+	/**
+	 * Gets the value of the externalIdOrcid property.
+	 * 
+	 * @return possible object is {@link ExternalIdSource }
+	 */
+	@Deprecated
+	public ExternalIdSource getExternalIdSource() {
+		return externalIdSource;
+	}
 
-    public void setSource(Source source) {
-        this.source = source;
-    }
+	/**
+	 * Sets the value of the externalIdOrcid property.
+	 * 
+	 * @param value allowed object is {@link ExternalIdSource }
+	 */
+	@Deprecated
+	public void setExternalIdSource(ExternalIdSource value) {
+		this.externalIdSource = value;
+	}
 
-    /**
-     * Gets the value of the externalIdCommonName property.
-     * 
-     * @return possible object is {@link ExternalIdCommonName }
-     */
-    public ExternalIdCommonName getExternalIdCommonName() {
-        return externalIdCommonName;
-    }
+	public Source getSource() {
+		return source;
+	}
 
-    /**
-     * Sets the value of the externalIdCommonName property.
-     * 
-     * @param value
-     *            allowed object is {@link ExternalIdCommonName }
-     */
-    public void setExternalIdCommonName(ExternalIdCommonName value) {
-        this.externalIdCommonName = value;
-    }
+	public void setSource(Source source) {
+		this.source = source;
+	}
 
-    /**
-     * Gets the value of the externalIdReference property.
-     * 
-     * @return possible object is {@link ExternalIdReference }
-     */
-    public ExternalIdReference getExternalIdReference() {
-        return externalIdReference;
-    }
+	/**
+	 * Gets the value of the externalIdCommonName property.
+	 * 
+	 * @return possible object is {@link ExternalIdCommonName }
+	 */
+	public ExternalIdCommonName getExternalIdCommonName() {
+		return externalIdCommonName;
+	}
 
-    /**
-     * Sets the value of the externalIdReference property.
-     * 
-     * @param value
-     *            allowed object is {@link ExternalIdReference }
-     */
-    public void setExternalIdReference(ExternalIdReference value) {
-        this.externalIdReference = value;
-    }
+	/**
+	 * Sets the value of the externalIdCommonName property.
+	 * 
+	 * @param value allowed object is {@link ExternalIdCommonName }
+	 */
+	public void setExternalIdCommonName(ExternalIdCommonName value) {
+		this.externalIdCommonName = value;
+	}
 
-    /**
-     * Gets the value of the externalIdUrl property.
-     * 
-     * @return possible object is {@link ExternalIdUrl }
-     */
-    public ExternalIdUrl getExternalIdUrl() {
-        return externalIdUrl;
-    }
+	/**
+	 * Gets the value of the externalIdReference property.
+	 * 
+	 * @return possible object is {@link ExternalIdReference }
+	 */
+	public ExternalIdReference getExternalIdReference() {
+		return externalIdReference;
+	}
 
-    /**
-     * Sets the value of the externalIdUrl property.
-     * 
-     * @param value
-     *            allowed object is {@link ExternalIdUrl }
-     */
-    public void setExternalIdUrl(ExternalIdUrl value) {
-        this.externalIdUrl = value;
-    }
-    
-    public Visibility getVisibility() {
-        return visibility;
-    }
+	/**
+	 * Sets the value of the externalIdReference property.
+	 * 
+	 * @param value allowed object is {@link ExternalIdReference }
+	 */
+	public void setExternalIdReference(ExternalIdReference value) {
+		this.externalIdReference = value;
+	}
 
-    public void setVisibility(Visibility visibility) {
-        this.visibility = visibility;
-    }
+	/**
+	 * Gets the value of the externalIdUrl property.
+	 * 
+	 * @return possible object is {@link ExternalIdUrl }
+	 */
+	public ExternalIdUrl getExternalIdUrl() {
+		return externalIdUrl;
+	}
 
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((externalIdCommonName == null) ? 0 : externalIdCommonName.hashCode());
-        result = prime * result + ((externalIdOrcid == null) ? 0 : externalIdOrcid.hashCode());
-        result = prime * result + ((externalIdReference == null) ? 0 : externalIdReference.hashCode());
-        result = prime * result + ((externalIdSource == null) ? 0 : externalIdSource.hashCode());
-        result = prime * result + ((externalIdUrl == null) ? 0 : externalIdUrl.hashCode());
-        result = prime * result + ((orcid == null) ? 0 : orcid.hashCode());
-        result = prime * result + ((source == null) ? 0 : source.hashCode());
-        return result;
-    }
+	/**
+	 * Sets the value of the externalIdUrl property.
+	 * 
+	 * @param value allowed object is {@link ExternalIdUrl }
+	 */
+	public void setExternalIdUrl(ExternalIdUrl value) {
+		this.externalIdUrl = value;
+	}
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        ExternalIdentifier other = (ExternalIdentifier) obj;
-        if (externalIdCommonName == null) {
-            if (other.externalIdCommonName != null)
-                return false;
-        } else if (!externalIdCommonName.equals(other.externalIdCommonName))
-            return false;
-        if (externalIdOrcid == null) {
-            if (other.externalIdOrcid != null)
-                return false;
-        } else if (!externalIdOrcid.equals(other.externalIdOrcid))
-            return false;
-        if (externalIdReference == null) {
-            if (other.externalIdReference != null)
-                return false;
-        } else if (!externalIdReference.equals(other.externalIdReference))
-            return false;
-        if (externalIdSource == null) {
-            if (other.externalIdSource != null)
-                return false;
-        } else if (!externalIdSource.equals(other.externalIdSource))
-            return false;
-        if (externalIdUrl == null) {
-            if (other.externalIdUrl != null)
-                return false;
-        } else if (!externalIdUrl.equals(other.externalIdUrl))
-            return false;
-        if (orcid == null) {
-            if (other.orcid != null)
-                return false;
-        } else if (!orcid.equals(other.orcid))
-            return false;
-        if (source == null) {
-            if (other.source != null)
-                return false;
-        } else if (!source.equals(other.source))
-            return false;
-        return true;
-    }
+	public Visibility getVisibility() {
+		return visibility;
+	}
 
-    /*
-     * @deprecated replaced with external-id-source in 1.2_rc5 and greater
-     */
-    @Deprecated
-    public ExternalIdSource getExternalIdOrcid() {
-        return externalIdOrcid;
-    }
+	public void setVisibility(Visibility visibility) {
+		this.visibility = visibility;
+	}
 
-    /*
-     * @deprecated replaced with external-id-source in 1.2_rc5 and greater
-     */
-    @Deprecated
-    public void setExternalIdOrcid(ExternalIdSource externalIdOrcid) {
-        this.externalIdOrcid = externalIdOrcid;
-    }
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((externalIdCommonName == null) ? 0 : externalIdCommonName.hashCode());
+		result = prime * result + ((externalIdOrcid == null) ? 0 : externalIdOrcid.hashCode());
+		result = prime * result + ((externalIdReference == null) ? 0 : externalIdReference.hashCode());
+		result = prime * result + ((externalIdSource == null) ? 0 : externalIdSource.hashCode());
+		result = prime * result + ((externalIdUrl == null) ? 0 : externalIdUrl.hashCode());
+		result = prime * result + ((orcid == null) ? 0 : orcid.hashCode());
+		result = prime * result + ((source == null) ? 0 : source.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		ExternalIdentifier other = (ExternalIdentifier) obj;
+		if (externalIdCommonName == null) {
+			if (other.externalIdCommonName != null)
+				return false;
+		} else if (!externalIdCommonName.equals(other.externalIdCommonName))
+			return false;
+		if (externalIdOrcid == null) {
+			if (other.externalIdOrcid != null)
+				return false;
+		} else if (!externalIdOrcid.equals(other.externalIdOrcid))
+			return false;
+		if (externalIdReference == null) {
+			if (other.externalIdReference != null)
+				return false;
+		} else if (!externalIdReference.equals(other.externalIdReference))
+			return false;
+		if (externalIdSource == null) {
+			if (other.externalIdSource != null)
+				return false;
+		} else if (!externalIdSource.equals(other.externalIdSource))
+			return false;
+		if (externalIdUrl == null) {
+			if (other.externalIdUrl != null)
+				return false;
+		} else if (!externalIdUrl.equals(other.externalIdUrl))
+			return false;
+		if (orcid == null) {
+			if (other.orcid != null)
+				return false;
+		} else if (!orcid.equals(other.orcid))
+			return false;
+		if (source == null) {
+			if (other.source != null)
+				return false;
+		} else if (!source.equals(other.source))
+			return false;
+		return true;
+	}
+
+	/*
+	 * @deprecated replaced with external-id-source in 1.2_rc5 and greater
+	 */
+	@Deprecated
+	public ExternalIdSource getExternalIdOrcid() {
+		return externalIdOrcid;
+	}
+
+	/*
+	 * @deprecated replaced with external-id-source in 1.2_rc5 and greater
+	 */
+	@Deprecated
+	public void setExternalIdOrcid(ExternalIdSource externalIdOrcid) {
+		this.externalIdOrcid = externalIdOrcid;
+	}
 }

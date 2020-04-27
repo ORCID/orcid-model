@@ -22,10 +22,8 @@ import javax.xml.bind.annotation.XmlType;
 import org.orcid.jaxb.model.common_rc2.LastModifiedDate;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
  * 
@@ -46,23 +44,20 @@ public class Works implements Serializable, ActivitiesContainer {
     /**
      * Gets the value of the orcidWork property.
      * 
-     * <p>
      * This accessor method returns a reference to the live list, not a
      * snapshot. Therefore any modification you make to the returned list will
      * be present inside the JAXB object. This is why there is not a
      * <CODE>set</CODE> method for the orcidWork property.
      * 
-     * <p>
      * For example, to add a new item, do as follows:
      * 
      * <pre>
      * getOrcidWork().add(newItem);
      * </pre>
      * 
-     * 
-     * <p>
      * Objects of the following type(s) are allowed in the list {@link Work }
      * 
+     * @return a List of Work objects
      * 
      */
     public List<Work> getOrcidWork() {

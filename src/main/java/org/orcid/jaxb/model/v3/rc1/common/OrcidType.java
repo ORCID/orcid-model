@@ -16,23 +16,20 @@ import javax.xml.bind.annotation.XmlType;
 import io.swagger.annotations.ApiModel;
 
 /**
- * <p>
  * Java class for orcid-type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * <p>
  * 
  * <pre>
- * &lt;simpleType name="orcid-type">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="admin"/>
- *     &lt;enumeration value="user"/>
- *     &lt;enumeration value="group"/>
- *     &lt;enumeration value="client"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="orcid-type"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="admin"/&gt;
+ *     &lt;enumeration value="user"/&gt;
+ *     &lt;enumeration value="group"/&gt;
+ *     &lt;enumeration value="client"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

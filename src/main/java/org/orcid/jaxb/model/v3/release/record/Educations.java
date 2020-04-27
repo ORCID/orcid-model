@@ -24,10 +24,8 @@ import org.orcid.jaxb.model.v3.release.common.LastModifiedDate;
 import io.swagger.annotations.ApiModel;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
  * 
@@ -50,13 +48,11 @@ public class Educations implements Serializable, ActivitiesContainer {
     /**
      * Gets the value of the affiliation property.
      * 
-     * <p>
      * This accessor method returns a reference to the live list, not a
      * snapshot. Therefore any modification you make to the returned list will
      * be present inside the JAXB object. This is why there is not a
      * <CODE>set</CODE> method for the affiliation property.
      * 
-     * <p>
      * For example, to add a new item, do as follows:
      * 
      * <pre>
@@ -64,10 +60,10 @@ public class Educations implements Serializable, ActivitiesContainer {
      * </pre>
      * 
      * 
-     * <p>
      * Objects of the following type(s) are allowed in the list {@link Education
      * }
      * 
+     * @return a List of Education objects
      * 
      */
     public List<Education> getEducation() {

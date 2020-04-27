@@ -8,7 +8,7 @@
 package org.orcid.jaxb.model.common;
 
 /**
- * <p>Java class for citation-type.
+ * Java class for citation-type.
  * 
  * 
  */

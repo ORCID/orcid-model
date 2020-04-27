@@ -12,6 +12,8 @@ import javax.xml.bind.annotation.XmlElementDecl;
 import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
 
+import org.orcid.jaxb.model.groupid_rc3.GroupIdRecords;
+
 /**
  * This object contains factory methods for each Java content interface and Java
  * element interface generated in the org.orcid.jaxb.model.clientgroup package.
@@ -38,7 +40,9 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link OrcidClientGroup }
+     * Creates an instance of {@link GroupIdRecords }
+     * 
+     * @return a GroupIdRecords object
      * 
      */
     public GroupIdRecords createGroupIdRecords() {
@@ -46,7 +50,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Creates a JAXBElement represenation of the given GroupIdRecord
+     * 
+     * @param value - a GroupIdRecord
+     * @return a JAXBElement containing the GroupIdRecord
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/group-id", name = "group-id-record")

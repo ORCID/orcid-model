@@ -16,17 +16,17 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import java.io.Serializable;
 
 /**
- * <p>Java class for scope.
+ * Java class for scope.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
+ * The following schema fragment specifies the expected content contained within this class.
+ *
  * <pre>
- * &lt;simpleType name="scope">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="read-protected"/>
- *     &lt;enumeration value="update"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="scope"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="read-protected"/&gt;
+ *     &lt;enumeration value="update"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

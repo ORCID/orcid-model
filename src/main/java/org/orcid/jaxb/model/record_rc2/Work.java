@@ -31,14 +31,10 @@ import org.orcid.jaxb.model.record.util.RecordUtil;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * 
- * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -375,7 +371,7 @@ public class Work implements VisibilityType, Activity, Serializable, SourceAware
     /**
      * Sets the value of the languageCode property.
      * 
-     * @param value
+     * @param languageCode
      *            allowed object is {@link String }
      * 
      */
@@ -396,7 +392,7 @@ public class Work implements VisibilityType, Activity, Serializable, SourceAware
     /**
      * Sets the value of the country property.
      * 
-     * @param value
+     * @param country
      *            allowed object is {@link Country }
      * 
      */
@@ -413,6 +409,8 @@ public class Work implements VisibilityType, Activity, Serializable, SourceAware
      * Indicates if two works are ORCID duplicated. Two works will be duplicated
      * if they have the same title, type, subtype, external identifiers and
      * source.
+     * 
+     * @param obj - work to check for duplication
      * 
      * @return true if the two works are duplicated according to ORCID
      *         requirements
@@ -457,6 +455,8 @@ public class Work implements VisibilityType, Activity, Serializable, SourceAware
      * Indicates if two works are ORCID duplicated. Two works will be duplicated
      * if they have the same title, type, subtype, external identifiers and
      * source.
+     * 
+     * @param obj - object to check for duplication
      * 
      * @return true if the two works are duplicated according to ORCID
      *         requirements

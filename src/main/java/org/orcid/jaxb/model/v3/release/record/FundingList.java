@@ -25,14 +25,10 @@ import org.orcid.jaxb.model.v3.release.common.LastModifiedDate;
 import io.swagger.annotations.ApiModel;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * 
- * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -41,9 +37,6 @@ import io.swagger.annotations.ApiModel;
 @ApiModel(value = "FundingListV3_0")
 public class FundingList implements ActivitiesContainer, Serializable {
 
-    /**
-     * 
-     */
     private static final long serialVersionUID = 1L;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "last-modified-date")
     protected LastModifiedDate lastModifiedDate;
@@ -53,13 +46,11 @@ public class FundingList implements ActivitiesContainer, Serializable {
     /**
      * Gets the value of the Fundings property.
      * 
-     * <p>
      * This accessor method returns a reference to the live list, not a
      * snapshot. Therefore any modification you make to the returned list will
      * be present inside the JAXB object. This is why there is not a
      * <CODE>set</CODE> method for the Fundings property.
      * 
-     * <p>
      * For example, to add a new item, do as follows:
      * 
      * <pre>
@@ -67,9 +58,9 @@ public class FundingList implements ActivitiesContainer, Serializable {
      * </pre>
      * 
      * 
-     * <p>
      * Objects of the following type(s) are allowed in the list {@link Funding }
      * 
+     * @return a List of Funding objects
      * 
      */
     public List<Funding> getFundings() {

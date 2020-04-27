@@ -15,22 +15,18 @@ import javax.xml.bind.annotation.XmlValue;
 import java.io.Serializable;
 
 /**
- * <p/>
  * Java class for anonymous complex type.
- * <p/>
- * <p/>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * <p/>
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}visibility"/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}visibility"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -38,10 +34,8 @@ import java.io.Serializable;
 @XmlRootElement(name = "short-description")
 public class ShortDescription implements Serializable {
 
-    /**
-     * 
-     */
     private static final long serialVersionUID = 1L;
+   
     @XmlValue
     protected String content;
 

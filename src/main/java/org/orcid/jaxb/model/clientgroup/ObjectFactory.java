@@ -47,6 +47,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RedirectUris }
      * 
+     * @return a RedirectUrls object
+     * 
      */
     public RedirectUris createRedirectUris() {
         return new RedirectUris();
@@ -54,6 +56,8 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrcidClient }
+     * 
+     * @return an OrcidClient object
      * 
      */
     public OrcidClient createOrcidClient() {
@@ -63,13 +67,18 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OrcidClientGroup }
      * 
+     * @return an OrcidClientGroup object
+     * 
      */
     public OrcidClientGroup createOrcidClientGroup() {
         return new OrcidClientGroup();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Creates an JAXBElement representation for the group name value
+     * 
+     *  @param value - the group name
+     *  @return a JAXBElement
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "group-name")
@@ -78,7 +87,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Creates an JAXBElement representation for the group orcid value
+     * 
+     *  @param value - the group orcid
+     *  @return a JAXBElement
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "group-orcid")
@@ -87,7 +99,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Creates an JAXBElement representation for the client id value
+     * 
+     *  @param value - the client id
+     *  @return a JAXBElement
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "client-id")
@@ -96,7 +111,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Creates an JAXBElement representation for the short description value
+     * 
+     *  @param value - the short description
+     *  @return a JAXBElement
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "short-description")
@@ -105,7 +123,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Creates an JAXBElement representation for the client secret value
+     * 
+     *  @param value - the client secret
+     *  @return a JAXBElement
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "client-secret")
@@ -114,7 +135,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Creates an JAXBElement representation for the email value
+     * 
+     *  @param value - the email
+     *  @return a JAXBElement
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "email")
@@ -123,7 +147,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Creates an JAXBElement representation for the website value
+     * 
+     *  @param value - the website
+     *  @return a JAXBElement
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "website")
@@ -132,7 +159,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Creates an JAXBElement representation for the redirect uri value
+     * 
+     *  @param value - the redirect uri
+     *  @return a JAXBElement
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "redirect-uri")
@@ -141,7 +171,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Creates an JAXBElement representation for the display name value
+     * 
+     *  @param value - the display name
+     *  @return a JAXBElement
      * 
      */
     @XmlElementDecl(namespace = "http://www.orcid.org/ns/orcid", name = "display-name")

@@ -177,8 +177,7 @@ public class OrcidClient implements Serializable {
     /**
      * Gets the value of the errors property.
      * 
-     * @param value
-     *            allowed object is {@link ErrorDesc }
+     * @return an ErrorDesc object
      * 
      */
     public ErrorDesc getErrors() {
@@ -188,8 +187,7 @@ public class OrcidClient implements Serializable {
     /**
      * Sets the value of the errors property.
      * 
-     * @param value
-     *            allowed object is {@link ErrorDesc }
+     * @param errors - an ErrorDesc object
      * 
      */
     public void setErrors(ErrorDesc errors) {
@@ -199,8 +197,7 @@ public class OrcidClient implements Serializable {
     /**
      * Gets the value of the persistentTokenEnabled property.
      * 
-     * @param value
-     *            allowed object is {@link boolean }
+     * @return boolean value
      * 
      */
     public boolean isPersistentTokenEnabled() {
@@ -210,8 +207,7 @@ public class OrcidClient implements Serializable {
     /**
      * Sets the value of the persistentTokenEnabled property.
      * 
-     * @param value
-     *            allowed object is {@link boolean }
+     * @param persistentTokenEnabled - persistentTokenEnabled boolean
      * 
      */
     public void setPersistentTokenEnabled(boolean persistentTokenEnabled) {
@@ -230,8 +226,7 @@ public class OrcidClient implements Serializable {
     /**
      * Sets the value of the idp property.
      * 
-     * @param value
-     *            allowed object is {@link String }
+     * @param idp - the idp value
      * 
      */
     public void setIdp(String idp) {

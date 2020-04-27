@@ -16,36 +16,34 @@ import javax.xml.bind.annotation.XmlType;
 import java.io.Serializable;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="orcid:funding-type" minOccurs="1" maxOccurs="1" />
- *         &lt;element ref="orcid:organization-defined-type" minOccurs="1" maxOccurs="1" />
- * 		&lt;element ref="orcid:funding-title" minOccurs="0" /> *						
- * 		&lt;element ref="orcid:short-description" minOccurs="0"/>			
- * 		&lt;element ref="orcid:amount" minOccurs="0" maxOccurs="1"/>
- * 		&lt;element ref="orcid:url" minOccurs="0" maxOccurs="1"/>				
- * 		&lt;element name="start-date" type="orcid:fuzzy-date" minOccurs="0" maxOccurs="1" />
- * 		&lt;element name="end-date" type="orcid:fuzzy-date" minOccurs="0" maxOccurs="1" />												
- * 		&lt;element ref="orcid:funding-external-identifiers" minOccurs="0" maxOccurs="1"/>
- * 		&lt;element ref="orcid:funding-contributors" minOccurs="0" maxOccurs="1"/>
- * 		&lt;element ref="orcid:organization" minOccurs="1" maxOccurs="1"/>				
- * 		&lt;element ref="orcid:source" minOccurs="0"  maxOccurs="1" />
- *       &lt;/sequence>
- *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}put-code"/>
- *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}visibility"/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="orcid:funding-type" minOccurs="1" maxOccurs="1" /&gt;
+ *         &lt;element ref="orcid:organization-defined-type" minOccurs="1" maxOccurs="1" /&gt;
+ * 		&lt;element ref="orcid:funding-title" minOccurs="0" /&gt; *						
+ * 		&lt;element ref="orcid:short-description" minOccurs="0"/&gt;			
+ * 		&lt;element ref="orcid:amount" minOccurs="0" maxOccurs="1"/&gt;
+ * 		&lt;element ref="orcid:url" minOccurs="0" maxOccurs="1"/&gt;				
+ * 		&lt;element name="start-date" type="orcid:fuzzy-date" minOccurs="0" maxOccurs="1" /&gt;
+ * 		&lt;element name="end-date" type="orcid:fuzzy-date" minOccurs="0" maxOccurs="1" /&gt;												
+ * 		&lt;element ref="orcid:funding-external-identifiers" minOccurs="0" maxOccurs="1"/&gt;
+ * 		&lt;element ref="orcid:funding-contributors" minOccurs="0" maxOccurs="1"/&gt;
+ * 		&lt;element ref="orcid:organization" minOccurs="1" maxOccurs="1"/&gt;				
+ * 		&lt;element ref="orcid:source" minOccurs="0"  maxOccurs="1" /&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}put-code"/&gt;
+ *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}visibility"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -385,6 +383,8 @@ public class Funding implements VisibilityType, Activity, Serializable {
      * Indicates if two funding are ORCID duplicated. Two fundings will be
      * duplicated if they have the same type, title, organization, description
      * and amount
+     * 
+     * @param obj - object to check for duplication
      * 
      * @return true if the two fundings are duplicated according to ORCID
      *         requirements

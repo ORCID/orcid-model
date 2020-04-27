@@ -398,13 +398,15 @@ public class Funding implements VisibilityType, Activity, Serializable, Organiza
     }
 
     /**
-     * Indicates if two funding are ORCID duplicated. Two fundings will be
+     * Indicates if two fundings are ORCID duplicated. Two fundings will be
      * duplicated if they have the same type, title, organization, description
      * and amount
      * 
+     * @param obj - object to check for duplication
+     * 
      * @return true if the two fundings are duplicated according to ORCID
      *         requirements
-     * */
+     */
     public boolean isDuplicated(Object obj) {
         if (this == obj)
             return true;

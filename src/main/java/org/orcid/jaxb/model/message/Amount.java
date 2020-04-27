@@ -12,24 +12,22 @@ import javax.xml.bind.annotation.XmlValue;
 import org.apache.commons.lang.StringUtils;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}amount" minOccurs="1" maxOccurs="1"/>
- *         &lt;attGroup ref="{http://www.orcid.org/ns/orcid}currency-code" minOccurs="1"/>
- *       &lt;/sequence> *    
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}amount" minOccurs="1" maxOccurs="1"/&gt;
+ *         &lt;attGroup ref="{http://www.orcid.org/ns/orcid}currency-code" minOccurs="1"/&gt;
+ *       &lt;/sequence&gt; *    
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

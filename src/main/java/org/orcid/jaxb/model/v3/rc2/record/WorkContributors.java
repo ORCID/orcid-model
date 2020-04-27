@@ -22,9 +22,9 @@ import org.orcid.jaxb.model.v3.rc2.common.Contributor;
 import io.swagger.annotations.ApiModel;
 
 /**
- * <p>Java class for anonymous complex type.
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * The following schema fragment specifies the expected content contained within this class.
  * 
  * 
  */
@@ -33,8 +33,10 @@ import io.swagger.annotations.ApiModel;
 @XmlRootElement(name = "work-contributors")
 @ApiModel(value = "WorkContributorsV3_0_rc2")
 public class WorkContributors implements Serializable {
-    private static final long serialVersionUID = -4322373773985616595L;
-    @XmlElement(namespace = "http://www.orcid.org/ns/work")
+    
+	private static final long serialVersionUID = -4322373773985616595L;
+    
+	@XmlElement(namespace = "http://www.orcid.org/ns/work")
     protected List<Contributor> contributor;
     
     public WorkContributors() {
@@ -48,22 +50,20 @@ public class WorkContributors implements Serializable {
     /**
      * Gets the value of the contributor property.
      * 
-     * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the contributor property.
      * 
-     * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getContributor().add(newItem);
      * </pre>
      * 
-     * 
-     * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Contributor }
+     * 
+     * @return a List of Contributor objects
      * 
      * 
      */

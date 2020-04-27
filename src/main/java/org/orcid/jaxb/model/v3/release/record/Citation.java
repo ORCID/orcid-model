@@ -22,97 +22,93 @@ import io.swagger.annotations.ApiModel;
 
 /**
  * Element to contain a citation of a given type
- * <p/>
- * <p>
+ *
  * Java class for citation complex type.
- * <p/>
- * <p>
+ *
  * The following schema fragment specifies the expected content contained within
  * this class.
- * <p/>
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "citation", propOrder = { "citationType", "citation" })
 @ApiModel(value = "CitationV3_0")
 public class Citation implements Serializable {
-    private static final long serialVersionUID = 6177533651147799332L;
-    @XmlJavaTypeAdapter(CitationTypeAdapter.class)
-    @XmlElement(name = "citation-type", required = true, defaultValue = "formatted-unspecified", namespace = "http://www.orcid.org/ns/work")
-    protected CitationType citationType;
-    @XmlElement(name = "citation-value", required = true, namespace = "http://www.orcid.org/ns/work")
-    protected String citation;
+	private static final long serialVersionUID = 6177533651147799332L;
+	@XmlJavaTypeAdapter(CitationTypeAdapter.class)
+	@XmlElement(name = "citation-type", required = true, defaultValue = "formatted-unspecified", namespace = "http://www.orcid.org/ns/work")
+	protected CitationType citationType;
+	@XmlElement(name = "citation-value", required = true, namespace = "http://www.orcid.org/ns/work")
+	protected String citation;
 
-    public Citation() {
-    }
+	public Citation() {
+	}
 
-    public Citation(String citation, CitationType citationType) {
-        this.citation = citation;
-        this.citationType = citationType;
-    }
+	public Citation(String citation, CitationType citationType) {
+		this.citation = citation;
+		this.citationType = citationType;
+	}
 
-    /**
-     * Gets the value of the workCitationType property.
-     *
-     * @return possible object is {@link CitationType }
-     */
-    public CitationType getWorkCitationType() {
-        return citationType;
-    }
+	/**
+	 * Gets the value of the workCitationType property.
+	 *
+	 * @return possible object is {@link CitationType }
+	 */
+	public CitationType getWorkCitationType() {
+		return citationType;
+	}
 
-    /**
-     * Sets the value of the workCitationType property.
-     *
-     * @param value
-     *            allowed object is {@link CitationType }
-     */
-    public void setWorkCitationType(CitationType value) {
-        this.citationType = value;
-    }
+	/**
+	 * Sets the value of the workCitationType property.
+	 *
+	 * @param value allowed object is {@link CitationType }
+	 */
+	public void setWorkCitationType(CitationType value) {
+		this.citationType = value;
+	}
 
-    /**
-     * Gets the value of the citation property.
-     *
-     * @return possible object is {@link Citation }
-     */
-    public String getCitation() {
-        return citation;
-    }
+	/**
+	 * Gets the value of the citation property.
+	 *
+	 * @return possible object is {@link Citation }
+	 */
+	public String getCitation() {
+		return citation;
+	}
 
-    /**
-     * Sets the value of the citation property.
-     *
-     * @param value
-     *            allowed object is {@link Citation }
-     */
-    public void setCitation(String value) {
-        this.citation = value;
-    }
+	/**
+	 * Sets the value of the citation property.
+	 *
+	 * @param value allowed object is {@link Citation }
+	 */
+	public void setCitation(String value) {
+		this.citation = value;
+	}
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (!(o instanceof Citation)) {
-            return false;
-        }
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) {
+			return true;
+		}
+		if (!(o instanceof Citation)) {
+			return false;
+		}
 
-        Citation citation1 = (Citation) o;
+		Citation citation1 = (Citation) o;
 
-        if (citation != null ? !citation.equals(citation1.citation) : citation1.citation != null) {
-            return false;
-        }
-        if (citationType != citation1.citationType) {
-            return false;
-        }
+		if (citation != null ? !citation.equals(citation1.citation) : citation1.citation != null) {
+			return false;
+		}
+		if (citationType != citation1.citationType) {
+			return false;
+		}
 
-        return true;
-    }
+		return true;
+	}
 
-    @Override
-    public int hashCode() {
-        int result = citationType != null ? citationType.hashCode() : 0;
-        result = 31 * result + (citation != null ? citation.hashCode() : 0);
-        return result;
-    }
+	@Override
+	public int hashCode() {
+		int result = citationType != null ? citationType.hashCode() : 0;
+		result = 31 * result + (citation != null ? citation.hashCode() : 0);
+		return result;
+	}
 }

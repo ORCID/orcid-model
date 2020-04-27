@@ -96,8 +96,7 @@ public class Address implements Serializable {
     /**
      * Sets the value of the affiliationCountry property.
      * 
-     * @param value
-     *            allowed object is {@link AffiliationCountry }
+     * @param value - the Country
      * 
      */
     public void setCountry(Country value) {

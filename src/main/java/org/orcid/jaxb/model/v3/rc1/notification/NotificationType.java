@@ -12,13 +12,10 @@ import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>
- * Java class for null.
+ * Java class for NotificationType.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * <p>
  * 
  */
 @XmlType(name = "")

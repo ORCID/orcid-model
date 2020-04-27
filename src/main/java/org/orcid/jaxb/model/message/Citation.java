@@ -16,22 +16,22 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Element to contain a citation of a given type
- * <p/>
- * <p>Java class for citation complex type.
- * <p/>
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p/>
+ * 
+ * Java class for citation complex type.
+ * 
+ * The following schema fragment specifies the expected content contained within this class.
+ * 
  * <pre>
- * &lt;complexType name="citation">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="work-citation-type" type="{http://www.orcid.org/ns/orcid}citation-type"/>
- *         &lt;element name="citation" type="{http://www.orcid.org/ns/orcid}citation"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="citation"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="work-citation-type" type="{http://www.orcid.org/ns/orcid}citation-type"/&gt;
+ *         &lt;element name="citation" type="{http://www.orcid.org/ns/orcid}citation"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)

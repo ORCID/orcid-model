@@ -345,6 +345,8 @@ public class PeerReview implements Filterable, Serializable, OrganizationHolder,
      * be duplicated if they have the same source and share at least one
      * external id
      * 
+     * @param obj - object to be checked for duplication
+     * 
      * @return true if the two peer reviews are duplicated according to ORCID
      *         requirements
      * */

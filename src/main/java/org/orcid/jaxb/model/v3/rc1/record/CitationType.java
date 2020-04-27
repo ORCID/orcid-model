@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlType;
 import io.swagger.annotations.ApiModel;
 
 /**
- * <p>Java class for citation-type.
+ * Java class for citation-type.
  * 
  * 
  */

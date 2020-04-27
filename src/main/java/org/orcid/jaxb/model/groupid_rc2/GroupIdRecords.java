@@ -12,28 +12,25 @@ import javax.xml.bind.annotation.XmlType;
 import org.orcid.jaxb.model.common_rc2.LastModifiedDate;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="total" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="page" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="page-size" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element ref="{http://www.orcid.org/ns/group-id}group-id-record" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="total" type="{http://www.w3.org/2001/XMLSchema}integer"/&gt;
+ *         &lt;element name="page" type="{http://www.w3.org/2001/XMLSchema}integer"/&gt;
+ *         &lt;element name="page-size" type="{http://www.w3.org/2001/XMLSchema}integer"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/group-id}group-id-record" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
- * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -118,13 +115,11 @@ public class GroupIdRecords {
     /**
      * Gets the value of the groupIdRecord property.
      * 
-     * <p>
      * This accessor method returns a reference to the live list, not a
      * snapshot. Therefore any modification you make to the returned list will
      * be present inside the JAXB object. This is why there is not a
      * <CODE>set</CODE> method for the groupIdRecord property.
      * 
-     * <p>
      * For example, to add a new item, do as follows:
      * 
      * <pre>
@@ -132,9 +127,10 @@ public class GroupIdRecords {
      * </pre>
      * 
      * 
-     * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link GroupIdRecord }
+     * 
+     * @return a List of GroupIdRecord objects
      * 
      * 
      */

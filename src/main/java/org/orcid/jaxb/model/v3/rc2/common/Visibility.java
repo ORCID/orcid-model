@@ -7,23 +7,14 @@
 
 package org.orcid.jaxb.model.v3.rc2.common;
 
+import java.io.Serializable;
+
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
-import com.fasterxml.jackson.annotation.JsonValue;
-
-import java.io.Serializable;
-
 /**
- * <p/>
  * Java class for visibility.
- * <p/>
- * <p/>
- * The following schema fragment specifies the expected content contained within
- * this class.
- * <p/>
- * <p/>
  * 
  */
 @XmlType(name = "visibility")

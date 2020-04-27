@@ -9,7 +9,11 @@ import javax.xml.bind.Marshaller;
 public class RecordUtil {
 
     /**
-     * @param args
+     * 
+     * Marshalls the given argment.
+     * 
+     * @param obj - object to be marshalled
+     * @return String representation of the marshalled object
      */
     public static String convertToString(Object obj) {
         try {

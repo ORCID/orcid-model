@@ -20,9 +20,9 @@ import org.orcid.jaxb.model.common_rc4.TranslatedTitle;
 import java.io.Serializable;
 
 /**
- * <p>Java class for anonymous complex type.
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * The following schema fragment specifies the expected content contained within this class.
  * 
  * 
  */
@@ -31,14 +31,14 @@ import java.io.Serializable;
 @XmlRootElement(name = "title", namespace = "http://www.orcid.org/ns/work")
 public class WorkTitle implements Serializable {
 
-    /**
-     * 
-     */
     private static final long serialVersionUID = 1L;
+   
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected Title title;
+    
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected Subtitle subtitle;
+    
     @XmlElement(name="translated-title", namespace = "http://www.orcid.org/ns/common")
     protected TranslatedTitle translatedTitle;
 
@@ -106,9 +106,7 @@ public class WorkTitle implements Serializable {
     /**
      * Sets the value of the translatedTitle property.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link translatedTitle }
+     * @param translatedTitle - the translated title
      *     
      */
     public void setTranslatedTitle(TranslatedTitle translatedTitle) {

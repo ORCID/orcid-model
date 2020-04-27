@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.annotations.ApiModel;
 
 /**
- * <p>Java class for citation-type.
+ * Java class for citation-type.
  * 
  * 
  */

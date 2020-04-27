@@ -16,25 +16,23 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}source-orcid" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}source-name" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}source-date" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}source-orcid" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}source-name" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}source-date" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -43,10 +41,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(propOrder = { "sourceOrcid", "sourceClientId", "sourceName", "sourceDate" })
 @XmlRootElement(name = "source")
 public class Source implements Serializable {
-    public static String NULL_SOURCE_PROFILE = "NOT_DEFINED";
-    /**
-     * 
-     */
+    
+	public static String NULL_SOURCE_PROFILE = "NOT_DEFINED";
+
     private static final long serialVersionUID = 1L;
     @XmlElement(name = "source-orcid")
     protected SourceOrcid sourceOrcid;
@@ -94,6 +91,9 @@ public class Source implements Serializable {
      * Only use this method if you really need to tell the difference between a
      * source ORCID and a source client ID. Use {@link #retrieveSourcePath()}
      * instead.
+     * 
+     * @return the source client id
+     * 
      **/
     @Deprecated
     public SourceClientId getSourceClientId() {

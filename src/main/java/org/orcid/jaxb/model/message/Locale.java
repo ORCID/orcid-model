@@ -16,25 +16,21 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import java.io.Serializable;
 
 /**
- * <p/>
  * Java class for visibility.
- * <p/>
- * <p/>
+ *
  * The following schema fragment specifies the expected content contained within
  * this class.
- * <p/>
- * <p/>
  * 
  * <pre>
- * &lt;simpleType name="locale">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="en"/>
- *     &lt;enumeration value="es"/>
- *     &lt;enumeration value="fr"/>
- *     &lt;enumeration value="zh_TW"/>
- *     &lt;enumeration value="zh_CN"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="locale"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="en"/&gt;
+ *     &lt;enumeration value="es"/&gt;
+ *     &lt;enumeration value="fr"/&gt;
+ *     &lt;enumeration value="zh_TW"/&gt;
+ *     &lt;enumeration value="zh_CN"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  */
 @XmlType(name = "locale")

@@ -16,26 +16,23 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * Container for organization location information
  * 
- * 
- * <p>
  * Java class for organization-address complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
  * 
  * <pre>
- * &lt;complexType name="organization-address">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="city" type="{http://www.orcid.org/ns/orcid}non-empty-string"/>
- *         &lt;element name="region" type="{http://www.orcid.org/ns/orcid}non-empty-string" minOccurs="0"/>
- *         &lt;element name="country" type="{http://www.orcid.org/ns/orcid}iso-3166-country"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="organization-address"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="city" type="{http://www.orcid.org/ns/orcid}non-empty-string"/&gt;
+ *         &lt;element name="region" type="{http://www.orcid.org/ns/orcid}non-empty-string" minOccurs="0"/&gt;
+ *         &lt;element name="country" type="{http://www.orcid.org/ns/orcid}iso-3166-country"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

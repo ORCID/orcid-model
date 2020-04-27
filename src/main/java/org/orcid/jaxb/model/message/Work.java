@@ -18,37 +18,35 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}work-title" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}journal-title minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}short-description" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}work-citation" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}work-type" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}publication-date" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}work-external-identifiers" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}url" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}work-contributors" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}source" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}language-code" minOccurs="0" maxOccurs="1"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}country" minOccurs="0" maxOccurs="1"/>
- *       &lt;/sequence>
- *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}put-code"/>
- *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}visibility"/>
- *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}anyType"/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}work-title" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}journal-title minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}short-description" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}work-citation" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}work-type" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}publication-date" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}work-external-identifiers" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}url" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}work-contributors" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}source" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}language-code" minOccurs="0" maxOccurs="1"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}country" minOccurs="0" maxOccurs="1"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}put-code"/&gt;
+ *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}visibility"/&gt;
+ *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}anyType"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -384,7 +382,7 @@ public class Work implements VisibilityType, Activity, Serializable {
     /**
      * Sets the value of the languageCode property.
      * 
-     * @param value
+     * @param languageCode
      *            allowed object is {@link String }
      * 
      */
@@ -405,7 +403,7 @@ public class Work implements VisibilityType, Activity, Serializable {
     /**
      * Sets the value of the country property.
      * 
-     * @param value
+     * @param country
      *            allowed object is {@link Country }
      * 
      */
@@ -422,6 +420,8 @@ public class Work implements VisibilityType, Activity, Serializable {
      * Indicates if two works are ORCID duplicated. Two works will be duplicated
      * if they have the same title, type, subtype, external identifiers and
      * source.
+     * 
+     * @param obj - object to check for duplication
      * 
      * @return true if the two works are duplicated according to ORCID
      *         requirements
@@ -466,6 +466,8 @@ public class Work implements VisibilityType, Activity, Serializable {
      * Indicates if two works are ORCID duplicated. Two works will be duplicated
      * if they have the same title, type, subtype, external identifiers and
      * source.
+     * 
+     * @param obj - object to be checked for duplication
      * 
      * @return true if the two works are duplicated according to ORCID
      *         requirements

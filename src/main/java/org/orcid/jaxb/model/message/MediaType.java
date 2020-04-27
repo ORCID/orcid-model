@@ -16,18 +16,18 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import java.io.Serializable;
 
 /**
- * <p>Java class for media-type.
+ * Java class for media-type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
+ * The following schema fragment specifies the expected content contained within this class.
+ * 
  * <pre>
- * &lt;simpleType name="media-type">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="print"/>
- *     &lt;enumeration value="online"/>
- *     &lt;enumeration value="other"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="media-type"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="print"/&gt;
+ *     &lt;enumeration value="online"/&gt;
+ *     &lt;enumeration value="other"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

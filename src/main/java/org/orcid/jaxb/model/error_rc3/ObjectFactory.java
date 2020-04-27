@@ -36,10 +36,10 @@ public class ObjectFactory {
     public ObjectFactory() {
     }
 
-    /**
-     * Create an instance of {@link OrcidError }
-     * 
-     */
+	/**
+	 * Create an instance of {@link OrcidError }
+	 * @return OrcidError
+	 */
     public OrcidError createError() {
         return new OrcidError();
     }

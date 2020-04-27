@@ -16,23 +16,20 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import java.io.Serializable;
 
 /**
- * <p>
  * Java class for orcid-type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * <p>
  * 
  * <pre>
- * &lt;simpleType name="orcid-type">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="grant"/>
- *     &lt;enumeration value="contract"/>
- *     &lt;enumeration value="award"/>
- *     &lt;enumeration value="salary-award"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="orcid-type"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="grant"/&gt;
+ *     &lt;enumeration value="contract"/&gt;
+ *     &lt;enumeration value="award"/&gt;
+ *     &lt;enumeration value="salary-award"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

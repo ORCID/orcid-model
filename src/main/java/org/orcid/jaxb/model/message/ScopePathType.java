@@ -20,37 +20,34 @@ import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>
  * Java class for scope-path-type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * <p>
  * 
  * <pre>
- * &lt;simpleType name="scope-path-type">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="/authorize"/>
- *     &lt;enumeration value="/authenticate"/>
- *     &lt;enumeration value="/read-public"/>
- *     &lt;enumeration value="/webhook"/>
- *     &lt;enumeration value="/orcid-bio/read-limited"/>
- *     &lt;enumeration value="/orcid-profile/read-limited"/>
- *     &lt;enumeration value="/orcid-works/read-limited"/>
- *     &lt;enumeration value="/funding/read-limited"/>
- *     &lt;enumeration value="/orcid-patents/read-limited"/>
- *     &lt;enumeration value="/orcid-works/update"/>
- *     &lt;enumeration value="/funding/update"/>
- *     &lt;enumeration value="/orcid-patents/update"/>
- *     &lt;enumeration value="/orcid-bio/external-identifiers/create"/>
- *     &lt;enumeration value="/orcid-bio/update"/>
- *     &lt;enumeration value="/orcid-works/create"/>
- *     &lt;enumeration value="/funding/create"/>
- *     &lt;enumeration value="/orcid-patents/create"/>
- *     &lt;enumeration value="/orcid-profile/create"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="scope-path-type"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="/authorize"/&gt;
+ *     &lt;enumeration value="/authenticate"/&gt;
+ *     &lt;enumeration value="/read-public"/&gt;
+ *     &lt;enumeration value="/webhook"/&gt;
+ *     &lt;enumeration value="/orcid-bio/read-limited"/&gt;
+ *     &lt;enumeration value="/orcid-profile/read-limited"/&gt;
+ *     &lt;enumeration value="/orcid-works/read-limited"/&gt;
+ *     &lt;enumeration value="/funding/read-limited"/&gt;
+ *     &lt;enumeration value="/orcid-patents/read-limited"/&gt;
+ *     &lt;enumeration value="/orcid-works/update"/&gt;
+ *     &lt;enumeration value="/funding/update"/&gt;
+ *     &lt;enumeration value="/orcid-patents/update"/&gt;
+ *     &lt;enumeration value="/orcid-bio/external-identifiers/create"/&gt;
+ *     &lt;enumeration value="/orcid-bio/update"/&gt;
+ *     &lt;enumeration value="/orcid-works/create"/&gt;
+ *     &lt;enumeration value="/funding/create"/&gt;
+ *     &lt;enumeration value="/orcid-patents/create"/&gt;
+ *     &lt;enumeration value="/orcid-profile/create"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

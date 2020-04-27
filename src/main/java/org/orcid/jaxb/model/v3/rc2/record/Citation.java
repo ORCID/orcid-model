@@ -22,14 +22,12 @@ import io.swagger.annotations.ApiModel;
 
 /**
  * Element to contain a citation of a given type
- * <p/>
- * <p>
+ * 
  * Java class for citation complex type.
- * <p/>
- * <p>
+ * 
  * The following schema fragment specifies the expected content contained within
  * this class.
- * <p/>
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "citation", propOrder = { "citationType", "citation" })

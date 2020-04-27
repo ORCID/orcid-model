@@ -245,10 +245,9 @@ public class WorkSummary implements Filterable, Activity, GroupableActivity, Ser
     /**
      * Gets the value of the workSources property.
      * 
-     * @return possible object is {@link WorkSource }
+     * @return String representation of work source
      * 
      */
-
     @Override
     public String retrieveSourcePath() {
         if (source != null) {

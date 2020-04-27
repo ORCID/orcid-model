@@ -16,25 +16,8 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import java.io.Serializable;
 
 /**
- * <p/>
  * Java class for visibility.
- * <p/>
- * <p/>
- * The following schema fragment specifies the expected content contained within
- * this class.
- * <p/>
- * <p/>
  * 
- * <pre>
- * &lt;simpleType name="visibility">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="private"/>
- *     &lt;enumeration value="limited"/>
- *     &lt;enumeration value="public"/>
- *     &lt;enumeration value="registered-only"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
  */
 @XmlType(name = "visibility")
 @XmlEnum

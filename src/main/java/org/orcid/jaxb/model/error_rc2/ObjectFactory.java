@@ -39,6 +39,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OrcidError }
      * 
+     * @return OrcidError
+     * 
      */
     public OrcidError createError() {
         return new OrcidError();

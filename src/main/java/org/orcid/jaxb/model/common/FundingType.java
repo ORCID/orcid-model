@@ -10,13 +10,11 @@ package org.orcid.jaxb.model.common;
 import java.io.Serializable;
 
 /**
- * <p>
  * Java class for orcid-type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * <p>
+ * 
  */
 public enum FundingType implements Serializable {
     GRANT("grant"), 

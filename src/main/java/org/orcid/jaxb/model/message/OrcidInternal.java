@@ -16,27 +16,25 @@ import javax.xml.bind.annotation.XmlType;
 import java.io.Serializable;
 
 /**
- * <p>
  * Java class for anonymous complex type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}security-details" minOccurs="0"/>
- *         &lt;element ref="{http://www.orcid.org/ns/orcid}preferences" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}scope"/>
- *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}visibility"/>
- *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}salesforce-id"/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}security-details" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.orcid.org/ns/orcid}preferences" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}scope"/&gt;
+ *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}visibility"/&gt;
+ *       &lt;attGroup ref="{http://www.orcid.org/ns/orcid}salesforce-id"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -46,9 +44,6 @@ import java.io.Serializable;
 @XmlRootElement(name = "orcid-internal")
 public class OrcidInternal implements VisibilityType, Serializable {
 
-    /**
-     * 
-     */
     private static final long serialVersionUID = 1L;
     @XmlElement(name = "security-details")
     protected SecurityDetails securityDetails;
@@ -163,8 +158,9 @@ public class OrcidInternal implements VisibilityType, Serializable {
     /**
      * Sets the salesforce id property
      * 
-     * @param SalesforceId
+     * @param salesforceId
      *            allowed object is {@link SalesforceId}
+     * 
      * */
     public void setSalesforceId(SalesforceId salesforceId) {
         this.salesforceId = salesforceId;

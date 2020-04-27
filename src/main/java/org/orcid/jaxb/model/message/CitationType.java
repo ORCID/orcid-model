@@ -14,22 +14,22 @@ import javax.xml.bind.annotation.XmlType;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- * <p>Java class for citation-type.
+ * Java class for citation-type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
+ * The following schema fragment specifies the expected content contained within this class.
+ * 
  * <pre>
- * &lt;simpleType name="citation-type">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="bibtex"/>
- *     &lt;enumeration value="formatted-apa"/>
- *     &lt;enumeration value="formatted-harvard"/>
- *     &lt;enumeration value="formatted-ieee"/>
- *     &lt;enumeration value="formatted-mla"/>
- *     &lt;enumeration value="formatted-vancouver"/>
- *     &lt;enumeration value="formatted-chicago"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="citation-type"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="bibtex"/&gt;
+ *     &lt;enumeration value="formatted-apa"/&gt;
+ *     &lt;enumeration value="formatted-harvard"/&gt;
+ *     &lt;enumeration value="formatted-ieee"/&gt;
+ *     &lt;enumeration value="formatted-mla"/&gt;
+ *     &lt;enumeration value="formatted-vancouver"/&gt;
+ *     &lt;enumeration value="formatted-chicago"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

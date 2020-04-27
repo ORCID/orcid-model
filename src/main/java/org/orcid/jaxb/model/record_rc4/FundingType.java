@@ -16,13 +16,11 @@ import javax.xml.bind.annotation.XmlType;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- * <p>
  * Java class for orcid-type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * <p>
+ * 
  */
 @XmlType(name = "grantType")
 @XmlEnum

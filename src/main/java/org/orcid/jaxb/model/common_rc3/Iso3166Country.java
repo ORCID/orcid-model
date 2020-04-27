@@ -13,14 +13,10 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>
  * Java class for country-type.
  * 
- * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * <p>
- * 
  * 
  */
 @XmlType(name = "iso3166Country")
