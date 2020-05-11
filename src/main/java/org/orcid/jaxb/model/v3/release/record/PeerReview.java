@@ -61,7 +61,7 @@ public class PeerReview implements Filterable, Serializable, OrganizationHolder,
     protected SubjectName subjectName;
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "subject-url")
     protected Url subjectUrl;
-    @XmlElement(required = true, namespace = "http://www.orcid.org/ns/peer-review", name = "convening-organization")
+    @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "convening-organization")
     protected Organization organization;
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected Source source;
