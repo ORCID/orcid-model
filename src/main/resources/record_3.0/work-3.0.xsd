@@ -141,7 +141,7 @@
 		<xs:annotation>
 			<xs:documentation>The type of object that the work is, from the list of supported types in https://members.orcid.org/api/resources/work-types
 			ORCID will validate this value against the enumeration 
-			https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/java/org/orcid/jaxb/model/common/WorkType.java and other rules when necessary
+			https://github.com/ORCID/orcid-model/tree/master/src/main/java/org/orcid/jaxb/model/common/WorkType.java and other rules when necessary
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string" />				
@@ -261,7 +261,7 @@
 		    * formatted-unspecified
 		    * ris
 			ORCID will validate this value against the enumeration 
-			https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/java/org/orcid/jaxb/model/common/CitationType.java and other rules when necessary
+			https://github.com/ORCID/orcid-model/tree/master/src/main/java/org/orcid/jaxb/model/common/CitationType.java and other rules when necessary
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string" />

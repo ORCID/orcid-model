@@ -125,7 +125,7 @@
     		* infrastructures: A facility, building, or other physical space used to perform research. Examples incldue a neutron spallation source, animal facility, data enclave, archaeological site, telescope array, ship, plane, farm, laboratory
     		* services: Services used for research purposes. Examples include data analysis, computing services, logistical support, legal services, copyediting, expert or staff advisement.
 			ORCID will validate this value against the enumeration 
-			https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/java/org/orcid/jaxb/model/common/ResourceType.java and other rules when necessary
+			https://github.com/ORCID/orcid-model/tree/master/src/main/java/org/orcid/jaxb/model/common/ResourceType.java and other rules when necessary
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string" />
