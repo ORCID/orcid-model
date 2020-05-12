@@ -4,43 +4,43 @@
 v2.1 is a current stable release of the ORCID API.
 
 ## XSDs and current state (all stable)
-- [activities-2.1.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/activities-2.1.xsd)
+- [activities-2.1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/activities-2.1.xsd)
 **stable**
-- [address-2.1.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/address-2.1.xsd)
+- [address-2.1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/address-2.1.xsd)
 **stable**
-- [bulk-2.1.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/bulk-2.1.xsd)
+- [bulk-2.1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/bulk-2.1.xsd)
 **stable**
-- [common-2.1.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/common_2.1/common-2.1.xsd)
+- [common-2.1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/common_2.1/common-2.1.xsd)
 **stable**
-- [education-2.1.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/education-2.1.xsd)
+- [education-2.1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/education-2.1.xsd)
 **stable**
-- [email-2.1.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/email-2.1.xsd)
+- [email-2.1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/email-2.1.xsd)
 **stable**
-- [employment-2.1.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/employment-2.1.xsd)
+- [employment-2.1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/employment-2.1.xsd)
 **not stable**
-- [error-2.1.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/error-2.1.xsd)
+- [error-2.1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/error-2.1.xsd)
 **stable**
-- [external-identifier-2.1.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/external-identifier-2.1.xsd)
+- [external-identifier-2.1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/external-identifier-2.1.xsd)
 **stable**
-- [funding-2.1.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/funding-2.1.xsd)
+- [funding-2.1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/funding-2.1.xsd)
 **stable**
-- [keyword-2.1.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/keyword-2.1.xsd)
+- [keyword-2.1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/keyword-2.1.xsd)
 **stable**
-- [other-names-2.1.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/other-name-2.1.xsd)
+- [other-names-2.1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/other-name-2.1.xsd)
 **stable**
-- [peer-review-2.1.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/peer-review-2.1.xsd)
+- [peer-review-2.1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/peer-review-2.1.xsd)
 **stable**
-- [person-2.1.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/person-2.1.xsd)
+- [person-2.1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/person-2.1.xsd)
 **stable**
-- [personal-details-2.1.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/personal-details-2.1.xsd)
+- [personal-details-2.1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/personal-details-2.1.xsd)
 **stable**
-- [record-2.1.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/record-2.1.xsd)
+- [record-2.1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/record-2.1.xsd)
 **stable**
-- [researcher-url-2.1.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/researcher-url-2.1.xsd)
+- [researcher-url-2.1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/researcher-url-2.1.xsd)
 **stable**
-- [search-2.1.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/search-2.1.xsd)
+- [search-2.1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/search-2.1.xsd)
 **stable**
-- [work-2.1.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/work-2.1.xsd)
+- [work-2.1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/work-2.1.xsd)
 **stable**
 
 ## Changes from Version 2.0:
@@ -58,47 +58,47 @@ Example of a source ORCID iD in 2.1
 
 ## Sample files:
 
-- [read activities-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/activities-2.1.xml)
-- [read address-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/address-2.1.xml)
-- [write address-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/write_sample/address-2.1.xml)
-- [write bulk-work xml-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/write_sample/bulk-work-2.1.xml)
-- [write bulk-work-2.1.json](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/write_sample/bulk-work-2.1.json)
-- [read biography-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/biography-2.1.xml)
-- [read education-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/education-2.1.xml)
-- [write education-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/write_sample/education-2.1.xml)
-- [read educations-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/educations-2.1.xml)
-- [read email-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/email-2.1.xml)
-- [read emails-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/emails-2.1.xml)
-- [read employment-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/employment-2.1.xml)
-- [write employment-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/write_sample/employment-2.1.xml)
-- [read employments-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/employments-2.1.xml)
-- [error-message-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/error-2.1.xml)
-- [read external-identifier-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/external-identifier-2.1.xml)
-- [write external-identifier-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/write_sample/external-identifier-2.1.xml)
-- [read external-identifiers-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/external-identifiers-2.1.xml)
-- [read funding-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/funding-2.1.xml)
-- [write funding-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/write_sample/funding-2.1.xml)
-- [read fundings-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/fundings-2.1.xml)
-- [read keyword-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/keyword-2.1.xml)
-- [write keyword-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/write_sample/keyword-2.1.xml)
-- [keywords-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/keywords-2.1.xml)
-- [read other-name-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/other-name-2.1.xml)
-- [write other-name-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/other-name-2.1.xml)
-- [read other-names-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/other-names-2.1.xml)
-- [read peer-review-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/peer-review-2.1.xml)
-- [write full peer-review-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/write_sample/peer-review-full-2.1.xml)
-- [write simple peer-review-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/write_sample/peer-review-simple-2.1.xml)
-- [read peer-reviews-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/peer-reviews-2.1.xml)
-- [read person-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/person-2.1.xml)
-- [read personal-details-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/personal-details-2.1.xml)
-- [read researcher-url-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/researcher-url-2.1.xml)
-- [write researcher-url-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/write_sample/researcher-url-2.1.xml)
-- [read researcher-urls-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/researcher-urls-2.1.xml)
-- [search-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/search-2.1.xml)
-- [read work-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/work-2.1.xml)
-- [write full work-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/write_sample/work-full-2.1.xml)
-- [write simple work-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/write_sample/work-simple-2.1.xml)
-- [read works-2.1.xml](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/works-2.1.xml)
+- [read activities-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/activities-2.1.xml)
+- [read address-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/address-2.1.xml)
+- [write address-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/write_sample/address-2.1.xml)
+- [write bulk-work xml-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/write_sample/bulk-work-2.1.xml)
+- [write bulk-work-2.1.json](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/write_sample/bulk-work-2.1.json)
+- [read biography-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/biography-2.1.xml)
+- [read education-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/education-2.1.xml)
+- [write education-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/write_sample/education-2.1.xml)
+- [read educations-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/educations-2.1.xml)
+- [read email-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/email-2.1.xml)
+- [read emails-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/emails-2.1.xml)
+- [read employment-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/employment-2.1.xml)
+- [write employment-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/write_sample/employment-2.1.xml)
+- [read employments-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/employments-2.1.xml)
+- [error-message-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/error-2.1.xml)
+- [read external-identifier-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/external-identifier-2.1.xml)
+- [write external-identifier-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/write_sample/external-identifier-2.1.xml)
+- [read external-identifiers-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/external-identifiers-2.1.xml)
+- [read funding-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/funding-2.1.xml)
+- [write funding-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/write_sample/funding-2.1.xml)
+- [read fundings-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/fundings-2.1.xml)
+- [read keyword-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/keyword-2.1.xml)
+- [write keyword-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/write_sample/keyword-2.1.xml)
+- [keywords-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/keywords-2.1.xml)
+- [read other-name-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/other-name-2.1.xml)
+- [write other-name-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/other-name-2.1.xml)
+- [read other-names-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/other-names-2.1.xml)
+- [read peer-review-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/peer-review-2.1.xml)
+- [write full peer-review-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/write_sample/peer-review-full-2.1.xml)
+- [write simple peer-review-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/write_sample/peer-review-simple-2.1.xml)
+- [read peer-reviews-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/peer-reviews-2.1.xml)
+- [read person-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/person-2.1.xml)
+- [read personal-details-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/personal-details-2.1.xml)
+- [read researcher-url-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/researcher-url-2.1.xml)
+- [write researcher-url-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/write_sample/researcher-url-2.1.xml)
+- [read researcher-urls-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/researcher-urls-2.1.xml)
+- [search-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/search-2.1.xml)
+- [read work-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/work-2.1.xml)
+- [write full work-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/write_sample/work-full-2.1.xml)
+- [write simple work-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/write_sample/work-simple-2.1.xml)
+- [read works-2.1.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/works-2.1.xml)
 
 For working with json see [ORCID conversion util](https://github.com/ORCID/orcid-conversion-lib)
 
@@ -233,7 +233,7 @@ When reading multiple works the contents of each work is returned or an error co
 | Work  |/activities/update|```curl -i -H 'Content-type: application/vnd.orcid+xml' -H 'Authorization: Bearer dd91868d-d29a-475e-9acb-bd3fdf2f43f4' -d '@[FILE-PATH]/work.xml' -X POST 'https://api.sandbox.orcid.org/v2.1/0000-0002-9227-8514/work'```|
 | Multiple works |/activities/update|```curl -i -H 'Content-type: application/vnd.orcid+xml' -H 'Authorization: Bearer dd91868d-d29a-475e-9acb-bd3fdf2f43f4' -d '@[FILE-PATH]/works.xml' -X POST 'https://api.sandbox.orcid.org/v2.1/0000-0002-9227-8514/works'```|
 
-When posting multiple works the contents of each work is returned or an error code is returned if there is an issue with a single work, see [bulk work error sample](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.1/samples/read_samples/bulk-work-error.xml).
+When posting multiple works the contents of each work is returned or an error code is returned if there is an issue with a single work, see [bulk work error sample](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/samples/read_samples/bulk-work-error.xml).
 
 ### Update Record Items
 |Item  |Scope  | Example cURL Statement  |

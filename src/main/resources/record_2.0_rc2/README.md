@@ -6,50 +6,50 @@ A Release Candidate (RC) is the built to help ORCID and members check if any cri
 undetected into the code during the previous development period. Release candidates are NOT suggested for production use.
 
 ## XSDs and current state (all stable)
-- [activities-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/activities-2.0_rc2.xsd) 
+- [activities-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/activities-2.0_rc2.xsd) 
 **stable**, developement ongoing
-- [address-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/address-2.0_rc2.xsd)
+- [address-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/address-2.0_rc2.xsd)
 **stable**, developement ongoing
-- [common-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/common_2.0_rc2/common-2.0_rc2.xsd)
+- [common-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/common_2.0_rc2/common-2.0_rc2.xsd)
 **stable**, developement ongoing
-- [education-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/education-2.0_rc2.xsd)
+- [education-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/education-2.0_rc2.xsd)
 **stable**, developement ongoing
-- [email-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/email-2.0_rc2.xsd)
+- [email-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/email-2.0_rc2.xsd)
 **stable**, developement ongoing
-- [employment-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/employment-2.0_rc2.xsd)
+- [employment-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/employment-2.0_rc2.xsd)
 **not stable**, developement ongoing
-- [error-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/error-2.0_rc2.xsd)
+- [error-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/error-2.0_rc2.xsd)
 **stable**, developement ongoing
-- [external-identifier-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/external-identifier-2.0_rc2.xsd)
+- [external-identifier-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/external-identifier-2.0_rc2.xsd)
 **stable**, developement ongoing
-- [funding-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/funding-2.0_rc2.xsd)
+- [funding-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/funding-2.0_rc2.xsd)
 **stable**, developement ongoing
-- [keyword-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/keyword-2.0_rc2.xsd)
+- [keyword-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/keyword-2.0_rc2.xsd)
 **stable**, developement ongoing
-- [other-names-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/other-name-2.0_rc2.xsd)
+- [other-names-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/other-name-2.0_rc2.xsd)
 **stable**, developement ongoing
-- [peer-review-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/peer-review-2.0_rc2.xsd)
+- [peer-review-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/peer-review-2.0_rc2.xsd)
 **stable**, developement ongoing
-- [person-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/person-2.0_rc2.xsd)
+- [person-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/person-2.0_rc2.xsd)
 **stable**, developement ongoing
-- [personal-details-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/personal-details-2.0_rc2.xsd)
+- [personal-details-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/personal-details-2.0_rc2.xsd)
 **stable**, developement ongoing
-- [researcher-url-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/researcher-url-2.0_rc2.xsd)
+- [researcher-url-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/researcher-url-2.0_rc2.xsd)
 **stable**, developement ongoing
-- [work-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/work-2.0_rc2.xsd)
+- [work-2.0_rc2.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/work-2.0_rc2.xsd)
 **stable**, developement ongoing
 
 ##Changes:
 ###Person section
 
-- Addition of [person section](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/person-2.0_rc2.xsd) corresponding to the v1.2 orcid-bio field. The children of the person field are:
-  - [address](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/address-2.0_rc2.xsd)
-  - [email](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/email-2.0_rc2.xsd)
-  - [external-identifiers](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/person-external-identifier-2.0_rc2.xsd)
-  - [keywords](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/keyword-2.0_rc2.xsd)
-  - [other-names](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/other-name-2.0_rc2.xsd)
-  - [personal-details](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/personal-details-2.0_rc2.xsd)
-  - [researcher-urls](https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/researcher-url-2.0_rc2.xsd)
+- Addition of [person section](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/person-2.0_rc2.xsd) corresponding to the v1.2 orcid-bio field. The children of the person field are:
+  - [address](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/address-2.0_rc2.xsd)
+  - [email](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/email-2.0_rc2.xsd)
+  - [external-identifiers](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/person-external-identifier-2.0_rc2.xsd)
+  - [keywords](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/keyword-2.0_rc2.xsd)
+  - [other-names](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/other-name-2.0_rc2.xsd)
+  - [personal-details](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/personal-details-2.0_rc2.xsd)
+  - [researcher-urls](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/researcher-url-2.0_rc2.xsd)
 - Source and creation date is captured with other-names, country, keywords, researcher-urls, and external identifiers.
 - Display index is returned with repeatable person fields
 - Address (county) is repeatable
@@ -72,29 +72,29 @@ undetected into the code during the previous development period. Release candida
 
 ## Sample XML files:
 
-- [activities-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/activities-2.0_rc2.xml)
-- [address-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/address-2.0_rc2.xml)
-- [biography-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/biography-2.0_rc2.xml)
-- [credit-name-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/credit-name-2.0_rc2.xml)
-- [education-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/education-2.0_rc2.xml)
-- [email-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/email-2.0_rc2.xml)
-- [emails-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/emails-2.0_rc2.xml)
-- [employment-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/employment-2.0_rc2.xml)
-- [error-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/error-2.0_rc2.xml)
-- [external-identifier-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/external-identifier-2.0_rc2.xml)
-- [external-identifiers-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/external-identifiers-2.0_rc2.xml)
-- [funding-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/funding-2.0_rc2.xml)
-- [keyword-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/keyword-2.0_rc2.xml)
-- [keywords-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/keywords-2.0_rc2.xml)
-- [name-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/name-2.0_rc2.xml)
-- [other-name-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/other-name-2.0_rc2.xml)
-- [other-names-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/other-names-2.0_rc2.xml)
-- [peer-review-2.0_rc2.xml ] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/peer-review-2.0_rc2.xml )
-- [person-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/person-2.0_rc2.xml)
-- [personal-details-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/personal-details-2.0_rc2.xml)
-- [researcher-url-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/researcher-url-2.0_rc2.xml)
-- [researcher-urls-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/researcher-urls-2.0_rc2.xml)
-- [work-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/tree/master/src/main/resources/record_2.0_rc2/samples/work-2.0_rc2.xml)
+- [activities-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/activities-2.0_rc2.xml)
+- [address-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/address-2.0_rc2.xml)
+- [biography-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/biography-2.0_rc2.xml)
+- [credit-name-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/credit-name-2.0_rc2.xml)
+- [education-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/education-2.0_rc2.xml)
+- [email-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/email-2.0_rc2.xml)
+- [emails-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/emails-2.0_rc2.xml)
+- [employment-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/employment-2.0_rc2.xml)
+- [error-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/error-2.0_rc2.xml)
+- [external-identifier-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/external-identifier-2.0_rc2.xml)
+- [external-identifiers-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/external-identifiers-2.0_rc2.xml)
+- [funding-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/funding-2.0_rc2.xml)
+- [keyword-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/keyword-2.0_rc2.xml)
+- [keywords-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/keywords-2.0_rc2.xml)
+- [name-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/name-2.0_rc2.xml)
+- [other-name-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/other-name-2.0_rc2.xml)
+- [other-names-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/other-names-2.0_rc2.xml)
+- [peer-review-2.0_rc2.xml ] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/peer-review-2.0_rc2.xml )
+- [person-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/person-2.0_rc2.xml)
+- [personal-details-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/personal-details-2.0_rc2.xml)
+- [researcher-url-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/researcher-url-2.0_rc2.xml)
+- [researcher-urls-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/researcher-urls-2.0_rc2.xml)
+- [work-2.0_rc2.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc2/samples/work-2.0_rc2.xml)
 
 **Note:** These files contain system-generated elements/attributes that are returned when reading items from ORCID, but should not be included when posting items to ORCID
 - put-code (exception: include put-code when updating items using the PUT method)

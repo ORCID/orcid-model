@@ -201,7 +201,7 @@
 		    * research-resource-proposal: A peer-reviewed proposal of use of a research resource
 		    * undefined
 		    ORCID will validate this value against the enumeration 
-			https://github.com/ORCID/orcid-model/tree/master/src/main/java/org/orcid/jaxb/model/common/PeerReviewSubjectType.java and other rules when necessary.
+			https://github.com/ORCID/orcid-model/blob/master/src/main/java/org/orcid/jaxb/model/common/PeerReviewSubjectType.java and other rules when necessary.
             </xs:documentation>
         </xs:annotation>
         <xs:restriction base="xs:string" />    
@@ -223,7 +223,7 @@
 			* organizer: A person who makes arrangements or preparations
 						for an event or activity.
 			ORCID will validate this value against the enumeration 
-			https://github.com/ORCID/orcid-model/tree/master/src/main/java/org/orcid/jaxb/model/common/Role.java and other rules when necessary
+			https://github.com/ORCID/orcid-model/blob/master/src/main/java/org/orcid/jaxb/model/common/Role.java and other rules when necessary
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string" />			
@@ -238,7 +238,7 @@
 			* evaluation: A post-peer review, expert evaluation of a
 						scholarly output.
 			ORCID will validate this value against the enumeration 
-			https://github.com/ORCID/orcid-model/tree/master/src/main/java/org/orcid/jaxb/model/common/PeerReviewType.java and other rules when necessary
+			https://github.com/ORCID/orcid-model/blob/master/src/main/java/org/orcid/jaxb/model/common/PeerReviewType.java and other rules when necessary
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string" />			
