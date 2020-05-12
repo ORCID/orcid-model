@@ -6,21 +6,21 @@ A Release Candidate (RC) is the built to help ORCID and members check if any cri
 undetected into the code during the previous development period. Release candidates are NOT suggested for production use.
 
 ## XSDs and current state (all stable)
-- [activities-2.0_rc1.xsd](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0_rc1/activities-2.0_rc1.xsd) 
+- [activities-2.0_rc1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc1/activities-2.0_rc1.xsd) 
 **stable**, further model changes will be expressed in v2.0_rc2
-- [common-2.0_rc1.xsd](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/common_2.0_rc1/common-2.0_rc1.xsd)
+- [common-2.0_rc1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/common_2.0_rc1/common-2.0_rc1.xsd)
 **stable**, further model changes will be expressed in v2.0_rc2
-- [education-2.0_rc1.xsd](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0_rc1/education-2.0_rc1.xsd)
+- [education-2.0_rc1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc1/education-2.0_rc1.xsd)
 **stable**, further model changes will be expressed in v2.0_rc2
-- [employment-2.0_rc1.xsd](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0_rc1/employment-2.0_rc1.xsd)
+- [employment-2.0_rc1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc1/employment-2.0_rc1.xsd)
 **stable**, further model changes will be expressed in v2.0_rc2
-- [error-2.0_rc1.xsd](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0_rc1/error-2.0_rc1.xsd)
+- [error-2.0_rc1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc1/error-2.0_rc1.xsd)
 **stable**, further model changes will be expressed in v2.0_rc2
-- [funding-2.0_rc1.xsd](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0_rc1/funding-2.0_rc1.xsd)
+- [funding-2.0_rc1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc1/funding-2.0_rc1.xsd)
 **stable**, further model changes will be expressed in v2.0_rc2
-- [peer-review-2.0_rc1.xsd](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0_rc1/peer-review-2.0_rc1.xsd)
+- [peer-review-2.0_rc1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc1/peer-review-2.0_rc1.xsd)
 **stable**, further model changes will be expressed in v2.0_rc2
-- [work-2.0_rc1.xsd](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0_rc1/work-2.0_rc1.xsd)
+- [work-2.0_rc1.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc1/work-2.0_rc1.xsd)
 **stable**, further model changes will be expressed in v2.0_rc2
 
 ## Changes
@@ -106,13 +106,13 @@ The 2.0_rc1 schema has been broken into individual pieces for each section of th
 
 ## Sample XML files:
 
-- [activities-2.0_rc1.xml] (https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0_rc1/samples/activities-2.0_rc1.xml)
-- [education-2.0_rc1.xml] (https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0_rc1/samples/education-2.0_rc1.xml)
-- [employment-2.0_rc1.xml] (https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0_rc1/samples/employment-2.0_rc1.xml)
-- [error-2.0_rc1.xml] (https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0_rc1/samples/error-2.0_rc1.xml)
-- [funding-2.0_rc1.xml] (https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0_rc1/samples/funding-2.0_rc1.xml)
-- [peer-review-2.0_rc1.xml ] (https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0_rc1/samples/peer-review-2.0_rc1.xml )
-- [work-2.0_rc1.xml] (https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0_rc1/samples/work-2.0_rc1.xml)
+- [activities-2.0_rc1.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc1/samples/activities-2.0_rc1.xml)
+- [education-2.0_rc1.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc1/samples/education-2.0_rc1.xml)
+- [employment-2.0_rc1.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc1/samples/employment-2.0_rc1.xml)
+- [error-2.0_rc1.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc1/samples/error-2.0_rc1.xml)
+- [funding-2.0_rc1.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc1/samples/funding-2.0_rc1.xml)
+- [peer-review-2.0_rc1.xml ] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc1/samples/peer-review-2.0_rc1.xml )
+- [work-2.0_rc1.xml] (https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0_rc1/samples/work-2.0_rc1.xml)
 
 **Note:** These files contain system-generated elements/attributes that are returned when reading items from ORCID, but should not be included when posting items to ORCID
 - put-code (exception: include put-code when updating items using the PUT method)

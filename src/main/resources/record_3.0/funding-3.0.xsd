@@ -139,7 +139,7 @@
     		* grant: Peer-reviewed funding providing direct research costs through competitions
     		* salary-award: A competitive, peer-reviewed award that is paid as salary to the awardee/faculty member
     		ORCID will validate this value against the enumeration 
-			https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/java/org/orcid/jaxb/model/common/FundingType.java and other rules when necessary
+			https://github.com/ORCID/orcid-model/blob/master/src/main/java/org/orcid/jaxb/model/common/FundingType.java and other rules when necessary
 			</xs:documentation>
 		</xs:annotation>
 
@@ -195,7 +195,7 @@
     			* supported-by
     			* other-contribution
 				ORCID will validate this value against the enumeration 
-				https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/java/org/orcid/jaxb/model/common/FundingContributorRole.java and other rules when necessary
+				https://github.com/ORCID/orcid-model/blob/master/src/main/java/org/orcid/jaxb/model/common/FundingContributorRole.java and other rules when necessary
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string" />
