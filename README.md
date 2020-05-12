@@ -22,7 +22,7 @@ Developers building ORCID API integrations using Java can easily marshall and un
 ## Active XSD versions and base URLs
 
 ### Current Version
-**[ORCID Message 3.0](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_3.0/README.md)**
+**[ORCID Message 3.0](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/README.md)**
 
     * API Base URLs - PRODUCTION
         * Public API:   https://pub.orcid.org/v3.0/
@@ -35,9 +35,9 @@ Developers building ORCID API integrations using Java can easily marshall and un
 
 These versions are still supported, but integrations should start planning to move to version 3.0
 
-* **[ORCID Message 2.1](https://github.com/ORCID/ORCID-Source/tree/master/orcid-model/src/main/resources/record_2.1)** - [Documentation](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.1/README.md)
+* **[ORCID Message 2.1](https://github.com/ORCID/ORCID-Source/tree/master/orcid-model/src/main/resources/record_2.1)** - [Documentation](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/README.md)
 
-* **[ORCID Message 2.0](https://github.com/ORCID/ORCID-Source/tree/master/orcid-model/src/main/resources/record_2.0)** - [Documentation](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0/README.md), [Change log from 1.2](https://members.orcid.org/api/news/xsd-20-update)
+* **[ORCID Message 2.0](https://github.com/ORCID/ORCID-Source/tree/master/orcid-model/src/main/resources/record_2.0)** - [Documentation](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0/README.md), [Change log from 1.2](https://members.orcid.org/api/news/xsd-20-update)
 
 #### XSD release candidate(s)
 
@@ -55,13 +55,13 @@ If using these release candidates please migrate to the current stable version 3
 * **[ORCID Message 2.0_rc2](https://github.com/ORCID/ORCID-Source/tree/master/orcid-model/src/main/resources/record_2.0_rc2)** - _Contains: Person section, migrates all identifiers to external-identifier_ <br/>
 * **[ORCID Message 2.0_rc1](https://github.com/ORCID/ORCID-Source/tree/master/orcid-model/src/main/resources/record_2.0_rc1)** - _Contains: Peer-review, new format XSD for activities_ <br/><br/>
 
-* **[ORCID Message 1.2](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/orcid-message-1.2.xsd)**
+* **[ORCID Message 1.2](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/orcid-message-1.2.xsd)**
 
 
 #### Sunset versions (unavailable, unsupported, should not be used)
 
 * **Version 1.0.x (includes versions 1.0.1 through 1.0.23)** <br>_Sunset Date: March 1, 2014_
-* **[ORCID Message 1.1](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/orcid-message-1.1.xsd)** <br>_Sunset Date: April 1, 2015_
+* **[ORCID Message 1.1](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/orcid-message-1.1.xsd)** <br>_Sunset Date: April 1, 2015_
 * **Version 1.2.x ** <br>_Sunset Date: Aug 1, 2018_
 
 _NOTE:<br />API calls for member to ORCID iD holder authorization using OAuth are not affected by XSD versions. Regardless of the XSD version used, the OAuth endpoints are:_
@@ -121,20 +121,20 @@ Release candidate versions of the XSD contain elements and data structures for f
 
 | Version/link | Release Date | Sunset date | Notes | Who should be using this version |
 | ------------ | ------------ | ----------- | ----- | -------------------------------- |
-| [ORCID XSD 2.1](https://github.com/ORCID/ORCID-Source/tree/master/orcid-model/src/main/resources/record_2.1) | Nov 17, 2017 | | **[Release version](#releaseVersion)**<br><br>CURRENT SUPPORTED VERSION<br/>*ORCID iDs are expressed in the canonical form with the https prefix* |This is a preferred version. All developers should be using or migrating to this version or 2.0. [Documentation](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.1/README.md)|
-| [ORCID XSD 2.0](https://github.com/ORCID/ORCID-Source/tree/master/orcid-model/src/main/resources/record_2.0) | Feb 13, 2017 | | **[Release version](#releaseVersion)**<br><br>CURRENT SUPPORTED VERSION<br/>[Change log from 1.2](https://members.orcid.org/api/news/xsd-20-update) |This is a preferred version. All developers should be using or migrating to this version or 2.1. [Documentation](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0/README.md)|
+| [ORCID XSD 2.1](https://github.com/ORCID/ORCID-Source/tree/master/orcid-model/src/main/resources/record_2.1) | Nov 17, 2017 | | **[Release version](#releaseVersion)**<br><br>CURRENT SUPPORTED VERSION<br/>*ORCID iDs are expressed in the canonical form with the https prefix* |This is a preferred version. All developers should be using or migrating to this version or 2.0. [Documentation](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/README.md)|
+| [ORCID XSD 2.0](https://github.com/ORCID/ORCID-Source/tree/master/orcid-model/src/main/resources/record_2.0) | Feb 13, 2017 | | **[Release version](#releaseVersion)**<br><br>CURRENT SUPPORTED VERSION<br/>[Change log from 1.2](https://members.orcid.org/api/news/xsd-20-update) |This is a preferred version. All developers should be using or migrating to this version or 2.1. [Documentation](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0/README.md)|
 | [ORCID XSD 2.0_rc4](https://github.com/ORCID/ORCID-Source/tree/master/orcid-model/src/main/resources/record_2.0_rc4) | Jan 24, 2017 | Spring 2018 | **[Release candidate version](#releaseCandidate)**<br><br/>_minor fixes and corrections_ | |
 | [ORCID XSD 2.0_rc3](https://github.com/ORCID/ORCID-Source/tree/master/orcid-model/src/main/resources/record_2.0_rc3) | Nov 18, 2016 | Spring 2018 | **[Release candidate version](#releaseCandidate)**<br><br/>_adds bulk works_ |  |
 | [ORCID XSD 2.0_rc2](https://github.com/ORCID/ORCID-Source/tree/master/orcid-model/src/main/resources/record_2.0_rc2) | Jul 20, 2016 | Spring 2018 | **[Release candidate version](#releaseCandidate)**<br><br/>_adds person section_ | |
 | [ORCID XSD 2.0_rc1](https://github.com/ORCID/ORCID-Source/tree/master/orcid-model/src/main/resources/record_2.0_rc1) | Jul 01, 2015 | Spring 2018 | **[Release candidate version](#releaseCandidate)**<br><br/>_adds peer-review section, reformats XSD for activities_ | |
-| [ORCID XSD 1.2](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/orcid-message-1.2.xsd) | Jan 12, 2015 | August 1st 2018 | **[Deprecated version](#deprecatedVersion)**<br/><br/> | All developers on this version should migrate to version 2.0 |
-| XSD 1.2_rcX | throughout 2014 | Apr 1, 2015 | **[Deprecated versions](#deprecatedVersion)**<br/><br/>[XSD 1.2_rc1](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/orcid-message-1.2_rc1.xsd): _adds elements for education or employment affiliations_<br/>[XSD 1.2_rc2](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/orcid-message-1.2_rc2.xsd): _updates the options for the creation-method field, and adds elements needed for funding_<br/>[XSD 1.2_rc3](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/orcid-message-1.2_rc3.xsd): _restricts the valid language codes to those supported by ORCID, and removes patents as a separate element (included under the works element)_<br/>[XSD 1.2_rc4](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/orcid-message-1.2_rc4.xsd): _provides more details about existing elements, email verification info, organization details that create an ORCID record, and funding agency details for funding element_<br/>[XSD 1.2_rc5](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/orcid-message-1.2_rc5.xsd): _clarifies elements for data provenance - the data source, creation date and modification date; work external IDs are required_<br/>[XSD 1.2_rc6](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/orcid-message-1.2_rc6.xsd): _adds more work types_ | These versions were sunset as of Apr 1, 2015. They are no longer available and should not be used. |
-| [ORCID XSD 1.1](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/orcid-message-1.1.xsd) | Nov 25, 2013 | Apr 1, 2015 | **[Deprecated version](#deprecatedVersion)**<br><br> | This version was sunset as of Apr 1, 2015. It is no longer available and should not be used. |
+| [ORCID XSD 1.2](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/orcid-message-1.2.xsd) | Jan 12, 2015 | August 1st 2018 | **[Deprecated version](#deprecatedVersion)**<br/><br/> | All developers on this version should migrate to version 2.0 |
+| XSD 1.2_rcX | throughout 2014 | Apr 1, 2015 | **[Deprecated versions](#deprecatedVersion)**<br/><br/>[XSD 1.2_rc1](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/orcid-message-1.2_rc1.xsd): _adds elements for education or employment affiliations_<br/>[XSD 1.2_rc2](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/orcid-message-1.2_rc2.xsd): _updates the options for the creation-method field, and adds elements needed for funding_<br/>[XSD 1.2_rc3](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/orcid-message-1.2_rc3.xsd): _restricts the valid language codes to those supported by ORCID, and removes patents as a separate element (included under the works element)_<br/>[XSD 1.2_rc4](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/orcid-message-1.2_rc4.xsd): _provides more details about existing elements, email verification info, organization details that create an ORCID record, and funding agency details for funding element_<br/>[XSD 1.2_rc5](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/orcid-message-1.2_rc5.xsd): _clarifies elements for data provenance - the data source, creation date and modification date; work external IDs are required_<br/>[XSD 1.2_rc6](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/orcid-message-1.2_rc6.xsd): _adds more work types_ | These versions were sunset as of Apr 1, 2015. They are no longer available and should not be used. |
+| [ORCID XSD 1.1](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/orcid-message-1.1.xsd) | Nov 25, 2013 | Apr 1, 2015 | **[Deprecated version](#deprecatedVersion)**<br><br> | This version was sunset as of Apr 1, 2015. It is no longer available and should not be used. |
 | [ORCID XSD 1.0.x](https://github.com/ORCID/ORCID-Source/tree/master/orcid-model/src/main/resources) | various | Mar 1, 2014 | **Sunset version** | These versions were sunset as of March 1, 2014. They are no longer available and should not be used. _(Versions 1.0.1 - 1.0.23)_ |
 
 # Getting help
 
-Technical documentation is included with the read-me file for each version. [Current release documentation](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.1/README.md)
+Technical documentation is included with the read-me file for each version. [Current release documentation](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/README.md)
 
 The [ORCID Member Support Site](https://members.orcid.org) has additional documentation, tutorials and guides, as well as contact for our support team.
 
