@@ -179,7 +179,7 @@
 							</xs:annotation>
 						</xs:element>
 						<xs:element name="convening-organization" type="common:organization"
-							minOccurs="1" maxOccurs="1">
+							minOccurs="0" maxOccurs="1">
 							<xs:annotation>
 								<xs:documentation>Information about the organization convening the review (journal publisher, conference organizer, funding agency, etc). Whenever possible, this organization is identified by a unique identifier like the Ringgold ID or FundRef ID.
 								</xs:documentation>
