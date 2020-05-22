@@ -10,7 +10,7 @@ The ```peer-review``` activity type is intended to allow for recognition of and 
 The ```peer-review``` activity type follows the [CASRAI Peer Review Services data profile](http://dictionary.casrai.org/Peer_Review_Services), which was developed by the [Peer Review Services Working Group (PRS-WG)](http://casrai.org/standards/subject-groups/peer-review-services), led by [ORCID](http://orcid.org) and [F1000](http://f1000.com/). More details about ORCID's implementation of this recommendation, and the Early Adopter program for Peer Review can be found on the [Peer Review Early Adopter page](http://orcid.org/content/peer-review-early-adopter-program).
 
 ## Peer Review XML
-XML for the ```peer-review``` activity follows the [peer-review-2.0.xsd](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0/peer-review-2.0.xsd) and consists of the following sections:
+XML for the ```peer-review``` activity follows the [peer-review-2.0.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0/peer-review-2.0.xsd) and consists of the following sections:
 
 ###The fields
 
@@ -49,7 +49,7 @@ XML for the ```peer-review``` activity follows the [peer-review-2.0.xsd](https:/
 
 ###Example file
 
-For an example XML file, see [peer-review-2.0.xml](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0/samples/peer-review-2.0.xml )
+For an example XML file, see [peer-review-2.0.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.0/samples/peer-review-2.0.xml )
 
 ***Note:*** *Sample files contain system-generated elements/attributes that are returned when reading items from ORCID. The following items should not be included when posting items to ORCID:*
 

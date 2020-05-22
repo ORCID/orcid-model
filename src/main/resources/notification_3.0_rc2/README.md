@@ -5,7 +5,7 @@ Starting in v3.0_rc2, the ORCID API supports new functionality to enable member 
 _**User-friendly implementation detail**: Several fields described below are displayed directly to the end user. The ORCID user interface is currently available in 10+ languages, and emails sent to the user are also presented in the user's language of choice. The language preference of the user is available via the ORCID API, and is always public. We strongly recommend that you read and consider the user's language when providing messages to them, providing user-displayed fields in their preferred language when feasible._
 
 ##Notifications Permission XML
-XML for the ```permission``` notifications follows the [notification-permission-3.0_rc2.xsd](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/notification_3.0_rc2/notification-permission-3.0_rc2.xsd) and consists of the following sections:
+XML for the ```permission``` notifications follows the [notification-permission-3.0_rc2.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/notification_3.0_rc2/notification-permission-3.0_rc2.xsd) and consists of the following sections:
 
 - **notification:notification-type**: The type of notification - for this type of notification, the value is always ```permission```. 
 
@@ -27,7 +27,7 @@ Consists of one or more ```notification:item``` elements, which contain the foll
 
 - **notification:external-identifier**: DISPLAYED TO END USER. An external identifier for the item. While this field is not required, it is very helpful information to provide to the end user, as it distinguishes the item from others that may be similar. Note that, when adding the item to the ORCID record, at least one external identifier is required, even if an internal reference identifier is used for this purpose. 
 
-For an example XML file, see [notification-permission-3.0_rc2.xml](https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/notification_3.0_rc2/samples/notification-permission-3.0_rc2.xml)
+For an example XML file, see [notification-permission-3.0_rc2.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/notification_3.0_rc2/samples/notification-permission-3.0_rc2.xml)
 
 ***Note:*** *Sample files contain system-generated elements/attributes that are returned when reading items from ORCID. The following items should not be included when posting items to ORCID. These fields will be present when reading notifications using this API:*
 
