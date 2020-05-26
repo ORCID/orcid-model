@@ -40,7 +40,7 @@ public class PeerReviewSummary implements Filterable, Activity, GroupableActivit
     protected ExternalIDs externalIdentifiers;
     @XmlElement(name = "completion-date", namespace = "http://www.orcid.org/ns/peer-review")
     protected FuzzyDate completionDate;
-    @XmlElement(required = true, namespace = "http://www.orcid.org/ns/peer-review", name = "convening-organization")
+    @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "convening-organization")
     protected Organization organization;
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected Source source;
