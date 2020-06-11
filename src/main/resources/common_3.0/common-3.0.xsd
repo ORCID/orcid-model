@@ -183,7 +183,8 @@
 				contain a disambiguated organization, which uniquely identifies the 
 				organization. While the schema does not enforce the presence of a 
 				disambiguated organization, it is only optional for peer review 
-				convening organizations. It is mandatory for all other instances.
+				convening organizations. A disambiguated organization is mandatory in 
+				all other cases where organization is required in the schema.
 			</xs:documentation>
 		</xs:annotation>
 
