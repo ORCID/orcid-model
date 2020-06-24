@@ -12,6 +12,7 @@ import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+import io.swagger.annotations.ApiModelProperty;
 import org.orcid.jaxb.model.v3.release.common.CreatedDate;
 import org.orcid.jaxb.model.v3.release.common.Filterable;
 import org.orcid.jaxb.model.v3.release.common.LastModifiedDate;
@@ -44,6 +45,7 @@ public class ResearchResource implements Filterable, Serializable, SourceAware, 
     @XmlAttribute(name = "path")
     protected String path;
     @XmlAttribute
+    @ApiModelProperty(dataType = "string", allowableValues = "limited, registered-only, public")
     protected Visibility visibility;
     @XmlAttribute(name = "display-index")
     protected String displayIndex;

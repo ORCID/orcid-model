@@ -16,6 +16,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+import io.swagger.annotations.ApiModelProperty;
 import org.orcid.jaxb.model.v3.release.common.Country;
 import org.orcid.jaxb.model.v3.release.common.CreatedDate;
 import org.orcid.jaxb.model.v3.release.common.Filterable;
@@ -47,6 +48,7 @@ public class Address implements Filterable, Serializable, Comparable<Address>, S
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "created-date")
     protected CreatedDate createdDate;
     @XmlAttribute
+    @ApiModelProperty(dataType = "string", allowableValues = "limited, registered-only, public")
     protected Visibility visibility;
     @XmlAttribute
     protected String path;

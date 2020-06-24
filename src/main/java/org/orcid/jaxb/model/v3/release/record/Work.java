@@ -18,6 +18,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
+import io.swagger.annotations.ApiModelProperty;
 import org.orcid.jaxb.model.common.LanguageCode;
 import org.orcid.jaxb.model.common.WorkType;
 import org.orcid.jaxb.model.common.adapters.LanguageCodeAdapter;
@@ -60,6 +61,12 @@ public class Work implements Filterable, Serializable, SourceAware, BulkElement,
     protected Citation citation;
     @XmlJavaTypeAdapter(WorkTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/work")
+    @ApiModelProperty(dataType = "string", allowableValues = "annotation, artistic-performance, book-chapter, book-review, book, " +
+            "conference-abstract, conference-paper, conference-poster, data-set, dictionary-entry, disclosure, dissertation-thesis, " +
+            "edited-book, encyclopedia-entry, invention, journal-article, journal-issue, lecture-speech, license, magazine-article, manual," +
+            "newsletter-article, newspaper-article, online-resource, other, patent, physical-object, preprint, registered-copyright, report," +
+            "research-technique, research-tool, software, spin-off-company, standards-and-policy, supervised-student-publication, technical-standard," +
+            "test, trademark, translation, website, working-paper, undefined")
     protected WorkType type;
     @XmlElement(name = "publication-date", namespace = "http://www.orcid.org/ns/common")
     protected PublicationDate publicationDate;
@@ -79,6 +86,7 @@ public class Work implements Filterable, Serializable, SourceAware, BulkElement,
     @XmlAttribute(name = "put-code")
     protected Long putCode;
     @XmlAttribute
+    @ApiModelProperty(dataType = "string", allowableValues = "limited, registered-only, public")
     protected Visibility visibility;
     @XmlAttribute(name = "path")
     protected String path;
