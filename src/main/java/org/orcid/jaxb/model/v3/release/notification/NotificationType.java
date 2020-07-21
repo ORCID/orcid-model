@@ -25,13 +25,13 @@ public enum NotificationType {
     //@formatter:off
     @Deprecated
     @XmlEnumValue("custom") CUSTOM,
-    @XmlEnumValue("institutional_connection") INSTITUTIONAL_CONNECTION,
+    @XmlEnumValue("institutional-connection") INSTITUTIONAL_CONNECTION,
     @XmlEnumValue("permission")PERMISSION,
     @XmlEnumValue("amended") AMENDED,
     @XmlEnumValue("service-anouncement") SERVICE_ANNOUNCEMENT,
     @XmlEnumValue("administrative") ADMINISTRATIVE,
     @XmlEnumValue("tip") TIP, 
-    @XmlEnumValue("find_my_stuff") FIND_MY_STUFF;
+    @XmlEnumValue("find-my-stuff") FIND_MY_STUFF;
     //@formatter:on
 
     public String value() {

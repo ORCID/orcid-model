@@ -9,12 +9,10 @@ package org.orcid.jaxb.model.v3.release.record;
 
 import java.io.Serializable;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
+import io.swagger.annotations.ApiModelProperty;
 import org.orcid.jaxb.model.common.CitationType;
 import org.orcid.jaxb.model.common.adapters.CitationTypeAdapter;
 
@@ -36,6 +34,7 @@ public class Citation implements Serializable {
 	private static final long serialVersionUID = 6177533651147799332L;
 	@XmlJavaTypeAdapter(CitationTypeAdapter.class)
 	@XmlElement(name = "citation-type", required = true, defaultValue = "formatted-unspecified", namespace = "http://www.orcid.org/ns/work")
+	@ApiModelProperty(dataType = "string", allowableValues = "formatted-unspecified, bibtex, formatted-apa, formatted-harvard, formatted-ieee, formatted-mla, formatted-vancouver, formatted-chicago, ris")
 	protected CitationType citationType;
 	@XmlElement(name = "citation-value", required = true, namespace = "http://www.orcid.org/ns/work")
 	protected String citation;

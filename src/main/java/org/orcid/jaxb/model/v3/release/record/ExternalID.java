@@ -9,6 +9,7 @@ import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
+import io.swagger.annotations.ApiModelProperty;
 import org.apache.commons.lang.StringUtils;
 import org.orcid.jaxb.model.common.Relationship;
 import org.orcid.jaxb.model.common.adapters.RelationshipAdapter;
@@ -44,6 +45,7 @@ public class ExternalID implements GroupAble, Cloneable, Serializable {
     protected Url url;
     @XmlJavaTypeAdapter(RelationshipAdapter.class)
     @XmlElement(name = "external-id-relationship", namespace = "http://www.orcid.org/ns/common")
+    @ApiModelProperty(dataType = "string", allowableValues = "part-of, self, version-of")
     protected Relationship relationship;
     
     @JsonIgnore

@@ -17,6 +17,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
+import io.swagger.annotations.ApiModelProperty;
 import org.orcid.jaxb.model.common.FundingType;
 import org.orcid.jaxb.model.common.adapters.FundingTypeAdapter;
 import org.orcid.jaxb.model.v3.release.common.Amount;
@@ -54,6 +55,7 @@ public class Funding implements Filterable, Serializable, OrganizationHolder, So
 
     @XmlJavaTypeAdapter(FundingTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/funding", required = true)
+    @ApiModelProperty(dataType = "string", allowableValues = "grant, contract, award, salary-award")
     protected FundingType type;
     @XmlElement(namespace = "http://www.orcid.org/ns/funding", name = "organization-defined-type")
     protected OrganizationDefinedFundingSubType organizationDefinedType;
@@ -87,6 +89,7 @@ public class Funding implements Filterable, Serializable, OrganizationHolder, So
     @XmlAttribute(name = "path")
     protected String path;
     @XmlAttribute
+    @ApiModelProperty(dataType = "string", allowableValues = "limited, registered-only, public")
     protected Visibility visibility;
 
     public FundingTitle getTitle() {

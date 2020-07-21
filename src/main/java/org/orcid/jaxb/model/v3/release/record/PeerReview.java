@@ -10,6 +10,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
+import io.swagger.annotations.ApiModelProperty;
 import org.orcid.jaxb.model.common.PeerReviewSubjectType;
 import org.orcid.jaxb.model.common.PeerReviewType;
 import org.orcid.jaxb.model.common.Role;
@@ -38,6 +39,7 @@ public class PeerReview implements Filterable, Serializable, OrganizationHolder,
     private static final long serialVersionUID = -1112309604310926743L;
     @XmlJavaTypeAdapter(PeerReviewRoleAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "reviewer-role")
+    @ApiModelProperty(dataType = "string", allowableValues = "reviewer, editor, member, chair, organizer")
     protected Role role;
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "review-identifiers")
     protected ExternalIDs externalIdentifiers;
@@ -45,6 +47,7 @@ public class PeerReview implements Filterable, Serializable, OrganizationHolder,
     protected Url url;
     @XmlJavaTypeAdapter(PeerReviewTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "review-type")
+    @ApiModelProperty(dataType = "string", allowableValues = "review, evaluation")
     protected PeerReviewType type;
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "review-completion-date")
     protected FuzzyDate completionDate;
@@ -56,6 +59,11 @@ public class PeerReview implements Filterable, Serializable, OrganizationHolder,
     protected Title subjectContainerName;
     @XmlJavaTypeAdapter(PeerReviewSubjectTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "subject-type")
+    @ApiModelProperty(dataType = "string", allowableValues = "artistic-performance, book-chapter, book-review, book, conference-abstract, conference-paper," +
+            "conference-poster, data-set, dictionary-entry, disclosure, dissertation-thesis, edited-book, encyclopedia-entry, invention, journal-article," +
+            "journal-issue, lecture-speech, license, magazine-article, manual, newsletter-article, newspaper-article, online-resource, other, patent," +
+            "registered-copyright, report, research-technique, research-tool, software, spin-off-company, standards-and-policy, supervised-student-publication," +
+            "technical-standard, test, trademark, translation, website, working-paper, grant, contract, award, salary-award, research-resource-proposal, undefined")
     protected PeerReviewSubjectType subjectType;
     @XmlElement( namespace = "http://www.orcid.org/ns/peer-review", name = "subject-name")
     protected SubjectName subjectName;
@@ -68,6 +76,7 @@ public class PeerReview implements Filterable, Serializable, OrganizationHolder,
     @XmlAttribute(name = "put-code")
     protected Long putCode;
     @XmlAttribute
+    @ApiModelProperty(dataType = "string", allowableValues = "limited, registered-only, public")
     protected Visibility visibility;
     @XmlAttribute(name = "path")
     protected String path;

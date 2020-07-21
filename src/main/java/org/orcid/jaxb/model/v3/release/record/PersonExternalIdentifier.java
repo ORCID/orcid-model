@@ -10,6 +10,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
+import io.swagger.annotations.ApiModelProperty;
 import org.orcid.jaxb.model.common.Relationship;
 import org.orcid.jaxb.model.common.adapters.RelationshipAdapter;
 import org.orcid.jaxb.model.v3.release.common.CreatedDate;
@@ -39,6 +40,7 @@ public class PersonExternalIdentifier implements Serializable, Filterable, Sourc
     protected String value;
     @XmlJavaTypeAdapter(RelationshipAdapter.class)
     @XmlElement(name="external-id-relationship", namespace = "http://www.orcid.org/ns/common")
+    @ApiModelProperty(dataType = "string", allowableValues = "part-of, self, version-of")
     protected Relationship relationship;
     @XmlElement(name="external-id-url", namespace = "http://www.orcid.org/ns/common")
     protected Url url;    
@@ -51,6 +53,7 @@ public class PersonExternalIdentifier implements Serializable, Filterable, Sourc
     @XmlAttribute(name = "put-code")
     protected Long putCode;        
     @XmlAttribute
+    @ApiModelProperty(dataType = "string", allowableValues = "limited, registered-only, public")
     protected Visibility visibility;
     @XmlAttribute
     protected String path;

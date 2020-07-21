@@ -19,6 +19,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
 
+import io.swagger.annotations.ApiModelProperty;
 import org.orcid.jaxb.model.common.ActionType;
 import org.orcid.jaxb.model.v3.release.record.ExternalID;
 import org.orcid.jaxb.model.v3.release.record.PersonExternalIdentifier;
@@ -56,6 +57,8 @@ public class Item implements Serializable {
     @XmlAttribute(name = "put-code")
     protected String putCode;
     @XmlElement(name = "item-type", namespace = "http://www.orcid.org/ns/notification", required = true)
+    @ApiModelProperty(dataType = "string", allowableValues = "bio, distinction, education, employment, external-identifier, invited-position," +
+            "funding, membership, peer-review, qualification, service, work, research-resource")
     protected ItemType itemType;
     @XmlElement(name = "item-name", namespace = "http://www.orcid.org/ns/notification", required = true)
     protected String itemName;
