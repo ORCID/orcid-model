@@ -1294,7 +1294,7 @@ public class ValidateV3SamplesTest {
         assertNotNull(extId.getLastModifiedDate());
         assertEquals(Long.valueOf(0), extId.getDisplayIndex());
         assertEquals(Long.valueOf(1), extId.getPutCode());
-        assertEquals(Relationship.PART_OF, extId.getRelationship());
+        assertEquals(Relationship.SELF, extId.getRelationship());
         assertNotNull(extId.getSource());
         assertEquals("type-1", extId.getType());
         assertEquals("http://url.com/1", extId.getUrl().getValue());
