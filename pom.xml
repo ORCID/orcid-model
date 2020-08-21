@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.orcid</groupId>
 	<artifactId>orcid-model</artifactId>
-	<version>3.0.3-SNAPSHOT</version>
+	<version>3.0.3</version>
 
 	<name>ORCID - Model</name>
 	<description>Container for all classes that will be used to marshal and unmarshal XML/JSON from the API</description>
