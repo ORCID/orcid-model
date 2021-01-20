@@ -62,7 +62,7 @@ public class Work implements Filterable, Serializable, SourceAware, BulkElement,
     @XmlJavaTypeAdapter(WorkTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/work")
     @ApiModelProperty(dataType = "string", allowableValues = "annotation, artistic-performance, book-chapter, book-review, book, " +
-            "conference-abstract, conference-paper, conference-poster, data-set, dictionary-entry, disclosure, dissertation-thesis, " +
+            "conference-abstract, conference-paper, conference-poster, data-management-plan, data-set, dictionary-entry, disclosure, dissertation-thesis, " +
             "edited-book, encyclopedia-entry, invention, journal-article, journal-issue, lecture-speech, license, magazine-article, manual," +
             "newsletter-article, newspaper-article, online-resource, other, patent, physical-object, preprint, registered-copyright, report," +
             "research-technique, research-tool, software, spin-off-company, standards-and-policy, supervised-student-publication, technical-standard," +
