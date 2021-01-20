@@ -11,6 +11,7 @@ public enum WorkType implements Serializable {
     CONFERENCE_ABSTRACT("conference-abstract"),
     CONFERENCE_PAPER("conference-paper"),
     CONFERENCE_POSTER("conference-poster"),
+    DATA_MANAGEMENT_PLAN("data-management-plan"),
     DATA_SET("data-set"),
     DICTIONARY_ENTRY("dictionary-entry"),
     DISCLOSURE("disclosure"),
