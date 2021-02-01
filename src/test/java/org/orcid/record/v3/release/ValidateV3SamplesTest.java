@@ -29,7 +29,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 import org.orcid.jaxb.model.common.AvailableLocales;
 import org.orcid.jaxb.model.common.CitationType;
-import org.orcid.jaxb.model.common.ContributorRole;
 import org.orcid.jaxb.model.common.Iso3166Country;
 import org.orcid.jaxb.model.common.PeerReviewSubjectType;
 import org.orcid.jaxb.model.common.Relationship;
@@ -1393,7 +1392,7 @@ public class ValidateV3SamplesTest {
         assertEquals(CitationType.FORMATTED_UNSPECIFIED, work.getWorkCitation().getWorkCitationType());
         assertNotNull(work.getWorkContributors());
         assertEquals(1, work.getWorkContributors().getContributor().size());
-        assertEquals(ContributorRole.AUTHOR, work.getWorkContributors().getContributor().get(0).getContributorAttributes().getContributorRole());
+        assertEquals("author", work.getWorkContributors().getContributor().get(0).getContributorAttributes().getContributorRole());
         assertEquals(SequenceType.FIRST, work.getWorkContributors().getContributor().get(0).getContributorAttributes().getContributorSequence());
         assertEquals("work@contributor.email", work.getWorkContributors().getContributor().get(0).getContributorEmail().getValue());
         assertEquals("8888-8888-8888-8880", work.getWorkContributors().getContributor().get(0).getContributorOrcid().getPath());

@@ -197,8 +197,7 @@
 		<xs:sequence>
 			<xs:element name="contributor-sequence" type="work:contributor-sequence"
 				minOccurs="0" />
-			<xs:element name="contributor-role" type="common:contributor-role"
-				minOccurs="0" />
+			<xs:element name="contributor-role" type="xs:string" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:simpleType name="contributor-sequence">
