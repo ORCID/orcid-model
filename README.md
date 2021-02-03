@@ -2,7 +2,7 @@
 
 This repository contains the data model used in the ORCID Registry and APIs as well as Java classes used for mashalling/unmarshalling.
 
-orcid-model is available in Maven central https://mvnrepository.com/artifact/org.orcid/orcid-model/3.0.1
+orcid-model is available in Maven central https://mvnrepository.com/artifact/org.orcid/orcid-model/3.0.4
 
 Developers building ORCID API integrations using Java can easily marshall and unmarshall ORCID API data by including this JAR as a dependency in projects.
 
