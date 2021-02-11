@@ -16,13 +16,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-import io.swagger.annotations.ApiModelProperty;
-import org.orcid.jaxb.model.common.ContributorRole;
 import org.orcid.jaxb.model.common.SequenceType;
-import org.orcid.jaxb.model.common.adapters.ContributorRoleAdapter;
 import org.orcid.jaxb.model.common.adapters.SequenceTypeAdapter;
 
 import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 /**
  * <p>
@@ -41,19 +39,17 @@ import io.swagger.annotations.ApiModel;
 @ApiModel(value = "ContributorAttributesV3_0")
 public class ContributorAttributes implements Serializable {
 
-    /**
-     * 
-     */
     private static final long serialVersionUID = 1L;
+    
     @XmlJavaTypeAdapter(SequenceTypeAdapter.class)
     @XmlElement(name = "contributor-sequence", namespace = "http://www.orcid.org/ns/work", required = true)
     @ApiModelProperty(dataType = "string", allowableValues = "first, additional")
     protected SequenceType contributorSequence;
-    @XmlJavaTypeAdapter(ContributorRoleAdapter.class)
+
     @XmlElement(name = "contributor-role", namespace = "http://www.orcid.org/ns/work", required = true)
     @ApiModelProperty(dataType = "string", allowableValues = "author, assignee, editor, chair-or-translator, co-investigator, " +
             "co-inventor, graduate-student, other-inventor, principal-investigator, postdoctoral-researcher, support-staff")
-    protected ContributorRole contributorRole;
+    protected String contributorRole;
 
     /**
      * Gets the value of the contributorSequence property.
@@ -82,7 +78,7 @@ public class ContributorAttributes implements Serializable {
      * @return possible object is {@link String }
      * 
      */
-    public ContributorRole getContributorRole() {
+    public String getContributorRole() {
         return contributorRole;
     }
 
@@ -93,7 +89,7 @@ public class ContributorAttributes implements Serializable {
      *            allowed object is {@link String }
      * 
      */
-    public void setContributorRole(ContributorRole value) {
+    public void setContributorRole(String value) {
         this.contributorRole = value;
     }
 
