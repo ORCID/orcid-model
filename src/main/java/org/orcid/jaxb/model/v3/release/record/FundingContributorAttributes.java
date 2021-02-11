@@ -14,9 +14,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-
-import org.orcid.jaxb.model.common.adapters.FundingContributorRoleAdapter;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -35,7 +32,7 @@ import io.swagger.annotations.ApiModelProperty;
 @ApiModel(value = "FundingContributorAttributesV3_0")
 public class FundingContributorAttributes implements Serializable {
     private static final long serialVersionUID = 8970123534713615455L;
-    @XmlJavaTypeAdapter(FundingContributorRoleAdapter.class)
+
     @XmlElement(required = true, namespace = "http://www.orcid.org/ns/funding", name = "contributor-role")
     @ApiModelProperty(dataType = "string", allowableValues = "author, assignee, editor, chair-or-translator, co-investigator, co-inventor," +
             "graduate-student, other-inventor, principal-investigator, postdoctoral-researcher, support-staff")
