@@ -44,8 +44,6 @@
 **stable**
 - [error-3.0.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/error-3.0.xsd)
 **stable**
-- [external-identifier-3.0.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/external-identifier-3.0.xsd)
-**stable**
 - [funding-3.0.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/funding-3.0.xsd)
 **stable**
 - [invited-position-3.0.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/invited-position-3.0.xsd)
@@ -59,6 +57,8 @@
 - [peer-review-3.0.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/peer-review-3.0.xsd)
 **stable**
 - [person-3.0.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/person-3.0.xsd)
+**stable**
+- [person-external-identifier-3.0.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/person-external-identifier-3.0.xsd)
 **stable**
 - [personal-details-3.0.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/personal-details-3.0.xsd)
 **stable**
