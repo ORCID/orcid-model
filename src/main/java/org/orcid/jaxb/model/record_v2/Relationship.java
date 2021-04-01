@@ -25,7 +25,9 @@ public enum Relationship implements Serializable {
     @XmlEnumValue("part-of")
     PART_OF("part-of"),
     @XmlEnumValue("self")
-    SELF("self"); 
+    SELF("self"),
+    @XmlEnumValue("funded-by")
+    FUNDED_BY("funded-by");
     private final String value;
 
     Relationship(String v) {

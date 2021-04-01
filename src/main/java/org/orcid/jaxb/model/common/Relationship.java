@@ -12,7 +12,8 @@ import java.io.Serializable;
 public enum Relationship implements Serializable {
     PART_OF("part-of"), 
     SELF("self"), 
-    VERSION_OF("version-of");
+    VERSION_OF("version-of"),
+    FUNDED_BY("funded-by");
     private final String value;
 
     Relationship(String v) {
