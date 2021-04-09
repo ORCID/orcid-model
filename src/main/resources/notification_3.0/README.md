@@ -13,12 +13,15 @@ XML for the ```permission``` notifications follows the [notification-permission-
 
 - **notification:notification-subject**: DISPLAYED TO END USER. A plain text value for describing to the user the type of items that you'll plan to add to his/her record once permission is granted. This value should be short (fewer than 25 characters), and can be a bit more descriptive, for example, "your recent publications", or "validated affiliations", or it can simply mirror the value used for ```notification:item-type``` below (education, employment, etc. You should assume that this text will be used in the middle of a sentence _(for example, the message subject line of "Add &lt;notification:item-type&gt; to your ORCID record")_, so you should use discretion on capitalization and length.
 
-<!-- TODO replace images using html code once they are in master -->
-![notification-subject](images/notification-subject.jpg?raw=true)
+<p align="center">
+  <img src='https://raw.githubusercontent.com/ORCID/orcid-model/master/src/main/resources/notification_3.0/images/notification-subject.jpg' alt='notification-subject' width='600'>
+</p>
 
 - **notification:notification-intro**: DISPLAYED TO END USER. A short message that will be included in the inbox message to the end-user. This message will be presented before the list of activities that you have included in the message. Your intro message should not exceed 1000 characters.
 
-![notification-intro](images/notification-intro.jpg?raw=true)
+<p align="center">
+  <img src='https://raw.githubusercontent.com/ORCID/orcid-model/master/src/main/resources/notification_3.0/images/notification-intro.jpg' alt='notification-intro' width='600'>
+</p>
 
 **notification:items block**
 
