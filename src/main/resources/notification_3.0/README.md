@@ -13,15 +13,18 @@ XML for the ```permission``` notifications follows the [notification-permission-
 
 - **notification:notification-subject**: DISPLAYED TO END USER. A plain text value for describing to the user the type of items that you'll plan to add to his/her record once permission is granted. This value should be short (fewer than 25 characters), and can be a bit more descriptive, for example, "your recent publications", or "validated affiliations", or it can simply mirror the value used for ```notification:item-type``` below (education, employment, etc. You should assume that this text will be used in the middle of a sentence _(for example, the message subject line of "Add &lt;notification:item-type&gt; to your ORCID record")_, so you should use discretion on capitalization and length.
 
+<!-- TODO replace images using html code once they are in master -->
+![notification-subject](images/notification-subject.jpg?raw=true)
+
 - **notification:notification-intro**: DISPLAYED TO END USER. A short message that will be included in the inbox message to the end-user. This message will be presented before the list of activities that you have included in the message. Your intro message should not exceed 1000 characters.
 
-
+![notification-intro](images/notification-intro.jpg?raw=true)
 
 **notification:items block**
 
 Consists of one or more ```notification:item``` elements, which contain the following sub-elements:
 
-- **notification:item-type**: The type of ORCID item represented by this ```item``` element. Choosen from the following: ```education```, ```employment```, ```funding```, ```work```, or ```peer-review```.
+- **notification:item-type**: The type of ORCID item represented by this ```item``` element. Chosen from the following: ```education```, ```employment```, ```funding```, ```work```, or ```peer-review```.
 
 - **notification:item-name**: DISPLAYED TO END USER. The name that should be shown to the end user to describe the item. This field is usually the name of the item that might be added once permission is granted (for example, the title of an article), but it also could include other identifying information, for example, _"Article Title (as published in journal ABC)"_, where "(as published in journal ABC)" is additional infomration that the client application would like to present to the user.
 
@@ -32,7 +35,7 @@ For an example XML file, see [notification-permission-3.0.xml](https://github.co
 ***Note:*** *Sample files contain system-generated elements/attributes that are returned when reading items from ORCID. The following items should not be included when posting items to ORCID. These fields will be present when reading notifications using this API:*
 
 - **put-code** - ORCID_internal identifier for this notification. _(exception: you must include the put-code when updating items using the PUT method to update an item previously added)_
-- **source** - the system will inlcude your client application as the source
+- **source** - the system will include your client application as the source
 - **created-date** - date that you created this notification; automatically assigned by the system
 - **sent-date** - date that the notification was sent to the end user from the inbox _(note that usually inbox messages are sent in batch to the user at an interval that the user specifies.)_
 - **read-date** - date that the user read your notification in the ORCID Inbox, OR took action on the notification sent through the users email
@@ -64,7 +67,7 @@ _Please note that ORCID reserves the right to limit the client applications with
 |Developers Sandbox | https://api.sandbox.orcid.org/oauth/token |
 | Production Registry | https://api.orcid.org/oauth/token |
 
-**Paramaters**
+**Parameters**
 
 | Field | Value|
 | ---- | ---- |
