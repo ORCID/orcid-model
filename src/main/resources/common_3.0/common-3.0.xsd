@@ -904,21 +904,10 @@
 
 	<xs:simpleType name="contributor-role">
 		<xs:annotation>
-			<xs:documentation>The role performed by the collaborator or other
-				contributor, selected from the following options:
-				* author 
-			    * assignee 
-			    * editor
-			    * chair-or-translator
-			    * co-investigator 
-			    * co-inventor 
-			    * graduate-student"
-			    * other-inventor 
-			    * principal-investigator 
-			    * postdoctoral-researcher
-			    * support-staff
-				ORCID will validate this value against the enumeration 
-				https://github.com/ORCID/orcid-model/blob/master/src/main/java/org/orcid/jaxb/model/common/ContributorRole.java and other rules when necessary.
+			<xs:documentation>
+				The role performed by the collaborator or other contributor, 
+				the list of allowed values is described here https://info.orcid.org/documentation/integration-and-api-faq/#easy-faq-2721 
+				and any value outside these will be rejected by our API.
 			</xs:documentation>
 		</xs:annotation>
 
