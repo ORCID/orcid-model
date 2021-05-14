@@ -138,7 +138,7 @@ public class ExternalID implements GroupAble, Cloneable, Serializable {
     @JsonIgnore
     public boolean isGroupAble() {
         // Dont group if it is a part-of identifier
-        if (Relationship.PART_OF.equals(relationship))
+        if (Relationship.PART_OF.equals(relationship) || Relationship.FUNDED_BY.equals(relationship))
             return false;
 
         // Dont groups works where the external id is empty
