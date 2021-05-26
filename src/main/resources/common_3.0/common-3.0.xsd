@@ -977,6 +977,7 @@
 			* part-of
 			* self
 			* version-of
+			* funded-by	
 			ORCID will validate this value against the enumeration 
 			https://github.com/ORCID/orcid-model/blob/master/src/main/java/org/orcid/jaxb/model/common/Relationship.java and other rules when necessary.
 			</xs:documentation>
