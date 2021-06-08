@@ -906,8 +906,45 @@
 		<xs:annotation>
 			<xs:documentation>
 				The role performed by the collaborator or other contributor, 
-				the list of allowed values is described here https://info.orcid.org/documentation/integration-and-api-faq/#easy-faq-2721 
-				and any value outside these will be rejected by our API.
+				There are two controlled vocabularies that can be used.  And value not on these lists will be rejected by the API.
+
+				Original role values
+				--------------
+
+				author
+				assignee
+				editor
+				chair-or-translator
+				co-investigator
+				co-inventor
+				graduate-student
+				other-inventor
+				principal-investigator
+				postdoctoral-researcher
+				support-staff
+
+				Note: support for original roles will be removed in future versions of the API.
+
+				CREDIT role values
+				------------
+				http://credit.niso.org/contributor-roles/conceptualization/
+				http://credit.niso.org/contributor-roles/data-curation/
+				http://credit.niso.org/contributor-roles/formal-analysis/
+				http://credit.niso.org/contributor-roles/funding-acquisition/
+				http://credit.niso.org/contributor-roles/investigation/
+				http://credit.niso.org/contributor-roles/methodology/
+				http://credit.niso.org/contributor-roles/project-administration/
+				http://credit.niso.org/contributor-roles/resources/
+				http://credit.niso.org/contributor-roles/software/
+				http://credit.niso.org/contributor-roles/supervision/
+				http://credit.niso.org/contributor-roles/validation/
+				http://credit.niso.org/contributor-roles/visualization/
+				http://credit.niso.org/contributor-roles/writing-original-draft/
+				http://credit.niso.org/contributor-roles/writing-review-editing/
+
+				Note: these toles use URIs as terms, so that they have a distinct namespace from the original roles.
+
+				More information on roles can be found in our documentation at https://info.orcid.org/documentation/integration-and-api-faq/#easy-faq-2721 
 			</xs:documentation>
 		</xs:annotation>
 
