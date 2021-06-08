@@ -906,7 +906,8 @@
 		<xs:annotation>
 			<xs:documentation>
 				The role performed by the collaborator or other contributor, 
-				There are two controlled vocabularies that can be used.  And value not on these lists will be rejected by the API.
+
+				There are two controlled vocabularies that can be used.  Any value not on these lists will be rejected by the API.
 
 				Original role values
 				--------------
@@ -942,7 +943,7 @@
 				http://credit.niso.org/contributor-roles/writing-original-draft/
 				http://credit.niso.org/contributor-roles/writing-review-editing/
 
-				Note: these toles use URIs as terms, so that they have a distinct namespace from the original roles.
+				Note: these roles use URIs as terms, so that they have a distinct namespace from the original roles.
 
 				More information on roles can be found in our documentation at https://info.orcid.org/documentation/integration-and-api-faq/#easy-faq-2721 
 			</xs:documentation>
