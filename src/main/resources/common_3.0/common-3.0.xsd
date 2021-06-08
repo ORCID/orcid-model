@@ -905,13 +905,12 @@
 	<xs:simpleType name="contributor-role">
 		<xs:annotation>
 			<xs:documentation>
-				The role performed by the collaborator or other contributor, 
+				The role performed by the collaborator or other contributor. 
 
 				There are two controlled vocabularies that can be used.  Any value not on these lists will be rejected by the API.
 
 				Original role values
 				--------------
-
 				author
 				assignee
 				editor
