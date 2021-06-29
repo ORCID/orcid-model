@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	elementFormDefault="qualified" targetNamespace="http://www.orcid.org/ns/expanded-search"
-	xmlns:expanded-search="http://www.orcid.org/ns/expanded-search">
+	xmlns:expanded-search="http://www.orcid.org/ns/expanded-search"
+	xmlns:common="http://www.orcid.org/ns/common" >
 	<xs:annotation>
 		<xs:documentation>
 			=============================================================================
@@ -27,6 +28,9 @@
 			The top level element is orcid-message.
 		</xs:documentation>
 	</xs:annotation>
+
+    <xs:import namespace="http://www.orcid.org/ns/common"
+		schemaLocation="../common_3.0/common-3.0.xsd" />
 
 	<xs:element name="expanded-search">
 		<xs:complexType>
@@ -111,4 +115,6 @@
 	<xs:simpleType name="email">
         <xs:restriction base="xs:string" />
     </xs:simpleType>
+    <xs:element name="last-modified-date" 
+      type="common:fuzzy-date" />
 </xs:schema>

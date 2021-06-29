@@ -1,157 +1,169 @@
 package org.orcid.jaxb.model.v3.release.search.expanded;
 
 import java.io.Serializable;
+import java.util.Arrays;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+import org.orcid.jaxb.model.v3.release.common.FuzzyDate;
+
 import io.swagger.annotations.ApiModel;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(propOrder = { "orcidId", "givenNames", "familyNames", "creditName", "otherNames", "emails", "institutionNames" })
+@XmlType(propOrder = { "orcidId", "givenNames", "familyNames", "creditName", "otherNames", "emails", "institutionNames",
+		"lastModifiedDate" })
 @ApiModel(value = "ExpandedResultV3_0")
 public class ExpandedResult implements Serializable {
-    
-    private static final long serialVersionUID = -7750679507838375771L;
-    
-    @XmlElement(name = "orcid-id", namespace = "http://www.orcid.org/ns/expanded-search")
-    protected String orcidId;
 
-    @XmlElement(name = "given-names", namespace = "http://www.orcid.org/ns/expanded-search")
-    protected String givenNames;
-    
-    @XmlElement(name = "family-names", namespace = "http://www.orcid.org/ns/expanded-search")
-    protected String familyNames;
-    
-    @XmlElement(name = "credit-name", namespace = "http://www.orcid.org/ns/expanded-search")
-    protected String creditName;
-    
-    @XmlElement(name = "other-name", namespace = "http://www.orcid.org/ns/expanded-search")
-    protected String[] otherNames;
-    
-    @XmlElement(name = "email", namespace = "http://www.orcid.org/ns/expanded-search")
-    protected String[] emails;
-    
-    @XmlElement(name = "institution-name", namespace = "http://www.orcid.org/ns/expanded-search")
-    protected String[] institutionNames;
-    
-    public String getOrcidId() {
-        return orcidId;
-    }
+	private static final long serialVersionUID = -7750679507838375771L;
 
-    public void setOrcidId(String orcidId) {
-        this.orcidId = orcidId;
-    }
+	@XmlElement(name = "orcid-id", namespace = "http://www.orcid.org/ns/expanded-search")
+	protected String orcidId;
 
-    public String getGivenNames() {
-        return givenNames;
-    }
+	@XmlElement(name = "given-names", namespace = "http://www.orcid.org/ns/expanded-search")
+	protected String givenNames;
 
-    public void setGivenNames(String givenNames) {
-        this.givenNames = givenNames;
-    }
+	@XmlElement(name = "family-names", namespace = "http://www.orcid.org/ns/expanded-search")
+	protected String familyNames;
 
-    public String getFamilyNames() {
-        return familyNames;
-    }
+	@XmlElement(name = "credit-name", namespace = "http://www.orcid.org/ns/expanded-search")
+	protected String creditName;
 
-    public void setFamilyNames(String familyNames) {
-        this.familyNames = familyNames;
-    }
+	@XmlElement(name = "other-name", namespace = "http://www.orcid.org/ns/expanded-search")
+	protected String[] otherNames;
 
-    public String getCreditName() {
-        return creditName;
-    }
+	@XmlElement(name = "email", namespace = "http://www.orcid.org/ns/expanded-search")
+	protected String[] emails;
 
-    public void setCreditName(String creditName) {
-        this.creditName = creditName;
-    }
+	@XmlElement(name = "institution-name", namespace = "http://www.orcid.org/ns/expanded-search")
+	protected String[] institutionNames;
 
-    public String[] getOtherNames() {
-        return otherNames;
-    }
+	@XmlElement(name = "last-modified-date", namespace = "http://www.orcid.org/ns/expanded-search")
+	protected FuzzyDate lastModifiedDate;
 
-    public void setOtherNames(String[] otherNames) {
-        this.otherNames = otherNames;
-    }
+	public String getOrcidId() {
+		return orcidId;
+	}
 
-    public String[] getEmails() {
-        return emails;
-    }
+	public void setOrcidId(String orcidId) {
+		this.orcidId = orcidId;
+	}
 
-    public void setEmails(String[] emails) {
-        this.emails = emails;
-    }
+	public String getGivenNames() {
+		return givenNames;
+	}
 
-    public String[] getInstitutionNames() {
-        return institutionNames;
-    }
+	public void setGivenNames(String givenNames) {
+		this.givenNames = givenNames;
+	}
 
-    public void setInstitutionNames(String[] institutionNames) {
-        this.institutionNames = institutionNames;
-    }
+	public String getFamilyNames() {
+		return familyNames;
+	}
 
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((orcidId == null) ? 0 : orcidId.hashCode());
-        result = prime * result + ((emails == null) ? 0 : emails.hashCode());
-        result = prime * result + ((givenNames == null) ? 0 : givenNames.hashCode());
-        result = prime * result + ((familyNames == null) ? 0 : familyNames.hashCode());
-        result = prime * result + ((creditName == null) ? 0 : creditName.hashCode());
-        result = prime * result + ((institutionNames == null) ? 0 : institutionNames.hashCode());
-        result = prime * result + ((otherNames == null) ? 0 : otherNames.hashCode());
-        return result;
-    }
+	public void setFamilyNames(String familyNames) {
+		this.familyNames = familyNames;
+	}
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        ExpandedResult other = (ExpandedResult) obj;
-        if (orcidId == null) {
-            if (other.orcidId != null)
-                return false;
-        } else if (!orcidId.equals(other.orcidId))
-            return false;
-        if (emails == null) {
-            if (other.emails != null)
-                return false;
-        } else if (!emails.equals(other.emails))
-            return false;
-        if (givenNames == null) {
-            if (other.givenNames != null)
-                return false;
-        } else if (!givenNames.equals(other.givenNames))
-            return false;
-        if (familyNames == null) {
-            if (other.familyNames != null)
-                return false;
-        } else if (!familyNames.equals(other.familyNames))
-            return false;
-        if (creditName == null) {
-            if (other.creditName != null)
-                return false;
-        } else if (!creditName.equals(other.creditName))
-            return false;
-        if (institutionNames == null) {
-            if (other.institutionNames != null)
-                return false;
-        } else if (!institutionNames.equals(other.institutionNames))
-            return false;
-        if (otherNames == null) {
-            if (other.otherNames != null)
-                return false;
-        } else if (!otherNames.equals(other.otherNames))
-            return false;
-        return true;
-    }
+	public String getCreditName() {
+		return creditName;
+	}
+
+	public void setCreditName(String creditName) {
+		this.creditName = creditName;
+	}
+
+	public String[] getOtherNames() {
+		return otherNames;
+	}
+
+	public void setOtherNames(String[] otherNames) {
+		this.otherNames = otherNames;
+	}
+
+	public String[] getEmails() {
+		return emails;
+	}
+
+	public void setEmails(String[] emails) {
+		this.emails = emails;
+	}
+
+	public String[] getInstitutionNames() {
+		return institutionNames;
+	}
+
+	public void setInstitutionNames(String[] institutionNames) {
+		this.institutionNames = institutionNames;
+	}
+
+	public FuzzyDate getLastModifiedDate() {
+		return lastModifiedDate;
+	}
+
+	public void setLastModifiedDate(FuzzyDate lastModifiedDate) {
+		this.lastModifiedDate = lastModifiedDate;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((creditName == null) ? 0 : creditName.hashCode());
+		result = prime * result + Arrays.hashCode(emails);
+		result = prime * result + ((familyNames == null) ? 0 : familyNames.hashCode());
+		result = prime * result + ((givenNames == null) ? 0 : givenNames.hashCode());
+		result = prime * result + Arrays.hashCode(institutionNames);
+		result = prime * result + ((lastModifiedDate == null) ? 0 : lastModifiedDate.hashCode());
+		result = prime * result + ((orcidId == null) ? 0 : orcidId.hashCode());
+		result = prime * result + Arrays.hashCode(otherNames);
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		ExpandedResult other = (ExpandedResult) obj;
+		if (creditName == null) {
+			if (other.creditName != null)
+				return false;
+		} else if (!creditName.equals(other.creditName))
+			return false;
+		if (!Arrays.equals(emails, other.emails))
+			return false;
+		if (familyNames == null) {
+			if (other.familyNames != null)
+				return false;
+		} else if (!familyNames.equals(other.familyNames))
+			return false;
+		if (givenNames == null) {
+			if (other.givenNames != null)
+				return false;
+		} else if (!givenNames.equals(other.givenNames))
+			return false;
+		if (!Arrays.equals(institutionNames, other.institutionNames))
+			return false;
+		if (lastModifiedDate == null) {
+			if (other.lastModifiedDate != null)
+				return false;
+		} else if (!lastModifiedDate.equals(other.lastModifiedDate))
+			return false;
+		if (orcidId == null) {
+			if (other.orcidId != null)
+				return false;
+		} else if (!orcidId.equals(other.orcidId))
+			return false;
+		if (!Arrays.equals(otherNames, other.otherNames))
+			return false;
+		return true;
+	}
 
 }
