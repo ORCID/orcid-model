@@ -121,7 +121,7 @@
 						<xs:element name="convening-organization" type="common:organization"
 							minOccurs="1" maxOccurs="1">
 							<xs:annotation>
-								<xs:documentation>Information about the organization convening the review (journal publisher, conference organizer, funding agency, etc). A valid organizational identifier (Ringgold ID, GRID ID or FundRef ID is required).
+								<xs:documentation>Information about the organization convening the review (journal publisher, conference organizer, funding agency, etc). A valid organizational identifier (Ringgold ID, ROR, GRID ID or FundRef ID is required).
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>																																	
