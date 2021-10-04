@@ -105,7 +105,7 @@
 - *common:start-date* is required if *common:end-date* is provided
 - Addition of optional element *common:url* for recording links about the affiliation
 - Addition of optional element *common:external-ids* for recording identifiers for the affiliation
-- Disambiguated organization identifier is now required and must be a valid Ringgold, FundRef, or GRID identifier
+- Disambiguated organization identifier is now required and must be a valid Ringgold, FundRef, ROR, or GRID identifier
 - Use of common namespace for *common:department-name*, *common:role-title* and *common:organization*
 
 ### Research-resources
@@ -120,14 +120,14 @@
 - work type *dissertation* has been migrated to *dissertation-thesis*
 
 ### Fundings
-- Disambiguated organization identifier is now required and must be a valid Ringgold, FundRef, or GRID identifier
+- Disambiguated organization identifier is now required and must be a valid Ringgold, FundRef, ROR, or GRID identifier
 - Use of common namespace for *common:organization*, replacing *funding:organization*
 - Use of common namespace for *common:url* replacing *funding:url* and this field is now returned in the funding summary
 - *common:start-date* is required if *common:end-date* is provided
 
 ### Peer-review
 - *reviewer-role* and *review-type* are returned with the peer-review summary
-- Disambiguated organization identifier is now required and must be a valid Ringgold, FundRef, or GRID identifier
+- Disambiguated organization identifier is now required and must be a valid Ringgold, FundRef, ROR, or GRID identifier
 - Addition of *common:external-id-normalized* when reading peer-reviews for normalized peer-review identifiers
 - Addition of *grant*, *contract*, *award*, *salary-award*, and *research-resource-proposal* to supported subject types
 
