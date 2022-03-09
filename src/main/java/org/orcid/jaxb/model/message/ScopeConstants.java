@@ -54,6 +54,10 @@ final public class ScopeConstants {
     public static final String INTERNAL_PERSON_LAST_MODIFIED = "/orcid-internal/person/last_modified";
     public static final String IDENTIFIER_TYPES_CREATE = "/identifier-types/create";
     
+    // Salesforce access
+    public static final String SALESFORCE_MEMBER_LIST_READ = "/member-list/read";
+    public static final String SALESFORCE_MEMBER_LIST_WRITE = "/member-list/write";
+    
     //openid
     public static final String OPENID = "openid";
     
