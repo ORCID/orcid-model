@@ -126,13 +126,15 @@ public enum ScopePathType implements Serializable {
     @XmlEnumValue(ScopeConstants.PREMIUM_NOTIFICATION) PREMIUM_NOTIFICATION(ScopeConstants.PREMIUM_NOTIFICATION, BASIC_NOTIFICATION),
     
     // Internal scopes
-    @XmlEnumValue(ScopeConstants.INTERNAL_PERSON_LAST_MODIFIED) INTERNAL_PERSON_LAST_MODIFIED (ScopeConstants.INTERNAL_PERSON_LAST_MODIFIED),         
-    @XmlEnumValue(ScopeConstants.IDENTIFIER_TYPES_CREATE) IDENTIFIER_TYPES_CREATE(ScopeConstants.IDENTIFIER_TYPES_CREATE),
-        
-    // Salesforce access
-    @XmlEnumValue(ScopeConstants.SALESFORCE_MEMBER_LIST_READ) SALESFORCE_MEMBER_LIST_READ (ScopeConstants.SALESFORCE_MEMBER_LIST_READ),         
-    @XmlEnumValue(ScopeConstants.SALESFORCE_MEMBER_LIST_WRITE) SALESFORCE_MEMBER_LIST_WRITE(ScopeConstants.SALESFORCE_MEMBER_LIST_WRITE);
+    @XmlEnumValue(ScopeConstants.INTERNAL) INTERNAL (ScopeConstants.INTERNAL),
+    @XmlEnumValue(ScopeConstants.INTERNAL_PERSON_LAST_MODIFIED) INTERNAL_PERSON_LAST_MODIFIED (ScopeConstants.INTERNAL_PERSON_LAST_MODIFIED),
     
+    @XmlEnumValue(ScopeConstants.IDENTIFIER_TYPES_CREATE) IDENTIFIER_TYPES_CREATE(ScopeConstants.IDENTIFIER_TYPES_CREATE),
+
+    // Salesforce access
+    @XmlEnumValue(ScopeConstants.SALESFORCE_MEMBER_LIST_READ) SALESFORCE_MEMBER_LIST_READ (ScopeConstants.SALESFORCE_MEMBER_LIST_READ),
+    @XmlEnumValue(ScopeConstants.SALESFORCE_MEMBER_LIST_WRITE) SALESFORCE_MEMBER_LIST_WRITE(ScopeConstants.SALESFORCE_MEMBER_LIST_WRITE);
+
     //@formatter:on
 
     private final String value;
@@ -297,6 +299,7 @@ public enum ScopePathType implements Serializable {
     public boolean isInternalScope() {
         switch (this) {
         case INTERNAL_PERSON_LAST_MODIFIED:
+        case INTERNAL:
             return true;
         default:
             return false;
