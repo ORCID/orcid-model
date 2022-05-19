@@ -33,6 +33,7 @@ public enum WorkType implements Serializable {
     PHYSICAL_OBJECT("physical-object"),
     PREPRINT("preprint"),
     REGISTERED_COPYRIGHT("registered-copyright"),
+    REVIEW("review"),
     REPORT("report"),
     RESEARCH_TECHNIQUE("research-technique"),
     RESEARCH_TOOL("research-tool"),

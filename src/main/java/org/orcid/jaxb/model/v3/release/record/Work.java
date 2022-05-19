@@ -66,7 +66,7 @@ public class Work implements Filterable, Serializable, SourceAware, BulkElement,
             "edited-book, encyclopedia-entry, invention, journal-article, journal-issue, lecture-speech, license, magazine-article, manual," +
             "newsletter-article, newspaper-article, online-resource, other, patent, physical-object, preprint, registered-copyright, report," +
             "research-technique, research-tool, software, spin-off-company, standards-and-policy, supervised-student-publication, technical-standard," +
-            "test, trademark, translation, website, working-paper, undefined")
+            "test, trademark, translation, website, working-paper,review, undefined")
     protected WorkType type;
     @XmlElement(name = "publication-date", namespace = "http://www.orcid.org/ns/common")
     protected PublicationDate publicationDate;
