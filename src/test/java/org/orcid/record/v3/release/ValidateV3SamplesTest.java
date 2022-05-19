@@ -1481,6 +1481,13 @@ public class ValidateV3SamplesTest {
         }
         assertTrue(foundWorkWithNoExtIds);
     }
+    
+    @Test
+    public void testUnmarshallWorkReview() throws JAXBException, SAXException, URISyntaxException {
+        Work work = (Work) unmarshallFromPath("/record_3.0/samples/read_samples/work-review-3.0.xml", Work.class, "/record_3.0/activities-3.0.xsd");
+        assertNotNull(work);
+        assertEquals(WorkType.REVIEW, work.getWorkType());        
+    }
 
     @Test
     public void testUnmarshallEducation() throws SAXException, URISyntaxException {

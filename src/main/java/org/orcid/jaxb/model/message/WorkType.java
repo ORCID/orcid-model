@@ -67,6 +67,8 @@ public enum WorkType implements Serializable {
     RESEARCH_TECHNIQUE("research-technique"),
     @XmlEnumValue("research-tool")
     RESEARCH_TOOL("research-tool"),
+    @XmlEnumValue("review")
+    REVIEW("review"),
     @XmlEnumValue("spin-off-company")
     SPIN_OFF_COMPANY("spin-off-company"),
     @XmlEnumValue("standards-and-policy")

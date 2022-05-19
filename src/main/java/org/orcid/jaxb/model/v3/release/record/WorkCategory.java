@@ -13,7 +13,7 @@ public enum WorkCategory {
     PUBLICATION("publication", WorkType.BOOK_CHAPTER, WorkType.BOOK_REVIEW, WorkType.BOOK, WorkType.DICTIONARY_ENTRY, WorkType.DISSERTATION_THESIS, WorkType.EDITED_BOOK,
             WorkType.ENCYCLOPEDIA_ENTRY, WorkType.JOURNAL_ARTICLE, WorkType.JOURNAL_ISSUE, WorkType.MAGAZINE_ARTICLE, WorkType.MANUAL, WorkType.NEWSLETTER_ARTICLE,
             WorkType.NEWSPAPER_ARTICLE, WorkType.ONLINE_RESOURCE, WorkType.PREPRINT, WorkType.REPORT, WorkType.RESEARCH_TOOL, WorkType.SUPERVISED_STUDENT_PUBLICATION, WorkType.TEST,
-            WorkType.TRANSLATION, WorkType.WEBSITE, WorkType.WORKING_PAPER), @XmlEnumValue("conference")
+            WorkType.TRANSLATION, WorkType.WEBSITE, WorkType.WORKING_PAPER, WorkType.REVIEW), @XmlEnumValue("conference")
     CONFERENCE("conference", WorkType.CONFERENCE_ABSTRACT, WorkType.CONFERENCE_PAPER, WorkType.CONFERENCE_POSTER), @XmlEnumValue("intellectual_property")
     INTELLECTUAL_PROPERTY("intellectual_property", WorkType.DISCLOSURE, WorkType.LICENSE, WorkType.PATENT, WorkType.REGISTERED_COPYRIGHT, WorkType.TRADEMARK), @XmlEnumValue("other_output")
     OTHER_OUTPUT("other_output", WorkType.ANNOTATION, WorkType.ARTISTIC_PERFORMANCE, WorkType.DATA_MANAGEMENT_PLAN, WorkType.DATA_SET, WorkType.INVENTION, WorkType.LECTURE_SPEECH, WorkType.OTHER,
