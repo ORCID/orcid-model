@@ -114,11 +114,16 @@
 	</xs:complexType>
 	<xs:simpleType name="activity-type">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="education"></xs:enumeration>
-			<xs:enumeration value="employment"></xs:enumeration>
-			<xs:enumeration value="funding"></xs:enumeration>
-			<xs:enumeration value="work"></xs:enumeration>
-			<xs:enumeration value="peer-review"></xs:enumeration>
+			<xs:enumeration value="employment"/>
+			<xs:enumeration value="education"/>
+			<xs:enumeration value="qualification"/>
+			<xs:enumeration value="invited-position"/>
+			<xs:enumeration value="distinction"/>
+			<xs:enumeration value="membership"/>
+			<xs:enumeration value="service"/>
+			<xs:enumeration value="funding"/>
+			<xs:enumeration value="work"/>
+			<xs:enumeration value="peer-review"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:complexType name="actioned-date">
