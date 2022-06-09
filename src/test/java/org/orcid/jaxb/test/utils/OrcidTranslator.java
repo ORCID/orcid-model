@@ -6,9 +6,12 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.io.Reader;
 import java.io.Writer;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.Optional;
 
@@ -20,6 +23,7 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 
+import org.orcid.jaxb.model.v3.release.notification.permission.NotificationPermission;
 import org.xml.sax.SAXException;
 
 import com.fasterxml.jackson.core.JsonGenerationException;
@@ -43,7 +47,7 @@ public class OrcidTranslator<T> {
     Unmarshaller unmarshaller;
     Marshaller marshaller;
     Class<?> modelClass;
-    
+
     public enum InputFormat {
         XML, JSON
     }
@@ -71,8 +75,9 @@ public class OrcidTranslator<T> {
         V3_0_PEER_REVIEW("record_3.0/peer-review-3.0.xsd", org.orcid.jaxb.model.v3.release.record.PeerReview.class),
         V3_0_FUNDING("record_3.0/funding-3.0.xsd", org.orcid.jaxb.model.v3.release.record.Funding.class),
         V3_0_FUNDINGS("record_3.0/activities-3.0.xsd", org.orcid.jaxb.model.v3.release.record.summary.Fundings.class),
-        V3_0_ACTIVITIES("record_3.0/activities-3.0.xsd", org.orcid.jaxb.model.v3.release.record.summary.ActivitiesSummary.class);
-        
+        V3_0_ACTIVITIES("activities-3.0.xsd", org.orcid.jaxb.model.v3.release.record.summary.ActivitiesSummary.class),
+        V3_0_NOTIFICATION_PERMISSION("notification_3.0/notification-permission-3.0.xsd", org.orcid.jaxb.model.v3.release.notification.permission.NotificationPermission.class);
+
         public final String location;
         public final Class<?> modelClass;
 
@@ -115,6 +120,10 @@ public class OrcidTranslator<T> {
      */
     public static OrcidTranslator<org.orcid.jaxb.model.v3.release.record.Record> v3_0(){
         return new OrcidTranslator<org.orcid.jaxb.model.v3.release.record.Record>(SchemaVersion.V3_0);
+    }
+
+    public static OrcidTranslator<NotificationPermission> V3_0_NOTIFICATION_PERMISSION() {
+        return new OrcidTranslator<NotificationPermission>(SchemaVersion.V3_0_NOTIFICATION_PERMISSION);
     }
     
     /**
@@ -254,4 +263,48 @@ public class OrcidTranslator<T> {
         marshaller.marshal(r, w);
     }
 
+    public Object unmarshalFromPath(String path, Class<?> type, String schemaPath) throws SAXException, URISyntaxException {
+        try (Reader reader = new InputStreamReader(getClass().getResourceAsStream(path))) {
+            Object obj = unmarshal(reader, type, schemaPath);
+            Object result = null;
+            if (NotificationPermission.class.equals(type)) {
+                result = (NotificationPermission) obj;
+            }
+            return result;
+        } catch (IOException e) {
+            throw new RuntimeException("Error reading notification from classpath", e);
+        }
+    }
+
+    private Object unmarshal(Reader reader, Class<?> type, String schemaPath) throws SAXException, URISyntaxException {
+        try {
+            JAXBContext context = JAXBContext.newInstance(type);
+            Unmarshaller unmarshaller = context.createUnmarshaller();
+            if (schemaPath != null) {
+                SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+                Schema schema = sf.newSchema(new File(getClass().getResource(schemaPath).toURI()));
+                unmarshaller.setSchema(schema);
+            }
+
+            return unmarshaller.unmarshal(reader);
+        } catch (JAXBException e) {
+            throw new RuntimeException("Unable to unmarshall orcid message" + e);
+        }
+    }
+
+    public void marshal(Object object, String path) throws JAXBException, SAXException, URISyntaxException {
+        JAXBContext context = JAXBContext.newInstance(object.getClass());
+        Marshaller marshaller = context.createMarshaller();
+
+        SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+        Schema schema = sf.newSchema(new File(getClass().getResource(path).toURI()));
+
+        marshaller.setSchema(schema);
+
+        marshaller.marshal(object, new PrintStream(new OutputStream() {
+            public void write(int b) {
+                //DO NOTHING
+            }
+        }));
+    }
 }

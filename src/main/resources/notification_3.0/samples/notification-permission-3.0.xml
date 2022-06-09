@@ -41,6 +41,14 @@
             <notification:item-type>employment</notification:item-type>
             <notification:item-name>Head of Research at NanoBiologica</notification:item-name>
         </notification:item>
+        <notification:item>
+            <notification:item-type>distinction</notification:item-type>
+            <notification:item-name>Honorary member</notification:item-name>
+        </notification:item>
+        <notification:item>
+            <notification:item-type>service</notification:item-type>
+            <notification:item-name>Volunteer society officer</notification:item-name>
+        </notification:item>
     </notification:items>
     <!--  Read only for API user -->
     <common:created-date>2014-01-01T09:17:56</common:created-date>
