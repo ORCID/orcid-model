@@ -75,7 +75,7 @@ public class OrcidTranslator<T> {
         V3_0_PEER_REVIEW("record_3.0/peer-review-3.0.xsd", org.orcid.jaxb.model.v3.release.record.PeerReview.class),
         V3_0_FUNDING("record_3.0/funding-3.0.xsd", org.orcid.jaxb.model.v3.release.record.Funding.class),
         V3_0_FUNDINGS("record_3.0/activities-3.0.xsd", org.orcid.jaxb.model.v3.release.record.summary.Fundings.class),
-        V3_0_ACTIVITIES("activities-3.0.xsd", org.orcid.jaxb.model.v3.release.record.summary.ActivitiesSummary.class),
+        V3_0_ACTIVITIES("record_3.0/activities-3.0.xsd", org.orcid.jaxb.model.v3.release.record.summary.ActivitiesSummary.class),
         V3_0_NOTIFICATION_PERMISSION("notification_3.0/notification-permission-3.0.xsd", org.orcid.jaxb.model.v3.release.notification.permission.NotificationPermission.class);
 
         public final String location;
