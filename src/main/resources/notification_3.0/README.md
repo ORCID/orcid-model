@@ -89,9 +89,9 @@ _Please note that ORCID reserves the right to limit the client applications with
 
 | Action                   | HTTP method | Scope                    | URL                                                      |
 |-------------------------|-------------|--------------------------|----------------------------------------------------------|
-| Add a notification | POST | /premium-notification | http://api.sandbox.orcid.org/v3.0/[ORCID]/notification-permission |
-| Read a notification | GET | /premium-notification | http://api.sandbox.orcid.org/v3.0/[ORCID]/notification-permission/[PUT-CODE] |
-| Flag an unread notification as archived | DELETE | /premium-notification | http://api.sandbox.orcid.org/v3.0/[ORCID]/notification-permission/[PUT-CODE] |
+| Add a notification | POST | /premium-notification | https://api.sandbox.orcid.org/v3.0/[ORCID]/notification-permission |
+| Read a notification | GET | /premium-notification | https://api.sandbox.orcid.org/v3.0/[ORCID]/notification-permission/[PUT-CODE] |
+| Flag an unread notification as archived | DELETE | /premium-notification | https://api.sandbox.orcid.org/v3.0/[ORCID]/notification-permission/[PUT-CODE] |
 
 - **[ORCID]** is the ORCID iD for the record, formatted as XXXX-XXXX-XXXX-XXXX
 - **[PUT-CODE]** is the ```put-code``` attribute for the specific ```notification``` that you wish to read or modify.
@@ -104,7 +104,7 @@ curl -i -L -H 'Accept: application/json' \
 	-d 'client_secret=...' \
 	-d 'scope=/premium-notification' \
 	-d 'grant_type=client_credentials' \
-	'http://api.sandbox.orcid.org/oauth/token'
+	'https://api.sandbox.orcid.org/oauth/token'
 ```
 
 #### Add a notification
