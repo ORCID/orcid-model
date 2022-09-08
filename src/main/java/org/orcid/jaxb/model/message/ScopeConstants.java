@@ -58,6 +58,7 @@ final public class ScopeConstants {
     // Salesforce access
     public static final String SALESFORCE_MEMBER_LIST_READ = "/member-list/read";
     public static final String SALESFORCE_MEMBER_LIST_WRITE = "/member-list/write";
+    public static final String SALESFORCE_MEMBER_LIST_FULL_ACCESS = "/member-list/full-access";
     
     //openid
     public static final String OPENID = "openid";
