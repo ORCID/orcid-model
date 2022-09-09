@@ -133,7 +133,8 @@ public enum ScopePathType implements Serializable {
 
     // Salesforce access
     @XmlEnumValue(ScopeConstants.SALESFORCE_MEMBER_LIST_READ) SALESFORCE_MEMBER_LIST_READ (ScopeConstants.SALESFORCE_MEMBER_LIST_READ),
-    @XmlEnumValue(ScopeConstants.SALESFORCE_MEMBER_LIST_WRITE) SALESFORCE_MEMBER_LIST_WRITE(ScopeConstants.SALESFORCE_MEMBER_LIST_WRITE);
+    @XmlEnumValue(ScopeConstants.SALESFORCE_MEMBER_LIST_WRITE) SALESFORCE_MEMBER_LIST_WRITE(ScopeConstants.SALESFORCE_MEMBER_LIST_WRITE),
+    @XmlEnumValue(ScopeConstants.SALESFORCE_MEMBER_LIST_FULL_ACCESS) SALESFORCE_MEMBER_LIST_FULL_ACCESS(ScopeConstants.SALESFORCE_MEMBER_LIST_FULL_ACCESS);
 
     //@formatter:on
 
@@ -251,6 +252,8 @@ public enum ScopePathType implements Serializable {
         case SALESFORCE_MEMBER_LIST_READ:
         	return true;
         case SALESFORCE_MEMBER_LIST_WRITE:
+        	return true;
+        case SALESFORCE_MEMBER_LIST_FULL_ACCESS:
         	return true;
         default:
             return false;
