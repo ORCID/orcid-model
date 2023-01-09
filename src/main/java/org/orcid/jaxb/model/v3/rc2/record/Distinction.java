@@ -11,7 +11,7 @@ import java.io.Serializable;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModel;
  * 
  */
 @XmlRootElement(name = "distinction", namespace = "http://www.orcid.org/ns/distinction")
-@ApiModel(value = "DistinctionV3_0_rc2")
+@Schema(description = "DistinctionV3_0_rc2")
 public class Distinction extends Affiliation implements Serializable {
 
     /**

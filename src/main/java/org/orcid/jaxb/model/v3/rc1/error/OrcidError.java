@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
 
 import org.orcid.jaxb.model.record.bulk.BulkElement;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 
 /**
@@ -54,7 +54,7 @@ import io.swagger.annotations.ApiModel;
     "moreInfo"
 })
 @XmlRootElement(name = "error", namespace = "http://www.orcid.org/ns/error")
-@ApiModel(value = "OrcidErrorV3_0_rc1")
+@Schema(description = "OrcidErrorV3_0_rc1")
 public class OrcidError implements Serializable, BulkElement {
     private static final long serialVersionUID = 6515336180207746606L;
     @XmlElement(name = "response-code", namespace = "http://www.orcid.org/ns/error")

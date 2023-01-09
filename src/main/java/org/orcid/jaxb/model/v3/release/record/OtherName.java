@@ -9,14 +9,14 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import org.orcid.jaxb.model.v3.release.common.CreatedDate;
 import org.orcid.jaxb.model.v3.release.common.Filterable;
 import org.orcid.jaxb.model.v3.release.common.LastModifiedDate;
 import org.orcid.jaxb.model.v3.release.common.Source;
 import org.orcid.jaxb.model.v3.release.common.Visibility;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 
@@ -26,7 +26,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "content" })
 @XmlRootElement(name = "other-name", namespace = "http://www.orcid.org/ns/other-name")
-@ApiModel(value = "OtherNameV3_0")
+@Schema(description = "OtherNameV3_0")
 public class OtherName implements Filterable, Serializable, Comparable<OtherName>, SourceAware {
     private static final long serialVersionUID = 1047027166285177589L;
     @XmlElement(name = "content", namespace = "http://www.orcid.org/ns/other-name")
@@ -40,7 +40,7 @@ public class OtherName implements Filterable, Serializable, Comparable<OtherName
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "created-date")
     protected CreatedDate createdDate;
     @XmlAttribute
-    @ApiModelProperty(dataType = "string", allowableValues = "limited, registered-only, public")
+    @Schema(type = "string", allowableValues = "limited, registered-only, public")
     protected Visibility visibility;
     @XmlAttribute
     protected String path;

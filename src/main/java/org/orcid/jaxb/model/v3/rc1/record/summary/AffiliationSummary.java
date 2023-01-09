@@ -21,11 +21,11 @@ import org.orcid.jaxb.model.v3.rc1.record.ExternalIDs;
 import org.orcid.jaxb.model.v3.rc1.record.GroupableActivity;
 import org.orcid.jaxb.model.v3.rc1.record.SourceAware;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "putCode", "departmentName", "roleTitle", "startDate", "endDate", "organization", "url", "externalIdentifiers", "displayIndex" })
-@ApiModel(value = "AffiliationSummaryV3_0_rc1")
+@Schema(description = "AffiliationSummaryV3_0_rc1")
 public abstract class AffiliationSummary implements Serializable, VisibilityType, Activity, SourceAware, GroupableActivity {
     private static final long serialVersionUID = -7091851116183573752L;
     @XmlElement(name = "department-name", namespace = "http://www.orcid.org/ns/common")

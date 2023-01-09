@@ -4,10 +4,10 @@ import java.io.Serializable;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlRootElement(name = "sourceClientId")
-@ApiModel(value = "SourceClientIdV3_0_rc1")
+@Schema(description = "SourceClientIdV3_0_rc1")
 public class SourceClientId extends OrcidIdBase implements Serializable {
     private static final long serialVersionUID = 3941977086034590626L;
 

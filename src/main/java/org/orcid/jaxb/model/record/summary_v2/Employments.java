@@ -18,12 +18,12 @@ import org.orcid.jaxb.model.record.summary_v2.EmploymentSummary;
 import org.orcid.jaxb.model.record_v2.ActivitiesContainer;
 import org.orcid.jaxb.model.record_v2.Activity;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "summaries" })
 @XmlRootElement(name = "employments", namespace = "http://www.orcid.org/ns/activities")
-@ApiModel(value = "EmploymentsSummaryV2_0")
+@Schema(description = "EmploymentsSummaryV2_0")
 public class Employments implements ActivitiesContainer, Serializable {
 
     private static final long serialVersionUID = 3293976926416154039L;

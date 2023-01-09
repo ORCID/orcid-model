@@ -11,12 +11,12 @@ import javax.xml.bind.annotation.XmlType;
 import org.orcid.jaxb.model.v3.rc2.common.Title;
 import org.orcid.jaxb.model.v3.rc2.common.TranslatedTitle;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "title", "translatedTitle" })
 @XmlRootElement(name = "title", namespace = "http://www.orcid.org/ns/research-resource")
-@ApiModel(value = "ResearchResourceTitleV3_0_rc2")
+@Schema(description = "ResearchResourceTitleV3_0_rc2")
 public class ResearchResourceTitle implements Serializable {
 
     private static final long serialVersionUID = 1L;

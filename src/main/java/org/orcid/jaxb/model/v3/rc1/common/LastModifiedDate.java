@@ -17,8 +17,8 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
 import javax.xml.datatype.XMLGregorianCalendar;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -33,12 +33,12 @@ import io.swagger.annotations.ApiModelProperty;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "value" })
 @XmlRootElement(name = "last-modified-date", namespace = "http://www.orcid.org/ns/common")
-@ApiModel(value = "LastModifiedDateV3_0_rc1")
+@Schema(description = "LastModifiedDateV3_0_rc1")
 public class LastModifiedDate implements Serializable {
     private static final long serialVersionUID = 2883055421414118541L;
     @XmlValue
     @XmlSchemaType(name = "dateTime")
-    @ApiModelProperty(readOnly = true)
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     protected XMLGregorianCalendar value;
 
     public LastModifiedDate() {

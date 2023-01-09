@@ -11,12 +11,12 @@ import javax.xml.bind.annotation.XmlType;
 import org.orcid.jaxb.model.v3.rc2.common.FuzzyDate;
 import org.orcid.jaxb.model.v3.rc2.common.Url;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "title", "hosts", "externalIdentifiers", "startDate", "endDate", "url" })
 @XmlRootElement(name = "proposal", namespace = "http://www.orcid.org/ns/research-resource")
-@ApiModel(value = "ResearchResourceProposalV3_0_rc2")
+@Schema(description = "ResearchResourceProposalV3_0_rc2")
 public class ResearchResourceProposal implements Serializable {
     private static final long serialVersionUID = 4396414540438557932L;
     @XmlElement(namespace = "http://www.orcid.org/ns/research-resource", name = "title")

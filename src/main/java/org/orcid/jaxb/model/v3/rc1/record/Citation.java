@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * Element to contain a citation of a given type
@@ -27,7 +27,7 @@ import io.swagger.annotations.ApiModel;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "citation", propOrder = { "citationType", "citation" })
-@ApiModel(value = "CitationV3_0_rc1")
+@Schema(description = "CitationV3_0_rc1")
 public class Citation implements Serializable {
     private static final long serialVersionUID = -5997208181322725989L;
     @XmlElement(name = "citation-type", required = true, defaultValue = "formatted-unspecified", namespace = "http://www.orcid.org/ns/work")

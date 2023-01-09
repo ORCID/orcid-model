@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
 import org.orcid.jaxb.model.v3.rc2.record.ExternalID;
 import org.orcid.jaxb.model.v3.rc2.record.PersonExternalIdentifier;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * Java class for anonymous complex type.
@@ -46,7 +46,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = { "putCode", "itemType", "itemName", "externalIdentifier" })
 @XmlRootElement(name = "item")
-@ApiModel(value = "ItemV3_0_rc2")
+@Schema(description = "ItemV3_0_rc2")
 public class Item implements Serializable {
     private static final long serialVersionUID = 5090603550709774075L;
     @XmlAttribute(name = "put-code")

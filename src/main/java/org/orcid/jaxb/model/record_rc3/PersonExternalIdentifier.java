@@ -17,7 +17,7 @@ import org.orcid.jaxb.model.common_rc3.Url;
 import org.orcid.jaxb.model.common_rc3.Visibility;
 import org.orcid.jaxb.model.common_rc3.VisibilityType;
 
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 
@@ -45,7 +45,7 @@ public class PersonExternalIdentifier implements VisibilityType, Serializable, F
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "created-date")
     protected CreatedDate createdDate;    
     @XmlAttribute(name = "put-code")
-    @ApiModelProperty(hidden = true)
+    @Schema(hidden = true)
     protected Long putCode;        
     @XmlAttribute
     protected Visibility visibility;

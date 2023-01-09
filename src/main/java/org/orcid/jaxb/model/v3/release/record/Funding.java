@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import org.orcid.jaxb.model.common.FundingType;
 import org.orcid.jaxb.model.common.adapters.FundingTypeAdapter;
 import org.orcid.jaxb.model.v3.release.common.Amount;
@@ -32,7 +32,7 @@ import org.orcid.jaxb.model.v3.release.common.Source;
 import org.orcid.jaxb.model.v3.release.common.Url;
 import org.orcid.jaxb.model.v3.release.common.Visibility;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -48,14 +48,14 @@ import io.swagger.annotations.ApiModel;
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "putCode", "path", "type", "organizationDefinedType", "title", "description", "amount", "url",
         "startDate", "endDate", "externalIdentifiers", "contributors", "organization" })
 @XmlRootElement(name = "funding", namespace = "http://www.orcid.org/ns/funding")
-@ApiModel(value = "FundingV3_0")
+@Schema(description = "FundingV3_0")
 public class Funding implements Filterable, Serializable, OrganizationHolder, SourceAware, ExternalIdentifiersAwareActivity {
 
     private final static long serialVersionUID = 1L;
 
     @XmlJavaTypeAdapter(FundingTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/funding", required = true)
-    @ApiModelProperty(dataType = "string", allowableValues = "grant, contract, award, salary-award")
+    @Schema(type = "string", allowableValues = "grant, contract, award, salary-award")
     protected FundingType type;
     @XmlElement(namespace = "http://www.orcid.org/ns/funding", name = "organization-defined-type")
     protected OrganizationDefinedFundingSubType organizationDefinedType;
@@ -89,7 +89,7 @@ public class Funding implements Filterable, Serializable, OrganizationHolder, So
     @XmlAttribute(name = "path")
     protected String path;
     @XmlAttribute
-    @ApiModelProperty(dataType = "string", allowableValues = "limited, registered-only, public")
+    @Schema(type = "string", allowableValues = "limited, registered-only, public")
     protected Visibility visibility;
 
     public FundingTitle getTitle() {

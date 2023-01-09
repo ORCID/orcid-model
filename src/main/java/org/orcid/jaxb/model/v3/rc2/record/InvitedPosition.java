@@ -11,7 +11,7 @@ import java.io.Serializable;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModel;
  * 
  */
 @XmlRootElement(name = "invited-position", namespace = "http://www.orcid.org/ns/invited-position")
-@ApiModel(value = "InvitedPositionV3_0_rc2")
+@Schema(description = "InvitedPositionV3_0_rc2")
 public class InvitedPosition extends Affiliation implements Serializable {
 
     /**

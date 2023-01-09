@@ -6,14 +6,14 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * @author Declan Newman (declan) Date: 31/07/2012
  */
 @XmlType(name = "type")
 @XmlEnum
-@ApiModel(value = "AffiliationTypeV3_0_rc2")
+@Schema(description = "AffiliationTypeV3_0_rc2")
 public enum AffiliationType implements Serializable {
 
     @XmlEnumValue("distinction")

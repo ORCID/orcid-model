@@ -13,7 +13,7 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * Java class for orcid-type.
@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModel;
  */
 @XmlType(name = "grantType")
 @XmlEnum
-@ApiModel(value = "FundingTypeV3_0_rc1")
+@Schema(description = "FundingTypeV3_0_rc1")
 public enum FundingType implements Serializable {
     @XmlEnumValue("grant")
     GRANT("grant"), 

@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -29,7 +29,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "name", "address", "disambiguatedOrganization" })
 @XmlRootElement(name = "organization", namespace = "http://www.orcid.org/ns/common")
-@ApiModel(value = "OrganizationV3_0")
+@Schema(description = "OrganizationV3_0")
 public class Organization implements Serializable {
 
     private final static long serialVersionUID = 1L;

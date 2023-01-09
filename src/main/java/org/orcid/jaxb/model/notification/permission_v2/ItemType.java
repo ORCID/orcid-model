@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlEnumValue;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 
@@ -13,7 +13,7 @@ import io.swagger.annotations.ApiModel;
  *
  */
 @XmlEnum
-@ApiModel(value = "ItemTypeV2_0")
+@Schema(description = "ItemTypeV2_0")
 public enum ItemType {
     //@formatter:off
     @XmlEnumValue("education") EDUCATION,

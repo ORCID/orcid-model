@@ -34,6 +34,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.module.jaxb.JaxbAnnotationModule;
 import com.google.common.io.Resources;
 
+
 /**
  * Utility class for serialising/deserialising ORCID records. Provides simple
  * access to parsers for Bean Creation

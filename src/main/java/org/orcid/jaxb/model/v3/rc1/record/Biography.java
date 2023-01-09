@@ -14,7 +14,7 @@ import org.orcid.jaxb.model.v3.rc1.common.LastModifiedDate;
 import org.orcid.jaxb.model.v3.rc1.common.Visibility;
 import org.orcid.jaxb.model.v3.rc1.common.VisibilityType;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 
@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "content" })
 @XmlRootElement(name = "biography", namespace = "http://www.orcid.org/ns/personal-details")
-@ApiModel(value = "BiographyV3_0_rc1")
+@Schema(description = "BiographyV3_0_rc1")
 public class Biography implements VisibilityType, Serializable {
     private static final long serialVersionUID = 2241181478695676559L;
 

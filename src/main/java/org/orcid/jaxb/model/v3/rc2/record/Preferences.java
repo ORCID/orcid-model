@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import org.orcid.jaxb.model.common.AvailableLocales;
 import org.orcid.jaxb.model.common.adapters.AvailableLocalesAdapter;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 
@@ -22,7 +22,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "locale" })
 @XmlRootElement(name = "preferences", namespace = "http://www.orcid.org/ns/preferences")
-@ApiModel(value = "PreferencesV3_0_rc2")
+@Schema(description = "PreferencesV3_0_rc2")
 public class Preferences implements Serializable {    
     private static final long serialVersionUID = -2143886440930470817L;
     @XmlJavaTypeAdapter(AvailableLocalesAdapter.class)

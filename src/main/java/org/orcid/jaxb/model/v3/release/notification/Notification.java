@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.datatype.XMLGregorianCalendar;
 
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import org.orcid.jaxb.model.v3.release.common.Source;
 import org.orcid.jaxb.model.v3.release.record.SourceAware;
 
@@ -55,7 +55,7 @@ abstract public class Notification implements Serializable, SourceAware {
     @XmlAttribute(name = "put-code")
     protected Long putCode;
     @XmlElement(name = "notification-type", namespace = "http://www.orcid.org/ns/notification", required = true)
-    @ApiModelProperty(dataType = "string", allowableValues = "custom, institutional-connection, permission, amended, service-anouncement, " +
+    @Schema(type = "string", allowableValues = "custom, institutional-connection, permission, amended, service-anouncement, " +
             "administrative, tip, find-my-stuff")
     protected NotificationType notificationType;
     @XmlElement(name = "created-date", namespace = "http://www.orcid.org/ns/common")

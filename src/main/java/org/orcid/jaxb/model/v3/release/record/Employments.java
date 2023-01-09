@@ -21,7 +21,7 @@ import javax.xml.bind.annotation.XmlType;
 
 import org.orcid.jaxb.model.v3.release.common.LastModifiedDate;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -36,7 +36,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "employment" })
 @XmlRootElement(name = "employments")
-@ApiModel(value = "EmploymentsV3_0")
+@Schema(description = "EmploymentsV3_0")
 public class Employments implements Serializable, ActivitiesContainer {
 
     /**

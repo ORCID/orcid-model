@@ -28,7 +28,7 @@ import org.orcid.jaxb.model.common_v2.Source;
 import org.orcid.jaxb.model.common_v2.Url;
 import org.orcid.jaxb.model.common_v2.Visibility;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -44,7 +44,7 @@ import io.swagger.annotations.ApiModel;
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "putCode", "path", "type", "organizationDefinedType", "title", "description", "amount", "url",
         "startDate", "endDate", "externalIdentifiers", "contributors", "organization" })
 @XmlRootElement(name = "funding", namespace = "http://www.orcid.org/ns/funding")
-@ApiModel(value = "FundingV2_0")
+@Schema(description = "FundingV2_0")
 public class Funding implements Filterable, Serializable, OrganizationHolder, SourceAware, ExternalIdentifiersAwareActivity {
 
     private final static long serialVersionUID = 1L;

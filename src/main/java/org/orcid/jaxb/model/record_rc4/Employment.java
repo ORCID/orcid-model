@@ -25,7 +25,7 @@ import org.orcid.jaxb.model.common_rc4.OrganizationHolder;
 import org.orcid.jaxb.model.common_rc4.Source;
 import org.orcid.jaxb.model.common_rc4.Visibility;
 
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -61,7 +61,7 @@ public class Employment implements Serializable, Filterable, Activity, Organizat
     protected CreatedDate createdDate;
 
     @XmlAttribute(name = "put-code")
-    @ApiModelProperty(hidden = true) 
+    @Schema(hidden = true) 
     protected Long putCode;
     @XmlAttribute(name = "path")
     protected String path;

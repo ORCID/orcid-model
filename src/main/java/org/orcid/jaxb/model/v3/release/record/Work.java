@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import org.orcid.jaxb.model.common.LanguageCode;
 import org.orcid.jaxb.model.common.WorkType;
 import org.orcid.jaxb.model.common.adapters.LanguageCodeAdapter;
@@ -35,7 +35,7 @@ import org.orcid.jaxb.model.v3.release.common.Title;
 import org.orcid.jaxb.model.v3.release.common.Url;
 import org.orcid.jaxb.model.v3.release.common.Visibility;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * Java class for anonymous complex type.
@@ -48,7 +48,7 @@ import io.swagger.annotations.ApiModel;
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "putCode", "path", "title", "journalTitle", "shortDescription", "citation", "type", "publicationDate",
         "externalIdentifiers", "url", "contributors", "languageCode", "country" })
 @XmlRootElement(name = "work", namespace = "http://www.orcid.org/ns/work")
-@ApiModel(value = "WorkV3_0")
+@Schema(description = "WorkV3_0")
 public class Work implements Filterable, Serializable, SourceAware, BulkElement, ExternalIdentifiersAwareActivity {
     private static final long serialVersionUID = 1L;
     @XmlElement(namespace = "http://www.orcid.org/ns/work")
@@ -61,7 +61,7 @@ public class Work implements Filterable, Serializable, SourceAware, BulkElement,
     protected Citation citation;
     @XmlJavaTypeAdapter(WorkTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/work")
-    @ApiModelProperty(dataType = "string", allowableValues = "annotation, artistic-performance, book-chapter, book-review, book, " +
+    @Schema(type = "string", allowableValues = "annotation, artistic-performance, book-chapter, book-review, book, " +
             "conference-abstract, conference-paper, conference-poster, data-management-plan, data-set, dictionary-entry, disclosure, dissertation-thesis, " +
             "edited-book, encyclopedia-entry, invention, journal-article, journal-issue, lecture-speech, license, magazine-article, manual," +
             "newsletter-article, newspaper-article, online-resource, other, patent, physical-object, preprint, registered-copyright, report," +
@@ -86,7 +86,7 @@ public class Work implements Filterable, Serializable, SourceAware, BulkElement,
     @XmlAttribute(name = "put-code")
     protected Long putCode;
     @XmlAttribute
-    @ApiModelProperty(dataType = "string", allowableValues = "limited, registered-only, public")
+    @Schema(type = "string", allowableValues = "limited, registered-only, public")
     protected Visibility visibility;
     @XmlAttribute(name = "path")
     protected String path;

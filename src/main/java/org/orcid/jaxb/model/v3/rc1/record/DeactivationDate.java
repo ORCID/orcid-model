@@ -15,8 +15,8 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
 import javax.xml.datatype.XMLGregorianCalendar;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.io.Serializable;
 
@@ -28,12 +28,12 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "value" })
 @XmlRootElement(name = "deactivation-date", namespace = "http://www.orcid.org/ns/history")
-@ApiModel(value = "DeactivationDateV3_0_rc1")
+@Schema(description = "DeactivationDateV3_0_rc1")
 public class DeactivationDate implements Serializable {
     private static final long serialVersionUID = 7014221241158724182L;
     @XmlValue
     @XmlSchemaType(name = "dateTime")
-    @ApiModelProperty(readOnly = true)
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     protected XMLGregorianCalendar value;
 
     public DeactivationDate() {

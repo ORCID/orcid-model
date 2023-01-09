@@ -13,8 +13,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.io.Serializable;
 
@@ -27,7 +27,7 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "value" })
 @XmlRootElement(name = "year")
-@ApiModel(value = "YearV3_0_rc2")
+@Schema(description = "YearV3_0_rc2")
 public class Year implements Serializable {
 
     /**
@@ -35,7 +35,7 @@ public class Year implements Serializable {
      */
     private static final long serialVersionUID = 1L;
     @XmlValue
-    @ApiModelProperty(example = "1999")    
+    @Schema(example = "1999")    
     protected String value;
 
     public Year() {

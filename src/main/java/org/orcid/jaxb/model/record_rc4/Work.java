@@ -29,7 +29,7 @@ import org.orcid.jaxb.model.common_rc4.Visibility;
 import org.orcid.jaxb.model.record.bulk.BulkElement;
 import org.orcid.jaxb.model.record.util.RecordUtil;
 
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * Java class for anonymous complex type.
@@ -69,7 +69,7 @@ public class Work implements Filterable, Activity, Serializable, SourceAware, Bu
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected Source source;
     @XmlAttribute(name = "put-code")
-    @ApiModelProperty(hidden = true)
+    @Schema(hidden = true)
     protected Long putCode;
     @XmlAttribute
     protected Visibility visibility;

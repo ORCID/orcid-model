@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
 import javax.xml.datatype.XMLGregorianCalendar;
 
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.io.Serializable;
 
@@ -31,7 +31,7 @@ public class SubmissionDate implements Serializable {
     private static final long serialVersionUID = 1L;
     @XmlValue
     @XmlSchemaType(name = "dateTime")
-    @ApiModelProperty(readOnly = true)
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     protected XMLGregorianCalendar value;
 
     public SubmissionDate() {

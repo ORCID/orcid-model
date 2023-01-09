@@ -20,7 +20,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 import org.orcid.jaxb.model.common_rc1.Source;
 import org.orcid.jaxb.model.record_rc1.SourceAware;
 
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * Java class for anonymous complex type.
@@ -54,7 +54,7 @@ abstract public class Notification implements Serializable, SourceAware {
 
     private final static long serialVersionUID = 1L;
     @XmlAttribute(name = "put-code")
-    @ApiModelProperty(hidden = true)
+    @Schema(hidden = true)
     protected Long putCode;
     @XmlElement(name = "notification-type", namespace = "http://www.orcid.org/ns/notification", required = true)
     protected NotificationType notificationType;

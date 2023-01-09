@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import org.orcid.jaxb.model.v3.release.common.CreatedDate;
 import org.orcid.jaxb.model.v3.release.common.Filterable;
 import org.orcid.jaxb.model.v3.release.common.FuzzyDate;
@@ -17,12 +17,12 @@ import org.orcid.jaxb.model.v3.release.common.Source;
 import org.orcid.jaxb.model.v3.release.common.Url;
 import org.orcid.jaxb.model.v3.release.common.Visibility;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "putCode", "path", "departmentName", "roleTitle", "startDate", "endDate", "organization", "url",
         "externalIdentifiers", "displayIndex" })
-@ApiModel(value = "AffiliationV3_0")
+@Schema(description = "AffiliationV3_0")
 public abstract class Affiliation implements OrganizationHolder, Filterable, SourceAware, ExternalIdentifiersAwareActivity {
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "department-name")
     protected String departmentName;
@@ -50,7 +50,7 @@ public abstract class Affiliation implements OrganizationHolder, Filterable, Sou
     @XmlAttribute(name = "path")
     protected String path;
     @XmlAttribute
-    @ApiModelProperty(dataType = "string", allowableValues = "limited, registered-only, public")
+    @Schema(type = "string", allowableValues = "limited, registered-only, public")
     protected Visibility visibility;
     @XmlAttribute(name = "display-index")
     protected String displayIndex;

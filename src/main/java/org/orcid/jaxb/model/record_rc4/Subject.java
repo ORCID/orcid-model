@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlType;
 import org.orcid.jaxb.model.common_rc4.Title;
 import org.orcid.jaxb.model.common_rc4.Url;
 
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 
@@ -36,7 +36,7 @@ public class Subject implements Serializable {
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review")
     protected Url url;
     @XmlAttribute(name = "put-code")
-    @ApiModelProperty(hidden = true) 
+    @Schema(hidden = true) 
     protected String putCode;
 
     public String getPutCode() {

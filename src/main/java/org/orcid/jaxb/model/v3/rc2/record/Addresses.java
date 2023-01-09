@@ -13,7 +13,7 @@ import javax.xml.bind.annotation.XmlType;
 
 import org.orcid.jaxb.model.v3.rc2.common.LastModifiedDate;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 
@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "address" })
 @XmlRootElement(name = "addresses", namespace = "http://www.orcid.org/ns/address")
-@ApiModel(value = "AddressesV3_0_rc2")
+@Schema(description = "AddressesV3_0_rc2")
 public class Addresses implements Serializable {
     private static final long serialVersionUID = 1191641767266835974L;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "last-modified-date")

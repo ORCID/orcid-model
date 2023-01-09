@@ -8,13 +8,13 @@ import javax.xml.bind.annotation.XmlTransient;
 
 import org.orcid.jaxb.model.v3.rc1.common.OrcidIdBase;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.lang.Deprecated;
 
 @Deprecated 
 @XmlRootElement(name = "source")
-@ApiModel(value = "WorkSourceV3_0_rc1")
+@Schema(description = "WorkSourceV3_0_rc1")
 public class WorkSource extends OrcidIdBase implements Serializable {
     private static final long serialVersionUID = -4089634143087022421L;
 

@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
 
 import org.orcid.jaxb.model.v3.rc1.record.ExternalID;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * Java class for anonymous complex type.
@@ -45,7 +45,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = { "putCode", "itemType", "itemName", "externalIdentifier" })
 @XmlRootElement(name = "item")
-@ApiModel(value = "ItemV3_0_rc1")
+@Schema(description = "ItemV3_0_rc1")
 public class Item implements Serializable {
 
     

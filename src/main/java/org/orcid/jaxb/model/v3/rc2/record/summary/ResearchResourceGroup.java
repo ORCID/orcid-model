@@ -23,12 +23,12 @@ import org.orcid.jaxb.model.v3.rc2.record.ExternalIDs;
 import org.orcid.jaxb.model.v3.rc2.record.Group;
 import org.orcid.jaxb.model.v3.rc2.record.GroupableActivity;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "identifiers", "researchResourceSummary" })
 @XmlRootElement(name = "research-resource-group", namespace = "http://www.orcid.org/ns/activities")
-@ApiModel(value = "ResearchResourceGroupV3_0_rc2")
+@Schema(description = "ResearchResourceGroupV3_0_rc2")
 public class ResearchResourceGroup implements Group, Serializable {
     private static final long serialVersionUID = -4032168708952113730L;
     @XmlElement(name = "last-modified-date", namespace = "http://www.orcid.org/ns/common")

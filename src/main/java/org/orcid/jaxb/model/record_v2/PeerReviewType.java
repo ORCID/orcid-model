@@ -8,11 +8,11 @@ import javax.xml.bind.annotation.XmlType;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlType(name = "type")
 @XmlEnum
-@ApiModel(value = "PeerReviewTypeV2_0")
+@Schema(description = "PeerReviewTypeV2_0")
 public enum PeerReviewType implements Serializable {
     @XmlEnumValue("review")
     REVIEW("review"),

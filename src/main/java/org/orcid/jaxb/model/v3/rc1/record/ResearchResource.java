@@ -18,12 +18,12 @@ import org.orcid.jaxb.model.v3.rc1.common.LastModifiedDate;
 import org.orcid.jaxb.model.v3.rc1.common.Source;
 import org.orcid.jaxb.model.v3.rc1.common.Visibility;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "proposal", "resourceItems", "displayIndex" })
 @XmlRootElement(name = "research-resource", namespace = "http://www.orcid.org/ns/research-resource")
-@ApiModel(value = "ResearchResourceV3_0_rc1")
+@Schema(description = "ResearchResourceV3_0_rc1")
 public class ResearchResource implements Filterable, Activity, Serializable, SourceAware {
     private static final long serialVersionUID = 5006791941739476429L;
     @XmlElement(namespace = "http://www.orcid.org/ns/common")

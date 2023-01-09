@@ -11,7 +11,7 @@ import org.orcid.jaxb.model.common_v2.Url;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /** New external identifier class
  * 
@@ -20,7 +20,7 @@ import io.swagger.annotations.ApiModel;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "type","value", "url", "relationship" })
-@ApiModel(value = "ExternalIDV2_0")
+@Schema(description = "ExternalIDV2_0")
 public class ExternalID implements GroupAble,Cloneable,Serializable{
     private static final long serialVersionUID = 1L;
 

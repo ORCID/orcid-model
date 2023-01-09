@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import org.apache.commons.lang.StringUtils;
 import org.orcid.jaxb.model.common.Relationship;
 import org.orcid.jaxb.model.common.adapters.RelationshipAdapter;
@@ -19,7 +19,7 @@ import org.orcid.jaxb.model.v3.release.common.Url;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * New external identifier class
@@ -29,7 +29,7 @@ import io.swagger.annotations.ApiModel;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "type", "value", "normalized", "normalizedError", "url", "relationship" })
-@ApiModel(value = "ExternalIDV3_0")
+@Schema(description = "ExternalIDV3_0")
 public class ExternalID implements GroupAble, Cloneable, Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -45,7 +45,7 @@ public class ExternalID implements GroupAble, Cloneable, Serializable {
     protected Url url;
     @XmlJavaTypeAdapter(RelationshipAdapter.class)
     @XmlElement(name = "external-id-relationship", namespace = "http://www.orcid.org/ns/common")
-    @ApiModelProperty(dataType = "string", allowableValues = "part-of, self, version-of")
+    @Schema(type = "string", allowableValues = "part-of, self, version-of")
     protected Relationship relationship;
     
     @JsonIgnore

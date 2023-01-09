@@ -11,7 +11,7 @@ import java.io.Serializable;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModel;
  * 
  */
 @XmlRootElement(name = "employment", namespace = "http://www.orcid.org/ns/employment")
-@ApiModel(value = "EmploymentV3_0")
+@Schema(description = "EmploymentV3_0")
 public class Employment extends Affiliation implements Serializable {
 
     /**

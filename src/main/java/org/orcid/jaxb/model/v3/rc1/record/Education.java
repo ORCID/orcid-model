@@ -11,7 +11,7 @@ import java.io.Serializable;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModel;
  * 
  */
 @XmlRootElement(name = "education", namespace = "http://www.orcid.org/ns/education")
-@ApiModel(value = "EducationV3_0_rc1")
+@Schema(description = "EducationV3_0_rc1")
 public class Education extends Affiliation implements Serializable {
 
     /**

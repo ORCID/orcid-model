@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>Java class for anonymous complex type.
@@ -27,7 +27,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "value" })
 @XmlRootElement(name = "contributor-email")
-@ApiModel(value = "ContributorEmailV3_0_rc1")
+@Schema(description = "ContributorEmailV3_0_rc1")
 public class ContributorEmail implements Serializable {
     private static final long serialVersionUID = 4094123334174911175L;
     @XmlValue

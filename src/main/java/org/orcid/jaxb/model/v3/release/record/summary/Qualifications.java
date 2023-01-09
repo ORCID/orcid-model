@@ -6,10 +6,10 @@ import java.util.Collection;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlRootElement(name = "qualifications", namespace = "http://www.orcid.org/ns/activities")
-@ApiModel(value = "QualificationsV3_0")
+@Schema(description = "QualificationsV3_0")
 public class Qualifications extends Affiliations<QualificationSummary> implements Serializable {
 
     /**

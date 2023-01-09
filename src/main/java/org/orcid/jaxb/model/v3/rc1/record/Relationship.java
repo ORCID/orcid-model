@@ -13,12 +13,12 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 
 @XmlType(namespace = "http://www.orcid.org/ns/common")
 @XmlEnum
-@ApiModel(value = "RelationshipV3_0_rc1")
+@Schema(description = "RelationshipV3_0_rc1")
 public enum Relationship implements Serializable {
     @XmlEnumValue("part-of")
     PART_OF("part-of"),

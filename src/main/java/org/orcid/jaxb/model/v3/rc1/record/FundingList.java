@@ -22,7 +22,7 @@ import javax.xml.bind.annotation.XmlType;
 
 import org.orcid.jaxb.model.v3.rc1.common.LastModifiedDate;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * Java class for anonymous complex type.
@@ -34,7 +34,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "fundings" })
 @XmlRootElement(name = "fundingList")
-@ApiModel(value = "FundingListV3_0_rc1")
+@Schema(description = "FundingListV3_0_rc1")
 public class FundingList implements ActivitiesContainer, Serializable {
     private static final long serialVersionUID = 1215767007032944298L;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "last-modified-date")

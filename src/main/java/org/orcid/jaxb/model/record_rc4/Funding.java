@@ -28,7 +28,7 @@ import org.orcid.jaxb.model.common_rc4.Source;
 import org.orcid.jaxb.model.common_rc4.Url;
 import org.orcid.jaxb.model.common_rc4.Visibility;
 
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -78,7 +78,7 @@ public class Funding implements Filterable, Activity, Serializable, Organization
     protected CreatedDate createdDate;
 
     @XmlAttribute(name = "put-code")
-    @ApiModelProperty(hidden = true) 
+    @Schema(hidden = true) 
     protected Long putCode;
     @XmlAttribute(name = "path")
     protected String path;

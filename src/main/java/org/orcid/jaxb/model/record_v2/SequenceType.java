@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlType;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * @author Declan Newman (declan)
@@ -16,7 +16,7 @@ import io.swagger.annotations.ApiModel;
  */
 @XmlType(name = "sequence")
 @XmlEnum
-@ApiModel(value = "SequenceTypeV2_0")
+@Schema(description = "SequenceTypeV2_0")
 public enum SequenceType implements Serializable {
 
     @XmlEnumValue("first")

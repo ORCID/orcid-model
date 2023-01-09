@@ -19,7 +19,7 @@ import org.orcid.jaxb.model.v3.release.common.Subtitle;
 import org.orcid.jaxb.model.v3.release.common.Title;
 import org.orcid.jaxb.model.v3.release.common.TranslatedTitle;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>Java class for anonymous complex type.
@@ -31,7 +31,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "title", "subtitle", "translatedTitle" })
 @XmlRootElement(name = "title", namespace = "http://www.orcid.org/ns/work")
-@ApiModel(value = "WorkTitleV3_0")
+@Schema(description = "WorkTitleV3_0")
 public class WorkTitle implements Serializable {
 
     /**

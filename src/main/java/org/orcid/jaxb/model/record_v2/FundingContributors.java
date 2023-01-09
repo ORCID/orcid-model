@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
 
 import org.orcid.jaxb.model.common_v2.Contributor;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>Java class for anonymous complex type.
@@ -32,7 +32,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "contributor" })
 @XmlRootElement(name = "contributors", namespace = "http://www.orcid.org/ns/funding")
-@ApiModel(value = "FundingContributorsV2_0")
+@Schema(description = "FundingContributorsV2_0")
 public class FundingContributors implements Serializable {
 
     /**

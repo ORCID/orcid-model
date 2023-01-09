@@ -21,7 +21,7 @@ import org.orcid.jaxb.model.common.SequenceType;
 import org.orcid.jaxb.model.common.adapters.ContributorRoleAdapter;
 import org.orcid.jaxb.model.common.adapters.SequenceTypeAdapter;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -37,7 +37,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "contributorSequence", "contributorRole" })
 @XmlRootElement(name = "contributor-attributes")
-@ApiModel(value = "ContributorAttributesV3_0_rc2")
+@Schema(description = "ContributorAttributesV3_0_rc2")
 public class ContributorAttributes implements Serializable {
 
     /**

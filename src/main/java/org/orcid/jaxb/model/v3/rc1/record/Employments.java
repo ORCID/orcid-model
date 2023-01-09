@@ -21,7 +21,7 @@ import javax.xml.bind.annotation.XmlType;
 
 import org.orcid.jaxb.model.v3.rc1.common.LastModifiedDate;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -36,7 +36,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "employment" })
 @XmlRootElement(name = "employments")
-@ApiModel(value = "EmploymentsV3_0_rc1")
+@Schema(description = "EmploymentsV3_0_rc1")
 public class Employments implements Serializable, ActivitiesContainer {
     private static final long serialVersionUID = -7661046274041098807L;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "last-modified-date")

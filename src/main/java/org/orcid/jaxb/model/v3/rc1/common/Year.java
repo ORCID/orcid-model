@@ -15,8 +15,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>Java class for anonymous complex type.
@@ -27,11 +27,11 @@ import io.swagger.annotations.ApiModelProperty;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "value" })
 @XmlRootElement(name = "year")
-@ApiModel(value = "YearV3_0_rc1")
+@Schema(description = "YearV3_0_rc1")
 public class Year implements Serializable {
     private static final long serialVersionUID = 3228046530862893952L;
     @XmlValue
-    @ApiModelProperty(example = "1999")    
+    @Schema(example = "1999")    
     protected String value;
 
     public Year() {

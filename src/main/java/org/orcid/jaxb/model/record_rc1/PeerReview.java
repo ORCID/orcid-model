@@ -20,7 +20,7 @@ import org.orcid.jaxb.model.common_rc1.Url;
 import org.orcid.jaxb.model.common_rc1.Visibility;
 import org.orcid.jaxb.model.common_rc1.VisibilityType;
 
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "role", "externalIdentifiers", "url", "type",  "completionDate",
@@ -55,7 +55,7 @@ public class PeerReview implements VisibilityType, Activity, Serializable, Organ
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected Source source;
     @XmlAttribute(name = "put-code")
-    @ApiModelProperty(hidden = true) 
+    @Schema(hidden = true) 
     protected Long putCode;
     @XmlAttribute
     protected Visibility visibility;

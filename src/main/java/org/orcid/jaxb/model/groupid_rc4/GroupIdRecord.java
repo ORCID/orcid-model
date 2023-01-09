@@ -16,7 +16,7 @@ import org.orcid.jaxb.model.record_rc4.SourceAware;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * Java class for anonymous complex type.
@@ -76,7 +76,7 @@ public class GroupIdRecord implements Serializable, SourceAware {
     @JsonIgnore
     protected Source source;
     @XmlAttribute(name = "put-code")
-    @ApiModelProperty(hidden = true) 
+    @Schema(hidden = true) 
     @JsonIgnore
     protected Long putCode;
     @JsonIgnore

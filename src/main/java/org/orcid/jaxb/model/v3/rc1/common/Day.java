@@ -17,8 +17,8 @@ import javax.xml.bind.annotation.XmlValue;
 
 import org.apache.commons.lang.StringUtils;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>Java class for anonymous complex type.
@@ -31,11 +31,11 @@ import io.swagger.annotations.ApiModelProperty;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "value" })
 @XmlRootElement(name = "day")
-@ApiModel(value = "DayV3_0_rc1")
+@Schema(description = "DayV3_0_rc1")
 public class Day implements Serializable {
     private static final long serialVersionUID = -5329795727004769924L;
     @XmlValue
-    @ApiModelProperty(example = "28")
+    @Schema(example = "28")
     protected String value;
 
     public Day() {

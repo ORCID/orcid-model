@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlType;
 import org.orcid.jaxb.model.common_v2.Title;
 import org.orcid.jaxb.model.common_v2.Url;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 
@@ -22,7 +22,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = {"externalIdentifiers","type","journalTitle","title","url"})
 @XmlRootElement(name = "subject", namespace = "http://www.orcid.org/ns/peer-review")
-@ApiModel(value = "SubjectV2_0")
+@Schema(description = "SubjectV2_0")
 public class Subject implements Serializable {    
     private static final long serialVersionUID = -3011951615514804083L;
     

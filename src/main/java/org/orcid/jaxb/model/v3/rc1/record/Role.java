@@ -6,11 +6,11 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlType(name = "role")
 @XmlEnum
-@ApiModel(value = "RoleV3_0_rc1")
+@Schema(description = "RoleV3_0_rc1")
 public enum Role implements Serializable {
     @XmlEnumValue("reviewer")
     REVIEWER("reviewer"),

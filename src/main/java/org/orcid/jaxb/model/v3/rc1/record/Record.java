@@ -16,7 +16,7 @@ import org.orcid.jaxb.model.v3.rc1.record.summary.ActivitiesSummary;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 
@@ -26,7 +26,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "orcidIdentifier", "preferences", "history", "person", "activitiesSummary" })
 @XmlRootElement(name = "record", namespace = "http://www.orcid.org/ns/record")
-@ApiModel(value = "RecordV3_0_rc1")
+@Schema(description = "RecordV3_0_rc1")
 public class Record implements Serializable {
     private static final long serialVersionUID = 1086932594400451295L;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "orcid-identifier")

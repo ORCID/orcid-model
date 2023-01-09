@@ -13,12 +13,12 @@ import javax.xml.bind.annotation.XmlType;
 import org.orcid.jaxb.model.v3.rc2.common.MultipleOrganizationHolder;
 import org.orcid.jaxb.model.v3.rc2.common.Organization;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "organization" })
 @XmlRootElement(name = "hosts", namespace = "http://www.orcid.org/ns/research-resource")
-@ApiModel(value = "ResearchResourceHostsV3_0_rc2")
+@Schema(description = "ResearchResourceHostsV3_0_rc2")
 public class ResearchResourceHosts implements Serializable, MultipleOrganizationHolder{
     private static final long serialVersionUID = -488401801848466689L;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "organization")

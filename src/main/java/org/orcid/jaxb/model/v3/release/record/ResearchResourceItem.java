@@ -13,12 +13,12 @@ import org.orcid.jaxb.model.common.ResourceType;
 import org.orcid.jaxb.model.common.adapters.ResourceTypeAdapter;
 import org.orcid.jaxb.model.v3.release.common.Url;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "resourceName", "resourceType", "hosts", "externalIdentifiers", "url" })
 @XmlRootElement(name = "resource-item", namespace = "http://www.orcid.org/ns/research-resource")
-@ApiModel(value = "ResearchResourceItemV3_0")
+@Schema(description = "ResearchResourceItemV3_0")
 public class ResearchResourceItem implements Serializable {
     private static final long serialVersionUID = -2045232365711820196L;
     @XmlElement(namespace = "http://www.orcid.org/ns/research-resource", name = "resource-name")

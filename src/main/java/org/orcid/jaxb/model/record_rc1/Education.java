@@ -25,7 +25,7 @@ import org.orcid.jaxb.model.common_rc1.Source;
 import org.orcid.jaxb.model.common_rc1.Visibility;
 import org.orcid.jaxb.model.common_rc1.VisibilityType;
 
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -61,7 +61,7 @@ public class Education implements Serializable, VisibilityType, Activity, Organi
     protected CreatedDate createdDate;
 
     @XmlAttribute(name = "put-code")
-    @ApiModelProperty(hidden = true) 
+    @Schema(hidden = true) 
     protected Long putCode;
     @XmlAttribute(name = "path")
     protected String path;

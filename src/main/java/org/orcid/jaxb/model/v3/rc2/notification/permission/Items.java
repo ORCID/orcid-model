@@ -22,7 +22,7 @@ import javax.xml.bind.annotation.XmlType;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * Java class for anonymous complex type.
@@ -47,7 +47,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = { "items" })
 @XmlRootElement(name = "items", namespace = "http://www.orcid.org/ns/notification")
-@ApiModel(value = "ItemsV3_0_rc2")
+@Schema(description = "ItemsV3_0_rc2")
 public class Items implements Serializable {
     private static final long serialVersionUID = 2144964881656002779L;
     @XmlElement(name = "item", namespace = "http://www.orcid.org/ns/notification", required = true)

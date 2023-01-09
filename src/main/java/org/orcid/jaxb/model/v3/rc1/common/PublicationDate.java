@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -30,7 +30,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "")
 @XmlRootElement(name = "publicationDate")
-@ApiModel(value = "PublicationDateV3_0_rc1")
+@Schema(description = "PublicationDateV3_0_rc1")
 public class PublicationDate extends FuzzyDate implements Serializable {
 
     public PublicationDate() {

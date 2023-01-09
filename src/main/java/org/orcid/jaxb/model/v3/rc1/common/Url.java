@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlValue;
 
 import org.apache.commons.lang.StringUtils;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -32,7 +32,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "value" })
 @XmlRootElement(name = "url")
-@ApiModel(value = "UrlV3_0_rc1")
+@Schema(description = "UrlV3_0_rc1")
 public class Url implements Serializable, Comparable<Url> {
     private static final long serialVersionUID = 49190432080226567L;
     @XmlValue

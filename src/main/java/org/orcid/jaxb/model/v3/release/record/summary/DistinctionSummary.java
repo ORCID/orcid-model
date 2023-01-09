@@ -4,10 +4,10 @@ import java.io.Serializable;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlRootElement(name = "distinction-summary", namespace = "http://www.orcid.org/ns/distinction")
-@ApiModel(value = "DistinctionSummaryV3_0")
+@Schema(description = "DistinctionSummaryV3_0")
 public class DistinctionSummary extends AffiliationSummary implements Serializable {
 
     /**

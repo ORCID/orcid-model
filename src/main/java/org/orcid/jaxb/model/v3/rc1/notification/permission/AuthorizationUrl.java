@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -45,7 +45,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = { "uri", "path", "host" })
 @XmlRootElement(name = "authorization-url", namespace = "http://www.orcid.org/ns/notification")
-@ApiModel(value = "AuthorizationUrlV3_0_rc1")
+@Schema(description = "AuthorizationUrlV3_0_rc1")
 public class AuthorizationUrl implements Serializable {
     private static final long serialVersionUID = 5849101654221466034L;
     @XmlElement(required = true)

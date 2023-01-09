@@ -16,12 +16,12 @@ import org.orcid.jaxb.model.v3.rc1.record.ExternalIDs;
 import org.orcid.jaxb.model.v3.rc1.record.Group;
 import org.orcid.jaxb.model.v3.rc1.record.GroupableActivity;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "identifiers", "peerReviewSummary" })
 @XmlRootElement(name = "peer-review-duplicate-group", namespace = "http://www.orcid.org/ns/activities")
-@ApiModel(value = "PeerReviewDuplicateGroupV3_0_rc1")
+@Schema(description = "PeerReviewDuplicateGroupV3_0_rc1")
 public class PeerReviewDuplicateGroup implements Group, Serializable {
     private static final long serialVersionUID = 5941298350849708891L;
     @XmlElement(name = "last-modified-date", namespace = "http://www.orcid.org/ns/common")

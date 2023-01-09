@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlValue;
 
 import org.apache.commons.lang.StringUtils;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -26,7 +26,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "content" })
 @XmlRootElement(name = "translatedTitle")
-@ApiModel(value = "TranslatedTitleV3_0_rc1")
+@Schema(description = "TranslatedTitleV3_0_rc1")
 public class TranslatedTitle implements Serializable {
     private static final long serialVersionUID = 4082306697489661659L;
     @XmlValue

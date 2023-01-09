@@ -25,7 +25,7 @@ import org.orcid.jaxb.model.common_v2.OrganizationHolder;
 import org.orcid.jaxb.model.common_v2.Source;
 import org.orcid.jaxb.model.common_v2.Visibility;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -40,7 +40,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "putCode", "path", "departmentName", "roleTitle", "startDate", "endDate", "organization" })
 @XmlRootElement(name = "employment", namespace = "http://www.orcid.org/ns/employment")
-@ApiModel(value = "EmploymentV2_0")
+@Schema(description = "EmploymentV2_0")
 public class Employment implements Serializable, Affiliation, Filterable, Activity, OrganizationHolder, SourceAware {
 
     private final static long serialVersionUID = 1L;

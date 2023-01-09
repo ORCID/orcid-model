@@ -12,11 +12,11 @@ import javax.xml.bind.annotation.XmlType;
 import org.orcid.jaxb.model.v3.rc1.common.LastModifiedDate;
 import org.orcid.jaxb.model.v3.rc1.record.GroupsContainer;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "groups" })
-@ApiModel(value = "AffiliationsV3_0_rc1")
+@Schema(description = "AffiliationsV3_0_rc1")
 public abstract class Affiliations<T extends AffiliationSummary> implements Serializable, GroupsContainer {
     private static final long serialVersionUID = 2447374809865396844L;
 

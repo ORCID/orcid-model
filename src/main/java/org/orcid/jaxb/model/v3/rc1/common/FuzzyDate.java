@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
 
 import org.apache.commons.lang.StringUtils;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -33,7 +33,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "fuzzyDate", propOrder = { "year", "month", "day" }, namespace = "http://www.orcid.org/ns/common")
 @XmlSeeAlso({ PublicationDate.class })
-@ApiModel(value = "FuzzyDateV3_0_rc1")
+@Schema(description = "FuzzyDateV3_0_rc1")
 public class FuzzyDate implements Serializable, Comparable<FuzzyDate> {
     private static final long serialVersionUID = 4829944211957444886L;
     @XmlElement(required = true)

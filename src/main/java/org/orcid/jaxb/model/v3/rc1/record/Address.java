@@ -23,7 +23,7 @@ import org.orcid.jaxb.model.v3.rc1.common.LastModifiedDate;
 import org.orcid.jaxb.model.v3.rc1.common.Source;
 import org.orcid.jaxb.model.v3.rc1.common.Visibility;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 
@@ -33,7 +33,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "country" })
 @XmlRootElement(name = "address", namespace = "http://www.orcid.org/ns/address")
-@ApiModel(value = "AddressV3_0_rc1")
+@Schema(description = "AddressV3_0_rc1")
 public class Address implements Filterable, Serializable, Comparable<Address>, SourceAware {
     private static final long serialVersionUID = -3408713435237778673L;
     @XmlElement(namespace = "http://www.orcid.org/ns/address", required = true)

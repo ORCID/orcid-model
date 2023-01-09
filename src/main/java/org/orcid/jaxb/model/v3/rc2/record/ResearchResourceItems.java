@@ -10,12 +10,12 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "resourceItems" })
 @XmlRootElement(name = "resource-items", namespace = "http://www.orcid.org/ns/research-resource")
-@ApiModel(value = "ResearchResourceItemsV3_0_rc2")
+@Schema(description = "ResearchResourceItemsV3_0_rc2")
 public class ResearchResourceItems implements Serializable {
     private static final long serialVersionUID = 6414351720429265799L;
     @XmlElement(namespace = "http://www.orcid.org/ns/research-resource", name = "resource-item")

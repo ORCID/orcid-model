@@ -21,12 +21,12 @@ import org.orcid.jaxb.model.v3.rc1.record.GroupableActivity;
 import org.orcid.jaxb.model.v3.rc1.record.ResearchResourceProposal;
 import org.orcid.jaxb.model.v3.rc1.record.SourceAware;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "proposal" })
 @XmlRootElement(name = "research-resource", namespace = "http://www.orcid.org/ns/research-resource")
-@ApiModel(value = "ResearchResourceSummaryV3_0_rc1")
+@Schema(description = "ResearchResourceSummaryV3_0_rc1")
 public class ResearchResourceSummary implements VisibilityType, Activity, GroupableActivity, Serializable, SourceAware {
     private static final long serialVersionUID = 952016084153496235L;
     @XmlElement(namespace = "http://www.orcid.org/ns/common")

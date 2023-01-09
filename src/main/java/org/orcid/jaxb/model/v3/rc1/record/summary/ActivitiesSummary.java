@@ -25,7 +25,7 @@ import org.orcid.jaxb.model.v3.rc1.common.LastModifiedDate;
 import org.orcid.jaxb.model.v3.rc1.record.ActivitiesContainer;
 import org.orcid.jaxb.model.v3.rc1.record.Activity;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -42,7 +42,7 @@ import io.swagger.annotations.ApiModel;
 @XmlType(propOrder = { "lastModifiedDate", "distinctions", "educations", "employments", "fundings", "invitedPositions", "memberships", "peerReviews", "qualifications",
         "researchResources", "services", "works" })
 @XmlRootElement(name = "activities-summary", namespace = "http://www.orcid.org/ns/activities")
-@ApiModel(value = "ActivitiesSummaryV3_0_rc1")
+@Schema(description = "ActivitiesSummaryV3_0_rc1")
 public class ActivitiesSummary implements Serializable, ActivitiesContainer {
     private static final long serialVersionUID = -1381163133529602122L;
     @XmlElement(name = "last-modified-date", namespace = "http://www.orcid.org/ns/common")

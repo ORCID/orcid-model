@@ -6,10 +6,10 @@ import java.util.Collection;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlRootElement(name = "invited-positions", namespace = "http://www.orcid.org/ns/activities")
-@ApiModel(value = "InvitedPositionsV3_0_rc2")
+@Schema(description = "InvitedPositionsV3_0_rc2")
 public class InvitedPositions extends Affiliations<InvitedPositionSummary> implements Serializable {
 
     /**

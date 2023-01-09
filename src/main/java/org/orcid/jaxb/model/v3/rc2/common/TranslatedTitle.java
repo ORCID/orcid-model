@@ -14,7 +14,7 @@ import org.apache.commons.lang.StringUtils;
 import org.orcid.jaxb.model.common.LanguageCode;
 import org.orcid.jaxb.model.common.adapters.LanguageCodeAdapter;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -29,7 +29,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "content" })
 @XmlRootElement(name = "translatedTitle")
-@ApiModel(value = "TranslatedTitleV3_0_rc2")
+@Schema(description = "TranslatedTitleV3_0_rc2")
 public class TranslatedTitle implements Serializable {
     /**
      * 

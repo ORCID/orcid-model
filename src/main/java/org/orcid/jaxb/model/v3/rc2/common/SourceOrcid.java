@@ -4,10 +4,10 @@ import java.io.Serializable;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlRootElement(name = "sourceOrcid")
-@ApiModel(value = "SourceOrcidV3_0_rc2")
+@Schema(description = "SourceOrcidV3_0_rc2")
 public class SourceOrcid extends OrcidIdBase implements Serializable {
 
     private static final long serialVersionUID = 1L;

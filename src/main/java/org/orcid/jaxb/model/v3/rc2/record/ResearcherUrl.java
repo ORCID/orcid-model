@@ -16,7 +16,7 @@ import org.orcid.jaxb.model.v3.rc2.common.Source;
 import org.orcid.jaxb.model.v3.rc2.common.Url;
 import org.orcid.jaxb.model.v3.rc2.common.Visibility;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 
@@ -26,7 +26,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "urlName", "url" })
 @XmlRootElement(name = "researcher-url", namespace = "http://www.orcid.org/ns/researcher-url")
-@ApiModel(value = "ResearcherUrlV3_0_rc2")
+@Schema(description = "ResearcherUrlV3_0_rc2")
 public class ResearcherUrl implements Filterable, Serializable, Comparable<ResearcherUrl>, SourceAware {
     private static final long serialVersionUID = 1047027166285177589L;    
     @XmlElement(name = "url-name", namespace = "http://www.orcid.org/ns/researcher-url")
