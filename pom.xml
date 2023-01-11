@@ -14,6 +14,7 @@
 		<main.basedir>${project.basedir}</main.basedir>
 		<swagger.version>2.2.7</swagger.version>
 		<jena.version>3.6.0</jena.version>
+		<jackson.version>2.14.1</jackson.version>
 		<spring.version>5.2.8.RELEASE</spring.version>
 	</properties>
 
@@ -192,7 +193,7 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.jaxrs</groupId>
 			<artifactId>jackson-jaxrs-json-provider</artifactId>
-			<version>2.13.3</version>
+			<version>${jackson.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>io.swagger.core.v3</groupId>
@@ -215,12 +216,12 @@
 	    <dependency>
              <groupId>com.fasterxml.jackson.core</groupId>
              <artifactId>jackson-core</artifactId>
-             <version>2.13.3</version>
+             <version>${jackson.version}</version>
         </dependency>
         <dependency>
              <groupId>com.fasterxml.jackson.core</groupId>
              <artifactId>jackson-databind</artifactId>
-             <version>2.13.3</version>
+             <version>${jackson.version}</version>
         </dependency> 
 		<dependency>
 			<groupId>com.sun.xml.bind</groupId>

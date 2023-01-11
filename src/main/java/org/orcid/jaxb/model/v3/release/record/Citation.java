@@ -16,7 +16,6 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import org.orcid.jaxb.model.common.CitationType;
 import org.orcid.jaxb.model.common.adapters.CitationTypeAdapter;
 
-import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * Element to contain a citation of a given type

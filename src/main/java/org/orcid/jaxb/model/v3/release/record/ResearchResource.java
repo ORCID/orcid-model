@@ -19,8 +19,6 @@ import org.orcid.jaxb.model.v3.release.common.LastModifiedDate;
 import org.orcid.jaxb.model.v3.release.common.Source;
 import org.orcid.jaxb.model.v3.release.common.Visibility;
 
-import io.swagger.v3.oas.annotations.media.Schema;
-
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "proposal", "resourceItems", "displayIndex" })
 @XmlRootElement(name = "research-resource", namespace = "http://www.orcid.org/ns/research-resource")

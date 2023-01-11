@@ -20,7 +20,6 @@ import org.orcid.jaxb.model.common.SequenceType;
 import org.orcid.jaxb.model.common.adapters.SequenceTypeAdapter;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>

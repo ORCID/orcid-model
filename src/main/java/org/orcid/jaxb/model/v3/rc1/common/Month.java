@@ -18,7 +18,6 @@ import javax.xml.bind.annotation.XmlValue;
 import org.apache.commons.lang.StringUtils;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>Java class for anonymous complex type.

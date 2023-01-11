@@ -24,8 +24,6 @@ import org.orcid.jaxb.model.common.ActionType;
 import org.orcid.jaxb.model.v3.release.record.ExternalID;
 import org.orcid.jaxb.model.v3.release.record.PersonExternalIdentifier;
 
-import io.swagger.v3.oas.annotations.media.Schema;
-
 /**
  * Java class for anonymous complex type.
  * 

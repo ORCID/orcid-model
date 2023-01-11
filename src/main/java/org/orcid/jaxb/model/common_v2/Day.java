@@ -16,7 +16,6 @@ import javax.xml.bind.annotation.XmlValue;
 import org.apache.commons.lang.StringUtils;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.io.Serializable;
 

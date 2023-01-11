@@ -19,8 +19,6 @@ import org.orcid.jaxb.model.v3.release.common.Url;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import io.swagger.v3.oas.annotations.media.Schema;
-
 /**
  * New external identifier class
  * 

@@ -32,8 +32,6 @@ import org.orcid.jaxb.model.v3.release.common.Source;
 import org.orcid.jaxb.model.v3.release.common.Url;
 import org.orcid.jaxb.model.v3.release.common.Visibility;
 
-import io.swagger.v3.oas.annotations.media.Schema;
-
 /**
  * <p>
  * Java class for anonymous complex type.
