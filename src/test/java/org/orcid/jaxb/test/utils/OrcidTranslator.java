@@ -56,20 +56,6 @@ public class OrcidTranslator<T> {
     public enum SchemaVersion {
         V2_0("record_2.0/record-2.0.xsd", org.orcid.jaxb.model.record_v2.Record.class), 
         V2_1("record_2.1/record-2.1.xsd", org.orcid.jaxb.model.record_v2.Record.class), 
-        V3_0RC1("record_3.0_rc1/record-3.0_rc1.xsd", org.orcid.jaxb.model.v3.rc1.record.Record.class),
-        V3_0RC1_WORK("record_3.0_rc1/work-3.0_rc1.xsd", org.orcid.jaxb.model.v3.rc1.record.Work.class),
-        V3_0RC1_WORKS("record_3.0_rc1/activities-3.0_rc1.xsd", org.orcid.jaxb.model.v3.rc1.record.summary.Works.class),
-        V3_0RC1_PEER_REVIEW("record_3.0_rc1/peer-review-3.0_rc1.xsd", org.orcid.jaxb.model.v3.rc1.record.PeerReview.class),
-        V3_0RC1_FUNDING("record_3.0_rc1/funding-3.0_rc1.xsd", org.orcid.jaxb.model.v3.rc1.record.Funding.class),
-        V3_0RC1_FUNDINGS("record_3.0_rc1/activities-3.0_rc1.xsd", org.orcid.jaxb.model.v3.rc1.record.summary.Fundings.class),
-        V3_0RC1_ACTIVITIES("record_3.0_rc1/activities-3.0_rc1.xsd", org.orcid.jaxb.model.v3.rc1.record.summary.ActivitiesSummary.class),
-        V3_0RC2("record_3.0_rc2/record-3.0_rc2.xsd", org.orcid.jaxb.model.v3.rc2.record.Record.class),
-        V3_0RC2_WORK("record_3.0_rc2/work-3.0_rc2.xsd", org.orcid.jaxb.model.v3.rc2.record.Work.class),
-        V3_0RC2_WORKS("record_3.0_rc2/activities-3.0_rc2.xsd", org.orcid.jaxb.model.v3.rc2.record.summary.Works.class),
-        V3_0RC2_PEER_REVIEW("record_3.0_rc2/peer-review-3.0_rc2.xsd", org.orcid.jaxb.model.v3.rc2.record.PeerReview.class),
-        V3_0RC2_FUNDING("record_3.0_rc2/funding-3.0_rc2.xsd", org.orcid.jaxb.model.v3.rc2.record.Funding.class),
-        V3_0RC2_FUNDINGS("record_3.0_rc2/activities-3.0_rc2.xsd", org.orcid.jaxb.model.v3.rc2.record.summary.Fundings.class),
-        V3_0RC2_ACTIVITIES("record_3.0_rc2/activities-3.0_rc2.xsd", org.orcid.jaxb.model.v3.rc2.record.summary.ActivitiesSummary.class),
         V3_0("record_3.0/record-3.0.xsd", org.orcid.jaxb.model.v3.release.record.Record.class),
         V3_0_WORK("record_3.0/work-3.0.xsd", org.orcid.jaxb.model.v3.release.record.Work.class),
         V3_0_WORKS("record_3.0/activities-3.0.xsd", org.orcid.jaxb.model.v3.release.record.summary.Works.class),
@@ -101,23 +87,9 @@ public class OrcidTranslator<T> {
     public static OrcidTranslator<org.orcid.jaxb.model.record_v2.Record> v2_1(){
         return new OrcidTranslator<org.orcid.jaxb.model.record_v2.Record>(SchemaVersion.V2_1);
     }
-
-    /**
-     * @return a new v3.0rc1 OrcidTranslator
-     */
-    public static OrcidTranslator<org.orcid.jaxb.model.v3.rc1.record.Record> v3_0RC1(){
-        return new OrcidTranslator<org.orcid.jaxb.model.v3.rc1.record.Record>(SchemaVersion.V3_0RC1);
-    }
     
     /**
-     * @return a new v3.0rc2 OrcidTranslator
-     */
-    public static OrcidTranslator<org.orcid.jaxb.model.v3.rc2.record.Record> v3_0RC2(){
-        return new OrcidTranslator<org.orcid.jaxb.model.v3.rc2.record.Record>(SchemaVersion.V3_0RC2);
-    }
-    
-    /**
-     * @return a new v3.0rc2 OrcidTranslator
+     * @return a new v3.0 OrcidTranslator
      */
     public static OrcidTranslator<org.orcid.jaxb.model.v3.release.record.Record> v3_0(){
         return new OrcidTranslator<org.orcid.jaxb.model.v3.release.record.Record>(SchemaVersion.V3_0);
@@ -128,7 +100,7 @@ public class OrcidTranslator<T> {
     }
     
     /**
-     * @return a new v3.0rc1 OrcidTranslator
+     * @return a new v3.0 OrcidTranslator
      */
     public static <X> OrcidTranslator<X> forSchema(SchemaVersion v){
         return new OrcidTranslator<X>(v);
