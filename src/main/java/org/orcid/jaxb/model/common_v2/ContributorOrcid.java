@@ -11,10 +11,10 @@ import java.io.Serializable;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlRootElement(name = "contributor-orcid")
-@ApiModel(value = "ContributorOrcidV2_0")
+@Schema(description = "ContributorOrcidV2_0")
 public class ContributorOrcid extends OrcidIdBase implements Serializable {
     private static final long serialVersionUID = 525166769240880033L;
 

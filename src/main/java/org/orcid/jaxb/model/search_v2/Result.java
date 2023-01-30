@@ -9,11 +9,11 @@ import javax.xml.bind.annotation.XmlType;
 
 import org.orcid.jaxb.model.common_v2.OrcidIdentifier;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "orcidIdentifier" })
-@ApiModel(value = "ResultV2_0")
+@Schema(description = "ResultV2_0")
 public class Result implements Serializable {
     private static final long serialVersionUID = 1L;
 

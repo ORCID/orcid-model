@@ -19,7 +19,7 @@ import org.orcid.jaxb.model.v3.release.common.ContributorEmail;
 import org.orcid.jaxb.model.v3.release.common.ContributorOrcid;
 import org.orcid.jaxb.model.v3.release.common.CreditName;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>Java class for anonymous complex type.
@@ -32,7 +32,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "contributorOrcid", "creditName", "contributorEmail", "contributorAttributes" })
 @XmlRootElement(name = "contributor", namespace = "http://www.orcid.org/ns/funding")
-@ApiModel(value = "FundingContributorV3_0")
+@Schema(description = "FundingContributorV3_0")
 public class FundingContributor implements Serializable {
 
     /**

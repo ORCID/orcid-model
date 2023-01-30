@@ -13,7 +13,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.io.Serializable;
 
@@ -28,7 +28,7 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "contributorOrcid", "creditName", "contributorEmail", "contributorAttributes" })
 @XmlRootElement(name = "contributor")
-@ApiModel(value = "ContributorV3_0")
+@Schema(description = "ContributorV3_0")
 public class Contributor implements Serializable {
     private static final long serialVersionUID = 7839384026083240514L;
     @XmlElement(name = "contributor-orcid", namespace = "http://www.orcid.org/ns/common")

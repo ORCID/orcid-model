@@ -19,8 +19,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import org.orcid.jaxb.model.common.SequenceType;
 import org.orcid.jaxb.model.common.adapters.SequenceTypeAdapter;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -36,18 +35,18 @@ import io.swagger.annotations.ApiModelProperty;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "contributorSequence", "contributorRole" })
 @XmlRootElement(name = "contributor-attributes")
-@ApiModel(value = "ContributorAttributesV3_0")
+@Schema(description = "ContributorAttributesV3_0")
 public class ContributorAttributes implements Serializable {
 
     private static final long serialVersionUID = 1L;
     
     @XmlJavaTypeAdapter(SequenceTypeAdapter.class)
     @XmlElement(name = "contributor-sequence", namespace = "http://www.orcid.org/ns/work", required = true)
-    @ApiModelProperty(dataType = "string", allowableValues = "first, additional")
+    @Schema(type = "string", allowableValues = "first, additional")
     protected SequenceType contributorSequence;
 
     @XmlElement(name = "contributor-role", namespace = "http://www.orcid.org/ns/work", required = true)
-    @ApiModelProperty(dataType = "string", allowableValues = "author, assignee, editor, chair-or-translator, co-investigator, " +
+    @Schema(type = "string", allowableValues = "author, assignee, editor, chair-or-translator, co-investigator, " +
             "co-inventor, graduate-student, other-inventor, principal-investigator, postdoctoral-researcher, support-staff")
     protected String contributorRole;
 

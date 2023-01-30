@@ -25,13 +25,13 @@ import javax.xml.bind.annotation.XmlType;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.PROPERTY)
 @XmlType(propOrder = { "uri", "path", "host" })
 @JsonPropertyOrder({ "uri", "path", "host" })
 @JsonIgnoreProperties({ "value", "valueAsString" })
-@ApiModel(value = "OrcidIdBaseV3_0")
+@Schema(description = "OrcidIdBaseV3_0")
 public class OrcidIdBase implements Serializable {
     private static final long serialVersionUID = 1L;
 

@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 
@@ -18,7 +18,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "deprecatedDate", "primaryRecord"})
 @XmlRootElement(name = "deprecated", namespace = "http://www.orcid.org/ns/deprecated")
-@ApiModel(value = "DeprecatedV3_0")
+@Schema(description = "DeprecatedV3_0")
 public class Deprecated implements Serializable {
     private static final long serialVersionUID = 3305981432682691956L;
     

@@ -15,8 +15,7 @@ import javax.xml.bind.annotation.XmlValue;
 
 import org.apache.commons.lang.StringUtils;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.io.Serializable;
 
@@ -31,7 +30,7 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "value" })
 @XmlRootElement(name = "day")
-@ApiModel(value = "DayV3_0")
+@Schema(description = "DayV3_0")
 public class Day implements Serializable {
 
     /**
@@ -39,7 +38,7 @@ public class Day implements Serializable {
      */
     private static final long serialVersionUID = 1L;
     @XmlValue
-    @ApiModelProperty(example = "28")
+    @Schema(example = "28")
     protected String value;
 
     public Day() {

@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlType;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * @author Angel Montenegro 
@@ -16,7 +16,7 @@ import io.swagger.annotations.ApiModel;
  */
 @XmlType(name = "contributorRole", namespace = "http://www.orcid.org/ns/funding")
 @XmlEnum
-@ApiModel(value = "FundingContributorRoleV2_0")
+@Schema(description = "FundingContributorRoleV2_0")
 public enum FundingContributorRole implements Serializable {
 
     @XmlEnumValue("lead")

@@ -4,10 +4,10 @@ import java.io.Serializable;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlRootElement(name = "qualification-summary", namespace = "http://www.orcid.org/ns/qualification")
-@ApiModel(value = "QualificationSummaryV3_0")
+@Schema(description = "QualificationSummaryV3_0")
 public class QualificationSummary extends AffiliationSummary implements Serializable {
 
     /**

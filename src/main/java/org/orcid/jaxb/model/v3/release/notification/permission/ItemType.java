@@ -3,7 +3,7 @@ package org.orcid.jaxb.model.v3.release.notification.permission;
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 
@@ -11,7 +11,7 @@ import io.swagger.annotations.ApiModel;
  *
  */
 @XmlEnum
-@ApiModel(value = "ItemTypeV3_0")
+@Schema(description = "ItemTypeV3_0")
 public enum ItemType {
     //@formatter:off
     @XmlEnumValue("bio") BIO,

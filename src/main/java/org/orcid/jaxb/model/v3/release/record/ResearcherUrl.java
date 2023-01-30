@@ -9,15 +9,13 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import org.orcid.jaxb.model.v3.release.common.CreatedDate;
 import org.orcid.jaxb.model.v3.release.common.Filterable;
 import org.orcid.jaxb.model.v3.release.common.LastModifiedDate;
 import org.orcid.jaxb.model.v3.release.common.Source;
 import org.orcid.jaxb.model.v3.release.common.Url;
 import org.orcid.jaxb.model.v3.release.common.Visibility;
-
-import io.swagger.annotations.ApiModel;
 
 /**
  * 
@@ -27,7 +25,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "urlName", "url" })
 @XmlRootElement(name = "researcher-url", namespace = "http://www.orcid.org/ns/researcher-url")
-@ApiModel(value = "ResearcherUrlV3_0")
+@Schema(description = "ResearcherUrlV3_0")
 public class ResearcherUrl implements Filterable, Serializable, Comparable<ResearcherUrl>, SourceAware {
     private static final long serialVersionUID = 1047027166285177589L;    
     @XmlElement(name = "url-name", namespace = "http://www.orcid.org/ns/researcher-url")
@@ -43,7 +41,7 @@ public class ResearcherUrl implements Filterable, Serializable, Comparable<Resea
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "created-date")
     protected CreatedDate createdDate;
     @XmlAttribute
-    @ApiModelProperty(dataType = "string", allowableValues = "limited, registered-only, public")
+    @Schema(type = "string", allowableValues = "limited, registered-only, public")
     protected Visibility visibility;
     @XmlAttribute
     protected String path;

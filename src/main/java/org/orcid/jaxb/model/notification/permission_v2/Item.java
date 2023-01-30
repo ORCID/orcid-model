@@ -22,7 +22,7 @@ import javax.xml.bind.annotation.XmlType;
 import org.orcid.jaxb.model.common.ActionType;
 import org.orcid.jaxb.model.record_v2.ExternalID;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -51,7 +51,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = { "putCode", "itemType", "itemName", "externalIdentifier" })
 @XmlRootElement(name = "item")
-@ApiModel(value = "ItemV2_0")
+@Schema(description = "ItemV2_0")
 public class Item implements Serializable {
     private static final long serialVersionUID = -2132083722870067565L;
     @XmlAttribute(name = "put-code")

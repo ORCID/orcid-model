@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import org.orcid.jaxb.model.common.PeerReviewSubjectType;
 import org.orcid.jaxb.model.common.PeerReviewType;
 import org.orcid.jaxb.model.common.Role;
@@ -28,18 +28,17 @@ import org.orcid.jaxb.model.v3.release.common.Title;
 import org.orcid.jaxb.model.v3.release.common.Url;
 import org.orcid.jaxb.model.v3.release.common.Visibility;
 
-import io.swagger.annotations.ApiModel;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "role", "externalIdentifiers", "url", "type",  "completionDate",
         "groupId", "subjectExternalIdentifier", "subjectContainerName", "subjectType", "subjectName", "subjectUrl", "organization" })
 @XmlRootElement(name = "peer-review", namespace = "http://www.orcid.org/ns/peer-review")
-@ApiModel(value = "PeerReviewV3_0")
+@Schema(description = "PeerReviewV3_0")
 public class PeerReview implements Filterable, Serializable, OrganizationHolder, SourceAware, ExternalIdentifiersAwareActivity {
     private static final long serialVersionUID = -1112309604310926743L;
     @XmlJavaTypeAdapter(PeerReviewRoleAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "reviewer-role")
-    @ApiModelProperty(dataType = "string", allowableValues = "reviewer, editor, member, chair, organizer")
+    @Schema(type = "string", allowableValues = "reviewer, editor, member, chair, organizer")
     protected Role role;
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "review-identifiers")
     protected ExternalIDs externalIdentifiers;
@@ -47,7 +46,7 @@ public class PeerReview implements Filterable, Serializable, OrganizationHolder,
     protected Url url;
     @XmlJavaTypeAdapter(PeerReviewTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "review-type")
-    @ApiModelProperty(dataType = "string", allowableValues = "review, evaluation")
+    @Schema(type = "string", allowableValues = "review, evaluation")
     protected PeerReviewType type;
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "review-completion-date")
     protected FuzzyDate completionDate;
@@ -59,7 +58,7 @@ public class PeerReview implements Filterable, Serializable, OrganizationHolder,
     protected Title subjectContainerName;
     @XmlJavaTypeAdapter(PeerReviewSubjectTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "subject-type")
-    @ApiModelProperty(dataType = "string", allowableValues = "artistic-performance, book-chapter, book-review, book, conference-abstract, conference-paper," +
+    @Schema(type = "string", allowableValues = "artistic-performance, book-chapter, book-review, book, conference-abstract, conference-paper," +
             "conference-poster, data-set, dictionary-entry, disclosure, dissertation-thesis, edited-book, encyclopedia-entry, invention, journal-article," +
             "journal-issue, lecture-speech, license, magazine-article, manual, newsletter-article, newspaper-article, online-resource, other, patent," +
             "registered-copyright, report, research-technique, research-tool, software, spin-off-company, standards-and-policy, supervised-student-publication," +
@@ -76,7 +75,7 @@ public class PeerReview implements Filterable, Serializable, OrganizationHolder,
     @XmlAttribute(name = "put-code")
     protected Long putCode;
     @XmlAttribute
-    @ApiModelProperty(dataType = "string", allowableValues = "limited, registered-only, public")
+    @Schema(type = "string", allowableValues = "limited, registered-only, public")
     protected Visibility visibility;
     @XmlAttribute(name = "path")
     protected String path;

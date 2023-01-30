@@ -8,13 +8,13 @@ import javax.xml.bind.annotation.XmlTransient;
 
 import org.orcid.jaxb.model.v3.release.common.OrcidIdBase;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.lang.Deprecated;
 
 @Deprecated 
 @XmlRootElement(name = "source")
-@ApiModel(value = "V3_0")
+@Schema(description = "V3_0")
 public class WorkSource extends OrcidIdBase implements Serializable {
 
     // This field indicates that the source is null on database

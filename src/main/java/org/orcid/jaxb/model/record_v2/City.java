@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlValue;
 
 import org.orcid.jaxb.model.common_v2.Visibility;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * City
@@ -29,7 +29,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "content" })
 @XmlRootElement(name = "city")
-@ApiModel(value = "CityV2_0")
+@Schema(description = "CityV2_0")
 public class City implements Serializable {
 
     private final static long serialVersionUID = 1L;

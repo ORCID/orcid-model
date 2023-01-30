@@ -7,11 +7,11 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "orcidId", "givenNames", "familyNames", "creditName", "otherNames", "emails", "institutionNames" })
-@ApiModel(value = "ExpandedResultV3_0")
+@Schema(description = "ExpandedResultV3_0")
 public class ExpandedResult implements Serializable {
     
     private static final long serialVersionUID = -7750679507838375771L;

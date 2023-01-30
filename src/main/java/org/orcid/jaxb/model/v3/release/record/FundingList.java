@@ -22,7 +22,7 @@ import javax.xml.bind.annotation.XmlType;
 
 import org.orcid.jaxb.model.v3.release.common.LastModifiedDate;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * Java class for anonymous complex type.
@@ -34,7 +34,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "fundings" })
 @XmlRootElement(name = "fundingList")
-@ApiModel(value = "FundingListV3_0")
+@Schema(description = "FundingListV3_0")
 public class FundingList implements ActivitiesContainer, Serializable {
 
     private static final long serialVersionUID = 1L;

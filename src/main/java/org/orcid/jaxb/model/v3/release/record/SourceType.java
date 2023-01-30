@@ -3,7 +3,7 @@ package org.orcid.jaxb.model.v3.release.record;
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 
@@ -11,7 +11,7 @@ import io.swagger.annotations.ApiModel;
  *
  */
 @XmlEnum
-@ApiModel(value = "SourceTypeV3_0")
+@Schema(description = "SourceTypeV3_0")
 public enum SourceType {
     @XmlEnumValue("USER") USER("USER");
 

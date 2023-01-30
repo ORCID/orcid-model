@@ -12,7 +12,7 @@ import org.orcid.jaxb.model.common_v2.LastModifiedDate;
 import org.orcid.jaxb.model.common_v2.Source;
 import org.orcid.jaxb.model.message.CreationMethod;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 
@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiModel;
 @XmlType(propOrder = { "creationMethod", "completionDate", "submissionDate", "lastModifiedDate", "claimed", "source", "deactivationDate", "verifiedEmail",
         "verifiedPrimaryEmail" })
 @XmlRootElement(name = "history", namespace = "http://www.orcid.org/ns/history")
-@ApiModel(value = "HistoryV2_0")
+@Schema(description = "HistoryV2_0")
 public class History implements Serializable, SourceAware {
     private static final long serialVersionUID = 5662067844899740318L;
     @XmlElement(namespace = "http://www.orcid.org/ns/history", name = "creation-method")

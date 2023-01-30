@@ -4,7 +4,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 import org.orcid.jaxb.model.v3.release.common.OrcidIdentifier;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 
@@ -12,7 +12,7 @@ import io.swagger.annotations.ApiModel;
  * 
  */
 @XmlRootElement(name = "application-group-orcid")
-@ApiModel(value = "GroupOrcidV3_0")
+@Schema(description = "GroupOrcidV3_0")
 public class GroupOrcid extends OrcidIdentifier {
     private static final long serialVersionUID = -7831298842584309866L;
 

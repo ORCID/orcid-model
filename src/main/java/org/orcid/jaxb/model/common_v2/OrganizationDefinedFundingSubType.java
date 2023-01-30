@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 
 /**
@@ -21,7 +21,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "content" })
 @XmlRootElement(name = "organizationDefinedType")
-@ApiModel(value = "OrganizationDefinedFundingSubTypeV2_0")
+@Schema(description = "OrganizationDefinedFundingSubTypeV2_0")
 public class OrganizationDefinedFundingSubType implements Serializable {
         
     private static final long serialVersionUID = 1L;

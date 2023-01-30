@@ -21,7 +21,7 @@ import org.orcid.jaxb.model.common.adapters.Iso3166CountryAdapter;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * ISO 3611 country
@@ -39,7 +39,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "value" })
 @XmlRootElement(name = "country")
-@ApiModel(value = "CountryV3_0")
+@Schema(description = "CountryV3_0")
 public class Country implements Serializable, Comparable<Country> {
 
     private final static long serialVersionUID = 1L;

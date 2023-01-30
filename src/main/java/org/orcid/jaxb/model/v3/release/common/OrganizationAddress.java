@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import org.orcid.jaxb.model.common.Iso3166Country;
 import org.orcid.jaxb.model.common.adapters.Iso3166CountryAdapter;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * Container for organization location information
@@ -37,7 +37,7 @@ import io.swagger.annotations.ApiModel;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "organization-address", propOrder = { "city", "region", "country" })
 @XmlRootElement(name = "organizationAddress", namespace = "http://www.orcid.org/ns/common")
-@ApiModel(value = "OrganizationAddressV3_0")
+@Schema(description = "OrganizationAddressV3_0")
 public class OrganizationAddress implements Serializable {
 
     private final static long serialVersionUID = 1L;
