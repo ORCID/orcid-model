@@ -1,0 +1,89 @@
+{
+  "type": "grant",
+  "organization-defined-type": {
+    "value": "Funding sub-type"
+  },
+  "title": {
+    "title": {
+      "value": "Grant title"
+    },
+    "translated-title": {
+      "value": "Translated title",
+      "language-code": "en"
+    }
+  },
+  "short-description": "Short description for the funding.",
+  "amount": {
+    "value": "1000.0",
+    "currency-code": "ADP"
+  },
+  "url": {
+    "value": "https://alt-url.org"
+  },
+  "start-date": {
+    "year": {
+      "value": "2000"
+    },
+    "month": {
+      "value": "02"
+    },
+    "day": {
+      "value": "02"
+    }
+  },
+  "end-date": {
+    "year": {
+      "value": "2020"
+    },
+    "month": {
+      "value": "02"
+    },
+    "day": {
+      "value": "02"
+    }
+  },
+  "external-ids": {
+    "external-id": [
+      {
+        "external-id-type": "grant_number",
+        "external-id-value": "987654321",
+        "external-id-url": {
+          "value": "http://orcid.org"
+        },
+        "external-id-relationship": "self"
+      },
+      {
+        "external-id-type": "grant_number",
+        "external-id-value": "PTDC/NEU",
+        "external-id-url": {
+          "value": "http://orcid.org"
+        },
+        "external-id-relationship": "self"
+      },
+      {
+        "external-id-type": "grant_number",
+        "external-id-value": "1234567",
+
+        "external-id-url": {
+          "value": "https://doi.org/10.1087/20120404"
+        },
+        "external-id-relationship": "part-of"
+      }
+    ]
+  },
+  "contributors": {
+    "contributor": []
+  },
+  "organization": {
+    "name": "ORCID",
+    "address": {
+      "city": "Bethesda",
+      "region": "Maryland",
+      "country": "US"
+    },
+    "disambiguated-organization": {
+      "disambiguated-organization-identifier": "https://ror.org/04fa4r544",
+      "disambiguation-source": "ROR"
+    }
+  }
+}

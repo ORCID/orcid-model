@@ -1,0 +1,269 @@
+{
+  "proposal": {
+    "title": {
+      "title": {
+        "value": "Proposal title"
+      },
+      "translated-title": {
+        "value": "Translated-title English",
+        "language-code": "en"
+      }
+    },
+    "hosts": {
+      "organization": [
+        {
+          "name": "ORCID",
+          "address": {
+            "city": "Bethesda",
+            "region": "Maryland",
+            "country": "US"
+          },
+          "disambiguated-organization": {
+            "disambiguated-organization-identifier": "grid.455335.1",
+            "disambiguation-source": "GRID"
+          }
+        },
+        {
+          "name": "NASA",
+          "address": {
+            "city": "Washington",
+            "region": "D.C",
+            "country": "US"
+          },
+          "disambiguated-organization": {
+            "disambiguated-organization-identifier": "https://ror.org/027ka1x80",
+            "disambiguation-source": "ROR"
+          }
+        }
+      ]
+    },
+    "external-ids": {
+      "external-id": [
+        {
+          "external-id-type": "source-work-id",
+          "external-id-value": "123456",
+          "external-id-url": "https://example.com/123456",
+          "external-id-relationship": "self"
+        },
+        {
+          "external-id-type": "handle",
+          "external-id-value": "https://grants.net/123456",
+          "external-id-url": "https://example.com/123456",
+          "external-id-relationship": "self"
+        },
+        {
+          "external-id-type": "other-id",
+          "external-id-value": "TG001JH",
+          "external-id-url": "https://example.com/TG001JH",
+          "external-id-relationship": "part-of"
+        }
+      ]
+    },
+    "start-date": {
+      "year": {
+        "value": "1999"
+      },
+      "month": {
+        "value": "02"
+      },
+      "day": {
+        "value": "02"
+      }
+    },
+    "end-date": {
+      "year": {
+        "value": "2012"
+      },
+      "month": {
+        "value": "02"
+      },
+      "day": {
+        "value": "02"
+      }
+    },
+    "url": {
+      "value": "http://xsede.org/GiantLaserAward"
+    }
+  },
+  "resource-item": [
+    {
+      "resource-name": "Giant Laser 1",
+      "resource-type": "infrastructures",
+      "hosts": {
+        "organization": [
+          {
+            "name": "Lasers-R-US",
+            "address": {
+              "city": "Bethesda",
+              "region": "Maryland",
+              "country": "US"
+            },
+            "disambiguated-organization": {
+              "disambiguated-organization-identifier": "grid.455335.1",
+              "disambiguation-source": "GRID"
+            }
+          }
+        ]
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "rrid",
+            "external-id-value": "rrid:giantLASER",
+            "external-id-url": "https://example.com/giant-laser",
+            "external-id-relationship": "self"
+          },
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.123/giantlaser",
+            "external-id-url": "https://doi.org/10.123/giantlase",
+            "external-id-relationship": "self"
+          },
+          {
+            "external-id-type": "emdb",
+            "external-id-value": "https://www.ebi.ac.uk/emdb/EMD-10623",
+            "external-id-url": "https://www.ebi.ac.uk/emdb/EMD-10623",
+            "external-id-relationship": "part-of"
+          }
+        ]
+      },
+      "url": "https://example.com"
+    },
+    {
+      "resource-name": "Moon Targets",
+      "resource-type": "infrastructures",
+      "hosts": {
+        "organization": [
+          {
+            "name": "Moon Holdings Ltd",
+            "address": {
+              "city": "Bethesda",
+              "region": "Maryland",
+              "country": "US"
+            },
+            "disambiguated-organization": {
+              "disambiguated-organization-identifier": "grid.455335.1",
+              "disambiguation-source": "GRID"
+            }
+          }
+        ]
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "uri",
+            "external-id-value": "https://moon.org/targetOnTheMoon",
+            "external-id-url": null,
+            "external-id-relationship": "part-of"
+          }
+        ]
+      },
+      "url": "https://example.com"
+    },
+    {
+      "resource-name": "Rare Book Collection on Lasers",
+      "resource-type": "collections",
+      "hosts": {
+        "organization": [
+          {
+            "name": "Moon Holdings Ltd",
+            "address": {
+              "city": "Bethesda",
+              "region": "Maryland",
+              "country": "US"
+            },
+            "disambiguated-organization": {
+              "disambiguated-organization-identifier": "grid.455335.1",
+              "disambiguation-source": "GRID"
+            }
+          }
+        ]
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "uri",
+            "external-id-value": "https://moon.org/rarebooksaboutlasers",
+            "external-id-url": null,
+            "external-id-relationship": "part-of"
+          }
+        ]
+      },
+      "url": null
+    },
+    {
+      "resource-name": "Giant Computer for Laser",
+      "resource-type": "equipment",
+      "hosts": {
+        "organization": [
+          {
+            "name": "Moon Holdings Ltd",
+            "address": {
+              "city": "Bethesda",
+              "region": "Maryland",
+              "country": "US"
+            },
+            "disambiguated-organization": {
+              "disambiguated-organization-identifier": "grid.455335.1",
+              "disambiguation-source": "GRID"
+            }
+          }
+        ]
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "uri",
+            "external-id-value": "https://moon.org/giant-computer-laser",
+            "external-id-url": null,
+            "external-id-relationship": "self"
+          },
+          {
+            "external-id-type": "uri",
+            "external-id-value": "https://moon.org/giant-computers",
+            "external-id-url": null,
+            "external-id-relationship": "part-of"
+          }
+        ]
+      },
+      "url": null
+    },
+    {
+      "resource-name": "Legal advice regarding giant lasers",
+      "resource-type": "services",
+      "hosts": {
+        "organization": [
+          {
+            "name": "Moon Holdings Ltd",
+            "address": {
+              "city": "Bethesda",
+              "region": "Maryland",
+              "country": "US"
+            },
+            "disambiguated-organization": {
+              "disambiguated-organization-identifier": "grid.455335.1",
+              "disambiguation-source": "GRID"
+            }
+          }
+        ]
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "uri",
+            "external-id-value": "https://moon.org/is-this-legal",
+            "external-id-url": null,
+            "external-id-relationship": "self"
+          },
+          {
+            "external-id-type": "uri",
+            "external-id-value": "https://moon.org/dont-sue",
+            "external-id-url": null,
+            "external-id-relationship": "part-of"
+          }
+        ]
+      },
+      "url": "https://example.com"
+    }
+  ]
+}
