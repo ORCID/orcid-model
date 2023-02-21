@@ -1,0 +1,162 @@
+{
+  "bulk": [
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 1"
+          },
+          "subtitle": "Work 1 subtitle",
+          "translated-title": {
+            "value": "Translated-title English",
+            "language-code": "en"
+          }
+        },
+        "journal-title": {
+          "value": "Journal Title"
+        },
+        "short-description": "Description",
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2015"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1026/j.crvasa.2015.05.007",
+              "external-id-url": {
+                "value": "http://extId/1"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": null,
+        "contributors": {
+          "contributor": []
+        },
+        "language-code": null,
+        "country": null,
+        "visibility": "public"
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 2"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Journal Title"
+        },
+        "short-description": "Short description",
+        "citation": {
+          "citation-type": "bibtex",
+          "citation-value": "\n\t\t\t@article {ORCID2012,\n\t\t\t\ttitle = \"ORCID: a system to uniquely identify researchers\",\n\t\t\t\tjournal = \"Learned Publishing\",\n\t\t\t\tyear = \"2022\",\n\t\t\t\tdoi = \"doi:10.1087/20140404\"\n\t\t\t\t}\n\t\t"
+        },
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2015"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1012/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": "https://example.com",
+        "contributors": {
+          "contributor": [
+            {
+              "contributor-orcid": {
+                "uri": "https://orcid.org/0000-0002-5391-5437",
+                "path": "0000-0002-5391-5437",
+                "host": "orcid.org"
+              },
+              "credit-name": {
+                "value": "Jordan"
+              },
+              "contributor-email": null,
+              "contributor-attributes": {
+                "contributor-sequence": "first",
+                "contributor-role": "author"
+              }
+            }
+          ]
+        },
+        "country": null
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 3"
+          },
+          "subtitle": "Work 3 subtitle"
+        },
+        "journal-title": {
+          "value": "Another journal title"
+        },
+        "short-description": "Short description",
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2015"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1032/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    }
+  ]
+}

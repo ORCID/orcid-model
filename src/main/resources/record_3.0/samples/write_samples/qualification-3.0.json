@@ -1,0 +1,61 @@
+{
+  "department-name": "Systems Engineering & Engineering",
+  "role-title": "Foundations of Aerospace at NASA",
+  "start-date": {
+    "year": {
+      "value": "2022"
+    },
+    "month": {
+      "value": "01"
+    },
+    "day": {
+      "value": "02"
+    }
+  },
+  "end-date": {
+    "year": {
+      "value": "2023"
+    },
+    "month": {
+      "value": "01"
+    },
+    "day": {
+      "value": "02"
+    }
+  },
+  "organization": {
+    "name": "National Aeronautics and Space Administration",
+    "address": {
+      "city": "Washington",
+      "region": "D.C",
+      "country": "US"
+    },
+    "disambiguated-organization": {
+      "disambiguated-organization-identifier": "https://ror.org/027ka1x80",
+      "disambiguation-source": "ROR"
+    }
+  },
+  "url": {
+    "value": "http://tempuri.org"
+  },
+  "external-ids": {
+    "external-id": [
+      {
+        "external-id-type": "other-id",
+        "external-id-value": "external-identifier-value",
+        "external-id-url": {
+          "value": "http://tempuri.org"
+        },
+        "external-id-relationship": "self"
+      },
+      {
+        "external-id-type": "grant_number",
+        "external-id-value": "external-identifier-value2",
+        "external-id-url": {
+          "value": "http://tempuri.org/2"
+        },
+        "external-id-relationship": "part-of"
+      }
+    ]
+  }
+}

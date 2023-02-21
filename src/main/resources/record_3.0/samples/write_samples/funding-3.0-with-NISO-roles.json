@@ -1,0 +1,334 @@
+{
+  "type": "grant",
+  "organization-defined-type": {
+    "value": "Funding sub-type"
+  },
+  "title": {
+    "title": {
+      "value": "Grant title"
+    },
+    "translated-title": {
+      "value": "Translated title",
+      "language-code": "en"
+    }
+  },
+  "short-description": "Short description for the funding.",
+  "amount": {
+    "value": "1000.0",
+    "currency-code": "ADP"
+  },
+  "url": {
+    "value": "https://alt-url.org"
+  },
+  "start-date": {
+    "year": {
+      "value": "2000"
+    },
+    "month": {
+      "value": "02"
+    },
+    "day": {
+      "value": "02"
+    }
+  },
+  "end-date": {
+    "year": {
+      "value": "2020"
+    },
+    "month": {
+      "value": "02"
+    },
+    "day": {
+      "value": "02"
+    }
+  },
+  "external-ids": {
+    "external-id": [
+      {
+        "external-id-type": "grant_number",
+        "external-id-value": "1234567",
+
+        "external-id-url": {
+          "value": "https://doi.org/10.1087/20120404"
+        },
+        "external-id-relationship": "part-of"
+      },
+      {
+        "external-id-type": "grant_number",
+        "external-id-value": "PTDC/NEU",
+        "external-id-url": {
+          "value": "http://orcid.org"
+        },
+        "external-id-relationship": "self"
+      }
+    ]
+  },
+  "contributors": {
+    "contributor": [
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-5391-5437",
+          "path": "0000-0002-5391-5437",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Jordan Holt"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-role": "lead"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-4325-871X",
+          "path": "0000-0002-4325-871X",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Fran Alsina"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-role": "co-lead"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-4685-4189",
+          "path": "0000-0002-4685-4189",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Frank"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-role": "supported-by"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-2990-7971",
+          "path": "0000-0002-2990-7971",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Özcan"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-role": "other-contribution"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-2428-8059",
+          "path": "0000-0002-2428-8059",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Filip"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-role": "http://credit.niso.org/contributor-roles/writing-review-editing/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0001-6546-5501",
+          "path": "0000-0001-6546-5501",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Bulu"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-role": "http://credit.niso.org/contributor-roles/writing-original-draft/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0001-7249-4079",
+          "path": "0000-0001-7249-4079",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Francisco"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-role": "http://credit.niso.org/contributor-roles/visualization/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-1601-6950",
+          "path": "0000-0002-1601-6950",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Amelya Betsalonia"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-role": "http://credit.niso.org/contributor-roles/validation/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-3409-1361",
+          "path": "0000-0003-3409-1361",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Aslan Yavuz"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-role": "http://credit.niso.org/contributor-roles/supervision/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-6851-3502",
+          "path": "0000-0002-6851-3502",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Sir-yeon"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-role": "http://credit.niso.org/contributor-roles/software/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-6634-4071",
+          "path": "0000-0002-6634-4071",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Miloslav"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-role": "http://credit.niso.org/contributor-roles/resources/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-3043-2835",
+          "path": "0000-0003-3043-2835",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Sir Theoneste"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-role": "http://credit.niso.org/contributor-roles/project-administration/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-2136-9360",
+          "path": "0000-0003-2136-9360",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Robert"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-role": "http://credit.niso.org/contributor-roles/methodology/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-4944-4334",
+          "path": "0000-0003-4944-4334",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Lynn"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-role": "http://credit.niso.org/contributor-roles/investigation/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-0497-2910",
+          "path": "0000-0002-0497-2910",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Jeremy"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-role": "http://credit.niso.org/contributor-roles/funding-acquisition/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-7642-8906",
+          "path": "0000-0002-7642-8906",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Adrienne"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-role": "http://credit.niso.org/contributor-roles/formal-analysis/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-2428-4058",
+          "path": "0000-0002-2428-4058",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Mihaela"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-role": "http://credit.niso.org/contributor-roles/data-curation/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-3445-5428",
+          "path": "0000-0003-3445-5428",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Mitchell"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-role": "http://credit.niso.org/contributor-roles/conceptualization/"
+        }
+      }
+    ]
+  },
+  "organization": {
+    "name": "Wellcome Trust",
+    "address": {
+      "city": "London",
+      "region": null,
+      "country": "GB"
+    },
+    "disambiguated-organization": {
+      "disambiguated-organization-identifier": "https://ror.org/033jnv181",
+      "disambiguation-source": "ROR"
+    }
+  }
+}

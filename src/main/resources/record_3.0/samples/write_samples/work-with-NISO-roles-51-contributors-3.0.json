@@ -1,0 +1,831 @@
+{
+  "title": {
+    "title": {
+      "value": "Work title"
+    },
+    "subtitle": {
+      "value": "Work subtitle"
+    },
+    "translated-title": {
+      "value": "Translated-title English",
+      "language-code": "en"
+    }
+  },
+  "journal-title": {
+    "value": "Journal title"
+  },
+  "short-description": "This is a short description of the work.",
+  "citation": {
+    "citation-type": "bibtex",
+    "citation-value": "\n\t\t\t@article {ORCID2012,\n\t\t\t\ttitle = \"ORCID: a system to uniquely identify researchers\",\n\t\t\t\tjournal = \"Learned Publishing\",\n\t\t\t\tyear = \"2022\",\n\t\t\t\tdoi = \"doi:10.1087/20140404\"\n\t\t\t\t}\n\t\t"
+  },
+  "type": "journal-article",
+  "publication-date": {
+    "year": {
+      "value": "2022"
+    },
+    "month": {
+      "value": "05"
+    },
+    "day": {
+      "value": "24"
+    }
+  },
+  "external-ids": {
+    "external-id": [
+      {
+        "external-id-type": "doi",
+        "external-id-value": "10.1187/20110402",
+        "external-id-url": {
+          "value": "https://doi.org/10.1087/20120404"
+        },
+        "external-id-relationship": "part-of"
+      },
+      {
+        "external-id-type": "doi",
+        "external-id-value": "10.1187/20110404",
+        "external-id-normalized-error": null,
+        "external-id-url": {
+          "value": "https://doi.org/10.1187/20110404"
+        },
+        "external-id-relationship": "self"
+      }
+    ]
+  },
+  "url": {
+    "value": "https://example.com"
+  },
+  "contributors": {
+    "contributor": [
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-5391-5437",
+          "path": "0000-0002-5391-5437",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Jordan"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "first",
+          "contributor-role": "http://credit.niso.org/contributor-roles/writing-review-editing/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-4325-871X",
+          "path": "0000-0002-4325-871X",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Fran"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "http://credit.niso.org/contributor-roles/writing-original-draft/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-4856-5225",
+          "path": "0000-0002-4856-5225",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Sam"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "http://credit.niso.org/contributor-roles/visualization/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-7174-6139",
+          "path": "0000-0002-7174-6139",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Jordan"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "http://credit.niso.org/contributor-roles/validation/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-1198-7731",
+          "path": "0000-0002-1198-7731",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Frank"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "http://credit.niso.org/contributor-roles/supervision/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-5878-5299",
+          "path": "0000-0002-5878-5299",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Ivo Saviane"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "http://credit.niso.org/contributor-roles/software/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-1635-6776",
+          "path": "0000-0003-1635-6776",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Jessica"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "http://credit.niso.org/contributor-roles/resources/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-5477-7064",
+          "path": "0000-0002-5477-7064",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Albert"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "http://credit.niso.org/contributor-roles/project-administration/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-2209-5667",
+          "path": "0000-0002-2209-5667",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Alfonso Chavera"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "http://credit.niso.org/contributor-roles/methodology/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-0608-6864",
+          "path": "0000-0003-0608-6864",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Alfonso"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "http://credit.niso.org/contributor-roles/investigation/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-2258-0128",
+          "path": "0000-0002-2258-0128",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Florina"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "http://credit.niso.org/contributor-roles/funding-acquisition/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0001-6925-8657",
+          "path": "0000-0001-6925-8657",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Saeed"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "http://credit.niso.org/contributor-roles/formal-analysis/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-8590-5348",
+          "path": "0000-0002-8590-5348",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Mostafa"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "http://credit.niso.org/contributor-roles/data-curation/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-5052-8343",
+          "path": "0000-0002-5052-8343",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Nichal"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "http://credit.niso.org/contributor-roles/conceptualization/"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-9657-6578",
+          "path": "0000-0002-9657-6578",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Farhad"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "support-staff"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0001-9485-2885",
+          "path": "0000-0001-9485-2885",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Kiyanoosh"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "support-staff"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-4452-321X",
+          "path": "0000-0003-4452-321X",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Hamed"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "support-staff"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0001-7760-5014",
+          "path": "0000-0001-7760-5014",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Marzieh"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "support-staff"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-1521-6229",
+          "path": "0000-0003-1521-6229",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Behnoush"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "support-staff"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-8274-4091",
+          "path": "0000-0002-8274-4091",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Mehdi"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "support-staff"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-3714-9776",
+          "path": "0000-0003-3714-9776",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Sajjad"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "support-staff"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-0377-3984",
+          "path": "0000-0003-0377-3984",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Sima"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-3620-9319",
+          "path": "0000-0003-3620-9319",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Mehdi"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-3869-6114",
+          "path": "0000-0003-3869-6114",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Laleh"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0001-9110-5040",
+          "path": "0000-0001-9110-5040",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Hamid"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-0964-485X",
+          "path": "0000-0003-0964-485X",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "shahrokh"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0001-9299-2067",
+          "path": "0000-0001-9299-2067",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Amir"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-2404-7068",
+          "path": "0000-0003-2404-7068",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Leila"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-5748-4160",
+          "path": "0000-0002-5748-4160",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Ashkan"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-0964-2689",
+          "path": "0000-0002-0964-2689",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Mohammad"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-5488-1814",
+          "path": "0000-0002-5488-1814",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Mariska"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0001-5495-4502",
+          "path": "0000-0001-5495-4502",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Jelmer"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-3524-5281",
+          "path": "0000-0002-3524-5281",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Menno"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-0417-6380",
+          "path": "0000-0003-0417-6380",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Joseph"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-4790-8094",
+          "path": "0000-0003-4790-8094",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Diretnan"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-0210-6880",
+          "path": "0000-0003-0210-6880",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Nils"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-4556-315X",
+          "path": "0000-0003-4556-315X",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Jacques"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-1811-3647",
+          "path": "0000-0003-1811-3647",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Anna"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0001-8881-7389",
+          "path": "0000-0001-8881-7389",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Olivier"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0001-7442-2693",
+          "path": "0000-0001-7442-2693",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Kees"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-1800-3173",
+          "path": "0000-0003-1800-3173",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Beatrix"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0003-4426-8968",
+          "path": "0000-0003-4426-8968",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Mahdi"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-0771-3009",
+          "path": "0000-0002-0771-3009",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Monique"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-2897-5470",
+          "path": "0000-0002-2897-5470",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Gyang"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0001-8635-8369",
+          "path": "0000-0001-8635-8369",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Sandra"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-9486-5050",
+          "path": "0000-0002-9486-5050",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Nathalie"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-1596-9370",
+          "path": "0000-0002-1596-9370",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Adrian"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-1376-6449",
+          "path": "0000-0002-1376-6449",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Freek"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-5504-4559",
+          "path": "0000-0002-5504-4559",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Sander"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0001-6225-4047",
+          "path": "0000-0001-6225-4047",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Christopher"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0001-9534-2668",
+          "path": "0000-0001-9534-2668",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Amalia"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "co-investigator"
+        }
+      }
+    ]
+  },
+  "language-code": "en",
+  "country": {
+    "value": "CA"
+  }
+}

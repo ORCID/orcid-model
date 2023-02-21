@@ -1,0 +1,4775 @@
+{
+  "bulk": [
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 1"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": {
+          "citation-type": "bibtex",
+          "citation-value": "\n\t\t\t@article {ORCID2012,\n\t\t\t\ttitle = \"ORCID: a system to uniquely identify researchers\",\n\t\t\t\tjournal = \"Learned Publishing\",\n\t\t\t\tyear = \"2022\",\n\t\t\t\tdoi = \"doi:10.1087/20140404\"\n\t\t\t\t}\n\t\t"
+        },
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2021"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1001/j.crvasa.2015.05.007",
+              "external-id-url": {
+                "value": "http://extId/1"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": null,
+        "contributors": {
+          "contributor": [
+            {
+              "contributor-orcid": {
+                "uri": "https://orcid.org/0000-0002-5391-5437",
+                "path": "0000-0002-5391-5437",
+                "host": "orcid.org"
+              },
+              "credit-name": {
+                "value": "Jordan"
+              },
+              "contributor-email": "example@example.com",
+              "contributor-attributes": {
+                "contributor-sequence": "first",
+                "contributor-role": "author"
+              }
+            },
+            {
+              "contributor-orcid": {
+                "uri": "https://orcid.org/0000-0002-4325-871X",
+                "path": "0000-0002-4325-871X",
+                "host": "orcid.org"
+              },
+              "credit-name": {
+                "value": "Fran"
+              },
+              "contributor-email": null,
+              "contributor-attributes": {
+                "contributor-sequence": "additional",
+                "contributor-role": "author"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 2"
+          }
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": "Short description of the work",
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2020"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1002/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": null,
+        "contributors": {
+          "contributor": [
+            {
+              "contributor-orcid": {
+                "uri": "https://orcid.org/0000-0002-5391-5437",
+                "path": "0000-0002-5391-5437",
+                "host": "orcid.org"
+              },
+              "credit-name": {
+                "value": "Jordan"
+              },
+              "contributor-email": "example@example.com",
+              "contributor-attributes": {
+                "contributor-sequence": "first",
+                "contributor-role": "author"
+              }
+            },
+            {
+              "contributor-orcid": {
+                "uri": "https://orcid.org/0000-0002-4325-871X",
+                "path": "0000-0002-4325-871X",
+                "host": "orcid.org"
+              },
+              "credit-name": {
+                "value": "Fran"
+              },
+              "contributor-email": null,
+              "contributor-attributes": {
+                "contributor-sequence": "additional",
+                "contributor-role": "author"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 3"
+          }
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2019"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1003/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": [{
+            "contributor-orcid": {
+              "uri": "https://orcid.org/0000-0002-5391-5437",
+              "path": "0000-0002-5391-5437",
+              "host": "orcid.org"
+            },
+            "credit-name": {
+              "value": "Jordan"
+            },
+            "contributor-email": "example@example.com",
+            "contributor-attributes": {
+              "contributor-sequence": "first",
+              "contributor-role": "author"
+            }
+          },
+          {
+            "contributor-orcid": {
+              "uri": "https://orcid.org/0000-0002-4325-871X",
+              "path": "0000-0002-4325-871X",
+              "host": "orcid.org"
+            },
+            "credit-name": {
+              "value": "Fran"
+            },
+            "contributor-email": null,
+            "contributor-attributes": {
+              "contributor-sequence": "additional",
+              "contributor-role": "author"
+            }
+          }]
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 4"
+          }
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": {
+          "citation-type": "bibtex",
+          "citation-value": "\n\t\t\t@article {ORCID2012,\n\t\t\t\ttitle = \"ORCID: a system to uniquely identify researchers\",\n\t\t\t\tjournal = \"Learned Publishing\",\n\t\t\t\tyear = \"2022\",\n\t\t\t\tdoi = \"doi:10.1087/20140404\"\n\t\t\t\t}\n\t\t"
+        },
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2018"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1004/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": [{
+            "contributor-orcid": {
+              "uri": "https://orcid.org/0000-0002-5391-5437",
+              "path": "0000-0002-5391-5437",
+              "host": "orcid.org"
+            },
+            "credit-name": {
+              "value": "Jordan"
+            },
+            "contributor-email": "example@example.com",
+            "contributor-attributes": {
+              "contributor-sequence": "first",
+              "contributor-role": "author"
+            }
+          },
+          {
+            "contributor-orcid": {
+              "uri": "https://orcid.org/0000-0002-4325-871X",
+              "path": "0000-0002-4325-871X",
+              "host": "orcid.org"
+            },
+            "credit-name": {
+              "value": "Fran"
+            },
+            "contributor-email": null,
+            "contributor-attributes": {
+              "contributor-sequence": "additional",
+              "contributor-role": "author"
+            }
+          }]
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 5"
+          }
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": {
+          "citation-type": "bibtex",
+          "citation-value": "\n\t\t\t@article {ORCID2012,\n\t\t\t\ttitle = \"ORCID: a system to uniquely identify researchers\",\n\t\t\t\tjournal = \"Learned Publishing\",\n\t\t\t\tyear = \"2022\",\n\t\t\t\tdoi = \"doi:10.1087/20140404\"\n\t\t\t\t}\n\t\t"
+        },
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2017"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1005/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 6"
+          }
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": {
+          "citation-type": "bibtex",
+          "citation-value": "\n\t\t\t@article {ORCID2012,\n\t\t\t\ttitle = \"ORCID: a system to uniquely identify researchers\",\n\t\t\t\tjournal = \"Learned Publishing\",\n\t\t\t\tyear = \"2022\",\n\t\t\t\tdoi = \"doi:10.1087/20140404\"\n\t\t\t\t}\n\t\t"
+        },
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2016"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1006/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 7"
+          }
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": {
+          "citation-type": "bibtex",
+          "citation-value": "\n\t\t\t@article {ORCID2012,\n\t\t\t\ttitle = \"ORCID: a system to uniquely identify researchers\",\n\t\t\t\tjournal = \"Learned Publishing\",\n\t\t\t\tyear = \"2022\",\n\t\t\t\tdoi = \"doi:10.1087/20140404\"\n\t\t\t\t}\n\t\t"
+        },
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2015"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1007/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": [
+            {
+              "contributor-orcid": {
+                "uri": "https://orcid.org/0000-0002-4856-5225",
+                "path": "0000-0002-4856-5225",
+                "host": "orcid.org"
+              },
+              "credit-name": {
+                "value": "Sam"
+              },
+              "contributor-email": null,
+              "contributor-attributes": {
+                "contributor-sequence": "additional",
+                "contributor-role": "http://credit.niso.org/contributor-roles/visualization/"
+              }
+            },
+            {
+              "contributor-orcid": {
+                "uri": "https://orcid.org/0000-0002-7174-6139",
+                "path": "0000-0002-7174-6139",
+                "host": "orcid.org"
+              },
+              "credit-name": {
+                "value": "Jordan"
+              },
+              "contributor-email": null,
+              "contributor-attributes": {
+                "contributor-sequence": "additional",
+                "contributor-role": "http://credit.niso.org/contributor-roles/validation/"
+              }
+            },
+            {
+              "contributor-orcid": {
+                "uri": "https://orcid.org/0000-0002-1198-7731",
+                "path": "0000-0002-1198-7731",
+                "host": "orcid.org"
+              },
+              "credit-name": {
+                "value": "Frank"
+              },
+              "contributor-email": null,
+              "contributor-attributes": {
+                "contributor-sequence": "additional",
+                "contributor-role": "http://credit.niso.org/contributor-roles/supervision/"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 8"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": {
+          "citation-type": "bibtex",
+          "citation-value": "\n\t\t\t@article {ORCID2012,\n\t\t\t\ttitle = \"ORCID: a system to uniquely identify researchers\",\n\t\t\t\tjournal = \"Learned Publishing\",\n\t\t\t\tyear = \"2022\",\n\t\t\t\tdoi = \"doi:10.1087/20140404\"\n\t\t\t\t}\n\t\t"
+        },
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2014"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1008/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 9"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": {
+          "citation-type": "bibtex",
+          "citation-value": "\n\t\t\t@article {ORCID2012,\n\t\t\t\ttitle = \"ORCID: a system to uniquely identify researchers\",\n\t\t\t\tjournal = \"Learned Publishing\",\n\t\t\t\tyear = \"2022\",\n\t\t\t\tdoi = \"doi:10.1087/20140404\"\n\t\t\t\t}\n\t\t"
+        },
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2013"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1009/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 10"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": {
+          "citation-type": "bibtex",
+          "citation-value": "\n\t\t\t@article {ORCID2012,\n\t\t\t\ttitle = \"ORCID: a system to uniquely identify researchers\",\n\t\t\t\tjournal = \"Learned Publishing\",\n\t\t\t\tyear = \"2022\",\n\t\t\t\tdoi = \"doi:10.1087/20140404\"\n\t\t\t\t}\n\t\t"
+        },
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2012"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1010/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 11"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2011"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1011/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 12"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2010"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1012/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 13"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2009"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1013/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 14"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2008"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1014/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 15"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2007"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1015/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 16"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2006"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1016/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 17"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2005"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1017/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 18"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2004"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1018/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 19"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2003"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1019/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 20"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2002"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1020/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 21"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2001"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1021/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 22"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "2000"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1022/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 23"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1999"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1023/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 24"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1998"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1024/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 25"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1997"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1025/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 26"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1996"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1026/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 27"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1995"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1027/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 28"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1994"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1028/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 29"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1993"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1029/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 30"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1992"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1030/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 31"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1991"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1031/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 32"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1990"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1032/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 33"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1989"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1033/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 33"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1988"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1034/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 35"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1987"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1035/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 36"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1986"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1036/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 37"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1985"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1037/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 38"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1984"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1038/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 39"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1983"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1039/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 40"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1982"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1040/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 41"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1981"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1041/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 42"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1980"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1042/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 43"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1979"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1043/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 44"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1978"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1044/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 45"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1977"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1045/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 46"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1976"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1046/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 47"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1975"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1047/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 48"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1974"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1048/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 49"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1973"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1049/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 50"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1972"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1050/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 51"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1971"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1051/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 52"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1970"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1052/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 53"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1969"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1053/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 54"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1968"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1054/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 55"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1967"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1055/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 56"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1966"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1056/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 57"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1965"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1057/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 58"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1964"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1058/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 59"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1963"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1059/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 60"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1962"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1060/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 61"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1961"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1061/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 62"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1960"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1062/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 63"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1959"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1063/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 64"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1958"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1064/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 65"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1957"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1065/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 66"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1956"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1066/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 67"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1955"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1067/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 68"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1954"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1068/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 69"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1953"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1069/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 70"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1953"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1070/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 71"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1952"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1071/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 72"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1951"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1072/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 73"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1950"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1073/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 74"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1949"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1074/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 75"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1948"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1075/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 76"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1947"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1076/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 77"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1946"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1077/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 78"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1945"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1078/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 79"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1944"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1079/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 80"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1943"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1080/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 81"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1942"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1081/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 82"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1941"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1082/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 83"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1940"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1083/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 84"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1939"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1084/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 85"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1938"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1085/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 86"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1937"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1086/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 87"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1936"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1087/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 88"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1935"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1088/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 89"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1934"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1089/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 90"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1933"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1090/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 91"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1932"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1091/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 92"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1931"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1092/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 93"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1930"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1093/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 94"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1929"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1094/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 95"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1928"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1095/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 96"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1927"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1096/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 97"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1926"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1097/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 98"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1925"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1098/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 99"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1924"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1099/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    },
+    {
+      "work": {
+        "title": {
+          "title": {
+            "value": "Work Title 100"
+          },
+          "subtitle": null,
+          "translated-title": null
+        },
+        "journal-title": {
+          "value": "Cor et Vasa"
+        },
+        "short-description": null,
+        "citation": null,
+        "type": "journal-article",
+        "publication-date": {
+          "year": {
+            "value": "1923"
+          },
+          "month": {
+            "value": "06"
+          },
+          "day": {
+            "value": "01"
+          }
+        },
+        "external-ids": {
+          "external-id": [
+            {
+              "external-id-type": "doi",
+              "external-id-value": "10.1100/j.crvasa.2015.05.008",
+              "external-id-url": {
+                "value": "http://extId/2"
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        },
+        "url": {
+          "value": "https://example.com"
+        },
+        "contributors": {
+          "contributor": []
+        }
+      }
+    }
+  ]
+}

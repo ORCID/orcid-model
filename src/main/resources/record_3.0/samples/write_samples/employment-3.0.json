@@ -1,0 +1,69 @@
+{
+  "department-name": "Primary Care Health Services",
+  "role-title": "Role",
+  "start-date": {
+    "year": {
+      "value": "2021"
+    },
+    "month": {
+      "value": "01"
+    },
+    "day": {
+      "value": "01"
+    }
+  },
+  "end-date": {
+    "year": {
+      "value": "2023"
+    },
+    "month": {
+      "value": "01"
+    },
+    "day": {
+      "value": "01"
+    }
+  },
+  "organization": {
+    "name": "Boston University",
+    "address": {
+      "city": "Boston",
+      "region": "Massachusetts",
+      "country": "US"
+    },
+    "disambiguated-organization": {
+      "disambiguated-organization-identifier": "https://ror.org/05qwgg493",
+      "disambiguation-source": "ROR"
+    }
+  },
+  "url": {
+    "value": "https://example.com"
+  },
+  "external-ids": {
+    "external-id": [
+      {
+        "external-id-type": "grant_number",
+        "external-id-value": "external-identifier-value",
+        "external-id-url": {
+          "value": "http://tempuri.org"
+        },
+        "external-id-relationship": "self"
+      },
+      {
+        "external-id-type": "grant_number",
+        "external-id-value": "external-identifier-value2",
+        "external-id-url": {
+          "value": "http://tempuri.org/2"
+        },
+        "external-id-relationship": "self"
+      },
+      {
+        "external-id-type": "doi",
+        "external-id-value": "http://dx.doi.org/10.13339/120000001",
+        "external-id-url": {
+          "value": "https://example.com/id-url"
+        },
+        "external-id-relationship": "part-of"
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "department-name": "Department",
+  "role-title": "Role",
+  "start-date": {
+    "year": {
+      "value": "2022"
+    },
+    "month": {
+      "value": "01"
+    },
+    "day": {
+      "value": "01"
+    }
+  },
+  "end-date": {
+    "year": {
+      "value": "2023"
+    },
+    "month": {
+      "value": "01"
+    },
+    "day": {
+      "value": "01"
+    }
+  },
+  "organization": {
+    "name": "University of Toronto",
+    "address": {
+      "city": "Toronto",
+      "region": "Ontario",
+      "country": "CA"
+    },
+    "disambiguated-organization": {
+      "disambiguated-organization-identifier": "https://ror.org/03dbr7087",
+      "disambiguation-source": "ROR"
+    }
+  },
+  "url": {
+    "value": "https://example.come/url"
+  },
+  "external-ids": {
+    "external-id": [
+      {
+        "external-id-type": "grant_number",
+        "external-id-value": "external-identifier-value",
+        "external-id-url": {
+          "value": "http://tempuri.org"
+        },
+        "external-id-relationship": "self"
+      },
+      {
+        "external-id-type": "grant_number",
+        "external-id-value": "external-identifier-value2",
+        "external-id-url": {
+          "value": "http://tempuri.org/2"
+        },
+        "external-id-relationship": "self"
+      },
+      {
+        "external-id-type": "emdb",
+        "external-id-value": "https://www.ebi.ac.uk/emdb/EMD-1001",
+        "external-id-url": {
+          "value": "https://www.ebi.ac.uk/emdb/EMD-1001"
+        },
+        "external-id-relationship": "part-of"
+      }
+    ]
+  }
+}

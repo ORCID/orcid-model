@@ -1,0 +1,72 @@
+{
+  "reviewer-role": "reviewer",
+  "review-identifiers": {
+    "external-id": [
+      {
+        "external-id-type": "source-work-id",
+        "external-id-value": "98765",
+        "external-id-url": {
+          "value": "https://example.com/98765"
+        },
+        "external-id-relationship": "self"
+      },
+      {
+        "external-id-type": "source-work-id",
+        "external-id-value": "123456",
+        "external-id-url": {
+          "value": "https://example.com/123456"
+        },
+        "external-id-relationship": "part-of"
+      }
+    ]
+  },
+  "review-url": "https://example.com",
+  "review-type": "review",
+  "review-completion-date": {
+    "year": {
+      "value": "2012"
+    },
+    "month": {
+      "value": "04"
+    },
+    "day": {
+      "value": "14"
+    }
+  },
+  "review-group-id": "issn:1741-4857",
+  "subject-external-identifier": {
+    "external-id-type": "doi",
+    "external-id-value": "10.80413/c4z0-kg94",
+    "external-id-url": {
+      "value": "https://localsystem.org/1234"
+    },
+    "external-id-relationship": "self"
+  },
+  "subject-container-name": "Research Resource Title",
+  "subject-type": "research-resource-proposal",
+  "subject-name": {
+    "title": {
+      "value": "Review subject name"
+    },
+    "subtitle": {
+      "value": "Review subtitle"
+    },
+    "translated-title": {
+      "value": "Subject name translated title",
+      "language-code": "en"
+    }
+  },
+  "subject-url": "https://example.com/review-item",
+  "convening-organization": {
+    "name": "ORCID",
+    "address": {
+      "city": "Bethesda",
+      "region": "MD",
+      "country": "US"
+    },
+    "disambiguated-organization": {
+      "disambiguated-organization-identifier": "https://ror.org/04fa4r544",
+      "disambiguation-source": "ROR"
+    }
+  }
+}

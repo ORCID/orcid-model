@@ -1,0 +1,61 @@
+{
+  "department-name": "Department",
+  "role-title": "Role",
+  "start-date": {
+    "year": {
+      "value": "2021"
+    },
+    "month": {
+      "value": "02"
+    },
+    "day": {
+      "value": "02"
+    }
+  },
+  "end-date": {
+    "year": {
+      "value": "2023"
+    },
+    "month": {
+      "value": "01"
+    },
+    "day": {
+      "value": "02"
+    }
+  },
+  "organization": {
+    "name": "Research Data Alliance",
+    "address": {
+      "city": "Dublin",
+      "region": "Province of Leinster",
+      "country": "IE"
+    },
+    "disambiguated-organization": {
+      "disambiguated-organization-identifier": "https://ror.org/05dc6w374",
+      "disambiguation-source": "ROR"
+    }
+  },
+  "url": {
+    "value": "http://tempuri.org"
+  },
+  "external-ids": {
+    "external-id": [
+      {
+        "external-id-type": "grant_number",
+        "external-id-value": "external-identifier-value",
+        "external-id-url": {
+          "value": "http://tempuri.org"
+        },
+        "external-id-relationship": "self"
+      },
+      {
+        "external-id-type": "grant_number",
+        "external-id-value": "external-identifier-value2",
+        "external-id-url": {
+          "value": "http://tempuri.org/2"
+        },
+        "external-id-relationship": "self"
+      }
+    ]
+  }
+}

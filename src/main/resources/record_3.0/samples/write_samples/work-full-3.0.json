@@ -1,0 +1,96 @@
+{
+  "title": {
+    "title": {
+      "value": "Work Title"
+    },
+    "subtitle": {
+      "value": "Work subtitle"
+    },
+    "translated-title": {
+      "value": "Translated-title English",
+      "language-code": "en"
+    }
+  },
+  "journal-title": {
+    "value": "Journal title"
+  },
+  "short-description": "This is a short description of the work.",
+  "citation": {
+    "citation-type": "bibtex",
+    "citation-value": "\n\t\t\t@article {ORCID2012,\n\t\t\t\ttitle = \"ORCID: a system to uniquely identify researchers\",\n\t\t\t\tjournal = \"Learned Publishing\",\n\t\t\t\tyear = \"2022\",\n\t\t\t\tdoi = \"doi:10.1087/20140404\"\n\t\t\t\t}\n\t\t"
+  },
+  "type": "journal-article",
+  "publication-date": {
+    "year": {
+      "value": "2022"
+    },
+    "month": {
+      "value": "05"
+    },
+    "day": {
+      "value": "24"
+    }
+  },
+  "external-ids": {
+    "external-id": [
+      {
+        "external-id-type": "doi",
+        "external-id-value": "10.1187/20120402",
+
+        "external-id-url": {
+          "value": "https://doi.org/10.1087/20120404"
+        },
+        "external-id-relationship": "part-of"
+      },
+      {
+        "external-id-type": "doi",
+        "external-id-value": "work:doi",
+        "external-id-url": {
+          "value": "http://orcid.org"
+        },
+        "external-id-relationship": "self"
+      }
+    ]
+  },
+  "url": {
+    "value": "https://example.com"
+  },
+  "contributors": {
+    "contributor": [
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-5391-5437",
+          "path": "0000-0002-5391-5437",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Jordan"
+        },
+        "contributor-email": "example@example.com",
+        "contributor-attributes": {
+          "contributor-sequence": "first",
+          "contributor-role": "author"
+        }
+      },
+      {
+        "contributor-orcid": {
+          "uri": "https://orcid.org/0000-0002-4325-871X",
+          "path": "0000-0002-4325-871X",
+          "host": "orcid.org"
+        },
+        "credit-name": {
+          "value": "Fran"
+        },
+        "contributor-email": null,
+        "contributor-attributes": {
+          "contributor-sequence": "additional",
+          "contributor-role": "author"
+        }
+      }
+    ]
+  },
+  "language-code": "en",
+  "country": {
+    "value": "CA"
+  }
+}

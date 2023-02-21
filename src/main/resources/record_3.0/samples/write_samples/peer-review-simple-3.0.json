@@ -1,0 +1,35 @@
+{
+  "reviewer-role": "reviewer",
+  "review-identifiers": {
+    "external-id": [
+      {
+        "external-id-type": "source-work-id",
+        "external-id-value": "123456",
+        "external-id-url": {
+          "value": "https://localsystem.org/1234"
+        },
+        "external-id-relationship": "self"
+      }
+    ]
+  },
+  "review-url": "https://example.com",
+  "review-type": "review",
+  "review-completion-date": {
+    "year": {
+      "value": "2012"
+    }
+  },
+  "review-group-id": "issn:1741-4857",
+  "convening-organization": {
+    "name": "ORCID",
+    "address": {
+      "city": "Bethesda",
+      "region": "MD",
+      "country": "US"
+    },
+    "disambiguated-organization": {
+      "disambiguated-organization-identifier": "385488",
+      "disambiguation-source": "RINGGOLD"
+    }
+  }
+}
