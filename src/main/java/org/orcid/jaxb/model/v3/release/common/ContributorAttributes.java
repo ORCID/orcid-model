@@ -18,6 +18,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import org.orcid.jaxb.model.common.SequenceType;
 import org.orcid.jaxb.model.common.adapters.SequenceTypeAdapter;
+import org.orcid.jaxb.model.message.ContributorRole;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
@@ -48,7 +49,7 @@ public class ContributorAttributes implements Serializable {
     @XmlElement(name = "contributor-role", namespace = "http://www.orcid.org/ns/work", required = true)
     @Schema(type = "string", allowableValues = "author, assignee, editor, chair-or-translator, co-investigator, " +
             "co-inventor, graduate-student, other-inventor, principal-investigator, postdoctoral-researcher, support-staff")
-    protected String contributorRole;
+    protected ContributorRole contributorRole;
 
     /**
      * Gets the value of the contributorSequence property.
@@ -77,7 +78,7 @@ public class ContributorAttributes implements Serializable {
      * @return possible object is {@link String }
      * 
      */
-    public String getContributorRole() {
+    public ContributorRole getContributorRole() {
         return contributorRole;
     }
 
@@ -88,7 +89,7 @@ public class ContributorAttributes implements Serializable {
      *            allowed object is {@link String }
      * 
      */
-    public void setContributorRole(String value) {
+    public void setContributorRole(ContributorRole value) {
         this.contributorRole = value;
     }
 
