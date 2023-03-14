@@ -103,7 +103,7 @@ public class ContributorAttributes implements Serializable {
 
         ContributorAttributes that = (ContributorAttributes) o;
 
-        if (contributorRole != that.contributorRole) {
+        if (contributorRole != null ? !contributorRole.equals(that.contributorRole) : that.contributorRole != null) {
             return false;
         }
         if (contributorSequence != that.contributorSequence) {
