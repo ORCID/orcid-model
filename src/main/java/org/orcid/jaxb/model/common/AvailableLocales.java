@@ -32,8 +32,10 @@ public enum AvailableLocales {
     IT("it"), 
     JA("ja"), 
     KO("ko"), 
+    PL("pl"),
     PT("pt"), 
     RU("ru"), 
+    TR("tr"),
     ZH_CN("zh_CN"), 
     ZH_TW("zh_TW"), 
     XX("xx");
