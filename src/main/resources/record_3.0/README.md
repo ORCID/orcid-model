@@ -234,8 +234,8 @@ Multiple scopes can be requested with a single access token by listing the reque
 | Add an activity    | POST          | /activities/update       | https://[HOST]/[ORCID]/[SECTION]            |
 | Update an activity | PUT           | /activities/update       | https://[HOST]/v3.0/[ORCID]/[SECTION]/[PUT-CODE] |
 | Delete an activity | DELETE        | /activities/update       | https://[HOST]/v3.0/[ORCID]/[SECTION]/[PUT-CODE] |
-| Add multiple works| POST           | /read-limited or /read-public | https://[HOST]/v3.0/[ORCID]/works		             |
-| Read multiple works| GET          | /activities/update       | https://[HOST]/v3.0/[ORCID]/works/[PUT-CODE1],[PUT-CODE2]  |
+| Add multiple works| POST           | /activities/update | https://[HOST]/v3.0/[ORCID]/works		             |
+| Read multiple works| GET          | /read-limited or /read-public       | https://[HOST]/v3.0/[ORCID]/works/[PUT-CODE1],[PUT-CODE2]  |
 | Search records     | GET         | /read-public      	      | https://[HOST]/v3.0/search?q=[SOLR-QUERY]*          	 |
 
 [HOST] is the ORCID environment you are using
