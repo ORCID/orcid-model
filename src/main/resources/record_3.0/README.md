@@ -272,7 +272,7 @@ Multiple scopes can be requested with a single access token by listing the reque
 **Notes:**
 - biography, email, person and personal-details sections are read only
 - when reading and posting multiple works a maximum of 100 works can be accessed with a single call.
-- When searching by default a maximum of 100 results will be returned. The `rows` parameter can be used to increase the number or results, but only up to 200. The `start` parameter (integer pointing to the zero-based position of the first result to be returned) can be used to page through larger results sets. See [Searching the API tutorial](https://github.com/ORCID/ORCID-Source/blob/master/orcid-api-web/tutorial/search.md)
+- When searching by default a maximum of 1000 results will be returned. The `rows` parameter can be used to increase the number or results, but only up to 200. The `start` parameter (integer pointing to the zero-based position of the first result to be returned) can be used to page through larger results sets. See [Searching the API tutorial](https://github.com/ORCID/ORCID-Source/blob/master/orcid-api-web/tutorial/search.md)
 
 ## OpenID Connect
 In addition to the REST API, ORCID Supports [OpenID Connect](https://github.com/ORCID/ORCID-Source/blob/master/orcid-web/ORCID_AUTH_WITH_OPENID_CONNECT.md) and an [Implicit workflow](https://github.com/ORCID/ORCID-Source/blob/master/orcid-web/ORCID_AUTH_WITH_OPENID_CONNECT.md#implicit-flow).
