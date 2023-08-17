@@ -201,12 +201,6 @@ For working with json see [ORCID conversion util](https://github.com/ORCID/orcid
 - [General guide to the ORCID API](https://github.com/ORCID/ORCID-Source/tree/master/orcid-api-web)
 - [Tutorials for reading and writing to ORCID records](https://github.com/ORCID/ORCID-Source/tree/master/orcid-api-web/tutorial)
 
-### Swagger
-
-The swagger interfaces to the API available at:
-- [member](https://api.orcid.org/v3.0/)
-- [public](https://pub.orcid.org/v3.0/)
-
 ### Scopes
 | Scope           | Request method | Obtain Access Token Through	| Expires In | API  |
 |-----------------|-------------|--------------------------|----------------------------------|-------------|
