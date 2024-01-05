@@ -3,6 +3,7 @@ package org.orcid.jaxb.model.common;
 import java.io.Serializable;
 
 public enum PeerReviewSubjectType implements Serializable {
+    ANNOTATION("annotation"),
     ARTISTIC_PERFORMANCE("artistic-performance"),
     BOOK_CHAPTER("book-chapter"),
     BOOK_REVIEW("book-review"),
@@ -10,6 +11,7 @@ public enum PeerReviewSubjectType implements Serializable {
     CONFERENCE_ABSTRACT("conference-abstract"),
     CONFERENCE_PAPER("conference-paper"),
     CONFERENCE_POSTER("conference-poster"),
+    DATA_MANAGEMENT_PLAN("data-management-plan"), 
     DATA_SET("data-set"),
     DICTIONARY_ENTRY("dictionary-entry"),
     DISCLOSURE("disclosure"),
@@ -28,10 +30,13 @@ public enum PeerReviewSubjectType implements Serializable {
     ONLINE_RESOURCE("online-resource"),
     OTHER("other"),
     PATENT("patent"),
+    PHYSICAL_OBJECT("physical-object"),
+    PREPRINT("preprint"),
     REGISTERED_COPYRIGHT("registered-copyright"),
     REPORT("report"),
     RESEARCH_TECHNIQUE("research-technique"),
     RESEARCH_TOOL("research-tool"),
+    REVIEW("review"), 
     SOFTWARE("software"),
     SPIN_OFF_COMPANY("spin-off-company"),
     STANDARDS_AND_POLICY("standards-and-policy"),
