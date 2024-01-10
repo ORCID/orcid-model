@@ -111,7 +111,7 @@ The swagger interfaces to the API available at:
 - [public](https://pub.orcid.org/v2.1/)
 
 #### CORS
-CORS is supported for the Public API, [Implicit OAuth](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) and 
+CORS is supported for the Public API, [Implicit OAuth](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) 
 and [Force Logout](http://members.orcid.org/api/resources/customize#logout) only. JSONP for CORS is not supported. For more information on CORS and supported content types please visit our [Content Negotiation page](https://github.com/ORCID/ORCID-Source/blob/master/CONTENT_NEGOTIATION.md).
 
 
