@@ -142,7 +142,7 @@
 - [read biography-3.0.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/samples/read_samples/biography-3.0.xml)
 - [distinction-3.0.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/samples/read_samples/distinction-3.0.xml)
 - [write distinction-3.0.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/samples/write_samples/distinction-3.0.xml)
-[write distinction-3.0.json](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/samples/write_samples/distinction-3.0.json)
+- [write distinction-3.0.json](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/samples/write_samples/distinction-3.0.json)
 - [read distinctions-3.0.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/samples/read_samples/distinctions-3.0.xml)
 - [read education-3.0.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/samples/read_samples/education-3.0.xml)
 - [write education-3.0.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/samples/write_samples/education-3.0.xml)
