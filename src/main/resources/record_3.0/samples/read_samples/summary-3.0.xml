@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<recordSummary>
+    <creation>2023-03-16</creation>
+    <employmentAffiliations>
+        <endDate>2025-01-01</endDate>
+        <organizationName>Universidade Federal do Rio de Janeiro</organizationName>
+        <type>employment</type>
+        <validated>false</validated>
+    </employmentAffiliations>
+    <employmentAffiliations>
+        <organizationName>Sport Lisboa e Benfica</organizationName>
+        <type>employment</type>
+        <validated>false</validated>
+    </employmentAffiliations>
+    <employmentAffiliations>
+        <endDate>2015-01-01</endDate>
+        <organizationName>University of Wisconsin-Madison</organizationName>
+        <role>Head of Department</role>
+        <startDate>2000-02-02</startDate>
+        <type>employment</type>
+        <url>https://tempuri.org</url>
+        <validated>true</validated>
+    </employmentAffiliations>
+    <employmentAffiliationsCount>5</employmentAffiliationsCount>
+    <externalIdentifiers>
+        <commonName>Scopus</commonName>
+        <id>7965</id>
+        <reference>1234</reference>
+        <url>https://example.com/1234</url>
+        <validated>true</validated>
+    </externalIdentifiers>
+    <externalIdentifiers>
+        <commonName>ResearcherID</commonName>
+        <id>8008</id>
+        <reference>1234567890-566775</reference>
+        <url>https://researcherid.com/1234567890-566775</url>
+        <validated>false</validated>
+    </externalIdentifiers>
+    <externalIdentifiers>
+        <commonName>ResearcherID</commonName>
+        <id>7978</id>
+        <reference>1234567890-12312</reference>
+        <url>https://researcherid.com/1234567890-12312</url>
+        <validated>true</validated>
+    </externalIdentifiers>
+    <externalIdentifiers>
+        <commonName>ResearcherID</commonName>
+        <id>7973</id>
+        <reference>1234567890-555</reference>
+        <url>https://researcherid.com/1234567890-555</url>
+        <validated>true</validated>
+    </externalIdentifiers>
+    <externalIdentifiers>
+        <commonName>ResearcherID</commonName>
+        <id>8092</id>
+        <reference>1234</reference>
+        <url>https://example.com/1234</url>
+        <validated>true</validated>
+    </externalIdentifiers>
+    <lastModified>2024-04-16</lastModified>
+    <name>Cpt. Crashalot</name>
+    <orcid>https://qa.orcid.org/0009-0006-7603-4444</orcid>
+    <peerReviewPublicationGrants>6</peerReviewPublicationGrants>
+    <peerReviewsTotal>6</peerReviewsTotal>
+    <professionalActivities>
+        <organizationName>Polytechnic Institute of Porto</organizationName>
+        <role>Fake role title</role>
+        <type>employment</type>
+        <url>https://www.ipp.pt/</url>
+        <validated>false</validated>
+    </professionalActivities>
+    <professionalActivities>
+        <organizationName>Edinburgh College</organizationName>
+        <role>Member type</role>
+        <startDate>2023-01-01</startDate>
+        <type>employment</type>
+        <validated>false</validated>
+    </professionalActivities>
+    <professionalActivities>
+        <endDate>2023-01-01</endDate>
+        <organizationName>Glasgow Science Centre</organizationName>
+        <startDate>2022-02-02</startDate>
+        <type>employment</type>
+        <validated>false</validated>
+    </professionalActivities>
+    <professionalActivitiesCount>17</professionalActivitiesCount>
+    <selfAssertedFunds>1</selfAssertedFunds>
+    <selfAssertedPeerReviews>0</selfAssertedPeerReviews>
+    <selfAssertedWorks>0</selfAssertedWorks>
+    <status>active</status>
+    <validatedFunds>1</validatedFunds>
+    <validatedWorks>1</validatedWorks>
+</recordSummary>
