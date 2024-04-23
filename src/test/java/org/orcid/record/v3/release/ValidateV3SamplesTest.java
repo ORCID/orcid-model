@@ -22,8 +22,10 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
+import javax.xml.validation.Validator;
 
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
@@ -1687,6 +1689,14 @@ public class ValidateV3SamplesTest {
         marshall(object, "/record_3.0/activities-3.0.xsd");   
     }
 
+	@Test
+	public void testValidateSummary() throws SAXException, URISyntaxException, IOException {
+		SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+		Schema schema = sf.newSchema(new File(getClass().getResource("/summary_3.0/summary-3.0.xsd").toURI()));
+		Validator validator = schema.newValidator();
+		validator.validate(new StreamSource(getClass().getResourceAsStream("/summary_3.0/samples/summary-3.0.xml")));
+	}
+    
     private void validateAffiliation(Affiliation object, boolean writeSample) {
         assertNotNull(object);
         if(!writeSample) {
