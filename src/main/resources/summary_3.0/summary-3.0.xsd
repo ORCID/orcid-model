@@ -105,9 +105,12 @@
 	<xs:element name="employment">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="put-code" type="summary:put-code" minOccurs="1" maxOccurs="1" />
+				<xs:element name="put-code" type="summary:put-code" minOccurs="1" maxOccurs="1" />				
+				<xs:element name="organization-name" type="common:non-empty-string" minOccurs="1" maxOccurs="1" />
+				<xs:element name="role" type="common:non-empty-string" minOccurs="1" maxOccurs="1" />
+				<xs:element name="url" type="xs:anyURI" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="common:start-date" minOccurs="0" maxOccurs="1" />
 				<xs:element ref="common:end-date" minOccurs="0" maxOccurs="1" />
-				<xs:element name="organization-name" type="common:non-empty-string" minOccurs="0" maxOccurs="1" />
 				<xs:element name="validated" type="summary:validated" minOccurs="1" maxOccurs="1" />
 			</xs:sequence>
 		</xs:complexType>
@@ -129,6 +132,8 @@
 				<xs:element name="organization-name" type="common:non-empty-string" minOccurs="1" maxOccurs="1" />
 				<xs:element name="role" type="common:non-empty-string" minOccurs="1" maxOccurs="1" />
 				<xs:element name="url" type="xs:anyURI" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="common:start-date" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="common:end-date" minOccurs="0" maxOccurs="1" />				
 				<xs:element name="validated" type="summary:validated" minOccurs="1" maxOccurs="1" />
 			</xs:sequence>
 		</xs:complexType>
