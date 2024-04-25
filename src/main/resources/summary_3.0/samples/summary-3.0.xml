@@ -14,21 +14,21 @@
 	</common:orcid-identifier>
 	<summary:external-identifiers>
 		<summary:external-identifier>
-			<summary:put-code>0</summary:put-code>
+			<summary:put-code>1</summary:put-code>
 			<summary:external-id-type>Scopus</summary:external-id-type>
 			<summary:external-id-value>1</summary:external-id-value>
 			<summary:external-id-url>https://example.com/1</summary:external-id-url>
 			<summary:validated>true</summary:validated>
 		</summary:external-identifier>
 		<summary:external-identifier>
-			<summary:put-code>1</summary:put-code>
+			<summary:put-code>2</summary:put-code>
 			<summary:external-id-type>ResearcherID</summary:external-id-type>
 			<summary:external-id-value>2</summary:external-id-value>
 			<summary:external-id-url>https://example.com/2</summary:external-id-url>
 			<summary:validated>true</summary:validated>
 		</summary:external-identifier>
 		<summary:external-identifier>
-			<summary:put-code>2</summary:put-code>
+			<summary:put-code>3</summary:put-code>
 			<summary:external-id-type>Other</summary:external-id-type>
 			<summary:external-id-value>3</summary:external-id-value>
 			<summary:external-id-url>https://example.com/3</summary:external-id-url>
@@ -38,7 +38,7 @@
 	<summary:employments>
 		<summary:count>5</summary:count>
 		<summary:employment>
-			<summary:put-code>0</summary:put-code>
+			<summary:put-code>1</summary:put-code>
 			<summary:organization-name>Org # 1</summary:organization-name>
 			<summary:role>Fake role title</summary:role>
 			<summary:url>https://www.ipp.pt/</summary:url>
@@ -55,34 +55,34 @@
 			<summary:validated>false</summary:validated>
 		</summary:employment>
 		<summary:employment>
-			<summary:put-code>0</summary:put-code>
+			<summary:put-code>2</summary:put-code>
 			<summary:organization-name>Org # 2</summary:organization-name>
 			<summary:role>Fake role title</summary:role>
 			<summary:url>https://www.ipp.pt/</summary:url>
 			<common:start-date>
-				<common:year>2022</common:year>
+				<common:year>2023</common:year>
 				<common:month>01</common:month>
 				<common:day>01</common:day>
 			</common:start-date>
 			<common:end-date>
-				<common:year>2022</common:year>
+				<common:year>2023</common:year>
 				<common:month>01</common:month>
 				<common:day>01</common:day>
 			</common:end-date>			
 			<summary:validated>false</summary:validated>
 		</summary:employment>
 		<summary:employment>
-			<summary:put-code>0</summary:put-code>
+			<summary:put-code>3</summary:put-code>
 			<summary:organization-name>Org # 3</summary:organization-name>
 			<summary:role>Fake role title</summary:role>
 			<summary:url>https://www.ipp.pt/</summary:url>
 			<common:start-date>
-				<common:year>2022</common:year>
+				<common:year>2024</common:year>
 				<common:month>01</common:month>
 				<common:day>01</common:day>
 			</common:start-date>
 			<common:end-date>
-				<common:year>2022</common:year>
+				<common:year>2024</common:year>
 				<common:month>01</common:month>
 				<common:day>01</common:day>
 			</common:end-date>			
@@ -92,9 +92,9 @@
 	<summary:professional-activities>
 		<summary:count>5</summary:count>
 		<summary:professional-activity>
-			<summary:put-code>0</summary:put-code>
+			<summary:put-code>1</summary:put-code>
 			<summary:type>distinction</summary:type>
-			<summary:organization-name>Org # 4</summary:organization-name>
+			<summary:organization-name>Org # 1</summary:organization-name>
 			<summary:role>Fake role title</summary:role>
 			<summary:url>https://www.ipp.pt/</summary:url>
 			<common:start-date>
