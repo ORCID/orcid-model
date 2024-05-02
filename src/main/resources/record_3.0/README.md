@@ -73,6 +73,8 @@
 **stable**
 - [service-3.0.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/service-3.0.xsd)
 **stable**
+- [summary-3.0.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/summary_3.0/summary-3.0.xsd)
+**stable**  
 - [work-3.0.xsd](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/work-3.0.xsd)
 **stable**
 
