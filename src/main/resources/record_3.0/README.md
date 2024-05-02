@@ -207,13 +207,13 @@
 - [write service-3.0.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/samples/write_samples/service-3.0.xml)
 - [write service-3.0.json](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/samples/write_samples/service-3.0.json)
 - [read services-3.0.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/samples/read_samples/services-3.0.xml)
-- [read summary-3.0.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/samples/read_samples/summary-3.0.xml)
 - [read work-3.0.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/samples/read_samples/work-3.0.xml)
 - [write full work-3.0.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/samples/write_samples/work-full-3.0.xml)
 - [write full work-3.0.json](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/samples/write_samples/work-full-3.0.json)
 - [write simple work-3.0.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/samples/write_samples/work-simple-3.0.xml)
 - [read works-3.0.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_3.0/samples/read_samples/works-3.0.xml)
-
+- [summary-3.0.xml](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/summary_3.0/samples/summary-3.0.xml)
+  
 For working with json see [ORCID conversion util](https://github.com/ORCID/orcid-conversion-lib)
 
 ## REST API Reference
