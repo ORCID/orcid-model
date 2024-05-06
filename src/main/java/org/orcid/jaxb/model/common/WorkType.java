@@ -28,6 +28,7 @@ public enum WorkType implements Serializable {
     NEWSLETTER_ARTICLE("newsletter-article"),
     NEWSPAPER_ARTICLE("newspaper-article"),
     ONLINE_RESOURCE("online-resource"),
+    ONTOLOGY("ontology"),
     OTHER("other"),
     PATENT("patent"),
     PHYSICAL_OBJECT("physical-object"),
