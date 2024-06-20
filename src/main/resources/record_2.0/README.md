@@ -71,7 +71,7 @@ Funding, Works and Peer-review items are grouped together based on a common exte
 
 ### New attributes for items
 - *put-code* attribute on the parent field of an item to uniquely identify that item within the ORCID Registry
-- *display-index* indicates the order the researcher has ranked this item within its group or section, higher display indexes appear first. (By deafulat all items added via the API will have their display index set to 0, the display index will update when the order is edited by the researcher.)
+- *display-index* indicates the order the researcher has ranked this item within its group or section, higher display indexes appear first. (By deafulat all items added via the API will have their display index set to 1, the display index will update when the order is edited by the researcher.)
 
 ### Additional metadata about items on the record 
  - *created date* when the item was first added to the ORCID record
