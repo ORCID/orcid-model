@@ -51,6 +51,9 @@
 				<xs:element ref="summary:fundings" minOccurs="0" maxOccurs="1" />
 				<xs:element ref="summary:works" minOccurs="0" maxOccurs="1" />
 				<xs:element ref="summary:peer-reviews" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="summary:education-qualifications" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="summary:research-resources" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="summary:email-domains" minOccurs="0" maxOccurs="1" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -72,6 +75,12 @@
 			<xs:enumeration value="invited-postition"/>
 			<xs:enumeration value="membership"/>
 			<xs:enumeration value="service"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="education-qualification-type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="education"/>
+			<xs:enumeration value="qualification"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:element name="external-identifiers">
@@ -139,6 +148,29 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
+	<xs:element name="education-qualifications">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="count" type="summary:count" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="summary:education-qualification"
+					minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="education-qualification">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="put-code" type="summary:put-code" minOccurs="1" maxOccurs="1" />
+				<xs:element name="type" type="summary:education-qualification-type" minOccurs="1" maxOccurs="1" />
+				<xs:element name="organization-name" type="common:non-empty-string" minOccurs="1" maxOccurs="1" />
+				<xs:element name="role" type="common:non-empty-string" minOccurs="1" maxOccurs="1" />
+				<xs:element name="url" type="xs:anyURI" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="common:start-date" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="common:end-date" minOccurs="0" maxOccurs="1" />				
+				<xs:element name="validated" type="summary:validated" minOccurs="1" maxOccurs="1" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="fundings">
 		<xs:complexType>
 			<xs:sequence>
@@ -147,6 +179,35 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
+	<xs:element name="research-resources">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="self-asserted-count" type="xs:int" minOccurs="1" maxOccurs="1" />
+				<xs:element name="validated-count" type="xs:int" minOccurs="1" maxOccurs="1" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="email-domains">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="count" type="summary:count" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="summary:email-domain"
+					minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="email-domain">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="value" type="common:non-empty-string" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="common:created-date" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="common:last-modified-date" minOccurs="0" maxOccurs="1" />				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
 	<xs:element name="works">
 		<xs:complexType>
 			<xs:sequence>

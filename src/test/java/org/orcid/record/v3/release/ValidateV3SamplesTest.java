@@ -1719,8 +1719,8 @@ public class ValidateV3SamplesTest {
         assertEquals("common:city", object.getOrganization().getAddress().getCity());
         assertEquals("common:region", object.getOrganization().getAddress().getRegion());
         assertEquals(Iso3166Country.AF, object.getOrganization().getAddress().getCountry());
-        assertEquals("http://dx.doi.org/10.13039/100000001", object.getOrganization().getDisambiguatedOrganization().getDisambiguatedOrganizationIdentifier());
-        assertEquals("FUNDREF", object.getOrganization().getDisambiguatedOrganization().getDisambiguationSource());
+        assertEquals("https://ror.org/021nxhr62", object.getOrganization().getDisambiguatedOrganization().getDisambiguatedOrganizationIdentifier());
+        assertEquals("ROR", object.getOrganization().getDisambiguatedOrganization().getDisambiguationSource());
         assertEquals("http://tempuri.org", object.getUrl().getValue());
         assertEquals(2, object.getExternalIdentifiers().getExternalIdentifier().size());
         assertEquals(Relationship.SELF, object.getExternalIdentifiers().getExternalIdentifier().get(0).getRelationship());
