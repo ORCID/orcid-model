@@ -72,7 +72,7 @@ public class VerificationDate implements Serializable {
         if (o == null || getClass() != o.getClass())
             return false;
 
-        LastModifiedDate that = (LastModifiedDate) o;
+        VerificationDate that = (VerificationDate) o;
 
         if (value != null ? !value.equals(that.value) : that.value != null)
             return false;
@@ -85,7 +85,7 @@ public class VerificationDate implements Serializable {
         return value != null ? value.hashCode() : 0;
     }
 
-    public boolean after(LastModifiedDate other) {
+    public boolean after(VerificationDate other) {
         if (this.value == null) {
             return false;
         }
