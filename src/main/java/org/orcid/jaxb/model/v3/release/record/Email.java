@@ -14,6 +14,7 @@ import org.orcid.jaxb.model.v3.release.common.CreatedDate;
 import org.orcid.jaxb.model.v3.release.common.Filterable;
 import org.orcid.jaxb.model.v3.release.common.LastModifiedDate;
 import org.orcid.jaxb.model.v3.release.common.Source;
+import org.orcid.jaxb.model.v3.release.common.VerificationDate;
 import org.orcid.jaxb.model.v3.release.common.Visibility;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -39,6 +40,8 @@ public class Email implements Filterable, Serializable, SourceAware {
     protected LastModifiedDate lastModifiedDate;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "created-date")
     protected CreatedDate createdDate;
+    @XmlAttribute
+    protected VerificationDate verificationDate;
     @XmlAttribute(name = "put-code")
     protected Long putCode;
     @XmlAttribute
@@ -85,6 +88,14 @@ public class Email implements Filterable, Serializable, SourceAware {
         this.createdDate = createdDate;
     }
 
+    public VerificationDate getVerificationDate() {
+        return verificationDate;
+    }
+
+    public void setVerificationDate(VerificationDate verificationDate) {
+        this.verificationDate = verificationDate;
+    }
+
     public Long getPutCode() {
         return putCode;
     }
@@ -107,8 +118,8 @@ public class Email implements Filterable, Serializable, SourceAware {
 
     public void setVisibility(Visibility visibility) {
         this.visibility = visibility;
-    }    
-    
+    }
+
     public Boolean isVerified() {
         return verified;
     }
@@ -144,6 +155,7 @@ public class Email implements Filterable, Serializable, SourceAware {
         result = prime * result + ((putCode == null) ? 0 : putCode.hashCode());
         result = prime * result + ((source == null) ? 0 : source.hashCode());
         result = prime * result + ((visibility == null) ? 0 : visibility.hashCode());
+        result = prime * result + ((verificationDate == null) ? 0 : verificationDate.hashCode());
         return result;
     }
 
@@ -187,6 +199,11 @@ public class Email implements Filterable, Serializable, SourceAware {
         } else if (!source.equals(other.source))
             return false;
         if (visibility != other.visibility)
+            return false;
+        if (verificationDate == null) {
+            if (other.verificationDate != null)
+                return false;
+        } else if (!verificationDate.equals(other.verificationDate))
             return false;
         return true;
     }
