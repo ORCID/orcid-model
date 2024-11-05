@@ -122,4 +122,11 @@
         <summary:self-asserted-count>0</summary:self-asserted-count>
         <summary:total>6</summary:total>
     </summary:peer-reviews>
+    <summary:email-domains>
+        <summary:count>1</summary:count>
+        <summary:email-domain>
+            <summary:value>orcid.org</summary:value>
+            <summary:verification-date>2024-11-04T17:31:37.355+02:00</summary:verification-date>
+        </summary:email-domain>
+    </summary:email-domains>
 </summary:record-summary>
