@@ -24,7 +24,7 @@ import java.io.Serializable;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "value" })
-@XmlRootElement(name = "verification-date", namespace = "http://www.orcid.org/ns/common")
+@XmlRootElement(name = "verification-date", namespace = "http://www.orcid.org/ns/summary")
 @Schema(description = "VerificationDateV3_0")
 public class VerificationDate implements Serializable {
 
@@ -95,5 +95,13 @@ public class VerificationDate implements Serializable {
         }
 
         return other.getValue().compare(this.value) < 0;
+    }
+
+    public String toString() {
+        String result = "";
+        result = result + this.value.getYear();
+        result = result + "-" + (this.value.getMonth() < 10 ? "0" + this.value.getMonth() : this.value.getMonth());
+        result = result + "-" + (this.value.getDay() < 10 ? "0" + this.value.getDay() : this.value.getDay());
+        return result;
     }
 }

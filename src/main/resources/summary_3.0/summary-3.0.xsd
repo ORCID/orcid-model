@@ -44,6 +44,7 @@
 				<xs:element ref="common:created-date" minOccurs="0" maxOccurs="1" />
 				<xs:element ref="common:last-modified-date" minOccurs="0" maxOccurs="1" />
 				<xs:element name="credit-name" type="summary:credit-name" minOccurs="0" maxOccurs="1" />
+				<xs:element name="verification-date" type="summary:verification-date" minOccurs="0" maxOccurs="1" />
 				<xs:element ref="common:orcid-identifier" minOccurs="1" maxOccurs="1"/>
 				<xs:element ref="summary:external-identifiers" minOccurs="0" maxOccurs="1" />
 				<xs:element ref="summary:employments" minOccurs="0" maxOccurs="1" />
@@ -83,6 +84,15 @@
 			<xs:enumeration value="qualification"/>
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:complexType name="verification-date">
+		<xs:annotation>
+			<xs:documentation>The date time when the element was verified.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="xs:dateTime" />
+		</xs:simpleContent>
+	</xs:complexType>
 	<xs:element name="external-identifiers">
 		<xs:complexType>
 			<xs:sequence>
@@ -202,6 +212,7 @@
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="value" type="common:non-empty-string" minOccurs="1" maxOccurs="1" />
+				<xs:element name="verification-date" type="summary:verification-date" minOccurs="1" maxOccurs="1" />
 				<xs:element ref="common:created-date" minOccurs="0" maxOccurs="1" />
 				<xs:element ref="common:last-modified-date" minOccurs="0" maxOccurs="1" />				
 			</xs:sequence>
