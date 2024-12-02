@@ -27,7 +27,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(propOrder = { "createdDate", "lastModifiedDate", "verificationDate", "source", "email" })
+@XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "email" })
 @XmlRootElement(name = "email", namespace = "http://www.orcid.org/ns/email")
 @Schema(description = "EmailV3_0")
 public class Email implements Filterable, Serializable, SourceAware {
@@ -40,7 +40,8 @@ public class Email implements Filterable, Serializable, SourceAware {
     protected LastModifiedDate lastModifiedDate;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "created-date")
     protected CreatedDate createdDate;
-    @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "verification-date")
+    @XmlTransient
+    @JsonIgnore
     protected VerificationDate verificationDate;
     @XmlAttribute(name = "put-code")
     protected Long putCode;
