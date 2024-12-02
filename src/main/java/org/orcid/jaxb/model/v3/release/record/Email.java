@@ -10,7 +10,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import org.orcid.jaxb.model.v3.release.common.CreatedDate;
 import org.orcid.jaxb.model.v3.release.common.Filterable;
 import org.orcid.jaxb.model.v3.release.common.LastModifiedDate;
@@ -43,7 +42,6 @@ public class Email implements Filterable, Serializable, SourceAware {
     protected CreatedDate createdDate;
     @XmlTransient
     @JsonIgnore
-    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     protected VerificationDate verificationDate;
     @XmlAttribute(name = "put-code")
     protected Long putCode;
