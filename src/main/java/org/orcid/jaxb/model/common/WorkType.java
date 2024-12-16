@@ -35,7 +35,7 @@ public enum WorkType implements Serializable {
     MAGAZINE_ARTICLE("magazine-article"),
     MANUAL("manual"),
     MOVING_IMAGE("moving-image"),
-    MUSICAL_COMPOSITION("music-composition"),
+    MUSICAL_COMPOSITION("musical-composition"),
     NEWSLETTER_ARTICLE("newsletter-article"),
     NEWSPAPER_ARTICLE("newspaper-article"),
     ONLINE_RESOURCE("online-resource"),
