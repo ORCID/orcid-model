@@ -59,12 +59,12 @@ public class Work implements Filterable, Serializable, SourceAware, BulkElement,
     protected Citation citation;
     @XmlJavaTypeAdapter(WorkTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/work")
-    @Schema(type = "string", allowableValues = "annotation, artistic-performance, book-chapter, book-review, book, " +
-            "conference-abstract, conference-paper, conference-poster, data-management-plan, data-set, dictionary-entry, disclosure, dissertation-thesis, " +
-            "edited-book, encyclopedia-entry, invention, journal-article, journal-issue, lecture-speech, license, magazine-article, manual," +
-            "newsletter-article, newspaper-article, online-resource, other, patent, physical-object, preprint, registered-copyright, report," +
-            "research-technique, research-tool, software, spin-off-company, standards-and-policy, supervised-student-publication, technical-standard," +
-            "test, trademark, translation, website, working-paper,review, undefined")
+    @Schema(type = "string", allowableValues = "annotation, artistic-performance, blog-post, book-chapter, book-review, book, cartographic-material, clinical-study" +
+            "conference-abstract, conference-output, conference-paper, conference-poster, conference-presentation, conference-proceedings, data-management-plan, data-set, design, dictionary-entry, disclosure, dissertation-thesis, " +
+            "edited-book, encyclopedia-entry, image, invention, journal-article, journal-issue, learning-object, lecture-speech, license, magazine-article, manual," +
+            "moving-image, musical-composition, newsletter-article, newspaper-article, online-resource, other, patent, physical-object, preprint, registered-copyright, report," +
+            "research-technique, research-tool, review, software, sound, spin-off-company, standards-and-policy, supervised-student-publication, technical-standard," +
+            "test, trademark, transcription, translation, website, working-paper, undefined")
     protected WorkType type;
     @XmlElement(name = "publication-date", namespace = "http://www.orcid.org/ns/common")
     protected PublicationDate publicationDate;
