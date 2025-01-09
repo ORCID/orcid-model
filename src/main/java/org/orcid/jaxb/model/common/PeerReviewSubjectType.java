@@ -43,6 +43,7 @@ public enum PeerReviewSubjectType implements Serializable {
     PATENT("patent"),
     PHYSICAL_OBJECT("physical-object"),
     PREPRINT("preprint"),
+    PUBLIC_SPEECH("public-speech"),
     REGISTERED_COPYRIGHT("registered-copyright"),
     REPORT("report"),
     RESEARCH_TECHNIQUE("research-technique"),
