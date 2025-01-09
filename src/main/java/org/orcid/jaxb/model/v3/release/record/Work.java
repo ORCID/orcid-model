@@ -62,7 +62,7 @@ public class Work implements Filterable, Serializable, SourceAware, BulkElement,
     @Schema(type = "string", allowableValues = "annotation, artistic-performance, blog-post, book-chapter, book-review, book, cartographic-material, clinical-study" +
             "conference-abstract, conference-output, conference-paper, conference-poster, conference-presentation, conference-proceedings, data-management-plan, data-set, design, dictionary-entry, disclosure, dissertation-thesis, " +
             "edited-book, encyclopedia-entry, image, invention, journal-article, journal-issue, learning-object, lecture-speech, license, magazine-article, manual," +
-            "moving-image, musical-composition, newsletter-article, newspaper-article, online-resource, other, patent, physical-object, preprint, public-speech, registered-copyright, report," +
+            "moving-image, musical-composition, newsletter-article, newspaper-article, online-resource, other, patent, physical-object, preprint, registered-copyright, report," +
             "research-technique, research-tool, review, software, sound, spin-off-company, standards-and-policy, supervised-student-publication, technical-standard," +
             "test, trademark, transcription, translation, website, working-paper, undefined")
     protected WorkType type;
