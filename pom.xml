@@ -173,6 +173,8 @@
 				<configuration>
 					<publishingServerId>central</publishingServerId>
 					<centralSnapshotsUrl>https://central.sonatype.com/repository/maven-snapshots/</centralSnapshotsUrl>
+					<autoPublish>true</autoPublish>
+					<waitUntil>uploaded</waitUntil>
 				</configuration>
 			</plugin>
 		</plugins>
