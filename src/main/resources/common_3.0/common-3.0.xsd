@@ -190,7 +190,7 @@
 
 		<xs:sequence>
 			<xs:element name="name" type="common:long-text" />
-			<xs:element name="address" type="common:organization-address" />
+			<xs:element name="address" type="common:organization-address"/>
 			<xs:element name="disambiguated-organization" type="common:disambiguated-organization"
 				minOccurs="0" maxOccurs="1" />
 		</xs:sequence>
@@ -204,7 +204,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element minOccurs="1" name="city" type="common:long-text">
+			<xs:element minOccurs="0" name="city" type="common:long-text">
 				<xs:annotation>
 					<xs:documentation>City</xs:documentation>
 				</xs:annotation>
@@ -214,7 +214,7 @@
 					<xs:documentation>Region within a country</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element minOccurs="1" name="country" type="common:iso-3166-country" />
+			<xs:element minOccurs="0" name="country" type="common:iso-3166-country" />
 		</xs:sequence>
 	</xs:complexType>
 

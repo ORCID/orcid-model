@@ -1689,13 +1689,13 @@ public class ValidateV3SamplesTest {
         marshall(object, "/record_3.0/activities-3.0.xsd");   
     }
 
-	@Test
-	public void testValidateSummary() throws SAXException, URISyntaxException, IOException {
-		SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-		Schema schema = sf.newSchema(new File(getClass().getResource("/summary_3.0/summary-3.0.xsd").toURI()));
-		Validator validator = schema.newValidator();
-		validator.validate(new StreamSource(getClass().getResourceAsStream("/summary_3.0/samples/summary-3.0.xml")));
-	}
+        @Test
+        public void testValidateSummary() throws SAXException, URISyntaxException, IOException {
+                SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+                Schema schema = sf.newSchema(new File(getClass().getResource("/summary_3.0/summary-3.0.xsd").toURI()));
+                Validator validator = schema.newValidator();
+                validator.validate(new StreamSource(getClass().getResourceAsStream("/summary_3.0/samples/summary-3.0.xml")));
+        }
     
     private void validateAffiliation(Affiliation object, boolean writeSample) {
         assertNotNull(object);
@@ -1731,6 +1731,135 @@ public class ValidateV3SamplesTest {
         assertEquals("grant_number", object.getExternalIdentifiers().getExternalIdentifier().get(1).getType());
         assertEquals("http://tempuri.org/2", object.getExternalIdentifiers().getExternalIdentifier().get(1).getUrl().getValue());
         assertEquals("external-identifier-value2", object.getExternalIdentifiers().getExternalIdentifier().get(1).getValue());
+    }
+    
+    
+    @Test
+    public void testUnmarshallRecordForProfessionalActivitiesNoCityNoCountry() throws SAXException, URISyntaxException {
+        Record record = (Record) unmarshallFromPath("/record_3.0/samples/read_samples/record-no-city-country-for-professional-activities-3.0.xml", Record.class, "/record_3.0/record-3.0.xsd");
+        assertNotNull(record);
+        assertNotNull(record.getPreferences());
+        assertEquals(AvailableLocales.ZH_CN, record.getPreferences().getLocale());
+        // Check activities
+        assertNotNull(record.getActivitiesSummary());        
+        ActivitiesSummary activities = record.getActivitiesSummary();
+        assertNotNull(activities.getLastModifiedDate());
+
+        assertNotNull(activities.getDistinctions());
+        Distinctions distinctions = activities.getDistinctions();
+        assertNotNull(distinctions.getLastModifiedDate());
+        assertEquals(1, distinctions.retrieveGroups().size());
+        DistinctionSummary distinction = distinctions.retrieveGroups().iterator().next().getActivities().get(0);
+        assertEquals(Long.valueOf(0), distinction.getPutCode());
+        assertEquals(Visibility.PRIVATE, distinction.getVisibility());
+        assertEquals("distinction:department-name", distinction.getDepartmentName());
+        assertEquals("distinction:role-title", distinction.getRoleTitle());
+        assertNotNull(distinction.getEndDate());
+        assertEquals("02", distinction.getEndDate().getDay().getValue());
+        assertEquals("02", distinction.getEndDate().getMonth().getValue());
+        assertEquals("1948", distinction.getEndDate().getYear().getValue());
+        assertNotNull(distinction.getStartDate());
+        assertEquals("02", distinction.getStartDate().getDay().getValue());
+        assertEquals("02", distinction.getStartDate().getMonth().getValue());
+        assertEquals("1948", distinction.getStartDate().getYear().getValue());
+        assertNotNull(distinction.getOrganization());
+        assertEquals("distinction-org", distinction.getOrganization().getName());
+        assertNotNull(distinction.getOrganization().getAddress());
+        assertNull(distinction.getOrganization().getAddress().getCity());
+        assertNull(distinction.getOrganization().getAddress().getCountry());
+         
+        assertNotNull(activities.getInvitedPositions());
+        InvitedPositions invitedPositions = activities.getInvitedPositions();
+        assertNotNull(invitedPositions.getLastModifiedDate());
+        assertEquals(1, invitedPositions.retrieveGroups().size());
+        InvitedPositionSummary invitedPosition = invitedPositions.retrieveGroups().iterator().next().getActivities().get(0);
+        assertEquals(Long.valueOf(0), invitedPosition.getPutCode());
+        assertEquals(Visibility.PRIVATE, invitedPosition.getVisibility());
+        assertEquals("invited-position:department-name", invitedPosition.getDepartmentName());
+        assertEquals("invited-position:role-title", invitedPosition.getRoleTitle());
+        assertNotNull(invitedPosition.getEndDate());
+        assertEquals("01", invitedPosition.getEndDate().getDay().getValue());
+        assertEquals("01", invitedPosition.getEndDate().getMonth().getValue());
+        assertEquals("2025", invitedPosition.getEndDate().getYear().getValue());
+        assertNotNull(invitedPosition.getStartDate());
+        assertEquals("01", invitedPosition.getStartDate().getDay().getValue());
+        assertEquals("01", invitedPosition.getStartDate().getMonth().getValue());
+        assertEquals("2019", invitedPosition.getStartDate().getYear().getValue());
+        assertNotNull(invitedPosition.getOrganization());
+        assertEquals("invited-position-org", invitedPosition.getOrganization().getName());
+        assertNotNull(invitedPosition.getOrganization().getAddress());
+        assertNull(invitedPosition.getOrganization().getAddress().getCity());
+        assertNull(invitedPosition.getOrganization().getAddress().getCountry());
+
+
+        assertNotNull(activities.getMemberships());
+        Memberships memberships = activities.getMemberships();
+        assertNotNull(memberships.getLastModifiedDate());
+        assertEquals(1, memberships.retrieveGroups().size());
+        MembershipSummary membership = memberships.retrieveGroups().iterator().next().getActivities().get(0);
+        assertEquals(Long.valueOf(0), membership.getPutCode());
+        assertEquals(Visibility.PRIVATE, membership.getVisibility());
+        assertEquals("membership:department-name", membership.getDepartmentName());
+        assertEquals("membership:role-title", membership.getRoleTitle());
+        assertNotNull(membership.getStartDate());
+        assertEquals("02", membership.getStartDate().getDay().getValue());
+        assertEquals("02", membership.getStartDate().getMonth().getValue());
+        assertEquals("1948", membership.getStartDate().getYear().getValue());
+        assertNotNull(membership.getOrganization());
+        assertEquals("membership-org", membership.getOrganization().getName());
+        assertNotNull(membership.getOrganization().getAddress());
+        assertNull(membership.getOrganization().getAddress().getCity());
+        assertNull(membership.getOrganization().getAddress().getCountry());
+
+
+        assertNotNull(activities.getQualifications());
+        Qualifications qualifications = activities.getQualifications();
+        assertNotNull(qualifications.getLastModifiedDate());
+        assertEquals(1, qualifications.retrieveGroups().size());
+        QualificationSummary qualification = qualifications.retrieveGroups().iterator().next().getActivities().get(0);
+        assertEquals(Long.valueOf(0), qualification.getPutCode());
+        assertEquals(Visibility.PRIVATE, qualification.getVisibility());
+        assertEquals("qualification:department-name", qualification.getDepartmentName());
+        assertEquals("qualification:role-title", qualification.getRoleTitle());
+        assertNotNull(qualification.getEndDate());
+        assertNull(qualification.getEndDate().getDay());
+        assertEquals("12", qualification.getEndDate().getMonth().getValue());
+        assertEquals("2025", qualification.getEndDate().getYear().getValue());
+        assertNotNull(qualification.getStartDate());
+        assertEquals("02", qualification.getStartDate().getDay().getValue());
+        assertEquals("02", qualification.getStartDate().getMonth().getValue());
+        assertEquals("1948", qualification.getStartDate().getYear().getValue());
+        assertNotNull(qualification.getOrganization());
+        assertEquals("qualification-org", qualification.getOrganization().getName());
+        assertNotNull(qualification.getOrganization().getAddress());
+        
+        
+        assertNotNull(activities.getServices());
+        Services services = activities.getServices();
+        assertNotNull(services.getLastModifiedDate());
+        assertEquals(1, services.retrieveGroups().size());
+        ServiceSummary service = services.retrieveGroups().iterator().next().getActivities().get(0);
+        assertEquals(Long.valueOf(0), service.getPutCode());
+        assertEquals(Visibility.PRIVATE, service.getVisibility());
+        assertEquals("service:department-name", service.getDepartmentName());
+        assertEquals("service:role-title", service.getRoleTitle());
+        assertNotNull(service.getStartDate());
+        assertEquals("02", service.getStartDate().getDay().getValue());
+        assertEquals("02", service.getStartDate().getMonth().getValue());
+        assertEquals("1948", service.getStartDate().getYear().getValue());
+        assertNotNull(service.getOrganization());
+        assertEquals("service-org", service.getOrganization().getName());
+        assertNotNull(service.getOrganization().getAddress());
+        assertNull(service.getOrganization().getAddress().getCity());
+        assertNull(service.getOrganization().getAddress().getCountry());
+        
+
+    }
+
+    @Test
+    public void testMarshallRecordForProfessionalActivitiesNoCityNoCountry() throws JAXBException, SAXException, URISyntaxException {
+        Record object = (Record) unmarshallFromPath("/record_3.0/samples/read_samples/record-no-city-country-for-professional-activities-3.0.xml", Record.class);
+        marshall(object, "/record_3.0/record-3.0.xsd");
     }
     
     private Object unmarshallFromPath(String path, Class<?> type) throws SAXException, URISyntaxException {
