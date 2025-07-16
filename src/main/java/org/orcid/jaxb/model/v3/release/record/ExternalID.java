@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.orcid.jaxb.model.common.Relationship;
 import org.orcid.jaxb.model.common.adapters.RelationshipAdapter;
 import org.orcid.jaxb.model.v3.release.common.TransientError;

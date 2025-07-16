@@ -7,7 +7,7 @@
 
 package org.orcid.jaxb.model.v3.release.common;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
