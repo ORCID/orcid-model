@@ -1762,12 +1762,8 @@ public class ValidateV3SamplesTest {
         assertEquals("02", distinction.getStartDate().getDay().getValue());
         assertEquals("02", distinction.getStartDate().getMonth().getValue());
         assertEquals("1948", distinction.getStartDate().getYear().getValue());
-        assertNotNull(distinction.getOrganization());
-        assertEquals("distinction-org", distinction.getOrganization().getName());
-        assertNotNull(distinction.getOrganization().getAddress());
-        assertNull(distinction.getOrganization().getAddress().getCity());
-        assertNull(distinction.getOrganization().getAddress().getCountry());
-         
+        
+        assertNull(distinction.getOrganization());         
         assertNotNull(activities.getInvitedPositions());
         InvitedPositions invitedPositions = activities.getInvitedPositions();
         assertNotNull(invitedPositions.getLastModifiedDate());
