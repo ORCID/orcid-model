@@ -207,14 +207,7 @@
 						<common:month>02</common:month>
 						<common:day>02</common:day>
 					</common:end-date>
-					<common:organization>
-						<common:name>distinction-org</common:name>
-						<common:address/>
-						<common:disambiguated-organization>
-							<common:disambiguated-organization-identifier>common:disambiguated-organization-identifier-distinction</common:disambiguated-organization-identifier>
-							<common:disambiguation-source>GRID</common:disambiguation-source>
-						</common:disambiguated-organization>
-					</common:organization>
+					
 				</distinction:distinction-summary>
 			</activities:affiliation-group>
 		</activities:distinctions>
