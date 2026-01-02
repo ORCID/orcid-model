@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.orcid</groupId>
 	<artifactId>orcid-model</artifactId>
-	<version>3.3.8</version>
+	<version>3.3.9</version>
 
 	<name>ORCID - Model</name>
 	<description>Container for all classes that will be used to marshal and unmarshal XML/JSON from the API</description>
@@ -14,7 +14,6 @@
 		<main.basedir>${project.basedir}</main.basedir>
 		<swagger.version>2.2.7</swagger.version>
 		<jena.version>3.6.0</jena.version>
-		<jackson.version>2.14.1</jackson.version>
 		<spring.version>5.2.8.RELEASE</spring.version>
 	</properties>
 
@@ -175,11 +174,7 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.18.0</version>
 		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.jaxrs</groupId>
-			<artifactId>jackson-jaxrs-json-provider</artifactId>
-			<version>${jackson.version}</version>
-		</dependency>
+
 		<dependency>
 			<groupId>io.swagger.core.v3</groupId>
 			<artifactId>swagger-jaxrs2</artifactId>
@@ -198,16 +193,11 @@
 		</dependency>
 		
 	    <!-- javax.xml -->
-	    <dependency>
-             <groupId>com.fasterxml.jackson.core</groupId>
-             <artifactId>jackson-core</artifactId>
-             <version>${jackson.version}</version>
-        </dependency>
-        <dependency>
-             <groupId>com.fasterxml.jackson.core</groupId>
-             <artifactId>jackson-databind</artifactId>
-             <version>${jackson.version}</version>
-        </dependency> 
+		<dependency>
+		    <groupId>tools.jackson.core</groupId>
+		    <artifactId>jackson-core</artifactId>
+		    <version>3.0.3</version>
+		</dependency>
 		<dependency>
 			<groupId>com.sun.xml.bind</groupId>
 			<artifactId>jaxb-impl</artifactId>
@@ -241,7 +231,7 @@
 	    <dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
-			<version>31.1-jre</version>
+			<version>33.5.0-jre</version>
 		</dependency>
 	</dependencies>
 </project>
