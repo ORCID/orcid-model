@@ -105,7 +105,7 @@ public class ValidateV2IdentifiersTest {
         assertNull(id.getRelationship());
         assertNotNull(id.getCreatedDate().getValue());
         assertNotNull(id.getLastModifiedDate().getValue());
-        assertEquals(new Long(1),id.getPutCode());
+        assertEquals(Long.valueOf(1),id.getPutCode());
         assertEquals(Visibility.PUBLIC,id.getVisibility());
         Validator validator = getValidator("person");
         validator.validate(marshall(Person.class, person));

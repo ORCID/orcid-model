@@ -58,11 +58,13 @@ public class PeerReview implements Filterable, Serializable, OrganizationHolder,
     protected Title subjectContainerName;
     @XmlJavaTypeAdapter(PeerReviewSubjectTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "subject-type")
-    @Schema(type = "string", allowableValues = "artistic-performance, book-chapter, book-review, book, conference-abstract, conference-paper," +
-            "conference-poster, data-set, dictionary-entry, disclosure, dissertation-thesis, edited-book, encyclopedia-entry, invention, journal-article," +
-            "journal-issue, lecture-speech, license, magazine-article, manual, newsletter-article, newspaper-article, online-resource, other, patent," +
-            "registered-copyright, report, research-technique, research-tool, software, spin-off-company, standards-and-policy, supervised-student-publication," +
-            "technical-standard, test, trademark, translation, website, working-paper, grant, contract, award, salary-award, research-resource-proposal, undefined")
+    @Schema(type = "string", allowableValues = """
+            artistic-performance, book-chapter, book-review, book, conference-abstract, conference-paper,\
+            conference-poster, data-set, dictionary-entry, disclosure, dissertation-thesis, edited-book, encyclopedia-entry, invention, journal-article,\
+            journal-issue, lecture-speech, license, magazine-article, manual, newsletter-article, newspaper-article, online-resource, other, patent,\
+            registered-copyright, report, research-technique, research-tool, software, spin-off-company, standards-and-policy, supervised-student-publication,\
+            technical-standard, test, trademark, translation, website, working-paper, grant, contract, award, salary-award, research-resource-proposal, undefined\
+            """)
     protected PeerReviewSubjectType subjectType;
     @XmlElement( namespace = "http://www.orcid.org/ns/peer-review", name = "subject-name")
     protected SubjectName subjectName;

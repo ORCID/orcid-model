@@ -55,8 +55,10 @@ public class Item implements Serializable {
     @XmlAttribute(name = "put-code")
     protected String putCode;
     @XmlElement(name = "item-type", namespace = "http://www.orcid.org/ns/notification", required = true)
-    @Schema(type = "string", allowableValues = "bio, distinction, education, employment, external-identifier, invited-position," +
-            "funding, membership, peer-review, qualification, service, work, research-resource")
+    @Schema(type = "string", allowableValues = """
+            bio, distinction, education, employment, external-identifier, invited-position,\
+            funding, membership, peer-review, qualification, service, work, research-resource\
+            """)
     protected ItemType itemType;
     @XmlElement(name = "item-name", namespace = "http://www.orcid.org/ns/notification", required = true)
     protected String itemName;

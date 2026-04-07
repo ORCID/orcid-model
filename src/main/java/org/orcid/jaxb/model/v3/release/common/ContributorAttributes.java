@@ -46,8 +46,10 @@ public class ContributorAttributes implements Serializable {
     protected SequenceType contributorSequence;
 
     @XmlElement(name = "contributor-role", namespace = "http://www.orcid.org/ns/work", required = true)
-    @Schema(type = "string", allowableValues = "author, assignee, editor, chair-or-translator, co-investigator, " +
-            "co-inventor, graduate-student, other-inventor, principal-investigator, postdoctoral-researcher, support-staff")
+    @Schema(type = "string", allowableValues = """
+            author, assignee, editor, chair-or-translator, co-investigator, \
+            co-inventor, graduate-student, other-inventor, principal-investigator, postdoctoral-researcher, support-staff\
+            """)
     protected String contributorRole;
 
     /**

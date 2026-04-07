@@ -181,7 +181,7 @@ public class ValidateV3SamplesTest {
             assertNotNull(address.getCreatedDate());
             assertNotNull(address.getLastModifiedDate());
             assertNotNull(address.getCountry());
-            if (address.getPutCode().equals(new Long(1))) {
+            if (address.getPutCode().equals(Long.valueOf(1))) {
                 assertEquals(Iso3166Country.US, address.getCountry().getValue());
                 assertEquals(Visibility.PUBLIC, address.getVisibility());
             } else {
