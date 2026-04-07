@@ -14,7 +14,7 @@
 		<main.basedir>${project.basedir}</main.basedir>
 		<swagger.version>2.2.7</swagger.version>
 		<jena.version>3.6.0</jena.version>
-		<spring.version>5.2.8.RELEASE</spring.version>
+		<spring.version>6.0.23</spring.version>
 	</properties>
 
 	<licenses>
@@ -169,14 +169,18 @@
 		        <artifactId>rewrite-maven-plugin</artifactId>
 		        <version>5.43.0</version> <configuration>
 		          <activeRecipes>
-		            <recipe>org.openrewrite.java.migrate.UpgradeToJava17</recipe>
+		            <!--recipe>org.openrewrite.java.migrate.UpgradeToJava17</recipe-->
+		            <recipe>org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0</recipe>
 		          </activeRecipes>
 		        </configuration>
 		        <dependencies>
 		          <dependency>
 		            <groupId>org.openrewrite.recipe</groupId>
-		            <artifactId>rewrite-migrate-java</artifactId>
-		            <version>2.20.0</version> </dependency>
+		            <!--artifactId>rewrite-migrate-java</artifactId> 
+		            <version>2.20.0</version--> 
+		            <artifactId>rewrite-spring</artifactId>
+            		<version>5.18.0</version>
+            	   </dependency>
 		        </dependencies>
 		    </plugin>
 		</plugins>
