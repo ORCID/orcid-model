@@ -5,14 +5,14 @@
 // Generated on: 2014.07.22 at 06:46:00 PM BST 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.orcid.org/ns/activities", xmlns = {
-        @javax.xml.bind.annotation.XmlNs(prefix = "activities", namespaceURI = "http://www.orcid.org/ns/activities"),
-        @javax.xml.bind.annotation.XmlNs(prefix = "employment", namespaceURI = "http://www.orcid.org/ns/employment"),         
-        @javax.xml.bind.annotation.XmlNs(prefix = "education", namespaceURI = "http://www.orcid.org/ns/education"),
-        @javax.xml.bind.annotation.XmlNs(prefix = "funding", namespaceURI = "http://www.orcid.org/ns/funding"),
-        @javax.xml.bind.annotation.XmlNs(prefix = "peer-review", namespaceURI = "http://www.orcid.org/ns/peer-review"),
-        @javax.xml.bind.annotation.XmlNs(prefix = "work", namespaceURI = "http://www.orcid.org/ns/work"),
-        @javax.xml.bind.annotation.XmlNs(prefix = "common", namespaceURI = "http://www.orcid.org/ns/common")}, 
-        elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "http://www.orcid.org/ns/activities", xmlns = {
+        @jakarta.xml.bind.annotation.XmlNs(prefix = "activities", namespaceURI = "http://www.orcid.org/ns/activities"),
+        @jakarta.xml.bind.annotation.XmlNs(prefix = "employment", namespaceURI = "http://www.orcid.org/ns/employment"),         
+        @jakarta.xml.bind.annotation.XmlNs(prefix = "education", namespaceURI = "http://www.orcid.org/ns/education"),
+        @jakarta.xml.bind.annotation.XmlNs(prefix = "funding", namespaceURI = "http://www.orcid.org/ns/funding"),
+        @jakarta.xml.bind.annotation.XmlNs(prefix = "peer-review", namespaceURI = "http://www.orcid.org/ns/peer-review"),
+        @jakarta.xml.bind.annotation.XmlNs(prefix = "work", namespaceURI = "http://www.orcid.org/ns/work"),
+        @jakarta.xml.bind.annotation.XmlNs(prefix = "common", namespaceURI = "http://www.orcid.org/ns/common")}, 
+        elementFormDefault = jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED)
 package org.orcid.jaxb.model.record.summary_v2;
 

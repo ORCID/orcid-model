@@ -10,8 +10,8 @@ package org.orcid.jaxb.model.v3.release.record.summary;
 import java.io.Serializable;
 import java.util.Collection;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlTransient;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlTransient;
 
 import org.orcid.jaxb.model.v3.release.common.LastModifiedDate;
 import org.orcid.jaxb.model.v3.release.record.ExternalIDs;

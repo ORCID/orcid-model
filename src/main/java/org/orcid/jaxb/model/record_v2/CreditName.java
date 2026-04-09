@@ -2,7 +2,7 @@ package org.orcid.jaxb.model.record_v2;
 
 import java.io.Serializable;
 
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
 
 /**
  * 

@@ -2,7 +2,7 @@ package org.orcid.jaxb.model.common.adapters;
 
 import java.util.Currency;
 
-import javax.xml.bind.annotation.adapters.XmlAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 
 public class CurrencyAdapter extends XmlAdapter<String, Currency> {
 

@@ -9,7 +9,7 @@ import java.io.Reader;
 import java.io.StringReader;
 import java.io.StringWriter;
 
-import javax.xml.bind.JAXBException;
+import jakarta.xml.bind.JAXBException;
 
 import org.junit.Test;
 import org.orcid.jaxb.test.utils.OrcidTranslator;

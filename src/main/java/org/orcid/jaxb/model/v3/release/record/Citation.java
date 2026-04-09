@@ -9,8 +9,8 @@ package org.orcid.jaxb.model.v3.release.record;
 
 import java.io.Serializable;
 
-import javax.xml.bind.annotation.*;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import jakarta.xml.bind.annotation.*;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import org.orcid.jaxb.model.common.CitationType;

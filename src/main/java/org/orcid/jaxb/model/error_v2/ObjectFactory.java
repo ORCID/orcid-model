@@ -8,7 +8,7 @@
 
 package org.orcid.jaxb.model.error_v2;
 
-import javax.xml.bind.annotation.XmlRegistry;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**

@@ -7,7 +7,7 @@
 
 package org.orcid.jaxb.model.notification.custom_v2;
 
-import javax.xml.bind.annotation.XmlRegistry;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 /**
  * This object contains factory methods for each Java content interface and Java

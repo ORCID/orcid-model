@@ -16,7 +16,7 @@ package org.orcid.jaxb.model.message;
  *
  * =============================================================================
  */
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "orcid-identifier")
 public class OrcidIdentifier extends OrcidIdBase {

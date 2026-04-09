@@ -5,6 +5,6 @@
 // Generated on: 2014.07.22 at 06:46:00 PM BST 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.orcid.org/ns/notification", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED, xmlns = { @javax.xml.bind.annotation.XmlNs(prefix = "common", namespaceURI = "http://www.orcid.org/ns/common"), })
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "http://www.orcid.org/ns/notification", elementFormDefault = jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED, xmlns = { @jakarta.xml.bind.annotation.XmlNs(prefix = "common", namespaceURI = "http://www.orcid.org/ns/common"), })
 package org.orcid.jaxb.model.notification_v2;
 

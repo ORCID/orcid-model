@@ -3,7 +3,7 @@ package org.orcid.jaxb.model.message;
 import java.io.Serializable;
 import java.util.List;
 
-import javax.xml.bind.annotation.XmlEnumValue;
+import jakarta.xml.bind.annotation.XmlEnumValue;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.google.common.collect.Lists;
