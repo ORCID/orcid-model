@@ -10,13 +10,13 @@ package org.orcid.jaxb.model.v3.release.record;
 import java.io.Serializable;
 import java.util.List;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import org.orcid.jaxb.model.common.LanguageCode;
@@ -59,12 +59,14 @@ public class Work implements Filterable, Serializable, SourceAware, BulkElement,
     protected Citation citation;
     @XmlJavaTypeAdapter(WorkTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/work")
-    @Schema(type = "string", allowableValues = "annotation, artistic-performance, blog-post, book-chapter, book-review, book, cartographic-material, clinical-study" +
-            "conference-abstract, conference-output, conference-paper, conference-poster, conference-presentation, conference-proceedings, data-management-plan, data-set, design, dictionary-entry, disclosure, dissertation-thesis, " +
-            "edited-book, encyclopedia-entry, image, invention, journal-article, journal-issue, learning-object, lecture-speech, license, magazine-article, manual," +
-            "moving-image, musical-composition, newsletter-article, newspaper-article, online-resource, other, patent, physical-object, preprint, public-speech, registered-copyright, report," +
-            "research-technique, research-tool, review, software, sound, spin-off-company, standards-and-policy, supervised-student-publication, technical-standard," +
-            "test, trademark, transcription, translation, website, working-paper, undefined")
+    @Schema(type = "string", allowableValues = """
+            annotation, artistic-performance, blog-post, book-chapter, book-review, book, cartographic-material, clinical-study\
+            conference-abstract, conference-output, conference-paper, conference-poster, conference-presentation, conference-proceedings, data-management-plan, data-set, design, dictionary-entry, disclosure, dissertation-thesis, \
+            edited-book, encyclopedia-entry, image, invention, journal-article, journal-issue, learning-object, lecture-speech, license, magazine-article, manual,\
+            moving-image, musical-composition, newsletter-article, newspaper-article, online-resource, other, patent, physical-object, preprint, public-speech, registered-copyright, report,\
+            research-technique, research-tool, review, software, sound, spin-off-company, standards-and-policy, supervised-student-publication, technical-standard,\
+            test, trademark, transcription, translation, website, working-paper, undefined\
+            """)
     protected WorkType type;
     @XmlElement(name = "publication-date", namespace = "http://www.orcid.org/ns/common")
     protected PublicationDate publicationDate;

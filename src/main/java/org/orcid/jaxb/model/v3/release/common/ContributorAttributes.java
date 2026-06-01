@@ -9,12 +9,12 @@ package org.orcid.jaxb.model.v3.release.common;
 
 import java.io.Serializable;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import org.orcid.jaxb.model.common.SequenceType;
 import org.orcid.jaxb.model.common.adapters.SequenceTypeAdapter;
@@ -46,8 +46,10 @@ public class ContributorAttributes implements Serializable {
     protected SequenceType contributorSequence;
 
     @XmlElement(name = "contributor-role", namespace = "http://www.orcid.org/ns/work", required = true)
-    @Schema(type = "string", allowableValues = "author, assignee, editor, chair-or-translator, co-investigator, " +
-            "co-inventor, graduate-student, other-inventor, principal-investigator, postdoctoral-researcher, support-staff")
+    @Schema(type = "string", allowableValues = """
+            author, assignee, editor, chair-or-translator, co-investigator, \
+            co-inventor, graduate-student, other-inventor, principal-investigator, postdoctoral-researcher, support-staff\
+            """)
     protected String contributorRole;
 
     /**

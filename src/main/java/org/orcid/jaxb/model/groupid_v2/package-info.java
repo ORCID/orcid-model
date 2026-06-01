@@ -5,9 +5,9 @@
 // Generated on: 2012.04.18 at 12:45:00 PM BST 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.orcid.org/ns/group-id", xmlns={
-		@javax.xml.bind.annotation.XmlNs(prefix = "group-id", namespaceURI = "http://www.orcid.org/ns/group-id"),
-		@javax.xml.bind.annotation.XmlNs(prefix = "common", namespaceURI = "http://www.orcid.org/ns/common"),},
-		elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "http://www.orcid.org/ns/group-id", xmlns={
+		@jakarta.xml.bind.annotation.XmlNs(prefix = "group-id", namespaceURI = "http://www.orcid.org/ns/group-id"),
+		@jakarta.xml.bind.annotation.XmlNs(prefix = "common", namespaceURI = "http://www.orcid.org/ns/common"),},
+		elementFormDefault = jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED)
 package org.orcid.jaxb.model.groupid_v2;
 

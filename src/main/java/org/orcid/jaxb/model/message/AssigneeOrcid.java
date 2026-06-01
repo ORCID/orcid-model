@@ -9,7 +9,7 @@ package org.orcid.jaxb.model.message;
 
 import java.io.Serializable;
 
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "assignee-orcid")
 public class AssigneeOrcid extends OrcidIdBase implements Serializable {

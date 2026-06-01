@@ -11,13 +11,13 @@ import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlTransient;
+import jakarta.xml.bind.annotation.XmlType;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import org.orcid.jaxb.model.common.ActionType;
@@ -55,8 +55,10 @@ public class Item implements Serializable {
     @XmlAttribute(name = "put-code")
     protected String putCode;
     @XmlElement(name = "item-type", namespace = "http://www.orcid.org/ns/notification", required = true)
-    @Schema(type = "string", allowableValues = "bio, distinction, education, employment, external-identifier, invited-position," +
-            "funding, membership, peer-review, qualification, service, work, research-resource")
+    @Schema(type = "string", allowableValues = """
+            bio, distinction, education, employment, external-identifier, invited-position,\
+            funding, membership, peer-review, qualification, service, work, research-resource\
+            """)
     protected ItemType itemType;
     @XmlElement(name = "item-name", namespace = "http://www.orcid.org/ns/notification", required = true)
     protected String itemName;

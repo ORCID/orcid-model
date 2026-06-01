@@ -2,13 +2,13 @@ package org.orcid.jaxb.model.v3.release.record;
 
 import java.io.Serializable;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import org.orcid.jaxb.model.common.PeerReviewSubjectType;
@@ -58,11 +58,13 @@ public class PeerReview implements Filterable, Serializable, OrganizationHolder,
     protected Title subjectContainerName;
     @XmlJavaTypeAdapter(PeerReviewSubjectTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "subject-type")
-    @Schema(type = "string", allowableValues = "artistic-performance, book-chapter, book-review, book, conference-abstract, conference-paper," +
-            "conference-poster, data-set, dictionary-entry, disclosure, dissertation-thesis, edited-book, encyclopedia-entry, invention, journal-article," +
-            "journal-issue, lecture-speech, license, magazine-article, manual, newsletter-article, newspaper-article, online-resource, other, patent," +
-            "registered-copyright, report, research-technique, research-tool, software, spin-off-company, standards-and-policy, supervised-student-publication," +
-            "technical-standard, test, trademark, translation, website, working-paper, grant, contract, award, salary-award, research-resource-proposal, undefined")
+    @Schema(type = "string", allowableValues = """
+            artistic-performance, book-chapter, book-review, book, conference-abstract, conference-paper,\
+            conference-poster, data-set, dictionary-entry, disclosure, dissertation-thesis, edited-book, encyclopedia-entry, invention, journal-article,\
+            journal-issue, lecture-speech, license, magazine-article, manual, newsletter-article, newspaper-article, online-resource, other, patent,\
+            registered-copyright, report, research-technique, research-tool, software, spin-off-company, standards-and-policy, supervised-student-publication,\
+            technical-standard, test, trademark, translation, website, working-paper, grant, contract, award, salary-award, research-resource-proposal, undefined\
+            """)
     protected PeerReviewSubjectType subjectType;
     @XmlElement( namespace = "http://www.orcid.org/ns/peer-review", name = "subject-name")
     protected SubjectName subjectName;

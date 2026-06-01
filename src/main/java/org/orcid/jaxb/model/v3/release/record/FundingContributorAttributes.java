@@ -9,11 +9,11 @@ package org.orcid.jaxb.model.v3.release.record;
 
 import java.io.Serializable;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlType;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
@@ -33,8 +33,10 @@ public class FundingContributorAttributes implements Serializable {
     private static final long serialVersionUID = 8970123534713615455L;
 
     @XmlElement(required = true, namespace = "http://www.orcid.org/ns/funding", name = "contributor-role")
-    @Schema(type = "string", allowableValues = "author, assignee, editor, chair-or-translator, co-investigator, co-inventor," +
-            "graduate-student, other-inventor, principal-investigator, postdoctoral-researcher, support-staff")
+    @Schema(type = "string", allowableValues = """
+            author, assignee, editor, chair-or-translator, co-investigator, co-inventor,\
+            graduate-student, other-inventor, principal-investigator, postdoctoral-researcher, support-staff\
+            """)
     protected String contributorRole;    
 
     /**

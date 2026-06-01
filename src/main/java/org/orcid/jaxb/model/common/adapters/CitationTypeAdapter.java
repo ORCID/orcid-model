@@ -1,6 +1,6 @@
 package org.orcid.jaxb.model.common.adapters;
 
-import javax.xml.bind.annotation.adapters.XmlAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 
 import org.orcid.jaxb.model.common.CitationType;
 

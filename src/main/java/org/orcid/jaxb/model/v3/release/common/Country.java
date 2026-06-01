@@ -9,12 +9,12 @@ package org.orcid.jaxb.model.v3.release.common;
 
 import java.io.Serializable;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.XmlValue;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlValue;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import org.orcid.jaxb.model.common.Iso3166Country;
 import org.orcid.jaxb.model.common.adapters.Iso3166CountryAdapter;

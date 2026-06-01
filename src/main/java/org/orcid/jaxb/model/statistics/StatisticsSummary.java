@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Map;
 
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 

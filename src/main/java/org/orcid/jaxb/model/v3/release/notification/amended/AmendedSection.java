@@ -1,6 +1,6 @@
 package org.orcid.jaxb.model.v3.release.notification.amended;
 
-import javax.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlEnum;
 
 /**
  * 

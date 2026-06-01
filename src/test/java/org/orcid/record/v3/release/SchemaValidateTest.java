@@ -6,7 +6,7 @@ import static org.junit.Assert.assertNotNull;
 import java.io.InputStreamReader;
 import java.io.Reader;
 
-import javax.xml.bind.JAXBException;
+import jakarta.xml.bind.JAXBException;
 
 import org.junit.Test;
 import org.orcid.jaxb.model.v3.release.record.Funding;

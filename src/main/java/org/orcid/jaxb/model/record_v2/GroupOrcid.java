@@ -1,6 +1,6 @@
 package org.orcid.jaxb.model.record_v2;
 
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
 
 import org.orcid.jaxb.model.common_v2.OrcidIdentifier;
 

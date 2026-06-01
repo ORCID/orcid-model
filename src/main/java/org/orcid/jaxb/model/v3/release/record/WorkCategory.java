@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import javax.xml.bind.annotation.XmlEnumValue;
+import jakarta.xml.bind.annotation.XmlEnumValue;
 
 import org.orcid.jaxb.model.common.WorkType;
 

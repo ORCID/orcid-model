@@ -9,12 +9,12 @@ package org.orcid.jaxb.model.v3.release.notification;
 
 import java.io.Serializable;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlTransient;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlSchemaType;
+import jakarta.xml.bind.annotation.XmlTransient;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -55,8 +55,10 @@ abstract public class Notification implements Serializable, SourceAware {
     @XmlAttribute(name = "put-code")
     protected Long putCode;
     @XmlElement(name = "notification-type", namespace = "http://www.orcid.org/ns/notification", required = true)
-    @Schema(type = "string", allowableValues = "custom, institutional-connection, permission, amended, service-anouncement, " +
-            "administrative, tip, find-my-stuff")
+    @Schema(type = "string", allowableValues = """
+            custom, institutional-connection, permission, amended, service-anouncement, \
+            administrative, tip, find-my-stuff\
+            """)
     protected NotificationType notificationType;
     @XmlElement(name = "created-date", namespace = "http://www.orcid.org/ns/common")
     @XmlSchemaType(name = "dateTime")

@@ -5,6 +5,6 @@
 // Generated on: 2014.07.22 at 06:46:00 PM BST 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.orcid.org/ns/common", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "http://www.orcid.org/ns/common", elementFormDefault = jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED)
 package org.orcid.jaxb.model.common_v2;
 

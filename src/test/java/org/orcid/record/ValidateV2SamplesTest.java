@@ -15,10 +15,10 @@ import java.io.Reader;
 import java.net.URISyntaxException;
 
 import javax.xml.XMLConstants;
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
+import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.JAXBException;
+import jakarta.xml.bind.Marshaller;
+import jakarta.xml.bind.Unmarshaller;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 
@@ -144,7 +144,7 @@ public class ValidateV2SamplesTest {
             assertNotNull(address.getCreatedDate());
             assertNotNull(address.getLastModifiedDate());
             assertNotNull(address.getCountry());
-            if (address.getPutCode().equals(new Long(1))) {
+            if (address.getPutCode().equals(Long.valueOf(1))) {
                 assertEquals(Iso3166Country.US, address.getCountry().getValue());
                 assertEquals(Visibility.PUBLIC, address.getVisibility());
             } else {
