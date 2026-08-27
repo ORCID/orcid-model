@@ -307,4 +307,24 @@ public class ScopePathTypeTest {
                 assertTrue(combined.contains(ScopePathType.AUTHENTICATE));
                 assertTrue(combined.contains(ScopePathType.READ_PUBLIC));
         }
+
+	@Test
+	public void test_INTERNAL_ACCOUNT_RECOVERY() {
+		// Test INTERNAL_ACCOUNT_RECOVERY: a leaf scope, it inherits nothing
+		Set<ScopePathType> combined = ScopePathType.INTERNAL_ACCOUNT_RECOVERY.combined();
+		assertEquals(1, combined.size());
+		assertTrue(combined.contains(ScopePathType.INTERNAL_ACCOUNT_RECOVERY));
+		assertTrue(ScopePathType.INTERNAL_ACCOUNT_RECOVERY.isInternalScope());
+		assertEquals(ScopePathType.INTERNAL_ACCOUNT_RECOVERY, ScopePathType.fromValue(ScopeConstants.INTERNAL_ACCOUNT_RECOVERY));
+	}
+
+	@Test
+	public void test_INTERNAL_ACCOUNT_RECOVERY_isNotImpliedByInternal() {
+		// The nested-looking path must not create inheritance in either direction:
+		// a client holding /orcid-internal must not be able to use /orcid-internal/account-recovery.
+		assertFalse(ScopePathType.INTERNAL.hasScope(ScopePathType.INTERNAL_ACCOUNT_RECOVERY));
+		assertFalse(ScopePathType.INTERNAL_ACCOUNT_RECOVERY.hasScope(ScopePathType.INTERNAL));
+		assertFalse(ScopePathType.INTERNAL_PERSON_LAST_MODIFIED.hasScope(ScopePathType.INTERNAL_ACCOUNT_RECOVERY));
+		assertFalse(ScopePathType.INTERNAL_ACCOUNT_RECOVERY.hasScope(ScopePathType.INTERNAL_PERSON_LAST_MODIFIED));
+	}
 }
