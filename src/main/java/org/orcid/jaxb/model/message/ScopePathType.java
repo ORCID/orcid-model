@@ -128,6 +128,7 @@ public enum ScopePathType implements Serializable {
     // Internal scopes
     @XmlEnumValue(ScopeConstants.INTERNAL) INTERNAL (ScopeConstants.INTERNAL),
     @XmlEnumValue(ScopeConstants.INTERNAL_PERSON_LAST_MODIFIED) INTERNAL_PERSON_LAST_MODIFIED (ScopeConstants.INTERNAL_PERSON_LAST_MODIFIED),
+    @XmlEnumValue(ScopeConstants.INTERNAL_ACCOUNT_RECOVERY) INTERNAL_ACCOUNT_RECOVERY (ScopeConstants.INTERNAL_ACCOUNT_RECOVERY),
     
     @XmlEnumValue(ScopeConstants.IDENTIFIER_TYPES_CREATE) IDENTIFIER_TYPES_CREATE(ScopeConstants.IDENTIFIER_TYPES_CREATE),
 
@@ -302,6 +303,7 @@ public enum ScopePathType implements Serializable {
     public boolean isInternalScope() {
         switch (this) {
         case INTERNAL_PERSON_LAST_MODIFIED:
+        case INTERNAL_ACCOUNT_RECOVERY:
         case INTERNAL:
             return true;
         default:
