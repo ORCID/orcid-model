@@ -139,4 +139,4 @@ Technical documentation is included with the read-me file for each version. [Cur
 
 The [ORCID Member Support Site](https://members.orcid.org) has additional documentation, tutorials and guides, as well as contact for our support team.
 
-We also invite you to submit questions to the [API Users Group](https://groups.google.com/forum/?fromgroups#!forum/orcid-api-users) mailing list and forum.
+We also invite you to submit questions to the [API Users Group](https://groups.google.com/forum/?fromgroups#!forum/orcid-api-users) mailing list and forum. 
