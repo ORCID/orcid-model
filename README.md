@@ -135,7 +135,7 @@ Release candidate versions of the XSD contain elements and data structures for f
 
 # Getting help
 
-Technical documentation is included with the read-me file for each version. [Current release documentation](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/README.md)
+Technical documentation is included with the read-me file for each version. [Current release documentation](https://github.com/ORCID/orcid-model/blob/master/src/main/resources/record_2.1/README.md) 
 
 The [ORCID Member Support Site](https://members.orcid.org) has additional documentation, tutorials and guides, as well as contact for our support team.
 
