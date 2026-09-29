@@ -133,6 +133,21 @@ public class Email implements Filterable, Serializable, SourceAware {
         this.primary = primary;
     }
 
+    // java.beans.Introspector recognises an "is" read method only for primitive boolean, so these
+    // boxed flags need get-accessors to be readable by code that copies beans by introspection,
+    // such as ORCID-Source's v2.0/v2.1 version converter. The isX() methods stay for existing callers.
+    public Boolean getVerified() {
+        return verified;
+    }
+
+    public Boolean getCurrent() {
+        return current;
+    }
+
+    public Boolean getPrimary() {
+        return primary;
+    }
+
     @Override
     public int hashCode() {
         final int prime = 31;
