@@ -27,7 +27,7 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "content" })
 @XmlRootElement(name = "source-name", namespace="http://www.orcid.org/ns/common")
-@Schema(description = "SourceNameV3_0")
+@Schema(name = "SourceName")
 public class SourceName implements Serializable {
 
     /**

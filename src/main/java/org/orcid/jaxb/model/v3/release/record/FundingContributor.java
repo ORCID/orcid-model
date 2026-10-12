@@ -32,7 +32,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "contributorOrcid", "creditName", "contributorEmail", "contributorAttributes" })
 @XmlRootElement(name = "contributor", namespace = "http://www.orcid.org/ns/funding")
-@Schema(description = "FundingContributorV3_0")
+@Schema(name = "FundingContributor")
 public class FundingContributor implements Serializable {
 
     /**

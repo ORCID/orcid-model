@@ -22,9 +22,10 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "locale" })
 @XmlRootElement(name = "preferences", namespace = "http://www.orcid.org/ns/preferences")
-@Schema(description = "PreferencesV3_0")
+@Schema(name = "Preferences")
 public class Preferences implements Serializable {    
     private static final long serialVersionUID = -2143886440930470817L;
+    @Schema(type = "string", allowableValues = { "ar", "cs", "de", "en", "es", "fr", "it", "ja", "ko", "pl", "pt", "ru", "tr", "zh_CN", "zh_TW", "xx" })
     @XmlJavaTypeAdapter(AvailableLocalesAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/preferences")
     AvailableLocales locale;

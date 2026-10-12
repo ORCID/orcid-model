@@ -11,7 +11,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "orcidId", "givenNames", "familyNames", "creditName", "otherNames", "emails", "institutionNames" })
-@Schema(description = "ExpandedResultV3_0")
+@Schema(name = "ExpandedResult")
 public class ExpandedResult implements Serializable {
     
     private static final long serialVersionUID = -7750679507838375771L;

@@ -23,10 +23,11 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlType(propOrder = { "creationMethod", "completionDate", "submissionDate", "lastModifiedDate", "claimed", "source", "deactivationDate", "verifiedEmail",
         "verifiedPrimaryEmail" })
 @XmlRootElement(name = "history", namespace = "http://www.orcid.org/ns/history")
-@Schema(description = "HistoryV3_0")
+@Schema(name = "History")
 public class History implements Serializable, SourceAware {
     private static final long serialVersionUID = 5662067844899740318L;
     @XmlElement(namespace = "http://www.orcid.org/ns/history", name = "creation-method")
+    @Schema(type = "string", allowableValues = { "API", "Direct", "Member-referred", "website" })
     protected CreationMethod creationMethod;
     @XmlElement(namespace = "http://www.orcid.org/ns/history", name = "completion-date")
     protected CompletionDate completionDate;

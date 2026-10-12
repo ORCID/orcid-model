@@ -37,7 +37,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "organization-address", propOrder = { "city", "region", "country" })
 @XmlRootElement(name = "organizationAddress", namespace = "http://www.orcid.org/ns/common")
-@Schema(description = "OrganizationAddressV3_0")
+@Schema(name = "OrganizationAddress")
 public class OrganizationAddress implements Serializable {
 
     private final static long serialVersionUID = 1L;

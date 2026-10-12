@@ -28,7 +28,7 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "contributorOrcid", "creditName", "contributorEmail", "contributorAttributes" })
 @XmlRootElement(name = "contributor")
-@Schema(description = "ContributorV3_0")
+@Schema(name = "Contributor")
 public class Contributor implements Serializable {
     private static final long serialVersionUID = 7839384026083240514L;
     @XmlElement(name = "contributor-orcid", namespace = "http://www.orcid.org/ns/common")

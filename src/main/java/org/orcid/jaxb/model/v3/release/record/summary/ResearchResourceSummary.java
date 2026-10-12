@@ -26,7 +26,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "proposal" })
 @XmlRootElement(name = "research-resource", namespace = "http://www.orcid.org/ns/research-resource")
-@Schema(description = "ResearchResourceSummaryV3_0")
+@Schema(name = "ResearchResourceSummary")
 public class ResearchResourceSummary implements VisibilityType, Activity, GroupableActivity, Serializable, SourceAware {
     /**
      * 
@@ -46,6 +46,7 @@ public class ResearchResourceSummary implements VisibilityType, Activity, Groupa
     @XmlAttribute(name = "path")
     protected String path;
     @XmlAttribute
+    @Schema(type = "string", allowableValues = { "private", "limited", "registered-only", "public" })
     protected Visibility visibility;
     @XmlAttribute(name = "display-index")
     protected String displayIndex;

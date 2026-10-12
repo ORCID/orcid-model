@@ -42,7 +42,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlType(propOrder = { "lastModifiedDate", "distinctions", "educations", "employments", "fundings", "invitedPositions", "memberships", "peerReviews", "qualifications",
         "researchResources", "services", "works" })
 @XmlRootElement(name = "activities-summary", namespace = "http://www.orcid.org/ns/activities")
-@Schema(description = "ActivitiesSummaryV3_0")
+@Schema(name = "ActivitiesSummary")
 public class ActivitiesSummary implements Serializable, ActivitiesContainer {
     private static final long serialVersionUID = 6877440564967601718L;
     @XmlElement(name = "last-modified-date", namespace = "http://www.orcid.org/ns/common")

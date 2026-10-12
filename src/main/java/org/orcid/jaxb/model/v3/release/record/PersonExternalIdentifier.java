@@ -28,7 +28,7 @@ import org.orcid.jaxb.model.v3.release.common.Visibility;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "type", "value", "url", "relationship" })
 @XmlRootElement(name = "external-identifier", namespace = "http://www.orcid.org/ns/external-identifier")
-@Schema(description = "PersonExternalIdentifierV3_0")
+@Schema(name = "PersonExternalIdentifier")
 public class PersonExternalIdentifier implements Serializable, Filterable, SourceAware {
     private static final long serialVersionUID = 8340033850223164314L;
     
@@ -38,7 +38,7 @@ public class PersonExternalIdentifier implements Serializable, Filterable, Sourc
     protected String value;
     @XmlJavaTypeAdapter(RelationshipAdapter.class)
     @XmlElement(name="external-id-relationship", namespace = "http://www.orcid.org/ns/common")
-    @Schema(type = "string", allowableValues = "part-of, self, version-of")
+    @Schema(type = "string", allowableValues = { "part-of", "self", "version-of", "funded-by" })
     protected Relationship relationship;
     @XmlElement(name="external-id-url", namespace = "http://www.orcid.org/ns/common")
     protected Url url;    
@@ -51,7 +51,7 @@ public class PersonExternalIdentifier implements Serializable, Filterable, Sourc
     @XmlAttribute(name = "put-code")
     protected Long putCode;        
     @XmlAttribute
-    @Schema(type = "string", allowableValues = "limited, registered-only, public")
+    @Schema(type = "string", allowableValues = { "private", "limited", "registered-only", "public" })
     protected Visibility visibility;
     @XmlAttribute
     protected String path;

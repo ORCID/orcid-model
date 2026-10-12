@@ -34,7 +34,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "fundings" })
 @XmlRootElement(name = "fundingList")
-@Schema(description = "FundingListV3_0")
+@Schema(name = "FundingList")
 public class FundingList implements ActivitiesContainer, Serializable {
 
     private static final long serialVersionUID = 1L;

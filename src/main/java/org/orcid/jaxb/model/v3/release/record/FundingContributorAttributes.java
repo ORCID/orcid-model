@@ -28,15 +28,13 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "contributorRole" })
 @XmlRootElement(name = "contributorAttributes", namespace = "http://www.orcid.org/ns/funding")
-@Schema(description = "FundingContributorAttributesV3_0")
+@Schema(name = "FundingContributorAttributes")
 public class FundingContributorAttributes implements Serializable {
     private static final long serialVersionUID = 8970123534713615455L;
 
     @XmlElement(required = true, namespace = "http://www.orcid.org/ns/funding", name = "contributor-role")
-    @Schema(type = "string", allowableValues = """
-            author, assignee, editor, chair-or-translator, co-investigator, co-inventor,\
-            graduate-student, other-inventor, principal-investigator, postdoctoral-researcher, support-staff\
-            """)
+    @Schema(type = "string", allowableValues = { "author", "assignee", "editor", "chair-or-translator", "co-investigator", "co-inventor",
+            "graduate-student", "other-inventor", "principal-investigator", "postdoctoral-researcher", "support-staff" })
     protected String contributorRole;    
 
     /**

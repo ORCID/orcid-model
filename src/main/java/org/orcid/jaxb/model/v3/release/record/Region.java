@@ -32,7 +32,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "content" })
 @XmlRootElement(name = "region")
-@Schema(description = "RegionV3_0")
+@Schema(name = "Region")
 public class Region implements Serializable {
 
     private final static long serialVersionUID = 1L;

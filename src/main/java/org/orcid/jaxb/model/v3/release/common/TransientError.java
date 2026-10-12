@@ -9,8 +9,11 @@ import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlType;
 import jakarta.xml.bind.annotation.XmlValue;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "errorCode", "errorMessage"})
+@Schema(name = "TransientError")
 public class TransientError implements Serializable {
     
     private static final long serialVersionUID = 1L;

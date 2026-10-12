@@ -25,7 +25,7 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "value" })
 @XmlRootElement(name = "verification-date", namespace = "http://www.orcid.org/ns/summary")
-@Schema(description = "VerificationDateV3_0")
+@Schema(name = "VerificationDate")
 public class VerificationDate implements Serializable {
 
     /**

@@ -3,7 +3,6 @@ package org.orcid.jaxb.model.v3.release.record;
 import jakarta.xml.bind.annotation.XmlEnum;
 import jakarta.xml.bind.annotation.XmlEnumValue;
 
-import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 
@@ -11,7 +10,6 @@ import io.swagger.v3.oas.annotations.media.Schema;
  *
  */
 @XmlEnum
-@Schema(description = "SourceTypeV3_0")
 public enum SourceType {
     @XmlEnumValue("USER") USER("USER");
 

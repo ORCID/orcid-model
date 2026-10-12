@@ -27,7 +27,7 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "value" })
 @XmlRootElement(name = "deactivation-date", namespace = "http://www.orcid.org/ns/history")
-@Schema(description = "DeactivationDateV3_0")
+@Schema(name = "DeactivationDate")
 public class DeactivationDate implements Serializable {
     private static final long serialVersionUID = 1L;
     @XmlValue

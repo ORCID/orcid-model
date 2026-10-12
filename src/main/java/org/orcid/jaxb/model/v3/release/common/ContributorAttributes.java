@@ -35,21 +35,19 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "contributorSequence", "contributorRole" })
 @XmlRootElement(name = "contributor-attributes")
-@Schema(description = "ContributorAttributesV3_0")
+@Schema(name = "ContributorAttributes")
 public class ContributorAttributes implements Serializable {
 
     private static final long serialVersionUID = 1L;
     
     @XmlJavaTypeAdapter(SequenceTypeAdapter.class)
     @XmlElement(name = "contributor-sequence", namespace = "http://www.orcid.org/ns/work", required = true)
-    @Schema(type = "string", allowableValues = "first, additional")
+    @Schema(type = "string", allowableValues = { "first", "additional" })
     protected SequenceType contributorSequence;
 
     @XmlElement(name = "contributor-role", namespace = "http://www.orcid.org/ns/work", required = true)
-    @Schema(type = "string", allowableValues = """
-            author, assignee, editor, chair-or-translator, co-investigator, \
-            co-inventor, graduate-student, other-inventor, principal-investigator, postdoctoral-researcher, support-staff\
-            """)
+    @Schema(type = "string", allowableValues = { "author", "assignee", "editor", "chair-or-translator", "co-investigator", "co-inventor",
+            "graduate-student", "other-inventor", "principal-investigator", "postdoctoral-researcher", "support-staff" })
     protected String contributorRole;
 
     /**

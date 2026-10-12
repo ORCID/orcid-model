@@ -22,7 +22,7 @@ import org.orcid.jaxb.model.v3.release.common.Visibility;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "proposal", "resourceItems", "displayIndex" })
 @XmlRootElement(name = "research-resource", namespace = "http://www.orcid.org/ns/research-resource")
-@Schema(description = "ResearchResourceV3_0")
+@Schema(name = "ResearchResource")
 public class ResearchResource implements Filterable, Serializable, SourceAware, ExternalIdentifiersAwareActivity {
     private static final long serialVersionUID = -3117752351151578304L;
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
@@ -43,7 +43,7 @@ public class ResearchResource implements Filterable, Serializable, SourceAware, 
     @XmlAttribute(name = "path")
     protected String path;
     @XmlAttribute
-    @Schema(type = "string", allowableValues = "limited, registered-only, public")
+    @Schema(type = "string", allowableValues = { "private", "limited", "registered-only", "public" })
     protected Visibility visibility;
     @XmlAttribute(name = "display-index")
     protected String displayIndex;
