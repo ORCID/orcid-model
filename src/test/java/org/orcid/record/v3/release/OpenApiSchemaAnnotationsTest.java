@@ -51,10 +51,14 @@ import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * classes such as the two {@code Works} overwrite each other;</li>
  * <li>no class still carries the old {@code XxxV3_0} label as its
  * description;</li>
- * <li>every enum-valued field documents the values that actually go over the
- * wire: the XSD enumeration where the XSD has one, otherwise what the field's
- * XmlAdapter (or the enum's XmlEnumValue) writes. Fields whose enum constants
- * already equal those values need no annotation.</li>
+ * <li>every enum-valued field documents the values the API writes in JSON,
+ * which is the normative format: what the field's XmlAdapter writes, else the
+ * enum's {@code @JsonValue}, else its {@code @XmlEnumValue}, else the constant
+ * name. Where the XSD enumerates the type, it may only narrow that list (it
+ * drops {@code system} from visibility); where JSON and the XSD disagree
+ * ({@code creation-method} is {@code DIRECT} in JSON and {@code Direct} in XML),
+ * JSON wins. Fields whose generated values already equal the JSON values need no
+ * annotation.</li>
  * </ul>
  */
 public class OpenApiSchemaAnnotationsTest {
@@ -147,31 +151,33 @@ public class OpenApiSchemaAnnotationsTest {
         return list.size() <= 6 ? list.toString() : list.subList(0, 6) + " … (" + list.size() + " values)";
     }
 
-    /** Values the API contract allows: the XSD enumeration if there is one, otherwise what goes over the wire. */
+    /** Values the API writes in JSON, narrowed by the XSD enumeration when the XSD lists a subset of them. */
     private static Set<String> contractValues(Class<?> enumType, XmlAdapter<Object, Object> adapter, Map<String, Set<String>> xsdEnumerations)
             throws Exception {
-        String xsdType = XSD_TYPE_BY_ENUM.get(enumType.getSimpleName());
-        if (xsdType != null) {
-            Set<String> fromXsd = xsdEnumerations.get(xsdType);
-            assertTrue("XSD simple type " + xsdType + " not found", fromXsd != null);
-            return new TreeSet<>(fromXsd);
-        }
-        Set<String> values = new TreeSet<>();
+        Set<String> json = new TreeSet<>();
         for (Object constant : enumType.getEnumConstants()) {
             if (adapter == null) {
-                values.add(defaultValue(enumType, constant));
+                json.add(defaultValue(enumType, constant));
                 continue;
             }
             try {
                 Object marshalled = adapter.marshal(constant);
                 if (marshalled != null) {
-                    values.add(marshalled.toString());
+                    json.add(marshalled.toString());
                 }
             } catch (Exception e) {
                 // A constant the adapter refuses never reaches the wire.
             }
         }
-        return values;
+        String xsdType = XSD_TYPE_BY_ENUM.get(enumType.getSimpleName());
+        if (xsdType != null) {
+            Set<String> fromXsd = xsdEnumerations.get(xsdType);
+            assertTrue("XSD simple type " + xsdType + " not found", fromXsd != null);
+            if (json.containsAll(fromXsd)) {
+                return new TreeSet<>(fromXsd);
+            }
+        }
+        return json;
     }
 
     /** What the generator emits for an enum when nothing says otherwise: @JsonValue, else @XmlEnumValue, else name(). */

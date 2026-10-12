@@ -27,7 +27,8 @@ import io.swagger.v3.oas.annotations.media.Schema;
 public class History implements Serializable, SourceAware {
     private static final long serialVersionUID = 5662067844899740318L;
     @XmlElement(namespace = "http://www.orcid.org/ns/history", name = "creation-method")
-    @Schema(type = "string", allowableValues = { "API", "Direct", "Member-referred", "website" })
+    @Schema(type = "string", allowableValues = { "API", "DIRECT", "MEMBER_REFERRED", "WEBSITE", "INTEGRATION_TEST" },
+            description = "JSON carries the constant name (DIRECT); XML carries the XSD value (Direct).")
     protected CreationMethod creationMethod;
     @XmlElement(namespace = "http://www.orcid.org/ns/history", name = "completion-date")
     protected CompletionDate completionDate;
