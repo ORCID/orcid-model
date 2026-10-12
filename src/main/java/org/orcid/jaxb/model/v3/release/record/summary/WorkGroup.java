@@ -25,7 +25,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "identifiers", "workSummary" })
 @XmlRootElement(name = "work-group", namespace = "http://www.orcid.org/ns/activities")
-@Schema(description = "WorkGroupV3_0")
+@Schema(name = "WorkGroup")
 public class WorkGroup extends ActivityGroup implements Serializable {
     
     private static final long serialVersionUID = -6172489241759247746L;

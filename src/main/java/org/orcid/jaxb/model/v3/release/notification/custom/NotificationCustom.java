@@ -20,6 +20,8 @@ import jakarta.xml.bind.annotation.XmlType;
 import org.orcid.jaxb.model.v3.release.notification.Notification;
 import org.orcid.jaxb.model.v3.release.notification.NotificationType;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 /**
  * Java class for anonymous complex type.
  * 
@@ -52,6 +54,7 @@ import org.orcid.jaxb.model.v3.release.notification.NotificationType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = { "putCode", "notificationType", "subject", "bodyText", "bodyHtml", "createdDate", "sentDate", "readDate", "archivedDate", "source" })
 @XmlRootElement(name = "notification", namespace = "http://www.orcid.org/ns/notification")
+@Schema(name = "NotificationCustom")
 public class NotificationCustom extends Notification implements Serializable {
 
     private final static long serialVersionUID = 1L;

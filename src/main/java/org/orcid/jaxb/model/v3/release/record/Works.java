@@ -34,7 +34,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "work" })
 @XmlRootElement(name = "works")
-@Schema(description = "WorksV3_0")
+@Schema(name = "Works")
 public class Works implements Serializable, ActivitiesContainer {
 
     private static final long serialVersionUID = 1L;

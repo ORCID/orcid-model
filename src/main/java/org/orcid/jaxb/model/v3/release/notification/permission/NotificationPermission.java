@@ -50,7 +50,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = { "putCode", "notificationType", "authorizationUrl", "notificationSubject", "notificationIntro", "items", "createdDate", "sentDate", "readDate", "actionedDate", "archivedDate", "source" })
 @XmlRootElement(name = "notification", namespace = "http://www.orcid.org/ns/notification")
-@Schema(description = "NotificationPermissionV3_0")
+@Schema(name = "NotificationPermission")
 public class NotificationPermission extends Notification {
     private static final long serialVersionUID = -1740905051692424869L;
     @XmlElement(name = "authorization-url", namespace = "http://www.orcid.org/ns/notification", required = true)
@@ -63,8 +63,10 @@ public class NotificationPermission extends Notification {
     @XmlTransient
     protected String subject;
     @XmlElement(name = "notification-subject", namespace = "http://www.orcid.org/ns/notification")
+    @Schema(required = true)
     protected String notificationSubject;
     @XmlElement(name = "notification-intro", namespace = "http://www.orcid.org/ns/notification")
+    @Schema(required = true)
     protected String notificationIntro;
 
     {

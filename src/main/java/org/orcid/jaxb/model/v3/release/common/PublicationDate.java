@@ -29,7 +29,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "")
 @XmlRootElement(name = "publicationDate")
-@Schema(description = "PublicationDateV3_0")
+@Schema(name = "PublicationDate")
 public class PublicationDate extends FuzzyDate implements Serializable {
 
     public PublicationDate() {

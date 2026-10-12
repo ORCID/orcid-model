@@ -18,7 +18,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "content" })
 @XmlRootElement(name = "family-name")
-@Schema(description = "FamilyNameV3_0")
+@Schema(name = "FamilyName")
 public class FamilyName implements Serializable {
     private static final long serialVersionUID = -3413526274697486506L;
 

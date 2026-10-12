@@ -27,7 +27,7 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "content" })
 @XmlRootElement(name = "title")
-@Schema(description = "TitleV3_0")
+@Schema(name = "Title")
 public class Title implements Serializable {
 
     /**

@@ -25,12 +25,13 @@ import org.orcid.jaxb.model.v3.release.common.Visibility;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "urlName", "url" })
 @XmlRootElement(name = "researcher-url", namespace = "http://www.orcid.org/ns/researcher-url")
-@Schema(description = "ResearcherUrlV3_0")
+@Schema(name = "ResearcherUrl")
 public class ResearcherUrl implements Filterable, Serializable, Comparable<ResearcherUrl>, SourceAware {
     private static final long serialVersionUID = 1047027166285177589L;    
     @XmlElement(name = "url-name", namespace = "http://www.orcid.org/ns/researcher-url")
     protected String urlName;
     @XmlElement(namespace = "http://www.orcid.org/ns/researcher-url")
+    @Schema(required = true)
     protected Url url;
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected Source source;
@@ -41,7 +42,7 @@ public class ResearcherUrl implements Filterable, Serializable, Comparable<Resea
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "created-date")
     protected CreatedDate createdDate;
     @XmlAttribute
-    @Schema(type = "string", allowableValues = "limited, registered-only, public")
+    @Schema(type = "string", allowableValues = { "private", "limited", "registered-only", "public" })
     protected Visibility visibility;
     @XmlAttribute
     protected String path;

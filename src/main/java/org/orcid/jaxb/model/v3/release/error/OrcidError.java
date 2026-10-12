@@ -54,7 +54,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
     "moreInfo"
 })
 @XmlRootElement(name = "error", namespace = "http://www.orcid.org/ns/error")
-@Schema(description = "OrcidErrorV3_0")
+@Schema(name = "OrcidError")
 public class OrcidError implements Serializable, BulkElement {
 
     private final static long serialVersionUID = 1L;

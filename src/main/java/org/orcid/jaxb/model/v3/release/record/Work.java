@@ -46,10 +46,11 @@ import org.orcid.jaxb.model.v3.release.common.Visibility;
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "putCode", "path", "title", "journalTitle", "shortDescription", "citation", "type", "publicationDate",
         "externalIdentifiers", "url", "contributors", "languageCode", "country" })
 @XmlRootElement(name = "work", namespace = "http://www.orcid.org/ns/work")
-@Schema(description = "WorkV3_0")
+@Schema(name = "Work")
 public class Work implements Filterable, Serializable, SourceAware, BulkElement, ExternalIdentifiersAwareActivity {
     private static final long serialVersionUID = 1L;
     @XmlElement(namespace = "http://www.orcid.org/ns/work")
+    @Schema(required = true)
     protected WorkTitle title;
     @XmlElement(name = "journal-title", namespace = "http://www.orcid.org/ns/work")
     protected Title journalTitle;
@@ -59,18 +60,20 @@ public class Work implements Filterable, Serializable, SourceAware, BulkElement,
     protected Citation citation;
     @XmlJavaTypeAdapter(WorkTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/work")
-    @Schema(type = "string", allowableValues = """
-            annotation, artistic-performance, blog-post, book-chapter, book-review, book, cartographic-material, clinical-study\
-            conference-abstract, conference-output, conference-paper, conference-poster, conference-presentation, conference-proceedings, data-management-plan, data-set, design, dictionary-entry, disclosure, dissertation-thesis, \
-            edited-book, encyclopedia-entry, image, invention, journal-article, journal-issue, learning-object, lecture-speech, license, magazine-article, manual,\
-            moving-image, musical-composition, newsletter-article, newspaper-article, online-resource, other, patent, physical-object, preprint, public-speech, registered-copyright, report,\
-            research-technique, research-tool, review, software, sound, spin-off-company, standards-and-policy, supervised-student-publication, technical-standard,\
-            test, trademark, transcription, translation, website, working-paper, undefined\
-            """)
+    @Schema(type = "string", required = true, allowableValues = { "annotation", "artistic-performance", "blog-post", "book-chapter", "book-review", "book",
+            "cartographic-material", "clinical-study", "conference-abstract", "conference-output", "conference-paper", "conference-poster",
+            "conference-presentation", "conference-proceedings", "data-management-plan", "data-set", "design", "dictionary-entry",
+            "disclosure", "dissertation-thesis", "edited-book", "encyclopedia-entry", "image", "invention", "journal-article",
+            "journal-issue", "learning-object", "lecture-speech", "license", "magazine-article", "manual", "moving-image",
+            "musical-composition", "newsletter-article", "newspaper-article", "online-resource", "other", "patent", "physical-object",
+            "preprint", "public-speech", "registered-copyright", "report", "research-technique", "research-tool", "review", "software",
+            "sound", "spin-off-company", "standards-and-policy", "supervised-student-publication", "technical-standard", "test",
+            "trademark", "transcription", "translation", "website", "working-paper", "undefined" })
     protected WorkType type;
     @XmlElement(name = "publication-date", namespace = "http://www.orcid.org/ns/common")
     protected PublicationDate publicationDate;
     @XmlElement(name = "external-ids", namespace = "http://www.orcid.org/ns/common")
+    @Schema(required = true, description = "At least one external identifier with relationship self is required when the work is added or updated through the API (error 9023).")
     protected ExternalIDs externalIdentifiers;
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected Url url;
@@ -86,7 +89,7 @@ public class Work implements Filterable, Serializable, SourceAware, BulkElement,
     @XmlAttribute(name = "put-code")
     protected Long putCode;
     @XmlAttribute
-    @Schema(type = "string", allowableValues = "limited, registered-only, public")
+    @Schema(type = "string", allowableValues = { "private", "limited", "registered-only", "public" })
     protected Visibility visibility;
     @XmlAttribute(name = "path")
     protected String path;

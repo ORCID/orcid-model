@@ -29,7 +29,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "content" })
 @XmlRootElement(name = "translatedTitle")
-@Schema(description = "TranslatedTitleV3_0")
+@Schema(name = "TranslatedTitle")
 public class TranslatedTitle implements Serializable {
     /**
      * 

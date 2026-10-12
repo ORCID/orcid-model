@@ -8,9 +8,12 @@ import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "name", "description" })
 @XmlRootElement(name = "client", namespace = "http://www.orcid.org/ns/client")
+@Schema(name = "ClientSummary")
 public class ClientSummary implements Serializable {
     private static final long serialVersionUID = -3011951615514804083L;
 

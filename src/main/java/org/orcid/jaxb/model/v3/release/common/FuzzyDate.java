@@ -33,7 +33,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "fuzzyDate", propOrder = { "year", "month", "day" }, namespace = "http://www.orcid.org/ns/common")
 @XmlSeeAlso({ PublicationDate.class })
-@Schema(description = "FuzzyDateV3_0")
+@Schema(name = "FuzzyDate")
 public class FuzzyDate implements Serializable, Comparable<FuzzyDate> {
 
     private final static long serialVersionUID = 1L;

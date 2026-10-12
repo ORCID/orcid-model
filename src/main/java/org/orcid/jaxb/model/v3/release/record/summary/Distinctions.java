@@ -9,7 +9,7 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlRootElement(name = "distinctions", namespace = "http://www.orcid.org/ns/activities")
-@Schema(description = "DistinctionsSummaryV3_0")
+@Schema(name = "DistinctionsSummary")
 public class Distinctions extends Affiliations<DistinctionSummary> implements Serializable {
 
     /**

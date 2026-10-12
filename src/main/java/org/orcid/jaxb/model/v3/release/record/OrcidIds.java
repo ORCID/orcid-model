@@ -15,7 +15,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "orcidIds" })
 @XmlRootElement(name = "orcid-ids", namespace = "http://www.orcid.org/ns/orcid-id")
-@Schema(description = "OrcidIdsV3_0")
+@Schema(name = "OrcidIds")
 public class OrcidIds implements Serializable {
     private static final long serialVersionUID = 921607209700657276L;
     @XmlElement(name = "orcid-id", namespace = "http://www.orcid.org/ns/orcid-id")

@@ -7,7 +7,7 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlRootElement(name = "invited-position-summary", namespace = "http://www.orcid.org/ns/invited-position")
-@Schema(description = "InvitedPositionSummaryV3_0")
+@Schema(name = "InvitedPositionSummary")
 public class InvitedPositionSummary extends AffiliationSummary implements Serializable {
 
     /**

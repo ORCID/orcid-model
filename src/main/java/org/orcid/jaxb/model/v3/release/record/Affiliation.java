@@ -20,13 +20,13 @@ import org.orcid.jaxb.model.v3.release.common.Visibility;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "putCode", "path", "departmentName", "roleTitle", "startDate", "endDate", "organization", "url",
         "externalIdentifiers", "displayIndex" })
-@Schema(description = "AffiliationV3_0")
+@Schema(name = "Affiliation")
 public abstract class Affiliation implements OrganizationHolder, Filterable, SourceAware, ExternalIdentifiersAwareActivity {
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "department-name")
     protected String departmentName;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "role-title")
     protected String roleTitle;
-    @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "start-date", required = true)
+    @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "start-date")
     protected FuzzyDate startDate;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "end-date")
     protected FuzzyDate endDate;
@@ -48,7 +48,7 @@ public abstract class Affiliation implements OrganizationHolder, Filterable, Sou
     @XmlAttribute(name = "path")
     protected String path;
     @XmlAttribute
-    @Schema(type = "string", allowableValues = "limited, registered-only, public")
+    @Schema(type = "string", allowableValues = { "private", "limited", "registered-only", "public" })
     protected Visibility visibility;
     @XmlAttribute(name = "display-index")
     protected String displayIndex;

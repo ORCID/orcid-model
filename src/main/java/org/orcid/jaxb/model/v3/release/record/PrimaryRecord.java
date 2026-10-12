@@ -20,7 +20,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "orcidIdentifier" })
 @XmlRootElement(name = "primary-record", namespace = "http://www.orcid.org/ns/deprecated")
-@Schema(description = "PrimaryRecordV3_0")
+@Schema(name = "PrimaryRecord")
 public class PrimaryRecord implements Serializable {
     private static final long serialVersionUID = -2996270049010073685L;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "orcid-identifier")

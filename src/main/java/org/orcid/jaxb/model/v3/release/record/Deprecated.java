@@ -18,7 +18,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "deprecatedDate", "primaryRecord"})
 @XmlRootElement(name = "deprecated", namespace = "http://www.orcid.org/ns/deprecated")
-@Schema(description = "DeprecatedV3_0")
+@Schema(name = "Deprecated")
 public class Deprecated implements Serializable {
     private static final long serialVersionUID = 3305981432682691956L;
     

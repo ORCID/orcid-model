@@ -7,7 +7,7 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlRootElement(name = "distinction-summary", namespace = "http://www.orcid.org/ns/distinction")
-@Schema(description = "DistinctionSummaryV3_0")
+@Schema(name = "DistinctionSummary")
 public class DistinctionSummary extends AffiliationSummary implements Serializable {
 
     /**

@@ -49,20 +49,19 @@ import org.orcid.jaxb.model.v3.release.record.PersonExternalIdentifier;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = { "putCode", "itemType", "itemName", "externalIdentifier" })
 @XmlRootElement(name = "item")
-@Schema(description = "ItemV3_0")
+@Schema(name = "Item")
 public class Item implements Serializable {
     private static final long serialVersionUID = 5090603550709774075L;
     @XmlAttribute(name = "put-code")
     protected String putCode;
     @XmlElement(name = "item-type", namespace = "http://www.orcid.org/ns/notification", required = true)
-    @Schema(type = "string", allowableValues = """
-            bio, distinction, education, employment, external-identifier, invited-position,\
-            funding, membership, peer-review, qualification, service, work, research-resource\
-            """)
+    @Schema(type = "string", description = "A permission notification accepts only employment, education, qualification, "
+            + "invited-position, distinction, membership, service, funding, work and peer-review (error 9047).", allowableValues = { "bio", "distinction", "education", "employment", "external-identifier",
+            "invited-position", "funding", "membership", "peer-review", "qualification", "service", "work", "research-resource" })
     protected ItemType itemType;
     @XmlElement(name = "item-name", namespace = "http://www.orcid.org/ns/notification", required = true)
     protected String itemName;
-    @XmlElement(name = "external-id", namespace = "http://www.orcid.org/ns/common", required = true)
+    @XmlElement(name = "external-id", namespace = "http://www.orcid.org/ns/common")
     protected ExternalID externalIdentifier;
     @XmlTransient
     protected ActionType actionType;

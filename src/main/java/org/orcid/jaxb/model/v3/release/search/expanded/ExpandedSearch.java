@@ -16,7 +16,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "results" })
 @XmlRootElement(name = "expanded-search", namespace = "http://www.orcid.org/ns/expanded-search")
-@Schema(description = "SearchV3_0")
+@Schema(name = "ExpandedSearch")
 public class ExpandedSearch implements Serializable {
     
     private static final long serialVersionUID = -1791045354400556107L;
