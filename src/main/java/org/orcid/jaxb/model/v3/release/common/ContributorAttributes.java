@@ -46,8 +46,21 @@ public class ContributorAttributes implements Serializable {
     protected SequenceType contributorSequence;
 
     @XmlElement(name = "contributor-role", namespace = "http://www.orcid.org/ns/work", required = true)
-    @Schema(type = "string", allowableValues = { "author", "assignee", "editor", "chair-or-translator", "co-investigator", "co-inventor",
-            "graduate-student", "other-inventor", "principal-investigator", "postdoctoral-researcher", "support-staff" })
+    @Schema(type = "string", description = "An original role or a CRediT role URI; anything else is refused (error 9058). "
+            + "The XSD says the original roles will be removed in a future version.", allowableValues = {
+            "author", "assignee", "editor", "chair-or-translator", "co-investigator", "co-inventor", "graduate-student",
+            "other-inventor", "principal-investigator", "postdoctoral-researcher", "support-staff",
+            "http://credit.niso.org/contributor-roles/conceptualization/",
+            "http://credit.niso.org/contributor-roles/data-curation/",
+            "http://credit.niso.org/contributor-roles/formal-analysis/",
+            "http://credit.niso.org/contributor-roles/funding-acquisition/",
+            "http://credit.niso.org/contributor-roles/investigation/", "http://credit.niso.org/contributor-roles/methodology/",
+            "http://credit.niso.org/contributor-roles/project-administration/",
+            "http://credit.niso.org/contributor-roles/resources/", "http://credit.niso.org/contributor-roles/software/",
+            "http://credit.niso.org/contributor-roles/supervision/", "http://credit.niso.org/contributor-roles/validation/",
+            "http://credit.niso.org/contributor-roles/visualization/",
+            "http://credit.niso.org/contributor-roles/writing-original-draft/",
+            "http://credit.niso.org/contributor-roles/writing-review-editing/" })
     protected String contributorRole;
 
     /**

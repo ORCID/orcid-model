@@ -45,7 +45,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = { "uri", "path", "host" })
 @XmlRootElement(name = "authorization-url", namespace = "http://www.orcid.org/ns/notification")
-@Schema(name = "AuthorizationUrl", description = "Send uri, or path alone; host is optional.")
+@Schema(name = "AuthorizationUrl", description = "Send uri (with or without path), or path alone; host is optional.")
 public class AuthorizationUrl implements Serializable {
     /**
      * 

@@ -27,6 +27,8 @@ import java.util.regex.Pattern;
 import javax.xml.parsers.DocumentBuilderFactory;
 
 import org.junit.Test;
+import org.orcid.jaxb.model.common.ContributorRole;
+import org.orcid.jaxb.model.common.FundingContributorRole;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -49,8 +51,8 @@ import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * <li>every v3.0 model class has an explicit schema name, unique across the
  * model, because the generator otherwise names schemas after XML elements and
  * classes such as the two {@code Works} overwrite each other;</li>
- * <li>no class still carries the old {@code XxxV3_0} label as its
- * description;</li>
+ * <li>no class, and no enum a v3.0 field uses, still carries an old
+ * {@code XxxV3_0} or {@code XxxV2_0} label as its description;</li>
  * <li>every enum-valued field documents the values the API writes in JSON,
  * which is the normative format: what the field's XmlAdapter writes, else the
  * enum's {@code @JsonValue}, else its {@code @XmlEnumValue}, else the constant
@@ -59,6 +61,9 @@ import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * ({@code creation-method} is {@code DIRECT} in JSON and {@code Direct} in XML),
  * JSON wins. Fields whose generated values already equal the JSON values need no
  * annotation.</li>
+ * <li>a {@code String} field that lists allowed values lists the vocabulary the
+ * API validates against: the contributor roles are the type's original roles
+ * plus the CRediT role URIs of {@code common-3.0.xsd}.</li>
  * </ul>
  */
 public class OpenApiSchemaAnnotationsTest {
@@ -71,7 +76,7 @@ public class OpenApiSchemaAnnotationsTest {
     private static final Map<String, String> XSD_TYPE_BY_ENUM = Map.of("Visibility", "visibility", "SequenceType", "contributor-sequence",
             "CreationMethod", "creation-method");
 
-    private static final Pattern OLD_LABEL = Pattern.compile("\\w*V3_0");
+    private static final Pattern OLD_LABEL = Pattern.compile("\\w*V\\d_\\d");
 
     @Test
     public void everyModelClassHasAUniqueSchemaName() throws Exception {
@@ -96,7 +101,16 @@ public class OpenApiSchemaAnnotationsTest {
     @Test
     public void noClassKeepsTheOldLabelAsItsDescription() throws Exception {
         List<String> problems = new ArrayList<>();
-        for (Class<?> c : allTypes()) {
+        Set<Class<?>> types = new LinkedHashSet<>(allTypes());
+        for (Class<?> c : classesWithFields()) {
+            for (Field field : c.getDeclaredFields()) {
+                Class<?> enumType = enumTypeOf(field, adapterFor(field));
+                if (enumType != null) {
+                    types.add(enumType);
+                }
+            }
+        }
+        for (Class<?> c : types) {
             Schema schema = c.getAnnotation(Schema.class);
             if (schema != null && OLD_LABEL.matcher(schema.description()).matches()) {
                 problems.add(c.getName() + " has description \"" + schema.description() + "\"");
@@ -139,6 +153,64 @@ public class OpenApiSchemaAnnotationsTest {
             }
         }
         assertNoProblems(problems);
+    }
+
+    @Test
+    public void stringFieldsListTheVocabularyTheApiValidates() throws Exception {
+        Set<String> credit = creditRoleUris();
+        assertTrue("no CRediT role URIs found in common-3.0.xsd", credit.size() == 14);
+        Map<String, Set<String>> vocabularies = new HashMap<>();
+        Set<String> work = new TreeSet<>(credit);
+        for (ContributorRole role : ContributorRole.values()) {
+            work.add(role.value());
+        }
+        Set<String> funding = new TreeSet<>(credit);
+        for (FundingContributorRole role : FundingContributorRole.values()) {
+            funding.add(role.value());
+        }
+        vocabularies.put("ContributorAttributes.contributorRole", work);
+        vocabularies.put("FundingContributorAttributes.contributorRole", funding);
+
+        List<String> problems = new ArrayList<>();
+        for (Class<?> c : classesWithFields()) {
+            for (Field field : c.getDeclaredFields()) {
+                Schema schema = field.getAnnotation(Schema.class);
+                if (schema == null || schema.allowableValues().length == 0 || field.getType() != String.class) {
+                    continue;
+                }
+                String where = c.getSimpleName() + "." + field.getName();
+                Set<String> expected = vocabularies.get(where);
+                Set<String> documented = new TreeSet<>(Arrays.asList(schema.allowableValues()));
+                if (expected == null) {
+                    problems.add(where + " lists allowed values but this test knows no vocabulary to check them against");
+                } else if (!documented.equals(expected)) {
+                    problems.add(where + " documents " + documented + " but the vocabulary is " + expected);
+                }
+            }
+        }
+        assertNoProblems(problems);
+    }
+
+    /** The CRediT role URIs listed in the documentation of common-3.0.xsd's contributor-role type. */
+    private static Set<String> creditRoleUris() throws Exception {
+        Set<String> uris = new TreeSet<>();
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        factory.setNamespaceAware(true);
+        try (InputStream in = OpenApiSchemaAnnotationsTest.class.getResourceAsStream("/common_3.0/common-3.0.xsd")) {
+            Document doc = factory.newDocumentBuilder().parse(in);
+            NodeList simpleTypes = doc.getElementsByTagNameNS("http://www.w3.org/2001/XMLSchema", "simpleType");
+            for (int i = 0; i < simpleTypes.getLength(); i++) {
+                Element simpleType = (Element) simpleTypes.item(i);
+                if ("contributor-role".equals(simpleType.getAttribute("name"))) {
+                    for (String line : simpleType.getTextContent().split("\\n")) {
+                        if (line.trim().startsWith("http://credit.niso.org/contributor-roles/")) {
+                            uris.add(line.trim());
+                        }
+                    }
+                }
+            }
+        }
+        return uris;
     }
 
     private static void assertNoProblems(List<String> problems) {
