@@ -32,8 +32,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
 public class FundingContributorAttributes implements Serializable {
     private static final long serialVersionUID = 8970123534713615455L;
 
-    @XmlElement(required = true, namespace = "http://www.orcid.org/ns/funding", name = "contributor-role")
-    @Schema(type = "string", description = "A funding role or a CRediT role URI; anything else is refused (error 9058).",
+    @XmlElement(namespace = "http://www.orcid.org/ns/funding", name = "contributor-role")
+    @Schema(type = "string", description = "A funding role or a CRediT role URI, as reads return them. Other values are refused (error 9058), "
+            + "apart from a few aliases the API normalises, such as SUPERVISION.",
             allowableValues = {
             "lead", "co-lead", "supported-by", "other-contribution",
             "http://credit.niso.org/contributor-roles/conceptualization/",

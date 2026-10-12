@@ -73,7 +73,7 @@ public class Work implements Filterable, Serializable, SourceAware, BulkElement,
     @XmlElement(name = "publication-date", namespace = "http://www.orcid.org/ns/common")
     protected PublicationDate publicationDate;
     @XmlElement(name = "external-ids", namespace = "http://www.orcid.org/ns/common")
-    @Schema(required = true, description = "At least one external identifier is required when the work is added through the API (error 9023).")
+    @Schema(required = true, description = "At least one external identifier with relationship self is required when the work is added or updated through the API (error 9023).")
     protected ExternalIDs externalIdentifiers;
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected Url url;

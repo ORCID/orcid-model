@@ -3,7 +3,6 @@ package org.orcid.jaxb.model.v3.release.notification.permission;
 import jakarta.xml.bind.annotation.XmlEnum;
 import jakarta.xml.bind.annotation.XmlEnumValue;
 
-
 /**
  * 
  * @author Will Simpson

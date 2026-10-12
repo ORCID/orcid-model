@@ -63,8 +63,10 @@ public class NotificationPermission extends Notification {
     @XmlTransient
     protected String subject;
     @XmlElement(name = "notification-subject", namespace = "http://www.orcid.org/ns/notification")
+    @Schema(required = true)
     protected String notificationSubject;
     @XmlElement(name = "notification-intro", namespace = "http://www.orcid.org/ns/notification")
+    @Schema(required = true)
     protected String notificationIntro;
 
     {

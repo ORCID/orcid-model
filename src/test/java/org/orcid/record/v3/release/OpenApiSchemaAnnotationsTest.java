@@ -1,5 +1,6 @@
 package org.orcid.record.v3.release;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.io.File;
@@ -61,9 +62,10 @@ import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * ({@code creation-method} is {@code DIRECT} in JSON and {@code Direct} in XML),
  * JSON wins. Fields whose generated values already equal the JSON values need no
  * annotation.</li>
- * <li>a {@code String} field that lists allowed values lists the vocabulary the
- * API validates against: the contributor roles are the type's original roles
- * plus the CRediT role URIs of {@code common-3.0.xsd}.</li>
+ * <li>a field that lists allowed values without being an enum lists a known
+ * vocabulary: the contributor roles are the type's original roles (the role
+ * enums) plus the CRediT role URIs of {@code common-3.0.xsd}, which is the list
+ * the Registry's own error 9058 gave when checked.</li>
  * </ul>
  */
 public class OpenApiSchemaAnnotationsTest {
@@ -158,7 +160,7 @@ public class OpenApiSchemaAnnotationsTest {
     @Test
     public void stringFieldsListTheVocabularyTheApiValidates() throws Exception {
         Set<String> credit = creditRoleUris();
-        assertTrue("no CRediT role URIs found in common-3.0.xsd", credit.size() == 14);
+        assertEquals("CRediT role URIs in common-3.0.xsd", 14, credit.size());
         Map<String, Set<String>> vocabularies = new HashMap<>();
         Set<String> work = new TreeSet<>(credit);
         for (ContributorRole role : ContributorRole.values()) {
@@ -172,13 +174,15 @@ public class OpenApiSchemaAnnotationsTest {
         vocabularies.put("FundingContributorAttributes.contributorRole", funding);
 
         List<String> problems = new ArrayList<>();
+        Set<String> checked = new TreeSet<>();
         for (Class<?> c : classesWithFields()) {
             for (Field field : c.getDeclaredFields()) {
                 Schema schema = field.getAnnotation(Schema.class);
-                if (schema == null || schema.allowableValues().length == 0 || field.getType() != String.class) {
+                if (schema == null || schema.allowableValues().length == 0 || enumTypeOf(field, adapterFor(field)) != null) {
                     continue;
                 }
                 String where = c.getSimpleName() + "." + field.getName();
+                checked.add(where);
                 Set<String> expected = vocabularies.get(where);
                 Set<String> documented = new TreeSet<>(Arrays.asList(schema.allowableValues()));
                 if (expected == null) {
@@ -186,6 +190,11 @@ public class OpenApiSchemaAnnotationsTest {
                 } else if (!documented.equals(expected)) {
                     problems.add(where + " documents " + documented + " but the vocabulary is " + expected);
                 }
+            }
+        }
+        for (String where : vocabularies.keySet()) {
+            if (!checked.contains(where)) {
+                problems.add(where + " no longer lists its vocabulary");
             }
         }
         assertNoProblems(problems);
@@ -349,6 +358,8 @@ public class OpenApiSchemaAnnotationsTest {
 
     private static List<Class<?>> scan(boolean includeEnums) throws Exception {
         List<Class<?>> classes = new ArrayList<>();
+        // A scan that finds nothing (classes in a jar, a moved package) would let every test pass.
+        int minimum = 140;
         ClassLoader loader = OpenApiSchemaAnnotationsTest.class.getClassLoader();
         for (String pkg : MODEL_PACKAGES) {
             Enumeration<URL> roots = loader.getResources(pkg);
@@ -362,6 +373,7 @@ public class OpenApiSchemaAnnotationsTest {
             }
         }
         classes.sort((a, b) -> a.getName().compareTo(b.getName()));
+        assertTrue("only " + classes.size() + " model classes found on the file system", classes.size() >= minimum);
         return classes;
     }
 

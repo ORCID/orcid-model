@@ -3,7 +3,6 @@ package org.orcid.jaxb.model.v3.release.record;
 import jakarta.xml.bind.annotation.XmlEnum;
 import jakarta.xml.bind.annotation.XmlEnumValue;
 
-
 /**
  * 
  * @author Daniel Palafox

@@ -41,13 +41,14 @@ public class ContributorAttributes implements Serializable {
     private static final long serialVersionUID = 1L;
     
     @XmlJavaTypeAdapter(SequenceTypeAdapter.class)
-    @XmlElement(name = "contributor-sequence", namespace = "http://www.orcid.org/ns/work", required = true)
+    @XmlElement(name = "contributor-sequence", namespace = "http://www.orcid.org/ns/work")
     @Schema(type = "string", allowableValues = { "first", "additional" })
     protected SequenceType contributorSequence;
 
-    @XmlElement(name = "contributor-role", namespace = "http://www.orcid.org/ns/work", required = true)
-    @Schema(type = "string", description = "An original role or a CRediT role URI; anything else is refused (error 9058). "
-            + "The XSD says the original roles will be removed in a future version.", allowableValues = {
+    @XmlElement(name = "contributor-role", namespace = "http://www.orcid.org/ns/work")
+    @Schema(type = "string", description = "An original role or a CRediT role URI, as reads return them. Other values are refused (error 9058), "
+            + "apart from a few aliases the API normalises, such as CONCEPTUALIZATION. The XSD says the original roles will be "
+            + "removed in a future version.", allowableValues = {
             "author", "assignee", "editor", "chair-or-translator", "co-investigator", "co-inventor", "graduate-student",
             "other-inventor", "principal-investigator", "postdoctoral-researcher", "support-staff",
             "http://credit.niso.org/contributor-roles/conceptualization/",

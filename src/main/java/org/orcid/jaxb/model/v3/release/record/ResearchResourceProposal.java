@@ -22,6 +22,7 @@ public class ResearchResourceProposal implements Serializable {
     @XmlElement(namespace = "http://www.orcid.org/ns/research-resource", name = "title")
     protected ResearchResourceTitle title;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "start-date")
+    @Schema(description = "Required when end-date is given (error 9050).")
     protected FuzzyDate startDate;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "end-date")
     protected FuzzyDate endDate;
