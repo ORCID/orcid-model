@@ -28,6 +28,7 @@ import org.orcid.jaxb.model.v3.release.common.Visibility;
 public class OtherName implements Filterable, Serializable, Comparable<OtherName>, SourceAware {
     private static final long serialVersionUID = 1047027166285177589L;
     @XmlElement(name = "content", namespace = "http://www.orcid.org/ns/other-name")
+    @Schema(required = true)
     protected String content;
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected Source source;

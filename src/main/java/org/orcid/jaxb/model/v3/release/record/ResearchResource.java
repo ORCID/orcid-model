@@ -32,10 +32,12 @@ public class ResearchResource implements Filterable, Serializable, SourceAware, 
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "created-date")
     protected CreatedDate createdDate;
     @XmlElement(namespace = "http://www.orcid.org/ns/research-resource", name = "proposal")
+    @Schema(required = true)
     protected ResearchResourceProposal proposal;
 
     @XmlElementWrapper(namespace = "http://www.orcid.org/ns/research-resource", name = "resource-items")
     @XmlElement(namespace = "http://www.orcid.org/ns/research-resource", name = "resource-item")
+    @Schema(required = true)
     protected List<ResearchResourceItem> resourceItems;
 
     @XmlAttribute(name = "put-code")

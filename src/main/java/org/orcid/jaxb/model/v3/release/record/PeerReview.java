@@ -38,17 +38,19 @@ public class PeerReview implements Filterable, Serializable, OrganizationHolder,
     private static final long serialVersionUID = -1112309604310926743L;
     @XmlJavaTypeAdapter(PeerReviewRoleAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "reviewer-role")
-    @Schema(type = "string", allowableValues = { "reviewer", "editor", "member", "chair", "organizer" })
+    @Schema(type = "string", required = true, allowableValues = { "reviewer", "editor", "member", "chair", "organizer" })
     protected Role role;
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "review-identifiers")
+    @Schema(required = true)
     protected ExternalIDs externalIdentifiers;
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "review-url")
     protected Url url;
     @XmlJavaTypeAdapter(PeerReviewTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "review-type")
-    @Schema(type = "string", allowableValues = { "review", "evaluation" })
+    @Schema(type = "string", required = true, allowableValues = { "review", "evaluation" })
     protected PeerReviewType type;
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "review-completion-date")
+    @Schema(required = true)
     protected FuzzyDate completionDate;
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "review-group-id", required = true)
     protected String groupId;
@@ -74,6 +76,7 @@ public class PeerReview implements Filterable, Serializable, OrganizationHolder,
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "subject-url")
     protected Url subjectUrl;
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "convening-organization")
+    @Schema(required = true)
     protected Organization organization;
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected Source source;

@@ -68,10 +68,12 @@ public class Funding implements Filterable, Serializable, OrganizationHolder, So
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected Url url;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "start-date")
+    @Schema(description = "Required when end-date is given (error 9050).")
     protected FuzzyDate startDate;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "end-date")
     protected FuzzyDate endDate;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "external-ids")
+    @Schema(required = true, description = "At least one external identifier is required when the funding is added through the API (error 9023).")
     protected ExternalIDs externalIdentifiers;
     @XmlElement(namespace = "http://www.orcid.org/ns/funding")
     protected FundingContributors contributors;

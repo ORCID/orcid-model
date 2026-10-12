@@ -28,6 +28,7 @@ import org.orcid.jaxb.model.v3.release.common.Visibility;
 public class Keyword implements Filterable, Serializable, Comparable<Keyword>, SourceAware {
     private static final long serialVersionUID = -6506745436549656971L;
     @XmlElement(name = "content", namespace = "http://www.orcid.org/ns/keyword")
+    @Schema(required = true)
     protected String content;
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected Source source;

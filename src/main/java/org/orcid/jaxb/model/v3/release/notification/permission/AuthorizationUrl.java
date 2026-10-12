@@ -45,18 +45,18 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = { "uri", "path", "host" })
 @XmlRootElement(name = "authorization-url", namespace = "http://www.orcid.org/ns/notification")
-@Schema(name = "AuthorizationUrl")
+@Schema(name = "AuthorizationUrl", description = "Send uri, or path alone; host is optional.")
 public class AuthorizationUrl implements Serializable {
     /**
      * 
      */
     private static final long serialVersionUID = 4942822562344458290L;
-    @XmlElement(required = true)
+    @XmlElement
     @XmlSchemaType(name = "anyURI")
     protected String uri;
-    @XmlElement(required = true)
+    @XmlElement
     protected String path;
-    @XmlElement(required = true)
+    @XmlElement
     protected String host;
 
     public AuthorizationUrl() {

@@ -26,7 +26,7 @@ public abstract class Affiliation implements OrganizationHolder, Filterable, Sou
     protected String departmentName;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "role-title")
     protected String roleTitle;
-    @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "start-date", required = true)
+    @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "start-date")
     protected FuzzyDate startDate;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "end-date")
     protected FuzzyDate endDate;

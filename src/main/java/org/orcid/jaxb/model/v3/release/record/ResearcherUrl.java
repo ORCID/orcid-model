@@ -31,6 +31,7 @@ public class ResearcherUrl implements Filterable, Serializable, Comparable<Resea
     @XmlElement(name = "url-name", namespace = "http://www.orcid.org/ns/researcher-url")
     protected String urlName;
     @XmlElement(namespace = "http://www.orcid.org/ns/researcher-url")
+    @Schema(required = true)
     protected Url url;
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected Source source;

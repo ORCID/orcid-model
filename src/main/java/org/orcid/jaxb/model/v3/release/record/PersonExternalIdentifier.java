@@ -38,9 +38,10 @@ public class PersonExternalIdentifier implements Serializable, Filterable, Sourc
     protected String value;
     @XmlJavaTypeAdapter(RelationshipAdapter.class)
     @XmlElement(name="external-id-relationship", namespace = "http://www.orcid.org/ns/common")
-    @Schema(type = "string", allowableValues = { "part-of", "self", "version-of", "funded-by" })
+    @Schema(type = "string", required = true, allowableValues = { "part-of", "self", "version-of", "funded-by" })
     protected Relationship relationship;
     @XmlElement(name="external-id-url", namespace = "http://www.orcid.org/ns/common")
+    @Schema(required = true)
     protected Url url;    
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected Source source;        

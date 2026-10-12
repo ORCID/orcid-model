@@ -50,6 +50,7 @@ import org.orcid.jaxb.model.v3.release.common.Visibility;
 public class Work implements Filterable, Serializable, SourceAware, BulkElement, ExternalIdentifiersAwareActivity {
     private static final long serialVersionUID = 1L;
     @XmlElement(namespace = "http://www.orcid.org/ns/work")
+    @Schema(required = true)
     protected WorkTitle title;
     @XmlElement(name = "journal-title", namespace = "http://www.orcid.org/ns/work")
     protected Title journalTitle;
@@ -59,7 +60,7 @@ public class Work implements Filterable, Serializable, SourceAware, BulkElement,
     protected Citation citation;
     @XmlJavaTypeAdapter(WorkTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/work")
-    @Schema(type = "string", allowableValues = { "annotation", "artistic-performance", "blog-post", "book-chapter", "book-review", "book",
+    @Schema(type = "string", required = true, allowableValues = { "annotation", "artistic-performance", "blog-post", "book-chapter", "book-review", "book",
             "cartographic-material", "clinical-study", "conference-abstract", "conference-output", "conference-paper", "conference-poster",
             "conference-presentation", "conference-proceedings", "data-management-plan", "data-set", "design", "dictionary-entry",
             "disclosure", "dissertation-thesis", "edited-book", "encyclopedia-entry", "image", "invention", "journal-article",
@@ -72,6 +73,7 @@ public class Work implements Filterable, Serializable, SourceAware, BulkElement,
     @XmlElement(name = "publication-date", namespace = "http://www.orcid.org/ns/common")
     protected PublicationDate publicationDate;
     @XmlElement(name = "external-ids", namespace = "http://www.orcid.org/ns/common")
+    @Schema(required = true, description = "At least one external identifier is required when the work is added through the API (error 9023).")
     protected ExternalIDs externalIdentifiers;
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected Url url;
