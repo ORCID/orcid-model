@@ -7,7 +7,7 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlRootElement(name = "sourceClientId")
-@Schema(description = "SourceClientIdV3_0")
+@Schema(name = "SourceClientId")
 public class SourceClientId extends OrcidIdBase implements Serializable {
 
     private static final long serialVersionUID = 1L;

@@ -23,7 +23,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "keywords" })
 @XmlRootElement(name = "keywords", namespace = "http://www.orcid.org/ns/keyword")
-@Schema(description = "KeywordsV3_0")
+@Schema(name = "Keywords")
 public class Keywords implements Serializable {
     private static final long serialVersionUID = 8977681069375479763L;
 

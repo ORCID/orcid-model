@@ -23,7 +23,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = {"externalIdentifiers","type","journalTitle","title","url"})
 @XmlRootElement(name = "subject", namespace = "http://www.orcid.org/ns/peer-review")
-@Schema(description = "SubjectV3_0")
+@Schema(name = "Subject")
 public class Subject implements Serializable {    
     private static final long serialVersionUID = -3011951615514804083L;
     

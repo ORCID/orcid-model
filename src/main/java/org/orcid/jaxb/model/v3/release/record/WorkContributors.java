@@ -31,7 +31,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "contributor" })
 @XmlRootElement(name = "work-contributors")
-@Schema(description = "WorkContributorsV3_0")
+@Schema(name = "WorkContributors")
 public class WorkContributors implements Serializable {
     private static final long serialVersionUID = -4322373773985616595L;
     @XmlElement(namespace = "http://www.orcid.org/ns/work")

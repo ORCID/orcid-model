@@ -27,7 +27,7 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "value" })
 @XmlRootElement(name = "contributor-email")
-@Schema(description = "ContributorEmailV3_0")
+@Schema(name = "ContributorEmail")
 public class ContributorEmail implements Serializable {
 
     /**

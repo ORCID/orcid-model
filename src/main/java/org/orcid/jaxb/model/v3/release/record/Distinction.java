@@ -24,7 +24,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * 
  */
 @XmlRootElement(name = "distinction", namespace = "http://www.orcid.org/ns/distinction")
-@Schema(description = "DistinctionV3_0")
+@Schema(name = "Distinction")
 public class Distinction extends Affiliation implements Serializable {
 
     /**

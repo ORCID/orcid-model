@@ -30,7 +30,7 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "value" })
 @XmlRootElement(name = "day")
-@Schema(description = "DayV3_0")
+@Schema(name = "Day")
 public class Day implements Serializable {
 
     /**

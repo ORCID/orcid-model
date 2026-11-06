@@ -33,7 +33,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "role", "externalIdentifiers", "url", "type", "completionDate", "groupId", "organization" })
 @XmlRootElement(name = "summary", namespace = "http://www.orcid.org/ns/peer-review")
-@Schema(description = "PeerReviewSummaryV3_0")
+@Schema(name = "PeerReviewSummary")
 public class PeerReviewSummary implements Filterable, Activity, GroupableActivity, Serializable, SourceAware, OrganizationHolder {
     private static final long serialVersionUID = -2215607501129977294L;
     @XmlElement(name = "external-ids", namespace = "http://www.orcid.org/ns/common")
@@ -53,6 +53,7 @@ public class PeerReviewSummary implements Filterable, Activity, GroupableActivit
     @XmlAttribute(name = "path")
     protected String path;
     @XmlAttribute
+    @Schema(type = "string", allowableValues = { "private", "limited", "registered-only", "public" })
     protected Visibility visibility;
     @XmlAttribute(name = "display-index")
     protected String displayIndex;
@@ -60,9 +61,11 @@ public class PeerReviewSummary implements Filterable, Activity, GroupableActivit
     protected String groupId; 
     @XmlJavaTypeAdapter(PeerReviewRoleAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "reviewer-role")
+    @Schema(type = "string", allowableValues = { "reviewer", "editor", "member", "chair", "organizer" })
     protected Role role;
     @XmlJavaTypeAdapter(PeerReviewTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "review-type")
+    @Schema(type = "string", allowableValues = { "review", "evaluation" })
     protected PeerReviewType type;
     @XmlElement(namespace = "http://www.orcid.org/ns/peer-review", name = "review-url")
     protected Url url;

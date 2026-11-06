@@ -13,7 +13,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "orcidIdentifier" })
-@Schema(description = "ResultV3_0")
+@Schema(name = "Result")
 public class Result implements Serializable {
     private static final long serialVersionUID = -7750679507838375771L;
     @XmlElement(name = "orcid-identifier", namespace = "http://www.orcid.org/ns/common")

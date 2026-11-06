@@ -6,7 +6,10 @@ import jakarta.xml.bind.annotation.XmlAttribute;
 import jakarta.xml.bind.annotation.XmlType;
 import jakarta.xml.bind.annotation.XmlValue;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 @XmlType
+@Schema(name = "TransientNonEmptyString")
 public class TransientNonEmptyString implements Serializable {
     
     private static final long serialVersionUID = 1L;

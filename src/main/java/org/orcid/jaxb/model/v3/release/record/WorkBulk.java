@@ -20,7 +20,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "bulk" })
 @XmlRootElement(name = "bulk", namespace=  "http://www.orcid.org/ns/bulk")
-@Schema(description = "WorkBulkV3_0")
+@Schema(name = "WorkBulk")
 public class WorkBulk implements Serializable, BulkElementContainer {    
     private static final long serialVersionUID = 1338769097760031210L;
     

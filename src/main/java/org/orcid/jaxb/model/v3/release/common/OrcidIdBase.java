@@ -31,7 +31,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlType(propOrder = { "uri", "path", "host" })
 @JsonPropertyOrder({ "uri", "path", "host" })
 @JsonIgnoreProperties({ "value", "valueAsString" })
-@Schema(description = "OrcidIdBaseV3_0")
+@Schema(name = "OrcidIdBase")
 public class OrcidIdBase implements Serializable {
     private static final long serialVersionUID = 1L;
 

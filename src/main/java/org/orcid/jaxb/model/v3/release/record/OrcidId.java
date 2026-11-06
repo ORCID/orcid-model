@@ -37,7 +37,7 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "value" })
 @XmlRootElement(name = "orcid-id", namespace = "http://www.orcid.org/ns/orcid-id")
-@Schema(description = "OrcidIdV3_0")
+@Schema(name = "OrcidId")
 public class OrcidId implements Serializable {
 
     private static final long serialVersionUID = 1L;

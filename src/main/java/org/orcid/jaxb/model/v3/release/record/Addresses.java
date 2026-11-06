@@ -23,7 +23,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "address" })
 @XmlRootElement(name = "addresses", namespace = "http://www.orcid.org/ns/address")
-@Schema(description = "AddressesV3_0")
+@Schema(name = "Addresses")
 public class Addresses implements Serializable {
     private static final long serialVersionUID = 1191641767266835974L;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "last-modified-date")

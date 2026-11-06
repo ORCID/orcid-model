@@ -14,7 +14,7 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlRootElement(name = "contributor-orcid")
-@Schema(description = "ContributorOrcidV3_0")
+@Schema(name = "ContributorOrcid")
 public class ContributorOrcid extends OrcidIdBase implements Serializable {
 
     private static final long serialVersionUID = 1L;

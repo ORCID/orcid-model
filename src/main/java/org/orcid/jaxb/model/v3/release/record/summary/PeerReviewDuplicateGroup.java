@@ -21,7 +21,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "identifiers", "peerReviewSummary" })
 @XmlRootElement(name = "peer-review-duplicate-group", namespace = "http://www.orcid.org/ns/activities")
-@Schema(description = "PeerReviewDuplicateGroupV3_0")
+@Schema(name = "PeerReviewDuplicateGroup")
 public class PeerReviewDuplicateGroup implements Group, Serializable {
     private static final long serialVersionUID = -4120782840977081952L;
     @XmlElement(name = "last-modified-date", namespace = "http://www.orcid.org/ns/common")

@@ -27,7 +27,7 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "value" })
 @XmlRootElement(name = "deprecated-date", namespace = "http://www.orcid.org/ns/deprecated")
-@Schema(description = "DeprecatedDateV3_0")
+@Schema(name = "DeprecatedDate")
 public class DeprecatedDate implements Serializable {
     private static final long serialVersionUID = 1L;
     @XmlValue

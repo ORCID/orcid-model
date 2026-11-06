@@ -28,15 +28,26 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "contributorRole" })
 @XmlRootElement(name = "contributorAttributes", namespace = "http://www.orcid.org/ns/funding")
-@Schema(description = "FundingContributorAttributesV3_0")
+@Schema(name = "FundingContributorAttributes")
 public class FundingContributorAttributes implements Serializable {
     private static final long serialVersionUID = 8970123534713615455L;
 
-    @XmlElement(required = true, namespace = "http://www.orcid.org/ns/funding", name = "contributor-role")
-    @Schema(type = "string", allowableValues = """
-            author, assignee, editor, chair-or-translator, co-investigator, co-inventor,\
-            graduate-student, other-inventor, principal-investigator, postdoctoral-researcher, support-staff\
-            """)
+    @XmlElement(namespace = "http://www.orcid.org/ns/funding", name = "contributor-role")
+    @Schema(type = "string", description = "A funding role or a CRediT role URI, as reads return them. Other values are refused (error 9058), "
+            + "apart from a few aliases the API normalises, such as SUPERVISION.",
+            allowableValues = {
+            "lead", "co-lead", "supported-by", "other-contribution",
+            "http://credit.niso.org/contributor-roles/conceptualization/",
+            "http://credit.niso.org/contributor-roles/data-curation/",
+            "http://credit.niso.org/contributor-roles/formal-analysis/",
+            "http://credit.niso.org/contributor-roles/funding-acquisition/",
+            "http://credit.niso.org/contributor-roles/investigation/", "http://credit.niso.org/contributor-roles/methodology/",
+            "http://credit.niso.org/contributor-roles/project-administration/",
+            "http://credit.niso.org/contributor-roles/resources/", "http://credit.niso.org/contributor-roles/software/",
+            "http://credit.niso.org/contributor-roles/supervision/", "http://credit.niso.org/contributor-roles/validation/",
+            "http://credit.niso.org/contributor-roles/visualization/",
+            "http://credit.niso.org/contributor-roles/writing-original-draft/",
+            "http://credit.niso.org/contributor-roles/writing-review-editing/" })
     protected String contributorRole;    
 
     /**

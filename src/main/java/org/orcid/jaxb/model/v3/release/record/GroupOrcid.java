@@ -12,7 +12,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * 
  */
 @XmlRootElement(name = "application-group-orcid")
-@Schema(description = "GroupOrcidV3_0")
+@Schema(name = "GroupOrcid")
 public class GroupOrcid extends OrcidIdentifier {
     private static final long serialVersionUID = -7831298842584309866L;
 

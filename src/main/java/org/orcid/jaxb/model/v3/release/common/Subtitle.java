@@ -26,7 +26,7 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "content" })
 @XmlRootElement(name = "subtitle", namespace = "http://www.orcid.org/ns/common")
-@Schema(description = "SubtitleV3_0")
+@Schema(name = "Subtitle")
 public class Subtitle implements Serializable {
 
     /**

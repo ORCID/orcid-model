@@ -33,7 +33,7 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "value" })
 @XmlRootElement(name = "created-date", namespace = "http://www.orcid.org/ns/common")
-@Schema(description = "CreatedDateV3_0")
+@Schema(name = "CreatedDate")
 public class CreatedDate implements Serializable {
 
     /**

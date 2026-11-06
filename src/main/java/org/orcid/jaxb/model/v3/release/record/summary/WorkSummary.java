@@ -45,13 +45,22 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "putCode", "createdDate", "lastModifiedDate", "source", "title", "externalIdentifiers", "url","type",  "publicationDate","journalTitle"  })
 @XmlRootElement(name = "work-summary", namespace = "http://www.orcid.org/ns/work")
-@Schema(description = "WorkSummaryV3_0")
+@Schema(name = "WorkSummary")
 public class WorkSummary implements VisibilityType, Activity, GroupableActivity, Serializable, SourceAware {
     private static final long serialVersionUID = -5296202791403288760L;
     @XmlElement(namespace = "http://www.orcid.org/ns/work")
     protected WorkTitle title;
     @XmlJavaTypeAdapter(WorkTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/work")
+    @Schema(type = "string", allowableValues = { "annotation", "artistic-performance", "blog-post", "book-chapter", "book-review", "book",
+            "cartographic-material", "clinical-study", "conference-abstract", "conference-output", "conference-paper", "conference-poster",
+            "conference-presentation", "conference-proceedings", "data-management-plan", "data-set", "design", "dictionary-entry",
+            "disclosure", "dissertation-thesis", "edited-book", "encyclopedia-entry", "image", "invention", "journal-article",
+            "journal-issue", "learning-object", "lecture-speech", "license", "magazine-article", "manual", "moving-image",
+            "musical-composition", "newsletter-article", "newspaper-article", "online-resource", "other", "patent", "physical-object",
+            "preprint", "public-speech", "registered-copyright", "report", "research-technique", "research-tool", "review", "software",
+            "sound", "spin-off-company", "standards-and-policy", "supervised-student-publication", "technical-standard", "test",
+            "trademark", "transcription", "translation", "website", "working-paper", "undefined" })
     protected WorkType type;
     @XmlElement(name = "journal-title", namespace = "http://www.orcid.org/ns/work")
     protected Title journalTitle;
@@ -73,6 +82,7 @@ public class WorkSummary implements VisibilityType, Activity, GroupableActivity,
     @XmlAttribute(name="path")
     protected String path;
     @XmlAttribute
+    @Schema(type = "string", allowableValues = { "private", "limited", "registered-only", "public" })
     protected Visibility visibility;
     @XmlAttribute(name = "display-index")
     protected String displayIndex;

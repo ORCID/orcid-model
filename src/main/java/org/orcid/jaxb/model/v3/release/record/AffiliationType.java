@@ -6,14 +6,11 @@ import jakarta.xml.bind.annotation.XmlEnum;
 import jakarta.xml.bind.annotation.XmlEnumValue;
 import jakarta.xml.bind.annotation.XmlType;
 
-import io.swagger.v3.oas.annotations.media.Schema;
-
 /**
  * @author Declan Newman (declan) Date: 31/07/2012
  */
 @XmlType(name = "type")
 @XmlEnum
-@Schema(description = "AffiliationTypeV3_0")
 public enum AffiliationType implements Serializable {
 
     @XmlEnumValue("distinction")

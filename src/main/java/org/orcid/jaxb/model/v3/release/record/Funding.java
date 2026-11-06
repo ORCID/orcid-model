@@ -46,14 +46,14 @@ import org.orcid.jaxb.model.v3.release.common.Visibility;
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "putCode", "path", "type", "organizationDefinedType", "title", "description", "amount", "url",
         "startDate", "endDate", "externalIdentifiers", "contributors", "organization" })
 @XmlRootElement(name = "funding", namespace = "http://www.orcid.org/ns/funding")
-@Schema(description = "FundingV3_0")
+@Schema(name = "Funding")
 public class Funding implements Filterable, Serializable, OrganizationHolder, SourceAware, ExternalIdentifiersAwareActivity {
 
     private final static long serialVersionUID = 1L;
 
     @XmlJavaTypeAdapter(FundingTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/funding", required = true)
-    @Schema(type = "string", allowableValues = "grant, contract, award, salary-award")
+    @Schema(type = "string", allowableValues = { "grant", "contract", "award", "salary-award" })
     protected FundingType type;
     @XmlElement(namespace = "http://www.orcid.org/ns/funding", name = "organization-defined-type")
     protected OrganizationDefinedFundingSubType organizationDefinedType;
@@ -68,10 +68,12 @@ public class Funding implements Filterable, Serializable, OrganizationHolder, So
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected Url url;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "start-date")
+    @Schema(description = "Required when end-date is given (error 9050).")
     protected FuzzyDate startDate;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "end-date")
     protected FuzzyDate endDate;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "external-ids")
+    @Schema(required = true, description = "At least one external identifier is required when the funding is added through the API (error 9023).")
     protected ExternalIDs externalIdentifiers;
     @XmlElement(namespace = "http://www.orcid.org/ns/funding")
     protected FundingContributors contributors;
@@ -87,7 +89,7 @@ public class Funding implements Filterable, Serializable, OrganizationHolder, So
     @XmlAttribute(name = "path")
     protected String path;
     @XmlAttribute
-    @Schema(type = "string", allowableValues = "limited, registered-only, public")
+    @Schema(type = "string", allowableValues = { "private", "limited", "registered-only", "public" })
     protected Visibility visibility;
 
     public FundingTitle getTitle() {

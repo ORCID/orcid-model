@@ -21,7 +21,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "sourceType", "spamCounter" })
 @XmlRootElement(name = "spam", namespace = "http://www.orcid.org/ns/spam")
-@Schema(description = "SpamV3_0")
+@Schema(name = "Spam")
 public class Spam implements Serializable {
     private static final long serialVersionUID = 1L;
 

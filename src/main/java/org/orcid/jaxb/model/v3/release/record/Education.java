@@ -24,7 +24,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * 
  */
 @XmlRootElement(name = "education", namespace = "http://www.orcid.org/ns/education")
-@Schema(description = "EducationV3_0")
+@Schema(name = "Education")
 public class Education extends Affiliation implements Serializable {
 
     /**

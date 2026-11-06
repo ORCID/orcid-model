@@ -27,7 +27,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "type", "value", "normalized", "normalizedError", "url", "relationship" })
-@Schema(description = "ExternalIDV3_0")
+@Schema(name = "ExternalID")
 public class ExternalID implements GroupAble, Cloneable, Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -43,7 +43,7 @@ public class ExternalID implements GroupAble, Cloneable, Serializable {
     protected Url url;
     @XmlJavaTypeAdapter(RelationshipAdapter.class)
     @XmlElement(name = "external-id-relationship", namespace = "http://www.orcid.org/ns/common")
-    @Schema(type = "string", allowableValues = "part-of, self, version-of")
+    @Schema(type = "string", allowableValues = { "part-of", "self", "version-of", "funded-by" })
     protected Relationship relationship;
     
     @JsonIgnore

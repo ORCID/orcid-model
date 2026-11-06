@@ -26,7 +26,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "content" })
 @XmlRootElement(name = "amount", namespace = "http://www.orcid.org/ns/common")
-@Schema(description = "AmountV3_0")
+@Schema(name = "Amount")
 public class Amount implements Serializable {
     private static final long serialVersionUID = -3479057385911792849L;
     @XmlValue

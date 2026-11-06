@@ -37,16 +37,18 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "organization-address", propOrder = { "city", "region", "country" })
 @XmlRootElement(name = "organizationAddress", namespace = "http://www.orcid.org/ns/common")
-@Schema(description = "OrganizationAddressV3_0")
+@Schema(name = "OrganizationAddress")
 public class OrganizationAddress implements Serializable {
 
     private final static long serialVersionUID = 1L;
-    @XmlElement(required = true, namespace = "http://www.orcid.org/ns/common")
+    @XmlElement(namespace = "http://www.orcid.org/ns/common")
+    @Schema(description = "Required for education and employment (error 9060).")
     protected String city;
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected String region;
     @XmlJavaTypeAdapter(Iso3166CountryAdapter.class)
-    @XmlElement(required = true, namespace = "http://www.orcid.org/ns/common")
+    @XmlElement(namespace = "http://www.orcid.org/ns/common")
+    @Schema(description = "Required for education and employment (error 9060).")
     protected Iso3166Country country;
 
     /**

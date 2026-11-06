@@ -27,7 +27,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "content" })
 @XmlRootElement(name = "sourceReference")
-@Schema(description = "SourceReferenceV3_0")
+@Schema(name = "SourceReference")
 public class SourceReference implements Serializable {
 
     /**

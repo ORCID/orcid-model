@@ -16,12 +16,13 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "title", "hosts", "externalIdentifiers", "startDate", "endDate", "url" })
 @XmlRootElement(name = "proposal", namespace = "http://www.orcid.org/ns/research-resource")
-@Schema(description = "ResearchResourceProposalV3_0")
+@Schema(name = "ResearchResourceProposal")
 public class ResearchResourceProposal implements Serializable {
     private static final long serialVersionUID = 4396414540438557932L;
     @XmlElement(namespace = "http://www.orcid.org/ns/research-resource", name = "title")
     protected ResearchResourceTitle title;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "start-date")
+    @Schema(description = "Required when end-date is given (error 9050).")
     protected FuzzyDate startDate;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "end-date")
     protected FuzzyDate endDate;

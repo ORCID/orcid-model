@@ -16,7 +16,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "groups" })
-@Schema(description = "AffiliationsV3_0")
+@Schema(name = "Affiliations")
 public abstract class Affiliations<T extends AffiliationSummary> implements Serializable, GroupsContainer {
     private static final long serialVersionUID = 3704765741431924269L;
 

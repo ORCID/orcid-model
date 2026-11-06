@@ -29,7 +29,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "email" })
 @XmlRootElement(name = "email", namespace = "http://www.orcid.org/ns/email")
-@Schema(description = "EmailV3_0")
+@Schema(name = "Email")
 public class Email implements Filterable, Serializable, SourceAware {
     private static final long serialVersionUID = 7986448691143979246L;
     @XmlElement(namespace = "http://www.orcid.org/ns/email")
@@ -48,6 +48,7 @@ public class Email implements Filterable, Serializable, SourceAware {
     @XmlAttribute
     protected String path;
     @XmlAttribute
+    @Schema(type = "string", allowableValues = { "private", "limited", "registered-only", "public" })
     protected Visibility visibility;
     @XmlAttribute
     protected Boolean verified;

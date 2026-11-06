@@ -12,8 +12,6 @@ import jakarta.xml.bind.annotation.XmlEnumValue;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.v3.oas.annotations.media.Schema;
-
 import java.io.Serializable;
 
 /**
@@ -33,7 +31,6 @@ import java.io.Serializable;
  * 
  */
 @XmlEnum
-@Schema(description = "CreationMethodV2_0")
 public enum CreationMethod implements Serializable {
 
     /**

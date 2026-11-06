@@ -32,7 +32,7 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "value" })
 @XmlRootElement(name = "last-modified-date", namespace = "http://www.orcid.org/ns/common")
-@Schema(description = "LastModifiedDateV3_0")
+@Schema(name = "LastModifiedDate")
 public class LastModifiedDate implements Serializable {
 
     /**

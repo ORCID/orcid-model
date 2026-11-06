@@ -31,7 +31,7 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "value" })
 @XmlRootElement(name = "url")
-@Schema(description = "UrlV3_0")
+@Schema(name = "Url")
 public class Url implements Serializable, Comparable<Url> {
 
     private static final long serialVersionUID = 1L;
