@@ -59,7 +59,7 @@ public class ValidateV2IdentifiersTest {
         assertEquals("funding:organization-defined-type",funding.getOrganizationDefinedType().getContent());
         assertNotNull(funding.getExternalIdentifiers());
         assertNotNull(funding.getExternalIdentifiers().getExternalIdentifier());
-        Assert.notEmpty(funding.getExternalIdentifiers().getExternalIdentifier());
+        Assert.notEmpty(funding.getExternalIdentifiers().getExternalIdentifier(), () -> "Funding external identifiers should not be empty");
         assertEquals("grant_number",funding.getExternalIdentifiers().getExternalIdentifier().get(0).getType());
         assertEquals("funding:external-identifier-value",funding.getExternalIdentifiers().getExternalIdentifier().get(0).getValue());
         assertEquals(new Url("http://tempuri.org"),funding.getExternalIdentifiers().getExternalIdentifier().get(0).getUrl());
