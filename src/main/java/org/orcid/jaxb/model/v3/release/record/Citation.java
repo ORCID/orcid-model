@@ -28,12 +28,13 @@ import org.orcid.jaxb.model.common.adapters.CitationTypeAdapter;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "citation", propOrder = { "citationType", "citation" })
-@Schema(description = "CitationV3_0")
+@Schema(name = "Citation")
 public class Citation implements Serializable {
 	private static final long serialVersionUID = 6177533651147799332L;
 	@XmlJavaTypeAdapter(CitationTypeAdapter.class)
 	@XmlElement(name = "citation-type", required = true, defaultValue = "formatted-unspecified", namespace = "http://www.orcid.org/ns/work")
-	@Schema(type = "string", allowableValues = "formatted-unspecified, bibtex, formatted-apa, formatted-harvard, formatted-ieee, formatted-mla, formatted-vancouver, formatted-chicago, ris")
+	@Schema(type = "string", allowableValues = { "formatted-unspecified", "bibtex", "formatted-apa", "formatted-harvard", "formatted-ieee",
+	        "formatted-mla", "formatted-vancouver", "formatted-chicago", "ris" })
 	protected CitationType citationType;
 	@XmlElement(name = "citation-value", required = true, namespace = "http://www.orcid.org/ns/work")
 	protected String citation;

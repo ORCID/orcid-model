@@ -23,7 +23,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * 
  * 
  */
-@Schema(description = "ServiceV3_0")
+@Schema(name = "Service")
 @XmlRootElement(name = "service", namespace = "http://www.orcid.org/ns/service")
 public class Service extends Affiliation implements Serializable {
 

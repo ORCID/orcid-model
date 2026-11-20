@@ -31,7 +31,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "title", "subtitle", "translatedTitle" })
 @XmlRootElement(name = "title", namespace = "http://www.orcid.org/ns/work")
-@Schema(description = "WorkTitleV3_0")
+@Schema(name = "WorkTitle")
 public class WorkTitle implements Serializable {
 
     /**

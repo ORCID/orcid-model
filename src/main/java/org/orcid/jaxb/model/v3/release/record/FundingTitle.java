@@ -30,7 +30,7 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "title", "translatedTitle" })
 @XmlRootElement(name = "title", namespace = "http://www.orcid.org/ns/funding")
-@Schema(description = "FundingTitleV3_0")
+@Schema(name = "FundingTitle")
 public class FundingTitle implements Serializable {
 
     /**

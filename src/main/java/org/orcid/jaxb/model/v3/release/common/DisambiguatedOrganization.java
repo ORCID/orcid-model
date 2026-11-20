@@ -45,7 +45,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "disambiguatedOrganizationIdentifier", "disambiguationSource" })
 @XmlRootElement(name = "disambiguatedOrganization", namespace = "http://www.orcid.org/ns/common")
-@Schema(description = "DisambiguatedOrganizationV3_0")
+@Schema(name = "DisambiguatedOrganization")
 public class DisambiguatedOrganization implements Serializable {
 
     private final static long serialVersionUID = 1L;

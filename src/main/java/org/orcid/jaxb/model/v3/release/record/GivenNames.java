@@ -18,7 +18,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "content" })
 @XmlRootElement(name = "given-names")
-@Schema(description = "GivenNamesV3_0")
+@Schema(name = "GivenNames")
 public class GivenNames implements Serializable {    
     private static final long serialVersionUID = -2364354286804334251L;
 

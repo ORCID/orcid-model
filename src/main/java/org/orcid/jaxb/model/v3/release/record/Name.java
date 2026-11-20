@@ -26,7 +26,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "givenNames", "familyName", "creditName", "source" })
 @XmlRootElement(name = "name", namespace = "http://www.orcid.org/ns/personal-details")
-@Schema(description = "NameV3_0")
+@Schema(name = "Name")
 public class Name implements Serializable, VisibilityType, SourceAware {
     private static final long serialVersionUID = -7946486981092688675L;
 
@@ -37,6 +37,7 @@ public class Name implements Serializable, VisibilityType, SourceAware {
     @XmlElement(name = "credit-name", namespace = "http://www.orcid.org/ns/personal-details")
     private CreditName creditName;
     @XmlAttribute
+    @Schema(type = "string", allowableValues = { "private", "limited", "registered-only", "public" })
     protected Visibility visibility;
     @XmlAttribute
     protected String path;

@@ -29,7 +29,7 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "value" })
 @XmlRootElement(name = "month")
-@Schema(description = "MonthV3_0")
+@Schema(name = "Month")
 public class Month implements Serializable {
 
     /**

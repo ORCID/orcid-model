@@ -11,6 +11,8 @@ import jakarta.xml.bind.annotation.XmlType;
 
 import org.orcid.jaxb.model.v3.release.common.LastModifiedDate;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 /**
  * Java class for anonymous complex type.
  * 
@@ -37,6 +39,7 @@ import org.orcid.jaxb.model.v3.release.common.LastModifiedDate;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "total", "page", "pageSize", "groupIdRecord" })
 @XmlRootElement(name = "group-id", namespace = "http://www.orcid.org/ns/group-id")
+@Schema(name = "GroupIdRecords")
 public class GroupIdRecords {
 
     @XmlElement(name = "last-modified-date", namespace = "http://www.orcid.org/ns/common")

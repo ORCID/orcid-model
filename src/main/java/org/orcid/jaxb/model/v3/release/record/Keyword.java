@@ -24,10 +24,11 @@ import org.orcid.jaxb.model.v3.release.common.Visibility;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "content" })
 @XmlRootElement(name = "keyword", namespace = "http://www.orcid.org/ns/keyword")
-@Schema(description = "KeywordV3_0")
+@Schema(name = "Keyword")
 public class Keyword implements Filterable, Serializable, Comparable<Keyword>, SourceAware {
     private static final long serialVersionUID = -6506745436549656971L;
     @XmlElement(name = "content", namespace = "http://www.orcid.org/ns/keyword")
+    @Schema(required = true)
     protected String content;
     @XmlElement(namespace = "http://www.orcid.org/ns/common")
     protected Source source;
@@ -38,7 +39,7 @@ public class Keyword implements Filterable, Serializable, Comparable<Keyword>, S
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "created-date")
     protected CreatedDate createdDate;
     @XmlAttribute
-    @Schema(type = "string", allowableValues = "limited, registered-only, public")
+    @Schema(type = "string", allowableValues = { "private", "limited", "registered-only", "public" })
     protected Visibility visibility;
     @XmlAttribute
     protected String path;

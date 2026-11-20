@@ -40,7 +40,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlType( propOrder = { "content" })
 @XmlRootElement(name = "credit-name")
 @JsonIgnoreProperties({"visibility"})
-@Schema(description = "CreditNameV3_0")
+@Schema(name = "CreditName")
 public class CreditName implements Serializable {
 
     private static final long serialVersionUID = 1L;

@@ -18,9 +18,12 @@ import org.orcid.jaxb.model.v3.release.notification.Notification;
 import org.orcid.jaxb.model.v3.release.notification.NotificationType;
 import org.orcid.jaxb.model.v3.release.notification.permission.Items;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = { "putCode", "notificationType", "amendedSection", "createdDate", "sentDate", "readDate", "archivedDate", "source" })
 @XmlRootElement(name = "notification", namespace = "http://www.orcid.org/ns/notification")
+@Schema(name = "NotificationAmended")
 public class NotificationAmended extends Notification {
 
     private final static long serialVersionUID = 1L;

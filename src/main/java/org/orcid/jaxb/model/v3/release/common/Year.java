@@ -26,7 +26,7 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "value" })
 @XmlRootElement(name = "year")
-@Schema(description = "YearV3_0")
+@Schema(name = "Year")
 public class Year implements Serializable {
 
     /**

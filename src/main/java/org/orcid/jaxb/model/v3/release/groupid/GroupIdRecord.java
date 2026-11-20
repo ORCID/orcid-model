@@ -16,6 +16,8 @@ import org.orcid.jaxb.model.v3.release.record.SourceAware;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 /**
  * Java class for anonymous complex type.
  * 
@@ -60,6 +62,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "createdDate", "name", "groupId", "description", "type", "source", "putCode" })
 @XmlRootElement(name = "group-id-record", namespace = "http://www.orcid.org/ns/group-id")
+@Schema(name = "GroupIdRecord")
 public class GroupIdRecord implements Serializable, SourceAware {
     private static final long serialVersionUID = 1516751098639982549L;
     @XmlElement(namespace = "http://www.orcid.org/ns/group-id", required = true)

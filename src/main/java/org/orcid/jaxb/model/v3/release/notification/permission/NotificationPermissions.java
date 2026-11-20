@@ -15,7 +15,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "notifications" })
 @XmlRootElement(name = "notifications", namespace = "http://www.orcid.org/ns/notification")
-@Schema(description = "NotificationPermissionsV3_0")
+@Schema(name = "NotificationPermissions")
 public class NotificationPermissions implements Serializable {
 
 	private static final long serialVersionUID = 720972206804832580L;

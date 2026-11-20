@@ -18,7 +18,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "organization" })
 @XmlRootElement(name = "hosts", namespace = "http://www.orcid.org/ns/research-resource")
-@Schema(description = "ResearchResourceHostsV3_0")
+@Schema(name = "ResearchResourceHosts")
 public class ResearchResourceHosts implements Serializable, MultipleOrganizationHolder{
     private static final long serialVersionUID = -488401801848466689L;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "organization")

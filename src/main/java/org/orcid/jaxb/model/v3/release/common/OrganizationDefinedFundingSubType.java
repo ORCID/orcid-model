@@ -21,7 +21,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "content" })
 @XmlRootElement(name = "organizationDefinedType")
-@Schema(description = "OrganizationDefinedFundingSubTypeV3_0")
+@Schema(name = "OrganizationDefinedFundingSubType")
 public class OrganizationDefinedFundingSubType implements Serializable {
         
     private static final long serialVersionUID = 1L;

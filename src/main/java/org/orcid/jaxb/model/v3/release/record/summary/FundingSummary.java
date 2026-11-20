@@ -32,12 +32,13 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "title", "externalIdentifiers", "url", "type", "startDate", "endDate","organization" })
 @XmlRootElement(name = "summary", namespace = "http://www.orcid.org/ns/funding")
-@Schema(description = "FundingSummaryV3_0")
+@Schema(name = "FundingSummary")
 public class FundingSummary implements VisibilityType, Activity, GroupableActivity, Serializable, SourceAware, OrganizationHolder {
 
     private static final long serialVersionUID = 7489792970949538708L;
     @XmlJavaTypeAdapter(FundingTypeAdapter.class)
     @XmlElement(namespace = "http://www.orcid.org/ns/funding", required = true)
+    @Schema(type = "string", allowableValues = { "grant", "contract", "award", "salary-award" })
     protected FundingType type;
     @XmlElement(required = true, namespace = "http://www.orcid.org/ns/funding")
     protected FundingTitle title;
@@ -63,6 +64,7 @@ public class FundingSummary implements VisibilityType, Activity, GroupableActivi
     @XmlAttribute(name="path")
     protected String path;
     @XmlAttribute
+    @Schema(type = "string", allowableValues = { "private", "limited", "registered-only", "public" })
     protected Visibility visibility;
     @XmlAttribute(name = "display-index")
     protected String displayIndex;

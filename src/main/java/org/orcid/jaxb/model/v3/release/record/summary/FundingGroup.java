@@ -21,7 +21,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "identifiers", "fundingSummary" })
 @XmlRootElement(name = "funding-group", namespace = "http://www.orcid.org/ns/activities")
-@Schema(description = "FundingGroupV3_0")
+@Schema(name = "FundingGroup")
 public class FundingGroup implements Group, Serializable {
     private static final long serialVersionUID = -4195445459874576505L;
     @XmlElement(name = "last-modified-date", namespace = "http://www.orcid.org/ns/common")

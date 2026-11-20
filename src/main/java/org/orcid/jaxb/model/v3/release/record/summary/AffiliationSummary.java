@@ -26,7 +26,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "createdDate", "lastModifiedDate", "source", "putCode", "departmentName", "roleTitle", "startDate", "endDate", "organization", "url", "externalIdentifiers", "displayIndex" })
-@Schema(description = "AffiliationSummaryV3_0")
+@Schema(name = "AffiliationSummary")
 public abstract class AffiliationSummary implements Serializable, VisibilityType, Activity, SourceAware, GroupableActivity, OrganizationHolder {
     private static final long serialVersionUID = -4466713277256891056L;
     @XmlElement(name = "department-name", namespace = "http://www.orcid.org/ns/common")
@@ -50,6 +50,7 @@ public abstract class AffiliationSummary implements Serializable, VisibilityType
     @XmlAttribute(name = "path")
     protected String path;
     @XmlAttribute
+    @Schema(type = "string", allowableValues = { "private", "limited", "registered-only", "public" })
     protected Visibility visibility;
     @XmlElement(namespace = "http://www.orcid.org/ns/common", name = "url")
     protected Url url;

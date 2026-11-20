@@ -31,7 +31,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlType(propOrder = { "sourceOrcid", "sourceClientId", "sourceName", "assertionOriginOrcid", "assertionOriginClientId",
 		"assertionOriginName" })
 @XmlRootElement(name = "source", namespace = "http://www.orcid.org/ns/common")
-@Schema(description = "SourceV3_0")
+@Schema(name = "Source")
 public class Source implements Serializable {
 
 	private static final long serialVersionUID = 1L;

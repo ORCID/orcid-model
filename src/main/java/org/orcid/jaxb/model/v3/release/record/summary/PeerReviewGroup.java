@@ -18,7 +18,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "identifiers", "peerReviewGroup" })
 @XmlRootElement(name = "peer-review-group", namespace = "http://www.orcid.org/ns/activities")
-@Schema(description = "PeerReviewGroupV3_0")
+@Schema(name = "PeerReviewGroup")
 public class PeerReviewGroup implements Serializable {
     private static final long serialVersionUID = 7477492442869221608L;
     @XmlElement(name = "last-modified-date", namespace = "http://www.orcid.org/ns/common")

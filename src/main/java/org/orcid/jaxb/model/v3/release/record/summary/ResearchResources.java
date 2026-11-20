@@ -21,7 +21,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = { "lastModifiedDate", "researchResourceGroup" })
 @XmlRootElement(name = "research-resources", namespace = "http://www.orcid.org/ns/activities")
-@Schema(description = "ResearchResourcesV3_0")
+@Schema(name = "ResearchResources")
 public class ResearchResources implements GroupsContainer, Serializable {
     private static final long serialVersionUID = 7836684039680621797L;
     @XmlElement(name = "last-modified-date", namespace = "http://www.orcid.org/ns/common")

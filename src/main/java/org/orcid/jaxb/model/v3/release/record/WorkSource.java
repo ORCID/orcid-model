@@ -14,7 +14,7 @@ import java.lang.Deprecated;
 
 @Deprecated 
 @XmlRootElement(name = "source")
-@Schema(description = "V3_0")
+@Schema(name = "WorkSource")
 public class WorkSource extends OrcidIdBase implements Serializable {
 
     // This field indicates that the source is null on database

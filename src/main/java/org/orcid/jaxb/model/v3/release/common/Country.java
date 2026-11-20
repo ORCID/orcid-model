@@ -39,7 +39,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "value" })
 @XmlRootElement(name = "country")
-@Schema(description = "CountryV3_0")
+@Schema(name = "Country")
 public class Country implements Serializable, Comparable<Country> {
 
     private final static long serialVersionUID = 1L;

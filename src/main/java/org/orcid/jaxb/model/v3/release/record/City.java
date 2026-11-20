@@ -29,13 +29,14 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType( propOrder = { "content" })
 @XmlRootElement(name = "city")
-@Schema(description = "CityV3_0")
+@Schema(name = "City")
 public class City implements Serializable {
 
     private final static long serialVersionUID = 1L;
     @XmlValue
     protected String content;
     @XmlAttribute(name = "visibility")
+    @Schema(type = "string", allowableValues = { "private", "limited", "registered-only", "public" })
     protected Visibility visibility;
 
     public City() {

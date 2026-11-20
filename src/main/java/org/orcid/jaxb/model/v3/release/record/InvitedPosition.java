@@ -24,7 +24,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * 
  */
 @XmlRootElement(name = "invited-position", namespace = "http://www.orcid.org/ns/invited-position")
-@Schema(description = "InvitedPositionV3_0")
+@Schema(name = "InvitedPosition")
 public class InvitedPosition extends Affiliation implements Serializable {
 
     /**
